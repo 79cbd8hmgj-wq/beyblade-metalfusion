@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/save-header.schema.json",
+  "title": "Save Header",
+  "type": "object",
+  "required": [
+    "magic",
+    "payload_checksum",
+    "unknown_08",
+    "unknown_0c",
+    "constant_10",
+    "constant_14"
+  ],
+  "properties": {
+    "magic": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "payload_checksum": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "unknown_08": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "unknown_0c": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "constant_10": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "constant_14": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

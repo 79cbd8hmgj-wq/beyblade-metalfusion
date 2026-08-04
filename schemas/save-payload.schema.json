@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/save-payload.schema.json",
+  "title": "Save Payload",
+  "type": "object",
+  "required": [
+    "size",
+    "ranges"
+  ],
+  "properties": {
+    "size": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "ranges": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

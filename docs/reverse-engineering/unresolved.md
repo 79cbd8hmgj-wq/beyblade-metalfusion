@@ -17,3 +17,10 @@ meaning of `+0x1C`, the high Spin Gear bits, and constants at `+0x22/+0x23`
 remains unresolved. `field_14_ptr` and `field_18_ptr` are bounded presentation
 resource families. Prices, unlock conditions, and the aggregation function
 require the exact runtime experiments in the Task 3 reports.
+
+## Task 5 persistence unknowns
+
+* **Unknown:** semantic offsets within payload `0x0004–0x1F5F` (player/settings/time, inventory/loadout, economy, story/tournament and character progression) await controlled copied-save diffs and serializer watchpoints.
+* **Unknown:** header words `+0x08` and `+0x0C`; do not call either a version, timestamp, or sequence.
+* **Candidate:** timer/DMA/interrupt helper identities and retail visibility of diagnostic output.
+* **Strongly supported but not proven free:** EEPROM tail blocks `0x3EF–0x3FF`; indirect access/runtime scan remains required.

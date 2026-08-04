@@ -1,0 +1,19 @@
+{
+  "serializer": {
+    "address": "0x08045198",
+    "extent_end": "0x08045590",
+    "confidence": "strongly_supported"
+  },
+  "deserializer": {
+    "address": "0x08045590",
+    "extent_end": "unknown",
+    "confidence": "strongly_supported"
+  },
+  "regions": [
+    {
+      "payload": "0x0004-0x1F5F",
+      "classification": "unresolved copied/translated fields",
+      "confidence": "unknown"
+    }
+  ]
+}

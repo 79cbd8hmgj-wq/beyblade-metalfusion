@@ -6,4 +6,4 @@ The internal title is `BEYBLADEGREV`, game code `BB2E`, maker code `70`, version
 
 **Strongly supported assessment:** the image is a valid, exact 4 MiB capacity image rather than malformed, trimmed, or overdumped. It has no terminal `0xFF` run, but does have terminal zero fill considered separately in the free-space report. Static analysis cannot independently establish whether an unknown historical patch was applied, so “unmodified retail dump” remains unknown despite the supported hash check.
 
-An `EEPROM_V` signature occurs at offset `0x003A937C` / `0x083A937C`; exact version suffix and code boundaries remain unknown. Full machine-readable fields are in `analysis/rom-map/rom-identity.json`.
+An null-terminated `EEPROM_V124` signature begins at offset `0x003A93BC` / runtime `0x083A93BC` (**confirmed direct binary evidence**). The older `0x003A937C` value points into preceding text and is rejected. Full machine-readable fields are in `analysis/rom-map/rom-identity.json`.

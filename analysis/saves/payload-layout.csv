@@ -1,0 +1,3 @@
+offset,length,classification,confidence
+0x0000,0x4,checksum,confirmed
+0x0004,0x1F5C,unresolved_copied_region,strongly_supported
