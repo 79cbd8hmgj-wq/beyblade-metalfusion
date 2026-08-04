@@ -26,8 +26,7 @@ trap cleanup EXIT
 [[ -x "${BUNDLE}/run-mgba-gdb-headless.sh" ]]
 [[ -f "${ROM}" ]]
 
-grep -Eq -- '(^|[[:space:]])-g([,[:space:]]|$)|--gdb' "${BUNDLE}/mgba-help.txt"
-
+printf 'Starting mGBA ARM GDB smoke test...\n'
 "${BUNDLE}/run-mgba-gdb-headless.sh" "${ROM}" >"${EMU_LOG}" 2>&1 &
 PID=$!
 
@@ -51,7 +50,8 @@ if [[ ${LISTENING} -ne 1 ]]; then
   exit 1
 fi
 
-gdb-multiarch -q -batch \
+printf 'mGBA is listening on 127.0.0.1:2345; connecting GDB...\n'
+if ! gdb-multiarch -q -batch \
   -ex 'set pagination off' \
   -ex 'set confirm off' \
   -ex 'set endian little' \
@@ -59,9 +59,19 @@ gdb-multiarch -q -batch \
   -ex 'target remote 127.0.0.1:2345' \
   -ex 'info registers' \
   -ex 'x/4i $pc' \
-  -ex 'detach' >"${GDB_LOG}" 2>&1
+  -ex 'detach' >"${GDB_LOG}" 2>&1; then
+  echo "gdb-multiarch could not complete the remote debugging session:" >&2
+  cat "${GDB_LOG}" >&2
+  echo "mGBA transcript:" >&2
+  cat "${EMU_LOG}" >&2
+  exit 1
+fi
 
-grep -Eq '^pc[[:space:]]+0x|^r0[[:space:]]+0x' "${GDB_LOG}"
+if ! grep -Eq '^pc[[:space:]]+0x|^r0[[:space:]]+0x' "${GDB_LOG}"; then
+  echo "GDB connected but did not return the expected ARM register output:" >&2
+  cat "${GDB_LOG}" >&2
+  exit 1
+fi
 
 {
   echo "mGBA ARM GDB smoke test: PASS"
