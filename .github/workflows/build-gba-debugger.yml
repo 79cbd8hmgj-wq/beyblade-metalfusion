@@ -88,7 +88,7 @@ jobs:
       - name: Compile mGBA
         run: |
           cmake --build build --target mgba-sdl --parallel "$(nproc)"
-          test -x build/mgba
+          test -x build/sdl/mgba
 
       - name: Assemble portable debugger bundle
         env:
@@ -98,7 +98,7 @@ jobs:
           BUNDLE="bundle/mgba-debug"
           mkdir -p "${BUNDLE}/lib" "${BUNDLE}/gdb" dist
 
-          cp build/mgba "${BUNDLE}/mgba"
+          cp build/sdl/mgba "${BUNDLE}/mgba"
           cp debugger-bundle/run-mgba-gdb.sh "${BUNDLE}/"
           cp debugger-bundle/run-mgba-gdb-headless.sh "${BUNDLE}/"
           cp debugger-bundle/connect-gdb.sh "${BUNDLE}/"
