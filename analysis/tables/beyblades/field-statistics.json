@@ -1,0 +1,76 @@
+{
+  "record_count": 83,
+  "stride": 40,
+  "fields": {
+    "field_14_ptr": {
+      "offset": "0x14",
+      "width": 4,
+      "endianness": "little",
+      "minimum": 136837680,
+      "maximum": 136944784,
+      "unique_value_count": 83,
+      "zero_count": 0,
+      "confidence": "confirmed"
+    },
+    "field_18_ptr": {
+      "offset": "0x18",
+      "width": 4,
+      "endianness": "little",
+      "minimum": 136946060,
+      "maximum": 136988044,
+      "unique_value_count": 83,
+      "zero_count": 0,
+      "confidence": "confirmed"
+    },
+    "field_1c_bytes": {
+      "offset": "0x1C",
+      "width": 4,
+      "endianness": "little",
+      "minimum": 303186690,
+      "maximum": 2500217856,
+      "unique_value_count": 71,
+      "zero_count": 0,
+      "confidence": "unknown"
+    },
+    "field_20_bytes": {
+      "offset": "0x20",
+      "width": 4,
+      "endianness": "little",
+      "minimum": 4278190858,
+      "maximum": 4278208033,
+      "unique_value_count": 82,
+      "zero_count": 0,
+      "confidence": "unknown"
+    },
+    "field_24_u8": {
+      "offset": "0x24",
+      "width": 1,
+      "endianness": "little",
+      "minimum": 0,
+      "maximum": 0,
+      "unique_value_count": 1,
+      "zero_count": 83,
+      "confidence": "unknown"
+    },
+    "season": {
+      "offset": "0x25",
+      "width": 1,
+      "endianness": "little",
+      "minimum": 0,
+      "maximum": 3,
+      "unique_value_count": 4,
+      "zero_count": 29,
+      "confidence": "strongly_supported"
+    },
+    "field_26_u16": {
+      "offset": "0x26",
+      "width": 2,
+      "endianness": "little",
+      "minimum": 0,
+      "maximum": 0,
+      "unique_value_count": 1,
+      "zero_count": 83,
+      "confidence": "unknown"
+    }
+  }
+}

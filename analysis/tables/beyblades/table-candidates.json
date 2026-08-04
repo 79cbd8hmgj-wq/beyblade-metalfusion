@@ -1,0 +1,6 @@
+{
+  "candidates": [
+    {"rank": 1, "start_offset": "0x0007A1F4", "runtime_address": "0x0807A1F4", "end_offset_exclusive": "0x0007AEE4", "record_count": 83, "stride": 40, "representation": "fixed-stride complete-template records", "confidence": "confirmed", "evidence": ["getBeyBladeWithIndex bounds index at 82 and computes base + index*40", "getRandomBeyBladeFromSeason scans 83 rows in 40-byte increments", "each row begins with five localized name pointers"]},
+    {"rank": 2, "start_offset": "0x000796DC", "end_offset_exclusive": "0x0007A1F4", "record_count": 710, "stride": 4, "representation": "concatenated localization lookup arrays", "confidence": "strongly_supported", "counterevidence": ["mixed 5- and 10-pointer repetition and no complete configuration fields", "accessor base is 0x0007A1F4"]}
+  ]
+}

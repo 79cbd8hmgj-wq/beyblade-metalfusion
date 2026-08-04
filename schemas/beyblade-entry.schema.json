@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://example.invalid/schemas/beyblade-entry.schema.json",
+  "title":"Beyblade complete-template entry",
+  "type":"object",
+  "required":["index","source_offset","runtime_address","display_names","name_pointers","raw_record_hex","confidence","evidence"],
+  "properties":{
+    "index":{"type":"integer","minimum":0,"maximum":82},
+    "source_offset":{"type":"string","pattern":"^0x[0-9A-F]{8}$"},
+    "runtime_address":{"type":"string","pattern":"^0x08[0-9A-F]{6}$"},
+    "display_names":{"type":"object","required":["english","french","german","italian","spanish"],"additionalProperties":{"type":"string"}},
+    "name_pointers":{"type":"array","minItems":5,"maxItems":5,"items":{"type":"string"}},
+    "field_14_ptr":{"type":"string"},"field_18_ptr":{"type":"string"},
+    "field_1c_bytes":{"type":"string","pattern":"^[0-9a-f]{8}$"},"field_20_bytes":{"type":"string","pattern":"^[0-9a-f]{8}$"},
+    "season":{"type":"integer","minimum":0,"maximum":255},"field_25_u8":{"type":"integer"},"field_26_u16":{"type":"integer"},
+    "related_component_ids":{"type":"array","items":{"type":"integer"}},
+    "raw_record_hex":{"type":"string","pattern":"^[0-9a-f]{80}$"},
+    "confidence":{"type":"object","additionalProperties":{"enum":["confirmed","strongly_supported","candidate","unknown"]}},
+    "evidence":{"type":"array","items":{"type":"string"}}
+  },"additionalProperties":true
+}

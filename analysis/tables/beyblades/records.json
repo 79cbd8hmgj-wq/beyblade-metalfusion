@@ -1,0 +1,32 @@
+{
+  "representative_subset": [
+    {
+      "index": 0,
+      "name": "Dragoon S",
+      "source_offset": "0x0007A1F4",
+      "runtime_address": "0x0807A1F4",
+      "raw_record_hex": "90d1330890d1330890d1330890d1330890d13308585a28088cc72908000f0540070b00ff00010000",
+      "season": 1,
+      "confidence": "confirmed"
+    },
+    {
+      "index": 41,
+      "name": "Bakushin-Oh",
+      "source_offset": "0x0007A85C",
+      "runtime_address": "0x0807A85C",
+      "raw_record_hex": "4ccf33084ccf33084ccf33084ccf33084ccf33082c2228088cb1290800000940003300ff00000000",
+      "season": 0,
+      "confidence": "confirmed"
+    },
+    {
+      "index": 82,
+      "name": "Rushing Boar",
+      "source_offset": "0x0007AEC4",
+      "runtime_address": "0x0807AEC4",
+      "raw_record_hex": "04cd330804cd330804cd330804cd330804cd3308909c29088c452a08004c0695094100ff00030000",
+      "season": 3,
+      "confidence": "confirmed"
+    }
+  ],
+  "full_export": "analysis/generated/tables/beyblades/records.json"
+}

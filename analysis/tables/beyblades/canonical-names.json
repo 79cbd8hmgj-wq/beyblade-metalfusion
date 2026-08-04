@@ -1,0 +1,2911 @@
+{
+  "classification": "complete_beyblade_names",
+  "count": 83,
+  "first_index": 0,
+  "last_index": 82,
+  "entries": [
+    {
+      "canonical_index": 0,
+      "displayed_text": "Dragoon S",
+      "localized_texts": [
+        "Dragoon S",
+        "Dragoon S",
+        "Dragoon S",
+        "Dragoon S",
+        "Dragoon S"
+      ],
+      "runtime_string_address": "0x0833D190",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D190",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A1F4",
+        "0x0007A1F8",
+        "0x0007A1FC",
+        "0x0007A200",
+        "0x0007A204"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon G"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 1,
+      "displayed_text": "Dragoon G",
+      "localized_texts": [
+        "Dragoon G",
+        "Dragoon G",
+        "Dragoon G",
+        "Dragoon G",
+        "Dragoon G"
+      ],
+      "runtime_string_address": "0x0833D184",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D184",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A21C",
+        "0x0007A220",
+        "0x0007A224",
+        "0x0007A228",
+        "0x0007A22C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon S",
+        "Dragoon V2"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 2,
+      "displayed_text": "Dragoon V2",
+      "localized_texts": [
+        "Dragoon V2",
+        "Dragoon V2",
+        "Dragoon V2",
+        "Dragoon V2",
+        "Dragoon V2"
+      ],
+      "runtime_string_address": "0x0833D178",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D178",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007A244",
+        "0x0007A248",
+        "0x0007A24C",
+        "0x0007A250",
+        "0x0007A254"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon G",
+        "Dragoon Storm"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 3,
+      "displayed_text": "Dragoon Storm",
+      "localized_texts": [
+        "Dragoon Storm",
+        "Dragoon Storm",
+        "Dragoon Storm",
+        "Dragoon Storm",
+        "Dragoon Storm"
+      ],
+      "runtime_string_address": "0x0833D168",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D168",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A26C",
+        "0x0007A270",
+        "0x0007A274",
+        "0x0007A278",
+        "0x0007A27C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon V2",
+        "Dragoon Fighter"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 4,
+      "displayed_text": "Dragoon Fighter",
+      "localized_texts": [
+        "Dragoon Fighter",
+        "Dragoon Fighter",
+        "Dragoon Fighter",
+        "Dragoon Fighter",
+        "Dragoon Fighter"
+      ],
+      "runtime_string_address": "0x0833D158",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D158",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007A294",
+        "0x0007A298",
+        "0x0007A29C",
+        "0x0007A2A0",
+        "0x0007A2A4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon Storm",
+        "Strata Dragoon G"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 5,
+      "displayed_text": "Strata Dragoon G",
+      "localized_texts": [
+        "Strata Dragoon G",
+        "Strata Dragoon G",
+        "Strata Dragoon G",
+        "Strata Dragoon G",
+        "Strata Dragoon G"
+      ],
+      "runtime_string_address": "0x0833D144",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D144",
+      "string_length": 16,
+      "direct_pointer_reference_offsets": [
+        "0x0007A2BC",
+        "0x0007A2C0",
+        "0x0007A2C4",
+        "0x0007A2C8",
+        "0x0007A2CC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon Fighter",
+        "Master Dragoon"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 6,
+      "displayed_text": "Master Dragoon",
+      "localized_texts": [
+        "Master Dragoon",
+        "Master Dragoon",
+        "Master Dragoon",
+        "Master Dragoon",
+        "Master Dragoon"
+      ],
+      "runtime_string_address": "0x0833D134",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D134",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007A2E4",
+        "0x0007A2E8",
+        "0x0007A2EC",
+        "0x0007A2F0",
+        "0x0007A2F4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Strata Dragoon G",
+        "Kids Dragoon"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 7,
+      "displayed_text": "Kids Dragoon",
+      "localized_texts": [
+        "Kids Dragoon",
+        "Kids Dragoon",
+        "Kids Dragoon",
+        "Kids Dragoon",
+        "Kids Dragoon"
+      ],
+      "runtime_string_address": "0x0833D124",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D124",
+      "string_length": 12,
+      "direct_pointer_reference_offsets": [
+        "0x0007A30C",
+        "0x0007A310",
+        "0x0007A314",
+        "0x0007A318",
+        "0x0007A31C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Master Dragoon",
+        "Dragoon Galaxy Turbo"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 8,
+      "displayed_text": "Dragoon Galaxy Turbo",
+      "localized_texts": [
+        "Dragoon Galaxy Turbo",
+        "Dragoon Galaxy Turbo",
+        "Dragoon Galaxy Turbo",
+        "Dragoon Galaxy Turbo",
+        "Dragoon Galaxy Turbo"
+      ],
+      "runtime_string_address": "0x0833D10C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D10C",
+      "string_length": 20,
+      "direct_pointer_reference_offsets": [
+        "0x0007A334",
+        "0x0007A338",
+        "0x0007A33C",
+        "0x0007A340",
+        "0x0007A344"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Kids Dragoon",
+        "Driger F"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 9,
+      "displayed_text": "Driger F",
+      "localized_texts": [
+        "Driger F",
+        "Driger F",
+        "Driger F",
+        "Driger F",
+        "Driger F"
+      ],
+      "runtime_string_address": "0x0833D100",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D100",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007A35C",
+        "0x0007A360",
+        "0x0007A364",
+        "0x0007A368",
+        "0x0007A36C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon Galaxy Turbo",
+        "Driger S"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 10,
+      "displayed_text": "Driger S",
+      "localized_texts": [
+        "Driger S",
+        "Driger S",
+        "Driger S",
+        "Driger S",
+        "Driger S"
+      ],
+      "runtime_string_address": "0x0833D0F4",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0F4",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007A384",
+        "0x0007A388",
+        "0x0007A38C",
+        "0x0007A390",
+        "0x0007A394"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Driger F",
+        "Driger G"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 11,
+      "displayed_text": "Driger G",
+      "localized_texts": [
+        "Driger G",
+        "Driger G",
+        "Driger G",
+        "Driger G",
+        "Driger G"
+      ],
+      "runtime_string_address": "0x0833D0E8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0E8",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007A3AC",
+        "0x0007A3B0",
+        "0x0007A3B4",
+        "0x0007A3B8",
+        "0x0007A3BC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Driger S",
+        "Metal Driger"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 12,
+      "displayed_text": "Metal Driger",
+      "localized_texts": [
+        "Metal Driger",
+        "Metal Driger",
+        "Metal Driger",
+        "Metal Driger",
+        "Metal Driger"
+      ],
+      "runtime_string_address": "0x0833D0D8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0D8",
+      "string_length": 12,
+      "direct_pointer_reference_offsets": [
+        "0x0007A3D4",
+        "0x0007A3D8",
+        "0x0007A3DC",
+        "0x0007A3E0",
+        "0x0007A3E4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Driger G",
+        "Master Driger"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 13,
+      "displayed_text": "Master Driger",
+      "localized_texts": [
+        "Master Driger",
+        "Master Driger",
+        "Master Driger",
+        "Master Driger",
+        "Master Driger"
+      ],
+      "runtime_string_address": "0x0833D0C8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0C8",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A3FC",
+        "0x0007A400",
+        "0x0007A404",
+        "0x0007A408",
+        "0x0007A40C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Metal Driger",
+        "Dranzer F"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 14,
+      "displayed_text": "Dranzer F",
+      "localized_texts": [
+        "Dranzer F",
+        "Dranzer F",
+        "Dranzer F",
+        "Dranzer F",
+        "Dranzer F"
+      ],
+      "runtime_string_address": "0x0833D0BC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0BC",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A424",
+        "0x0007A428",
+        "0x0007A42C",
+        "0x0007A430",
+        "0x0007A434"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Master Driger",
+        "Knight Dranzer"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 15,
+      "displayed_text": "Knight Dranzer",
+      "localized_texts": [
+        "Knight Dranzer",
+        "Knight Dranzer",
+        "Knight Dranzer",
+        "Knight Dranzer",
+        "Knight Dranzer"
+      ],
+      "runtime_string_address": "0x0833D0AC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D0AC",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007A44C",
+        "0x0007A450",
+        "0x0007A454",
+        "0x0007A458",
+        "0x0007A45C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer F",
+        "Master Dranzer"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 16,
+      "displayed_text": "Master Dranzer",
+      "localized_texts": [
+        "Master Dranzer",
+        "Master Dranzer",
+        "Master Dranzer",
+        "Master Dranzer",
+        "Master Dranzer"
+      ],
+      "runtime_string_address": "0x0833D09C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D09C",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007A474",
+        "0x0007A478",
+        "0x0007A47C",
+        "0x0007A480",
+        "0x0007A484"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Knight Dranzer",
+        "Ultimate Frostic Dranzer"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 17,
+      "displayed_text": "Ultimate Frostic Dranzer",
+      "localized_texts": [
+        "Ultimate Frostic Dranzer",
+        "Ultimate Frostic Dranzer",
+        "Ultimate Frostic Dranzer",
+        "Ultimate Frostic Dranzer",
+        "Ultimate Frostic Dranzer"
+      ],
+      "runtime_string_address": "0x0833D080",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D080",
+      "string_length": 24,
+      "direct_pointer_reference_offsets": [
+        "0x0007A49C",
+        "0x0007A4A0",
+        "0x0007A4A4",
+        "0x0007A4A8",
+        "0x0007A4AC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Master Dranzer",
+        "Draciel S"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 18,
+      "displayed_text": "Draciel S",
+      "localized_texts": [
+        "Draciel S",
+        "Draciel S",
+        "Draciel S",
+        "Draciel S",
+        "Draciel S"
+      ],
+      "runtime_string_address": "0x0833D074",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D074",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A4C4",
+        "0x0007A4C8",
+        "0x0007A4CC",
+        "0x0007A4D0",
+        "0x0007A4D4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Ultimate Frostic Dranzer",
+        "Draciel V2"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 19,
+      "displayed_text": "Draciel V2",
+      "localized_texts": [
+        "Draciel V2",
+        "Draciel V2",
+        "Draciel V2",
+        "Draciel V2",
+        "Draciel V2"
+      ],
+      "runtime_string_address": "0x0833D068",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D068",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007A4EC",
+        "0x0007A4F0",
+        "0x0007A4F4",
+        "0x0007A4F8",
+        "0x0007A4FC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel S",
+        "Draciel Fortress"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 20,
+      "displayed_text": "Draciel Fortress",
+      "localized_texts": [
+        "Draciel Fortress",
+        "Draciel Fortress",
+        "Draciel Fortress",
+        "Draciel Fortress",
+        "Draciel Fortress"
+      ],
+      "runtime_string_address": "0x0833D054",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D054",
+      "string_length": 16,
+      "direct_pointer_reference_offsets": [
+        "0x0007A514",
+        "0x0007A518",
+        "0x0007A51C",
+        "0x0007A520",
+        "0x0007A524"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel V2",
+        "Master Draciel"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 21,
+      "displayed_text": "Master Draciel",
+      "localized_texts": [
+        "Master Draciel",
+        "Master Draciel",
+        "Master Draciel",
+        "Master Draciel",
+        "Master Draciel"
+      ],
+      "runtime_string_address": "0x0833D044",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D044",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007A53C",
+        "0x0007A540",
+        "0x0007A544",
+        "0x0007A548",
+        "0x0007A54C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel Fortress",
+        "Draciel Metal"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 22,
+      "displayed_text": "Draciel Metal",
+      "localized_texts": [
+        "Draciel Metal",
+        "Draciel Metal",
+        "Draciel Metal",
+        "Draciel Metal",
+        "Draciel Metal"
+      ],
+      "runtime_string_address": "0x0833D034",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D034",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A564",
+        "0x0007A568",
+        "0x0007A56C",
+        "0x0007A570",
+        "0x0007A574"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Master Draciel",
+        "Wolborg"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 23,
+      "displayed_text": "Wolborg",
+      "localized_texts": [
+        "Wolborg",
+        "Wolborg",
+        "Wolborg",
+        "Wolborg",
+        "Wolborg"
+      ],
+      "runtime_string_address": "0x0833D02C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D02C",
+      "string_length": 7,
+      "direct_pointer_reference_offsets": [
+        "0x0007A58C",
+        "0x0007A590",
+        "0x0007A594",
+        "0x0007A598",
+        "0x0007A59C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel Metal",
+        "Wolborg 2"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 24,
+      "displayed_text": "Wolborg 2",
+      "localized_texts": [
+        "Wolborg 2",
+        "Wolborg 2",
+        "Wolborg 2",
+        "Wolborg 2",
+        "Wolborg 2"
+      ],
+      "runtime_string_address": "0x0833D020",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D020",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A5B4",
+        "0x0007A5B8",
+        "0x0007A5BC",
+        "0x0007A5C0",
+        "0x0007A5C4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wolborg",
+        "Seaborg"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 25,
+      "displayed_text": "Seaborg",
+      "localized_texts": [
+        "Seaborg",
+        "Seaborg",
+        "Seaborg",
+        "Seaborg",
+        "Seaborg"
+      ],
+      "runtime_string_address": "0x0833D018",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D018",
+      "string_length": 7,
+      "direct_pointer_reference_offsets": [
+        "0x0007A5DC",
+        "0x0007A5E0",
+        "0x0007A5E4",
+        "0x0007A5E8",
+        "0x0007A5EC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wolborg 2",
+        "Seaborg 2"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 26,
+      "displayed_text": "Seaborg 2",
+      "localized_texts": [
+        "Seaborg 2",
+        "Seaborg 2",
+        "Seaborg 2",
+        "Seaborg 2",
+        "Seaborg 2"
+      ],
+      "runtime_string_address": "0x0833D00C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D00C",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A604",
+        "0x0007A608",
+        "0x0007A60C",
+        "0x0007A610",
+        "0x0007A614"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Seaborg",
+        "Wyborg"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 27,
+      "displayed_text": "Wyborg",
+      "localized_texts": [
+        "Wyborg",
+        "Wyborg",
+        "Wyborg",
+        "Wyborg",
+        "Wyborg"
+      ],
+      "runtime_string_address": "0x0833D004",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033D004",
+      "string_length": 6,
+      "direct_pointer_reference_offsets": [
+        "0x0007A62C",
+        "0x0007A630",
+        "0x0007A634",
+        "0x0007A638",
+        "0x0007A63C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Seaborg 2",
+        "Trygle"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 28,
+      "displayed_text": "Trygle",
+      "localized_texts": [
+        "Trygle",
+        "Trygle",
+        "Trygle",
+        "Trygle",
+        "Trygle"
+      ],
+      "runtime_string_address": "0x0833CFFC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFFC",
+      "string_length": 6,
+      "direct_pointer_reference_offsets": [
+        "0x0007A654",
+        "0x0007A658",
+        "0x0007A65C",
+        "0x0007A660",
+        "0x0007A664"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wyborg",
+        "Bearing Stinger"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 29,
+      "displayed_text": "Bearing Stinger",
+      "localized_texts": [
+        "Bearing Stinger",
+        "Bearing Stinger",
+        "Bearing Stinger",
+        "Bearing Stinger",
+        "Bearing Stinger"
+      ],
+      "runtime_string_address": "0x0833CFEC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFEC",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007A67C",
+        "0x0007A680",
+        "0x0007A684",
+        "0x0007A688",
+        "0x0007A68C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Trygle",
+        "Grip Attacker"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 30,
+      "displayed_text": "Grip Attacker",
+      "localized_texts": [
+        "Grip Attacker",
+        "Grip Attacker",
+        "Grip Attacker",
+        "Grip Attacker",
+        "Grip Attacker"
+      ],
+      "runtime_string_address": "0x0833CFDC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFDC",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A6A4",
+        "0x0007A6A8",
+        "0x0007A6AC",
+        "0x0007A6B0",
+        "0x0007A6B4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Bearing Stinger",
+        "Ultimate Saizo"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 31,
+      "displayed_text": "Ultimate Saizo",
+      "localized_texts": [
+        "Ultimate Saizo",
+        "Ultimate Saizo",
+        "Ultimate Saizo",
+        "Ultimate Saizo",
+        "Ultimate Saizo"
+      ],
+      "runtime_string_address": "0x0833CFCC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFCC",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007A6CC",
+        "0x0007A6D0",
+        "0x0007A6D4",
+        "0x0007A6D8",
+        "0x0007A6DC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Grip Attacker",
+        "Spark Knight"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 32,
+      "displayed_text": "Spark Knight",
+      "localized_texts": [
+        "Spark Knight",
+        "Spark Knight",
+        "Spark Knight",
+        "Spark Knight",
+        "Spark Knight"
+      ],
+      "runtime_string_address": "0x0833CFBC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFBC",
+      "string_length": 12,
+      "direct_pointer_reference_offsets": [
+        "0x0007A6F4",
+        "0x0007A6F8",
+        "0x0007A6FC",
+        "0x0007A700",
+        "0x0007A704"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Ultimate Saizo",
+        "Roller Attacker"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 33,
+      "displayed_text": "Roller Attacker",
+      "localized_texts": [
+        "Roller Attacker",
+        "Roller Attacker",
+        "Roller Attacker",
+        "Roller Attacker",
+        "Roller Attacker"
+      ],
+      "runtime_string_address": "0x0833CFAC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CFAC",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007A71C",
+        "0x0007A720",
+        "0x0007A724",
+        "0x0007A728",
+        "0x0007A72C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Spark Knight",
+        "Roller Defenser"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 34,
+      "displayed_text": "Roller Defenser",
+      "localized_texts": [
+        "Roller Defenser",
+        "Roller Defenser",
+        "Roller Defenser",
+        "Roller Defenser",
+        "Roller Defenser"
+      ],
+      "runtime_string_address": "0x0833CF9C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF9C",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007A744",
+        "0x0007A748",
+        "0x0007A74C",
+        "0x0007A750",
+        "0x0007A754"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Roller Attacker",
+        "Wing Attacker"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 35,
+      "displayed_text": "Wing Attacker",
+      "localized_texts": [
+        "Wing Attacker",
+        "Wing Attacker",
+        "Wing Attacker",
+        "Wing Attacker",
+        "Wing Attacker"
+      ],
+      "runtime_string_address": "0x0833CF8C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF8C",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A76C",
+        "0x0007A770",
+        "0x0007A774",
+        "0x0007A778",
+        "0x0007A77C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Roller Defenser",
+        "Wing Defenser"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 36,
+      "displayed_text": "Wing Defenser",
+      "localized_texts": [
+        "Wing Defenser",
+        "Wing Defenser",
+        "Wing Defenser",
+        "Wing Defenser",
+        "Wing Defenser"
+      ],
+      "runtime_string_address": "0x0833CF7C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF7C",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A794",
+        "0x0007A798",
+        "0x0007A79C",
+        "0x0007A7A0",
+        "0x0007A7A4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wing Attacker",
+        "Bistool"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 37,
+      "displayed_text": "Bistool",
+      "localized_texts": [
+        "Bistool",
+        "Bistool",
+        "Bistool",
+        "Bistool",
+        "Bistool"
+      ],
+      "runtime_string_address": "0x0833CF74",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF74",
+      "string_length": 7,
+      "direct_pointer_reference_offsets": [
+        "0x0007A7BC",
+        "0x0007A7C0",
+        "0x0007A7C4",
+        "0x0007A7C8",
+        "0x0007A7CC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wing Defenser",
+        "Polta"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 38,
+      "displayed_text": "Polta",
+      "localized_texts": [
+        "Polta",
+        "Polta",
+        "Polta",
+        "Polta",
+        "Polta"
+      ],
+      "runtime_string_address": "0x0833CF6C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF6C",
+      "string_length": 5,
+      "direct_pointer_reference_offsets": [
+        "0x0007A7E4",
+        "0x0007A7E8",
+        "0x0007A7EC",
+        "0x0007A7F0",
+        "0x0007A7F4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Bistool",
+        "Makendo"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 39,
+      "displayed_text": "Makendo",
+      "localized_texts": [
+        "Makendo",
+        "Makendo",
+        "Makendo",
+        "Makendo",
+        "Makendo"
+      ],
+      "runtime_string_address": "0x0833CF64",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF64",
+      "string_length": 7,
+      "direct_pointer_reference_offsets": [
+        "0x0007A80C",
+        "0x0007A810",
+        "0x0007A814",
+        "0x0007A818",
+        "0x0007A81C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Polta",
+        "Bump King"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 40,
+      "displayed_text": "Bump King",
+      "localized_texts": [
+        "Bump King",
+        "Bump King",
+        "Bump King",
+        "Bump King",
+        "Bump King"
+      ],
+      "runtime_string_address": "0x0833CF58",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF58",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007A834",
+        "0x0007A838",
+        "0x0007A83C",
+        "0x0007A840",
+        "0x0007A844"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Makendo",
+        "Bakushin-Oh"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 41,
+      "displayed_text": "Bakushin-Oh",
+      "localized_texts": [
+        "Bakushin-Oh",
+        "Bakushin-Oh",
+        "Bakushin-Oh",
+        "Bakushin-Oh",
+        "Bakushin-Oh"
+      ],
+      "runtime_string_address": "0x0833CF4C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF4C",
+      "string_length": 11,
+      "direct_pointer_reference_offsets": [
+        "0x0007A85C",
+        "0x0007A860",
+        "0x0007A864",
+        "0x0007A868",
+        "0x0007A86C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Bump King",
+        "Galeon Attacker"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 42,
+      "displayed_text": "Galeon Attacker",
+      "localized_texts": [
+        "Galeon Attacker",
+        "Galeon Attacker",
+        "Galeon Attacker",
+        "Galeon Attacker",
+        "Galeon Attacker"
+      ],
+      "runtime_string_address": "0x0833CF3C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF3C",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007A884",
+        "0x0007A888",
+        "0x0007A88C",
+        "0x0007A890",
+        "0x0007A894"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Bakushin-Oh",
+        "Galman"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 43,
+      "displayed_text": "Galman",
+      "localized_texts": [
+        "Galman",
+        "Galman",
+        "Galman",
+        "Galman",
+        "Galman"
+      ],
+      "runtime_string_address": "0x0833CF34",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF34",
+      "string_length": 6,
+      "direct_pointer_reference_offsets": [
+        "0x0007A8AC",
+        "0x0007A8B0",
+        "0x0007A8B4",
+        "0x0007A8B8",
+        "0x0007A8BC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Galeon Attacker",
+        "Galzzly"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 44,
+      "displayed_text": "Galzzly",
+      "localized_texts": [
+        "Galzzly",
+        "Galzzly",
+        "Galzzly",
+        "Galzzly",
+        "Galzzly"
+      ],
+      "runtime_string_address": "0x0833CF2C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF2C",
+      "string_length": 7,
+      "direct_pointer_reference_offsets": [
+        "0x0007A8D4",
+        "0x0007A8D8",
+        "0x0007A8DC",
+        "0x0007A8E0",
+        "0x0007A8E4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Galman",
+        "Gekiryu-Oh"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 45,
+      "displayed_text": "Gekiryu-Oh",
+      "localized_texts": [
+        "Gekiryu-Oh",
+        "Gekiryu-Oh",
+        "Gekiryu-Oh",
+        "Gekiryu-Oh",
+        "Gekiryu-Oh"
+      ],
+      "runtime_string_address": "0x0833CF20",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF20",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007A8FC",
+        "0x0007A900",
+        "0x0007A904",
+        "0x0007A908",
+        "0x0007A90C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Galzzly",
+        "Megaro Arm"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 46,
+      "displayed_text": "Megaro Arm",
+      "localized_texts": [
+        "Megaro Arm",
+        "Megaro Arm",
+        "Megaro Arm",
+        "Megaro Arm",
+        "Megaro Arm"
+      ],
+      "runtime_string_address": "0x0833CF14",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CF14",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007A924",
+        "0x0007A928",
+        "0x0007A92C",
+        "0x0007A930",
+        "0x0007A934"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Gekiryu-Oh",
+        "Auto Change Balancer"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 47,
+      "displayed_text": "Auto Change Balancer",
+      "localized_texts": [
+        "Auto Change Balancer",
+        "Auto Change Balancer",
+        "Auto Change Balancer",
+        "Auto Change Balancer",
+        "Auto Change Balancer"
+      ],
+      "runtime_string_address": "0x0833CEFC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEFC",
+      "string_length": 20,
+      "direct_pointer_reference_offsets": [
+        "0x0007A94C",
+        "0x0007A950",
+        "0x0007A954",
+        "0x0007A958",
+        "0x0007A95C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Megaro Arm",
+        "Flash Leopard"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 48,
+      "displayed_text": "Flash Leopard",
+      "localized_texts": [
+        "Flash Leopard",
+        "Flash Leopard",
+        "Flash Leopard",
+        "Flash Leopard",
+        "Flash Leopard"
+      ],
+      "runtime_string_address": "0x0833CEEC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEEC",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007A974",
+        "0x0007A978",
+        "0x0007A97C",
+        "0x0007A980",
+        "0x0007A984"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Auto Change Balancer",
+        "Rock Bison"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 49,
+      "displayed_text": "Rock Bison",
+      "localized_texts": [
+        "Rock Bison",
+        "Rock Bison",
+        "Rock Bison",
+        "Rock Bison",
+        "Rock Bison"
+      ],
+      "runtime_string_address": "0x0833CEE0",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEE0",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007A99C",
+        "0x0007A9A0",
+        "0x0007A9A4",
+        "0x0007A9A8",
+        "0x0007A9AC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Flash Leopard",
+        "Zeus"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 50,
+      "displayed_text": "Zeus",
+      "localized_texts": [
+        "Zeus",
+        "Zeus",
+        "Zeus",
+        "Zeus",
+        "Zeus"
+      ],
+      "runtime_string_address": "0x0833CED8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CED8",
+      "string_length": 4,
+      "direct_pointer_reference_offsets": [
+        "0x0007A9C4",
+        "0x0007A9C8",
+        "0x0007A9CC",
+        "0x0007A9D0",
+        "0x0007A9D4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Rock Bison",
+        "Trypio"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 51,
+      "displayed_text": "Trypio",
+      "localized_texts": [
+        "Trypio",
+        "Trypio",
+        "Trypio",
+        "Trypio",
+        "Trypio"
+      ],
+      "runtime_string_address": "0x0833CED0",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CED0",
+      "string_length": 6,
+      "direct_pointer_reference_offsets": [
+        "0x0007A9EC",
+        "0x0007A9F0",
+        "0x0007A9F4",
+        "0x0007A9F8",
+        "0x0007A9FC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Zeus",
+        "Dragoon V"
+      ],
+      "suspected_season": 1,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 52,
+      "displayed_text": "Dragoon V",
+      "localized_texts": [
+        "Dragoon V",
+        "Dragoon V",
+        "Dragoon V",
+        "Dragoon V",
+        "Dragoon V"
+      ],
+      "runtime_string_address": "0x0833CEC4",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEC4",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AA14",
+        "0x0007AA18",
+        "0x0007AA1C",
+        "0x0007AA20",
+        "0x0007AA24"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Trypio",
+        "Metal Dranzer"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 53,
+      "displayed_text": "Metal Dranzer",
+      "localized_texts": [
+        "Metal Dranzer",
+        "Metal Dranzer",
+        "Metal Dranzer",
+        "Metal Dranzer",
+        "Metal Dranzer"
+      ],
+      "runtime_string_address": "0x0833CEB4",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEB4",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007AA3C",
+        "0x0007AA40",
+        "0x0007AA44",
+        "0x0007AA48",
+        "0x0007AA4C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon V",
+        "Driger V"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 54,
+      "displayed_text": "Driger V",
+      "localized_texts": [
+        "Driger V",
+        "Driger V",
+        "Driger V",
+        "Driger V",
+        "Driger V"
+      ],
+      "runtime_string_address": "0x0833CEA8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CEA8",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007AA64",
+        "0x0007AA68",
+        "0x0007AA6C",
+        "0x0007AA70",
+        "0x0007AA74"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Metal Dranzer",
+        "Dranzer V"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 55,
+      "displayed_text": "Dranzer V",
+      "localized_texts": [
+        "Dranzer V",
+        "Dranzer V",
+        "Dranzer V",
+        "Dranzer V",
+        "Dranzer V"
+      ],
+      "runtime_string_address": "0x0833CE9C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE9C",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AA8C",
+        "0x0007AA90",
+        "0x0007AA94",
+        "0x0007AA98",
+        "0x0007AA9C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Driger V",
+        "Dranzer S"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 56,
+      "displayed_text": "Dranzer S",
+      "localized_texts": [
+        "Dranzer S",
+        "Dranzer S",
+        "Dranzer S",
+        "Dranzer S",
+        "Dranzer S"
+      ],
+      "runtime_string_address": "0x0833CE90",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE90",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AAB4",
+        "0x0007AAB8",
+        "0x0007AABC",
+        "0x0007AAC0",
+        "0x0007AAC4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer V",
+        "Bound Defenser"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 57,
+      "displayed_text": "Bound Defenser",
+      "localized_texts": [
+        "Bound Defenser",
+        "Bound Defenser",
+        "Bound Defenser",
+        "Bound Defenser",
+        "Bound Defenser"
+      ],
+      "runtime_string_address": "0x0833CE80",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE80",
+      "string_length": 14,
+      "direct_pointer_reference_offsets": [
+        "0x0007AADC",
+        "0x0007AAE0",
+        "0x0007AAE4",
+        "0x0007AAE8",
+        "0x0007AAEC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer S",
+        "Metal Masters Draciel"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 58,
+      "displayed_text": "Metal Masters Draciel",
+      "localized_texts": [
+        "Metal Masters Draciel",
+        "Metal Masters Draciel",
+        "Metal Masters Draciel",
+        "Metal Masters Draciel",
+        "Metal Masters Draciel"
+      ],
+      "runtime_string_address": "0x0833CE68",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE68",
+      "string_length": 21,
+      "direct_pointer_reference_offsets": [
+        "0x0007AB04",
+        "0x0007AB08",
+        "0x0007AB0C",
+        "0x0007AB10",
+        "0x0007AB14"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Bound Defenser",
+        "Griffolyon Hidden Spirit"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 59,
+      "displayed_text": "Griffolyon Hidden Spirit",
+      "localized_texts": [
+        "Griffolyon Hidden Spirit",
+        "Griffolyon Hidden Spirit",
+        "Griffolyon Hidden Spirit",
+        "Griffolyon Hidden Spirit",
+        "Griffolyon Hidden Spirit"
+      ],
+      "runtime_string_address": "0x0833CE4C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE4C",
+      "string_length": 24,
+      "direct_pointer_reference_offsets": [
+        "0x0007AB2C",
+        "0x0007AB30",
+        "0x0007AB34",
+        "0x0007AB38",
+        "0x0007AB3C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Metal Masters Draciel",
+        "Hayate Hidden Spirit"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 60,
+      "displayed_text": "Hayate Hidden Spirit",
+      "localized_texts": [
+        "Hayate Hidden Spirit",
+        "Hayate Hidden Spirit",
+        "Hayate Hidden Spirit",
+        "Hayate Hidden Spirit",
+        "Hayate Hidden Spirit"
+      ],
+      "runtime_string_address": "0x0833CE34",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE34",
+      "string_length": 20,
+      "direct_pointer_reference_offsets": [
+        "0x0007AB54",
+        "0x0007AB58",
+        "0x0007AB5C",
+        "0x0007AB60",
+        "0x0007AB64"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Griffolyon Hidden Spirit",
+        "Zinrai Hidden Spirit"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 61,
+      "displayed_text": "Zinrai Hidden Spirit",
+      "localized_texts": [
+        "Zinrai Hidden Spirit",
+        "Zinrai Hidden Spirit",
+        "Zinrai Hidden Spirit",
+        "Zinrai Hidden Spirit",
+        "Zinrai Hidden Spirit"
+      ],
+      "runtime_string_address": "0x0833CE1C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE1C",
+      "string_length": 20,
+      "direct_pointer_reference_offsets": [
+        "0x0007AB7C",
+        "0x0007AB80",
+        "0x0007AB84",
+        "0x0007AB88",
+        "0x0007AB8C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Hayate Hidden Spirit",
+        "Dranzer G"
+      ],
+      "suspected_season": 0,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 62,
+      "displayed_text": "Dranzer G",
+      "localized_texts": [
+        "Dranzer G",
+        "Dranzer G",
+        "Dranzer G",
+        "Dranzer G",
+        "Dranzer G"
+      ],
+      "runtime_string_address": "0x0833CE10",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE10",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007ABA4",
+        "0x0007ABA8",
+        "0x0007ABAC",
+        "0x0007ABB0",
+        "0x0007ABB4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Zinrai Hidden Spirit",
+        "Wolborg 4"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 63,
+      "displayed_text": "Wolborg 4",
+      "localized_texts": [
+        "Wolborg 4",
+        "Wolborg 4",
+        "Wolborg 4",
+        "Wolborg 4",
+        "Wolborg 4"
+      ],
+      "runtime_string_address": "0x0833CE04",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CE04",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007ABCC",
+        "0x0007ABD0",
+        "0x0007ABD4",
+        "0x0007ABD8",
+        "0x0007ABDC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer G",
+        "Torch Pegasus"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 64,
+      "displayed_text": "Torch Pegasus",
+      "localized_texts": [
+        "Torch Pegasus",
+        "Torch Pegasus",
+        "Torch Pegasus",
+        "Torch Pegasus",
+        "Torch Pegasus"
+      ],
+      "runtime_string_address": "0x0833CDF4",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDF4",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007ABF4",
+        "0x0007ABF8",
+        "0x0007ABFC",
+        "0x0007AC00",
+        "0x0007AC04"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wolborg 4",
+        "Dranzer GT"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 65,
+      "displayed_text": "Dranzer GT",
+      "localized_texts": [
+        "Dranzer GT",
+        "Dranzer GT",
+        "Dranzer GT",
+        "Dranzer GT",
+        "Dranzer GT"
+      ],
+      "runtime_string_address": "0x0833CDE8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDE8",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007AC1C",
+        "0x0007AC20",
+        "0x0007AC24",
+        "0x0007AC28",
+        "0x0007AC2C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Torch Pegasus",
+        "Strata Dragoon MS"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 66,
+      "displayed_text": "Strata Dragoon MS",
+      "localized_texts": [
+        "Strata Dragoon MS",
+        "Strata Dragoon MS",
+        "Strata Dragoon MS",
+        "Strata Dragoon MS",
+        "Strata Dragoon MS"
+      ],
+      "runtime_string_address": "0x0833CDD4",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDD4",
+      "string_length": 17,
+      "direct_pointer_reference_offsets": [
+        "0x0007AC44",
+        "0x0007AC48",
+        "0x0007AC4C",
+        "0x0007AC50",
+        "0x0007AC54"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer GT",
+        "Driger MS"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 67,
+      "displayed_text": "Driger MS",
+      "localized_texts": [
+        "Driger MS",
+        "Driger MS",
+        "Driger MS",
+        "Driger MS",
+        "Driger MS"
+      ],
+      "runtime_string_address": "0x0833CDC8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDC8",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AC6C",
+        "0x0007AC70",
+        "0x0007AC74",
+        "0x0007AC78",
+        "0x0007AC7C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Strata Dragoon MS",
+        "Draciel MS"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 68,
+      "displayed_text": "Draciel MS",
+      "localized_texts": [
+        "Draciel MS",
+        "Draciel MS",
+        "Draciel MS",
+        "Draciel MS",
+        "Draciel MS"
+      ],
+      "runtime_string_address": "0x0833CDBC",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDBC",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007AC94",
+        "0x0007AC98",
+        "0x0007AC9C",
+        "0x0007ACA0",
+        "0x0007ACA4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Driger MS",
+        "Dragoon MS"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 69,
+      "displayed_text": "Dragoon MS",
+      "localized_texts": [
+        "Dragoon MS",
+        "Dragoon MS",
+        "Dragoon MS",
+        "Dragoon MS",
+        "Dragoon MS"
+      ],
+      "runtime_string_address": "0x0833CDB0",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDB0",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007ACBC",
+        "0x0007ACC0",
+        "0x0007ACC4",
+        "0x0007ACC8",
+        "0x0007ACCC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel MS",
+        "Gigars"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 70,
+      "displayed_text": "Gigars",
+      "localized_texts": [
+        "Gigars",
+        "Gigars",
+        "Gigars",
+        "Gigars",
+        "Gigars"
+      ],
+      "runtime_string_address": "0x0833CDA8",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CDA8",
+      "string_length": 6,
+      "direct_pointer_reference_offsets": [
+        "0x0007ACE4",
+        "0x0007ACE8",
+        "0x0007ACEC",
+        "0x0007ACF0",
+        "0x0007ACF4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dragoon MS",
+        "Wyvern DJ"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 71,
+      "displayed_text": "Wyvern DJ",
+      "localized_texts": [
+        "Wyvern DJ",
+        "Wyvern DJ",
+        "Wyvern DJ",
+        "Wyvern DJ",
+        "Wyvern DJ"
+      ],
+      "runtime_string_address": "0x0833CD9C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD9C",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AD0C",
+        "0x0007AD10",
+        "0x0007AD14",
+        "0x0007AD18",
+        "0x0007AD1C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Gigars",
+        "Dranzer MS"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 72,
+      "displayed_text": "Dranzer MS",
+      "localized_texts": [
+        "Dranzer MS",
+        "Dranzer MS",
+        "Dranzer MS",
+        "Dranzer MS",
+        "Dranzer MS"
+      ],
+      "runtime_string_address": "0x0833CD90",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD90",
+      "string_length": 10,
+      "direct_pointer_reference_offsets": [
+        "0x0007AD34",
+        "0x0007AD38",
+        "0x0007AD3C",
+        "0x0007AD40",
+        "0x0007AD44"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Wyvern DJ",
+        "Flash Leopard II"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 73,
+      "displayed_text": "Flash Leopard II",
+      "localized_texts": [
+        "Flash Leopard II",
+        "Flash Leopard II",
+        "Flash Leopard II",
+        "Flash Leopard II",
+        "Flash Leopard II"
+      ],
+      "runtime_string_address": "0x0833CD7C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD7C",
+      "string_length": 16,
+      "direct_pointer_reference_offsets": [
+        "0x0007AD5C",
+        "0x0007AD60",
+        "0x0007AD64",
+        "0x0007AD68",
+        "0x0007AD6C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dranzer MS",
+        "Draciel V"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 74,
+      "displayed_text": "Draciel V",
+      "localized_texts": [
+        "Draciel V",
+        "Draciel V",
+        "Draciel V",
+        "Draciel V",
+        "Draciel V"
+      ],
+      "runtime_string_address": "0x0833CD70",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD70",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AD84",
+        "0x0007AD88",
+        "0x0007AD8C",
+        "0x0007AD90",
+        "0x0007AD94"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Flash Leopard II",
+        "Trygator"
+      ],
+      "suspected_season": 2,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 75,
+      "displayed_text": "Trygator",
+      "localized_texts": [
+        "Trygator",
+        "Trygator",
+        "Trygator",
+        "Trygator",
+        "Trygator"
+      ],
+      "runtime_string_address": "0x0833CD64",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD64",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007ADAC",
+        "0x0007ADB0",
+        "0x0007ADB4",
+        "0x0007ADB8",
+        "0x0007ADBC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel V",
+        "Galeon 2"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 76,
+      "displayed_text": "Galeon 2",
+      "localized_texts": [
+        "Galeon 2",
+        "Galeon 2",
+        "Galeon 2",
+        "Galeon 2",
+        "Galeon 2"
+      ],
+      "runtime_string_address": "0x0833CD58",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD58",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007ADD4",
+        "0x0007ADD8",
+        "0x0007ADDC",
+        "0x0007ADE0",
+        "0x0007ADE4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Trygator",
+        "Thunder Pegasus"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 77,
+      "displayed_text": "Thunder Pegasus",
+      "localized_texts": [
+        "Thunder Pegasus",
+        "Thunder Pegasus",
+        "Thunder Pegasus",
+        "Thunder Pegasus",
+        "Thunder Pegasus"
+      ],
+      "runtime_string_address": "0x0833CD48",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD48",
+      "string_length": 15,
+      "direct_pointer_reference_offsets": [
+        "0x0007ADFC",
+        "0x0007AE00",
+        "0x0007AE04",
+        "0x0007AE08",
+        "0x0007AE0C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Galeon 2",
+        "Dark Gargoyle"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 78,
+      "displayed_text": "Dark Gargoyle",
+      "localized_texts": [
+        "Dark Gargoyle",
+        "Dark Gargoyle",
+        "Dark Gargoyle",
+        "Dark Gargoyle",
+        "Dark Gargoyle"
+      ],
+      "runtime_string_address": "0x0833CD38",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD38",
+      "string_length": 13,
+      "direct_pointer_reference_offsets": [
+        "0x0007AE24",
+        "0x0007AE28",
+        "0x0007AE2C",
+        "0x0007AE30",
+        "0x0007AE34"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Thunder Pegasus",
+        "Rapid Eagle"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 79,
+      "displayed_text": "Rapid Eagle",
+      "localized_texts": [
+        "Rapid Eagle",
+        "Rapid Eagle",
+        "Rapid Eagle",
+        "Rapid Eagle",
+        "Rapid Eagle"
+      ],
+      "runtime_string_address": "0x0833CD2C",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD2C",
+      "string_length": 11,
+      "direct_pointer_reference_offsets": [
+        "0x0007AE4C",
+        "0x0007AE50",
+        "0x0007AE54",
+        "0x0007AE58",
+        "0x0007AE5C"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Dark Gargoyle",
+        "Trygle 2"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 80,
+      "displayed_text": "Trygle 2",
+      "localized_texts": [
+        "Trygle 2",
+        "Trygle 2",
+        "Trygle 2",
+        "Trygle 2",
+        "Trygle 2"
+      ],
+      "runtime_string_address": "0x0833CD20",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD20",
+      "string_length": 8,
+      "direct_pointer_reference_offsets": [
+        "0x0007AE74",
+        "0x0007AE78",
+        "0x0007AE7C",
+        "0x0007AE80",
+        "0x0007AE84"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Rapid Eagle",
+        "Draciel G"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 81,
+      "displayed_text": "Draciel G",
+      "localized_texts": [
+        "Draciel G",
+        "Draciel G",
+        "Draciel G",
+        "Draciel G",
+        "Draciel G"
+      ],
+      "runtime_string_address": "0x0833CD14",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD14",
+      "string_length": 9,
+      "direct_pointer_reference_offsets": [
+        "0x0007AE9C",
+        "0x0007AEA0",
+        "0x0007AEA4",
+        "0x0007AEA8",
+        "0x0007AEAC"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Trygle 2",
+        "Rushing Boar"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    },
+    {
+      "canonical_index": 82,
+      "displayed_text": "Rushing Boar",
+      "localized_texts": [
+        "Rushing Boar",
+        "Rushing Boar",
+        "Rushing Boar",
+        "Rushing Boar",
+        "Rushing Boar"
+      ],
+      "runtime_string_address": "0x0833CD04",
+      "shared_across_languages": true,
+      "confidence": "confirmed",
+      "string_offset": "0x0033CD04",
+      "string_length": 12,
+      "direct_pointer_reference_offsets": [
+        "0x0007AEC4",
+        "0x0007AEC8",
+        "0x0007AECC",
+        "0x0007AED0",
+        "0x0007AED4"
+      ],
+      "unique_reference_count": 5,
+      "surrounding_names": [
+        "Draciel G"
+      ],
+      "suspected_season": 3,
+      "reused_by_another_record": false,
+      "evidence": [
+        "canonical index is the operand accepted by getBeyBladeWithIndex; row = 0x0007A1F4 + index * 40",
+        "five language columns point to this same proper-name string"
+      ],
+      "counterevidence": []
+    }
+  ]
+}
