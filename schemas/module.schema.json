@@ -1,0 +1,53 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/module.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allocation": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "depends_on": {
+      "items": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "encoding": {
+      "enum": [
+        "raw",
+        "hex"
+      ]
+    },
+    "entry_offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "thumb": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "allocation",
+    "path",
+    "sha256"
+  ],
+  "type": "object"
+}

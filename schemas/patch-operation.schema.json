@@ -1,0 +1,68 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/patch-operation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "data": {
+      "pattern": "^(?:[0-9a-f]{2})*$",
+      "type": "string"
+    },
+    "depends_on": {
+      "items": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "expected": {
+      "pattern": "^(?:[0-9a-f]{2})*$",
+      "type": "string"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "write_bytes",
+        "replace_exact",
+        "fill",
+        "write_u8",
+        "write_u16",
+        "write_u32",
+        "write_rom_pointer",
+        "write_thumb_pointer"
+      ]
+    },
+    "offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "target_allocation": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "target_offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "thumb": {
+      "type": "boolean"
+    },
+    "value": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "offset",
+    "expected"
+  ],
+  "type": "object"
+}

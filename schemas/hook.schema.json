@@ -1,0 +1,58 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/hook.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "depends_on": {
+      "items": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "destination_allocation": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "destination_offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "expected": {
+      "pattern": "^(?:[0-9a-f]{2})+$",
+      "type": "string"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "thumb_b",
+        "thumb_bl",
+        "arm_b",
+        "arm_bl"
+      ]
+    },
+    "site": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "veneer_allocation": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "site",
+    "expected",
+    "destination_allocation"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,5 @@
+# Build profiles
+
+Profiles are dependency-free JSON validated strictly by `tools.build.profile`. Every operation has a stable ID; duplicate IDs, missing dependencies, and cycles fail. Numeric address fields use lowercase `0x` hexadecimal. `noop` remains 4 MiB; `expansion-smoke` expands without writes; `infrastructure-smoke` inserts only project-created unreachable fixtures and metadata. Later profiles should declare assets, tables, texts, modules, exact guarded patches, explicit relocations, hooks, validation, and smoke policy—never hidden edits.
+
+Runtime validation is authoritative and rejects unknown fields outside `extension_metadata`, wrong nested types, unknown operation kinds, duplicate allocation/operation IDs, cycles, unresolved allocations, absolute resource paths, malformed lowercase hexadecimal values, unsafe internal regions, and invalid expansion bounds. Non-empty table, text, relocation, hook, and smoke sections are executed; an unsupported mode fails before publication rather than being ignored.

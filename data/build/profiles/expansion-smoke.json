@@ -1,0 +1,43 @@
+{
+  "allocation_regions": [
+    {
+      "end": "0x00800000",
+      "id": "expansion",
+      "start": "0x00400000"
+    }
+  ],
+  "allocations": [],
+  "assets": [],
+  "expansion": {
+    "fill": "0xff",
+    "reservations": [],
+    "target_size": "0x00800000"
+  },
+  "hooks": [],
+  "metadata": {
+    "enabled": false
+  },
+  "modules": [],
+  "output": {
+    "bps_name": "spirit-unbound.bps",
+    "rom_name": "spirit-unbound.gba"
+  },
+  "patches": [],
+  "profile_id": "expansion-smoke",
+  "project": "Spirit Unbound",
+  "relocations": [],
+  "schema_version": 1,
+  "smoke_test": {
+    "enabled": false
+  },
+  "source_rom": {
+    "sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "size": "0x00400000"
+  },
+  "tables": [],
+  "texts": [],
+  "validation": {
+    "allow_invalid_header": false,
+    "require_base_unchanged": true
+  }
+}

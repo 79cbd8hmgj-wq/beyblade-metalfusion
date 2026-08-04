@@ -2,6 +2,16 @@
 
 This repository contains reproducible tooling and documentation for reverse engineering **Beyblade G-Revolution (Game Boy Advance)**.
 
+## Spirit Unbound deterministic builds
+
+Task 7 adds the patch-only implementation foundation under `tools/build/`. With the supported, legally obtained ROM, run:
+
+```sh
+./scripts/build-spirit-unbound.sh "Beyblade G-Revolution (USA).gba" infrastructure-smoke
+```
+
+Generated ROMs, patches, temporary files, and reports remain ignored. See [`docs/build/build-system.md`](docs/build/build-system.md) for source protection, audit artifacts, BPS verification, optional toolchain support, and reproducibility.
+
 ## GBA debugger bundle
 
 The `Build GBA GDB Debugger Bundle` GitHub Action compiles a portable Linux x86_64 build of mGBA with its ARM GDB stub enabled. The resulting bundle provides:

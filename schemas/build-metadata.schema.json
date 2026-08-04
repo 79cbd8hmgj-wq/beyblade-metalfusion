@@ -1,0 +1,49 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/build-metadata.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allocation_pointer": {
+      "type": "integer"
+    },
+    "allocation_size": {
+      "type": "integer"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "flags": {
+      "type": "integer"
+    },
+    "manifest_core_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "profile_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "project_version": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "source_rom_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tool_version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "project_version",
+    "profile_hash",
+    "source_rom_hash",
+    "manifest_core_hash",
+    "tool_version"
+  ],
+  "type": "object"
+}

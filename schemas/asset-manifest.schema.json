@@ -1,0 +1,121 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/asset-manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assets": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "alignment": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "allocation_class": {
+            "enum": [
+              "data",
+              "arm",
+              "thumb"
+            ]
+          },
+          "compressed_size": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "decoded_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "dependencies": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "encoding": {
+            "enum": [
+              "raw",
+              "hex"
+            ]
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "format": {
+            "type": "string"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "provenance": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "runtime_consumers": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "raw_binary",
+              "palette",
+              "tile_data",
+              "tilemap",
+              "sprite_sheet",
+              "portrait",
+              "animation_metadata",
+              "compressed_blob",
+              "audio",
+              "code_module"
+            ]
+          },
+          "uncompressed_size": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "path",
+          "format",
+          "alignment",
+          "allocation_class",
+          "compressed_size",
+          "uncompressed_size",
+          "dependencies",
+          "provenance",
+          "runtime_consumers"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "assets"
+  ],
+  "type": "object"
+}
