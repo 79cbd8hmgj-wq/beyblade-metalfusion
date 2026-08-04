@@ -1,0 +1,1 @@
+{"status":"unknown","tables":[],"confirmed":"Component name pointer arrays contain no inline price fields.","candidate_evidence":["shop and inventory diagnostic strings exist"],"counterevidence":"No candidate combines item-ID correlation with a verified code consumer.","next_experiment":"Watch currency and inventory RAM during one purchase; break when 0x0807B0D8 is resolved."}

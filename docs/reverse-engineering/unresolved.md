@@ -6,8 +6,14 @@
 * Where exactly do ARM bootstrap code, Thumb game code, literal pools, and non-code data transition? Static density is insufficient for instruction-accurate boundaries.
 * Does `EEPROM_V` at `0x003A937C` belong to a versioned EEPROM library whose suffix is stored non-contiguously, and what code range implements it?
 * Do any unaligned, computed, or encoded pointers enter the terminal fill at `0x003D52C0`? Twenty-three aligned pointer-like words already target it.
-* Which candidate tables encode Beyblade records? This is intentionally deferred to Task 2 and requires watchpoints/breakpoints rather than semantic guessing.
+* Which code constructs battle-effective statistics from the Task 3 category-local component IDs, and is menu aggregation identical?
 
 ## Task 2 bounded unknowns
 
-Task 2 confirms the 83 × 40-byte complete-template table at `0x0007A1F4`, but preserves the semantics of record offsets `0x14`–`0x24` and `0x26`–`0x27` as unknown. Task 3 should follow the two ROM pointer fields and consumers of packed bytes rather than infer component meanings from franchise knowledge. Runtime follow-ups are specified in `beyblade-table.md`; they require a reproducible save/gameplay state and are not prerequisites for the statically confirmed base, count, or stride.
+Task 3 identifies `+0x1D`, `+0x1E`, and `+0x20` as strongly supported
+Attack Ring, Weight Disk, and Blade Base IDs; `+0x1F` remains a packed Spin
+Gear/core candidate and `+0x21` a strongly supported Bit Chip ID. The exact
+meaning of `+0x1C`, the high Spin Gear bits, and constants at `+0x22/+0x23`
+remains unresolved. `field_14_ptr` and `field_18_ptr` are bounded presentation
+resource families. Prices, unlock conditions, and the aggregation function
+require the exact runtime experiments in the Task 3 reports.

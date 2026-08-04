@@ -61,3 +61,18 @@ python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --tab
 ```
 
 See [the complete-table report](docs/reverse-engineering/beyblade-table.md). Full exports are ignored; compact evidence and representative records are tracked.
+
+## Task 3: components and moves
+
+Extract the four confirmed component-name categories and the 32 Bit
+Beast/Special Move presentation pairs with:
+
+```bash
+python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --table components --output analysis/generated/tables/components
+python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --table bit-beasts-and-moves --output analysis/generated/tables/moves
+```
+
+Both paths validate the supported ROM and perform byte-perfect in-memory
+serialization checks. See the [component report](docs/reverse-engineering/component-tables.md),
+[aggregation boundary](docs/reverse-engineering/stat-aggregation.md), and
+[shop investigation](docs/reverse-engineering/shops-and-unlocks.md).

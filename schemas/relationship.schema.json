@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Evidence relationship","type":"object","required":["source","target","relation","evidence","confidence"],"properties":{"source":{"type":"string"},"target":{"type":"string"},"relation":{"type":"string"},"evidence":{"type":"string"},"confidence":{"enum":["confirmed","strongly_supported","candidate","unknown"]}}}

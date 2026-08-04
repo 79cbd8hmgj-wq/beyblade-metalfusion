@@ -15,8 +15,8 @@ The first/last canonical entries are index 0 **Dragoon S** and index 82 **Rushin
 | `0x18` | 4 | ROM pointer `field_18_ptr` | confirmed pointer, unknown meaning |
 | `0x1C` | 4 | `field_1c_bytes` packed configuration | unknown semantics |
 | `0x20` | 4 | `field_20_bytes` packed configuration | unknown semantics |
-| `0x24` | 1 | `field_24_u8`, range 0–3 | unknown |
-| `0x25` | 1 | season/generation selector, range 3–70 | strongly supported by direct season-accessor comparison |
+| `0x24` | 1 | `field_24_u8`, always zero in all 83 records | unknown/reserved candidate |
+| `0x25` | 1 | season/generation selector, range 0–3 | strongly supported by direct season-accessor comparison |
 | `0x26` | 2 | `field_26_u16`, always zero in this table | unknown/reserved candidate |
 
 Unknown packed bytes are intentionally not assigned component/stat names. `field-statistics.json` records distributions. Task 3 should begin by following `field_14_ptr`, `field_18_ptr`, and setup code reading offsets `0x1C`–`0x23`, without reconstructing components here.
