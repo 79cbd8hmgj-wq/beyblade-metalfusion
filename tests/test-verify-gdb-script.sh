@@ -21,7 +21,7 @@ printf 'mGBA test frontend\n' > "${BUNDLE}/mgba-help.txt"
 
 cat > "${BUNDLE}/run-mgba-gdb-headless.sh" <<'LAUNCHER'
 #!/usr/bin/env bash
-python3 - <<'PY'
+exec python3 - <<'PY'
 import socket
 import time
 
@@ -47,3 +47,15 @@ PATH="${BIN_DIR}:${PATH}" \
   "${BUNDLE}" "${TMP_DIR}/test.gba"
 
 grep -q 'mGBA ARM GDB smoke test: PASS' "${BUNDLE}/GDB_SMOKE_TEST.txt"
+
+# The verifier must terminate its launched server. Leaving this port occupied
+# would cause the following real mGBA test to connect to the fake listener.
+for _ in $(seq 1 20); do
+  if ! awk '$2 ~ /:0929$/ && $4 == "0A" { found=1 } END { exit !found }' /proc/net/tcp; then
+    exit 0
+  fi
+  sleep 0.05
+done
+
+echo "Regression test leaked a listener on 127.0.0.1:2345" >&2
+exit 1
