@@ -35,7 +35,6 @@ jobs:
             libedit-dev \
             libelf-dev \
             libsdl2-dev \
-            netcat-openbsd \
             ninja-build \
             pkg-config \
             python3 \
@@ -88,7 +87,7 @@ jobs:
 
       - name: Compile mGBA
         run: |
-          cmake --build build --target mgba --parallel "$(nproc)"
+          cmake --build build --target mgba-sdl --parallel "$(nproc)"
           test -x build/mgba
 
       - name: Assemble portable debugger bundle
@@ -109,7 +108,7 @@ jobs:
           cp mgba-src/LICENSE "${BUNDLE}/license.txt"
           chmod +x "${BUNDLE}/mgba" "${BUNDLE}"/*.sh
 
-          scripts/collect-runtime-libs.sh "${BUNDLE}/mgba" "${BUNDLE}/lib"
+          bash scripts/collect-runtime-libs.sh "${BUNDLE}/mgba" "${BUNDLE}/lib"
 
           file "${BUNDLE}/mgba" > "${BUNDLE}/mgba-file.txt"
           ldd "${BUNDLE}/mgba" > "${BUNDLE}/mgba-ldd.txt"
@@ -137,7 +136,7 @@ jobs:
       - name: Verify ARM GDB server end to end
         run: |
           python3 scripts/make-test-rom.py test-gdb.gba
-          scripts/verify-gdb-bundle.sh bundle/mgba-debug test-gdb.gba
+          bash scripts/verify-gdb-bundle.sh bundle/mgba-debug test-gdb.gba
 
       - name: Generate checksums and archive
         run: |
