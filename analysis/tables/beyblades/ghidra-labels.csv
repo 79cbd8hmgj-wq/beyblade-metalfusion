@@ -1,0 +1,5 @@
+address,name
+0803DC70,getRandomBeyBladeFromSeason
+0803DCFC,getBeyBladeWithIndex
+0803E1F4,collection_scan_candidate
+0807A1F4,gCompleteBeybladeTemplates

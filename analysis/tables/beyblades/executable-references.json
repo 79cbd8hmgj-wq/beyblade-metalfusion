@@ -1,0 +1,66 @@
+{
+  "symbols": [
+    {
+      "label": "getRandomBeyBladeFromSeason",
+      "function_start_offset": "0x0003DC70",
+      "runtime_address": "0x0803DC70",
+      "end_estimate": "0x0003DCF2",
+      "mode": "Thumb",
+      "string_literal_offset": "0x0003DCF8",
+      "table_literals": [
+        "0x0003DCDC"
+      ],
+      "constants": {
+        "record_count": 83,
+        "candidate_capacity": 32,
+        "stride": 40,
+        "season_field_offset": "0x25"
+      },
+      "confidence": "confirmed",
+      "pseudocode": "scan ids 0..82; retain at most 32 whose signed byte at record+0x25 equals season; report if none; choose a candidate using RNG; return base + id*40"
+    },
+    {
+      "label": "getBeyBladeWithIndex",
+      "function_start_offset": "0x0003DCFC",
+      "runtime_address": "0x0803DCFC",
+      "end_estimate": "0x0003DD26",
+      "mode": "Thumb",
+      "string_literal_offset": "0x0003DD14",
+      "table_literals": [
+        "0x0003DD28"
+      ],
+      "constants": {
+        "maximum_index": 82,
+        "stride": 40
+      },
+      "confidence": "confirmed",
+      "pseudocode": "if index > 82: report and return NULL; return 0x0807A1F4 + index*40"
+    },
+    {
+      "label": "removeBladeFromTysonsCollection_anchor",
+      "function_start_offset": "0x0003E1F4",
+      "runtime_address": "0x0803E1F4",
+      "end_estimate": "0x0003E256",
+      "mode": "Thumb",
+      "string_literal_offset": "0x0003E1D8",
+      "constants": {
+        "maximum_index": 82
+      },
+      "confidence": "candidate",
+      "pseudocode": "scan 83 entries of a RAM-backed collection-related structure for matching signed identifiers and active marker; return derived RAM address or NULL",
+      "unresolved": "diagnostic literal belongs to the preceding caller/literal pool; exact semantic function boundary requires a triggered breakpoint"
+    },
+    {
+      "label": "initBeybladeMenu_string",
+      "string_offset": "0x003A8990",
+      "runtime_address": "0x083A8990",
+      "mode": "Thumb",
+      "confidence": "candidate",
+      "unresolved": "literal pool follows code ending near 0x0005668C; exact enclosing start and menu behavior require caller tracing/runtime trigger",
+      "string_reference_offsets": [
+        "0x000566AC"
+      ]
+    }
+  ],
+  "ghidra_labels": "analysis/tables/beyblades/ghidra-labels.csv"
+}

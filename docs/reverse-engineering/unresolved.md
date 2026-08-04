@@ -7,3 +7,7 @@
 * Does `EEPROM_V` at `0x003A937C` belong to a versioned EEPROM library whose suffix is stored non-contiguously, and what code range implements it?
 * Do any unaligned, computed, or encoded pointers enter the terminal fill at `0x003D52C0`? Twenty-three aligned pointer-like words already target it.
 * Which candidate tables encode Beyblade records? This is intentionally deferred to Task 2 and requires watchpoints/breakpoints rather than semantic guessing.
+
+## Task 2 bounded unknowns
+
+Task 2 confirms the 83 × 40-byte complete-template table at `0x0007A1F4`, but preserves the semantics of record offsets `0x14`–`0x24` and `0x26`–`0x27` as unknown. Task 3 should follow the two ROM pointer fields and consumers of packed bytes rather than infer component meanings from franchise knowledge. Runtime follow-ups are specified in `beyblade-table.md`; they require a reproducible save/gameplay state and are not prerequisites for the statically confirmed base, count, or stride.

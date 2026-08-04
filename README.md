@@ -51,3 +51,13 @@ python3 -m tools.gba.rom_map --rom "Beyblade G-Revolution (USA).gba" --tracked-o
 Tracked reports are under `analysis/`; the complete reproducible listings are ignored under `analysis/generated/`. See the [methodology](docs/reverse-engineering/methodology.md), [header validation](docs/reverse-engineering/rom-header.md), [ROM map](docs/reverse-engineering/rom-map.md), and [unresolved questions](docs/reverse-engineering/unresolved.md). The driver refuses an unsupported hash unless `--allow-unsupported-rom` is explicitly supplied.
 
 No extracted copyrighted game asset is added by the analysis.
+
+## Task 2: complete Beyblade templates
+
+Extract all 83 fixed-width complete-Beyblade templates without modifying the ROM:
+
+```bash
+python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --table beyblades --output analysis/generated/tables/beyblades
+```
+
+See [the complete-table report](docs/reverse-engineering/beyblade-table.md). Full exports are ignored; compact evidence and representative records are tracked.
