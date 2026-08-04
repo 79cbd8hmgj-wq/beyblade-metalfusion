@@ -1,0 +1,9 @@
+{
+  "component_aggregation":{"confidence":"unknown","finding":"Template IDs are not read by 0x080300D4; it consumes already assembled words at nested +0x10/+0x14/+0x18. The exact ID-to-stat producer remains unresolved."},
+  "engine_gear":{"confidence":"strongly_supported","finding":"The packed +0x1F byte is read and mask 0x40 tested at 0x08030316. Low-six-bit indexing and 0x80 effects remain unknown; 0x40 is not renamed."},
+  "bit_beast":{"confidence":"strongly_supported","finding":"Type 3 returns f10+f14+f18 only when move 3 is selected. This is a mechanical consumer distinct from the 32 presentation-name pairs. Move 4 targeting mechanics remain unknown."},
+  "launch":{"confidence":"candidate","finding":"Diagnostic initRipCord anchor exists near 0x0003B5BC, but no instruction-derived result formula was established."},
+  "ai":{"confidence":"unknown","finding":"No decision entry or profile table is assigned a semantic label without runtime/caller evidence."},
+  "presentation":{"confidence":"candidate","finding":"Overlay/menu/ripcord diagnostic anchors bound likely presentation lifecycle code; they are not treated as mechanics."},
+  "outcomes":{"confidence":"candidate","finding":"Resolver writes paired codes 0,1,2 through output pointers based on value comparison; meanings win/loss/draw require caller or runtime verification."}
+}

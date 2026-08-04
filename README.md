@@ -76,3 +76,16 @@ Both paths validate the supported ROM and perform byte-perfect in-memory
 serialization checks. See the [component report](docs/reverse-engineering/component-tables.md),
 [aggregation boundary](docs/reverse-engineering/stat-aggregation.md), and
 [shop investigation](docs/reverse-engineering/shops-and-unlocks.md).
+
+## Task 4: battle-engine boundary
+
+Extract the confirmed diagnostic enums and scan the battle range without
+modifying the cartridge image:
+
+```bash
+python3 -m tools.gba.battle_enums --rom "Beyblade G-Revolution (USA).gba"
+python3 -m tools.gba.battle_functions --rom "Beyblade G-Revolution (USA).gba" --output analysis/generated/battle-functions.json
+```
+
+The [battle report](docs/reverse-engineering/battle-engine.md) separates direct
+instruction evidence from candidates and unknown runtime-only behavior.

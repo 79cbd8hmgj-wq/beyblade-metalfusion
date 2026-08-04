@@ -1,0 +1,10 @@
+{
+  "confidence_vocabulary": ["confirmed", "strongly_supported", "candidate", "unknown"],
+  "functions": [
+    {"label":"battle_debug_print","rom_start":"0x0002FF48","runtime_start":"0x0802FF48","end_exclusive":"0x0802FF90","mode":"Thumb","confidence":"strongly_supported","reads":["participant+0x30C:u8","participant+0x2C8:u32","participant+0x2CC:u32"],"callees":["debug_printf candidate"]},
+    {"label":"resolve_exchange_candidate","rom_start":"0x0002FFAC","runtime_start":"0x0802FFAC","end_exclusive":"0x080300D4","mode":"Thumb","confidence":"strongly_supported","callees":["0x080300D4","0x080320CC","0x08031204"],"notes":"Computes both values, handles type 0 simultaneous and type 1 defense branches, clamps signed negatives, mutates nested +0x0C, writes two result outputs."},
+    {"label":"select_move_value","rom_start":"0x000300D4","runtime_start":"0x080300D4","end_exclusive":"0x0803019C","mode":"Thumb","confidence":"confirmed","reads":["participant+0x04","participant+0x2C8","participant+0x2CC","nested+0x10","nested+0x14","nested+0x18"],"notes":"Seven-entry computed branch table at 0x000300F0; exact supported paths are modeled."},
+    {"label":"battle_setup_candidate","rom_start":"0x0003019C","runtime_start":"0x0803019C","end_exclusive":"0x080302A8","mode":"Thumb","confidence":"candidate"},
+    {"label":"packed_core_flag_consumer","rom_start":"0x000302E0","runtime_start":"0x080302E0","end_exclusive":"0x080303B0","mode":"Thumb","confidence":"strongly_supported","notes":"Reads template +0x1F and tests 0x40 at 0x08030316; observed arithmetic branch changes a derived value. Engine Gear semantic name remains candidate."}
+  ]
+}

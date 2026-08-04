@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Compact battle trace","type":"object","required":["format","observations"],"properties":{"format":{"const":"battle-gdb-observations-v1"},"observations":{"type":"array","items":{"type":"object","required":["key","value"],"properties":{"key":{"type":"string"},"value":{"type":"integer"}}}}}}

@@ -1,0 +1,7 @@
+{
+  "debugger_status":"unperformed_environment_limitation",
+  "reason":"No running mGBA GDB server or battle-ready automated input state was present.",
+  "scripts":["debugger-bundle/task4-battle.gdb"],
+  "confidence":"confirmed",
+  "warning":"No static finding is promoted to runtime-confirmed."
+}

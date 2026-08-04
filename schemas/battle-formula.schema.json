@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Battle formulas","type":"object","required":["function","confidence","cases"],"properties":{"function":{"type":"string"},"confidence":{"enum":["confirmed","strongly_supported","candidate","unknown"]},"cases":{"type":"object"}}}
