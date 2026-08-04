@@ -1,0 +1,27 @@
+Game Boy Advance memory map
+===========================
+
+00000000-00003FFF  BIOS (16 KiB)
+02000000-0203FFFF  External work RAM / EWRAM (256 KiB)
+03000000-03007FFF  Internal work RAM / IWRAM (32 KiB)
+04000000-040003FE  I/O registers
+05000000-050003FF  Palette RAM (1 KiB)
+06000000-06017FFF  VRAM (96 KiB)
+07000000-070003FF  Object attribute memory / OAM (1 KiB)
+08000000-09FFFFFF  Game Pak ROM, wait state 0
+0A000000-0BFFFFFF  Game Pak ROM, wait state 1 mirror
+0C000000-0DFFFFFF  Game Pak ROM, wait state 2 mirror
+0E000000-0E00FFFF  Game Pak SRAM/Flash save window
+
+Beyblade G-Revolution ROM offsets map directly to runtime addresses by adding
+0x08000000 while executing from the normal Game Pak ROM window.
+
+Examples:
+
+  ROM file offset 0x00123456 -> runtime address 0x08123456
+  runtime address 0x08080000 -> ROM file offset 0x00080000
+
+The CPU is ARM7TDMI (ARMv4T) and can execute both 32-bit ARM instructions and
+16-bit Thumb instructions. Bit 5 of CPSR indicates Thumb state. Function
+pointers may store Thumb addresses with bit 0 set; clear bit 0 to obtain the
+aligned code address while preserving Thumb mode in the debugger.
