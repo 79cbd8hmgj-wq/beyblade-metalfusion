@@ -10,3 +10,7 @@ and destinations remain unknown because integer range alone is insufficient.
 The reusable parser accepts a caller-selected field count, requires ASCII/NUL
 termination and four-byte alignment, and preserves padding exactly. It does not
 scan or export commercial content in bulk.
+
+## Task 8 avatar/portrait notes
+
+**Unknown:** player overworld actor resource, sprite animation table, palette upload path, and portrait loader sites. Task 8 adds manifests without commercial asset extraction.

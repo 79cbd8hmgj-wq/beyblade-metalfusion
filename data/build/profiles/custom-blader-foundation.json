@@ -1,0 +1,132 @@
+{
+  "allocation_regions": [
+    {
+      "end": "0x00800000",
+      "id": "expansion",
+      "start": "0x00400000"
+    }
+  ],
+  "allocations": [
+    {
+      "alignment": "0x10",
+      "class": "data",
+      "id": "metadata-block",
+      "size": "0x90"
+    },
+    {
+      "alignment": "0x4",
+      "class": "data",
+      "id": "task8-manifest-anchor",
+      "size": "0x80"
+    },
+    {
+      "alignment": "0x2",
+      "class": "thumb",
+      "id": "task8-foundation-module",
+      "size": "0x2"
+    }
+  ],
+  "assets": [],
+  "expansion": {
+    "fill": "0xff",
+    "reservations": [
+      {
+        "end": "0x00610000",
+        "id": "reserved-future",
+        "start": "0x00600000"
+      }
+    ],
+    "target_size": "0x00800000"
+  },
+  "extension_metadata": {
+    "status": "foundation-profile; no original-ROM hooks until runtime evidence is confirmed",
+    "task": "8"
+  },
+  "hooks": [],
+  "metadata": {
+    "allocation": "metadata-block",
+    "enabled": true,
+    "id": "write-task8-build-metadata",
+    "project_version": "0.8.0"
+  },
+  "modules": [
+    {
+      "allocation": "task8-foundation-module",
+      "encoding": "hex",
+      "entry_offset": "0x0",
+      "id": "insert-task8-foundation-stub",
+      "path": "data/build/fixtures/task8-foundation.hex",
+      "sha256": "c7dfbb7d02759eacb64dbc916c1bb6f21eabaff1c1032ea5c9176abf7fd28df8",
+      "thumb": true
+    }
+  ],
+  "output": {
+    "bps_name": "spirit-unbound-custom-blader-foundation.bps",
+    "rom_name": "spirit-unbound-custom-blader-foundation.gba"
+  },
+  "patches": [],
+  "profile_id": "custom-blader-foundation",
+  "project": "Spirit Unbound",
+  "relocations": [],
+  "schema_version": 1,
+  "smoke_test": {
+    "enabled": true
+  },
+  "source_rom": {
+    "sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "size": "0x00400000"
+  },
+  "tables": [
+    {
+      "id": "validate-beyblade-table",
+      "kind": "beyblade",
+      "mode": "validate-only"
+    },
+    {
+      "category": "attack-rings",
+      "id": "validate-components-attack-rings",
+      "kind": "component_names",
+      "mode": "validate-only"
+    },
+    {
+      "category": "blade-bases",
+      "id": "validate-components-blade-bases",
+      "kind": "component_names",
+      "mode": "validate-only"
+    },
+    {
+      "category": "spin-gears",
+      "id": "validate-components-spin-gears",
+      "kind": "component_names",
+      "mode": "validate-only"
+    },
+    {
+      "category": "weight-disks",
+      "id": "validate-components-weight-disks",
+      "kind": "component_names",
+      "mode": "validate-only"
+    },
+    {
+      "id": "validate-event-action-words",
+      "kind": "event_word_stream",
+      "mode": "validate-only",
+      "offset": "0x000a8368",
+      "size": "0x10"
+    },
+    {
+      "id": "validate-event-bindings",
+      "kind": "event_bindings",
+      "mode": "validate-only"
+    },
+    {
+      "id": "validate-presentation-pairs",
+      "kind": "presentation_pairs",
+      "mode": "validate-only"
+    }
+  ],
+  "texts": [],
+  "validation": {
+    "allow_invalid_header": false,
+    "require_base_unchanged": true
+  }
+}

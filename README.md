@@ -112,3 +112,7 @@ logic is native Thumb. Compact evidence is in `analysis/scripts/`; lossless,
 hash-gated tools are in `tools/gba/`; the report begins at
 `docs/reverse-engineering/script-engine.md`. Unknown opcode and save semantics
 remain neutral and byte-preserved.
+
+## Task 8 custom Blader foundation
+
+The repository includes a deterministic `custom-blader-foundation` foundation profile plus Python reference models for custom identity, custom save-extension slots, creator navigation, token-aware name substitution, manifests, strict schemas, save-inspector reporting, and experimental output-file-only save editing. This is not a functional Task 8 ROM patch: native gameplay hooks and EEPROM-tail safety remain gated behind documented unresolved runtime evidence.

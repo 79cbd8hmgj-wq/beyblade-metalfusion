@@ -33,3 +33,10 @@ tournament battle; watch runtime base `*[0x03000198] + 0x15C8..0x15D3` across
 init/award/reset; break `0x08042F08` and record r0-r3 plus the 55×0x30 record
 region; and break serializer `0x08045198` while those watched bytes change.
 Use only copied saves and the commands in `debugger-bundle/task6-events.gdb`.
+
+## Task 8 unresolved runtime hooks
+
+* **unknown:** exact New Game hook for the creator state machine.
+* **unknown:** text renderer substitution hook for player-facing Tyson/Takao paths.
+* **unknown:** player sprite and portrait loader hooks.
+* **unknown:** dynamic proof that EEPROM tail blocks `0x3EF-0x3FF` survive every original subsystem.
