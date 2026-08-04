@@ -1,0 +1,20 @@
+{
+  "$id": "https://example.invalid/schemas/story-graph.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "confidence": {
+      "enum": [
+        "confirmed",
+        "strongly_supported",
+        "candidate",
+        "unknown"
+      ]
+    }
+  },
+  "required": [
+    "confidence"
+  ],
+  "title": "Story Graph",
+  "type": "object"
+}

@@ -1,0 +1,8 @@
+{
+  "environment": "no live mGBA GDB session was available during static run",
+  "performed": [],
+  "scripts": [
+    "debugger-bundle/task6-events.gdb"
+  ],
+  "status": "unknown"
+}

@@ -1,0 +1,5 @@
+{
+  "confidence": "strongly_supported",
+  "relationship": "low authored inline names -> high name binding -> aligned action stream",
+  "counterevidence": "a direct pointer connecting each low record to its high binding has not yet been found"
+}

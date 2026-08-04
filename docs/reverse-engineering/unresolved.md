@@ -24,3 +24,12 @@ require the exact runtime experiments in the Task 3 reports.
 * **Unknown:** header words `+0x08` and `+0x0C`; do not call either a version, timestamp, or sequence.
 * **Candidate:** timer/DMA/interrupt helper identities and retail visibility of diagnostic output.
 * **Strongly supported but not proven free:** EEPROM tail blocks `0x3EF–0x3FF`; indirect access/runtime scan remains required.
+
+## Task 6 exact runtime work
+
+All items are **unknown** pending a live mGBA session: break on the binding
+consumer after reads of `0x08094F00`; watch `0x0809B350` during a normal and a
+tournament battle; watch runtime base `*[0x03000198] + 0x15C8..0x15D3` across
+init/award/reset; break `0x08042F08` and record r0-r3 plus the 55×0x30 record
+region; and break serializer `0x08045198` while those watched bytes change.
+Use only copied saves and the commands in `debugger-bundle/task6-events.gdb`.

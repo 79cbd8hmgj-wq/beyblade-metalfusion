@@ -1,0 +1,11 @@
+address,name,mode,confidence
+0x0802C6AC,initTournament,thumb,confirmed
+0x0802C70C,addTournamentPoints,thumb,strongly_supported
+0x0802CC58,ResetTournament,thumb,confirmed
+0x0802CCC4,ReInitTournament,thumb,confirmed
+0x0802D144,getWinningTeam,thumb,strongly_supported
+0x0802D184,getLosingTeam,thumb,strongly_supported
+0x0802D1C4,getTeamAhead,thumb,strongly_supported
+0x0802D258,getPointsDifference,thumb,strongly_supported
+0x08042F08,experience_raise_helper,thumb,strongly_supported
+0x0809B350,TriggerBattle_action_stream,data,confirmed

@@ -1,0 +1,104 @@
+{
+  "confidence": "confirmed",
+  "entries": [
+    {
+      "binding_offset": "0x0009552C",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "LockPoolDoors",
+      "stream_address": "0x080A8368",
+      "stream_offset": "0x000A8368",
+      "string_offset": "0x003A2DB8"
+    },
+    {
+      "binding_offset": "0x000958C8",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "StadiumEntry",
+      "stream_address": "0x080A8D7C",
+      "stream_offset": "0x000A8D7C",
+      "string_offset": "0x003A2DE4"
+    },
+    {
+      "binding_offset": "0x000956D4",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "StartPrelim",
+      "stream_address": "0x080AABEC",
+      "stream_offset": "0x000AABEC",
+      "string_offset": "0x003A2DC8"
+    },
+    {
+      "binding_offset": "0x00095AE8",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "TriggerBattle",
+      "stream_address": "0x0809B350",
+      "stream_offset": "0x0009B350",
+      "string_offset": "0x003A2DF4"
+    },
+    {
+      "binding_offset": "0x00095D4C",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "TriggerBattle",
+      "stream_address": "0x0809B350",
+      "stream_offset": "0x0009B350",
+      "string_offset": "0x003A2DF4"
+    },
+    {
+      "binding_offset": "0x00095F7C",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "TriggerBattle",
+      "stream_address": "0x0809B350",
+      "stream_offset": "0x0009B350",
+      "string_offset": "0x003A2DF4"
+    },
+    {
+      "binding_offset": "0x0009615C",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "TriggerBattle",
+      "stream_address": "0x0809B350",
+      "stream_offset": "0x0009B350",
+      "string_offset": "0x003A2DF4"
+    },
+    {
+      "binding_offset": "0x00096368",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "TriggerBattle",
+      "stream_address": "0x0809B350",
+      "stream_offset": "0x0009B350",
+      "string_offset": "0x003A2DF4"
+    },
+    {
+      "binding_offset": "0x00094F00",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "atDojo",
+      "stream_address": "0x080B52E8",
+      "stream_offset": "0x000B52E8",
+      "string_offset": "0x003A2D50"
+    },
+    {
+      "binding_offset": "0x00094F08",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "atExitToStreets",
+      "stream_address": "0x080B5310",
+      "stream_offset": "0x000B5310",
+      "string_offset": "0x003A2D40"
+    },
+    {
+      "binding_offset": "0x00095048",
+      "confidence": "confirmed",
+      "mode": "data",
+      "name": "inAlley",
+      "stream_address": "0x080B3B70",
+      "stream_offset": "0x000B3B70",
+      "string_offset": "0x003A2D58"
+    }
+  ]
+}

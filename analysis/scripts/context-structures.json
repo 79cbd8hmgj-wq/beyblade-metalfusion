@@ -1,0 +1,5 @@
+{
+  "confidence": "unknown",
+  "fields": [],
+  "note": "No context field is assigned before the central stream consumer is bounded; wait, PC, actor, result, parent/child, and concurrency remain runtime experiments."
+}

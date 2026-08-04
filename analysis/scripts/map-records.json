@@ -1,0 +1,13 @@
+{
+  "families": [
+    {
+      "confidence": "candidate",
+      "examples": [
+        "0x00002CB0 atExitToStreets",
+        "0x00002CD0 atDojo"
+      ],
+      "range": "0x00000000-0x00003C40",
+      "shape": "pointer arrays plus 3-u32/inline-ASCII/aligned records observed"
+    }
+  ]
+}
