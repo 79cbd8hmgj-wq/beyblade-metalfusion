@@ -59,7 +59,7 @@ if ! gdb-multiarch -q -batch \
   -ex 'target remote 127.0.0.1:2345' \
   -ex 'info registers' \
   -ex 'x/4i $pc' \
-  -ex 'detach' >"${GDB_LOG}" 2>&1; then
+  -ex 'disconnect' >"${GDB_LOG}" 2>&1; then
   echo "gdb-multiarch could not complete the remote debugging session:" >&2
   cat "${GDB_LOG}" >&2
   echo "mGBA transcript:" >&2
