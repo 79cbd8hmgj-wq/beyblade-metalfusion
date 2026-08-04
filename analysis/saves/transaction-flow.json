@@ -1,0 +1,20 @@
+{
+  "save": [
+    "serialize runtime at 0x08045198",
+    "checksum 0x08044D8C",
+    "construct header 0x08044EA0",
+    "invalidate header 0x08044F64",
+    "write/verify payload 0x08044F14",
+    "write/verify header last 0x08044D2C"
+  ],
+  "load": [
+    "configure 0x080674BC with 0x40",
+    "read header",
+    "validate magic/constants",
+    "read payload 0x08044FB0",
+    "validate stored/header/calculated checksums 0x080450E4",
+    "deserialize 0x08045590"
+  ],
+  "power_loss": "header-first invalidation and header-last commit reject interrupted transactions; no redundant old slot",
+  "confidence": "strongly_supported"
+}

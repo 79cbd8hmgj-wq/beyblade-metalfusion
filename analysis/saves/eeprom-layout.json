@@ -1,0 +1,46 @@
+{
+  "capacity_bytes": "0x2000",
+  "block_size": 8,
+  "block_count": "0x400",
+  "ranges": [
+    {
+      "start_block": "0x000",
+      "end_block": "0x002",
+      "byte_offset": "0x0000",
+      "byte_length": "0x18",
+      "purpose": "transaction_header",
+      "readers": [
+        "0x08044A8C"
+      ],
+      "writers": [
+        "0x08044D2C",
+        "0x08044F64"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "start_block": "0x003",
+      "end_block": "0x3EE",
+      "byte_offset": "0x0018",
+      "byte_length": "0x1F60",
+      "purpose": "serialized_payload",
+      "readers": [
+        "0x08044FB0"
+      ],
+      "writers": [
+        "0x08044F14"
+      ],
+      "confidence": "confirmed"
+    },
+    {
+      "start_block": "0x3EF",
+      "end_block": "0x3FF",
+      "byte_offset": "0x1F78",
+      "byte_length": "0x88",
+      "purpose": "unreferenced_tail_not_free",
+      "readers": [],
+      "writers": [],
+      "confidence": "strongly_supported"
+    }
+  ]
+}

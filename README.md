@@ -89,3 +89,7 @@ python3 -m tools.gba.battle_functions --rom "Beyblade G-Revolution (USA).gba" --
 
 The [battle report](docs/reverse-engineering/battle-engine.md) separates direct
 instruction evidence from candidates and unknown runtime-only behavior.
+
+## Task 5 save tooling
+
+The dependency-free `tools.gba.save_format` model validates the supported ROM and parses/rebuilds an 8-KiB EEPROM image without discarding unknown bytes. `tools.gba.save_diff` creates deterministic changed-range reports. See [save layout](docs/reverse-engineering/save-layout.md), [transactions](docs/reverse-engineering/save-transactions.md), and [payload status](docs/reverse-engineering/save-payload.md). Never run experiments on a user's only save.

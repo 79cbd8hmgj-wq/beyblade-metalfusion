@@ -1,0 +1,123 @@
+{
+  "functions": [
+    {
+      "rom_offset": "0x00044A8C",
+      "runtime_address": "0x08044A8C",
+      "label": "save_system_init_load",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044D2C",
+      "runtime_address": "0x08044D2C",
+      "label": "write_header_3_blocks",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044D8C",
+      "runtime_address": "0x08044D8C",
+      "label": "payload_additive_checksum",
+      "mode": "Thumb",
+      "confidence": "confirmed"
+    },
+    {
+      "rom_offset": "0x00044DAC",
+      "runtime_address": "0x08044DAC",
+      "label": "save_transaction",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044E54",
+      "runtime_address": "0x08044E54",
+      "label": "prepare_payload",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044EA0",
+      "runtime_address": "0x08044EA0",
+      "label": "construct_header",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044EE8",
+      "runtime_address": "0x08044EE8",
+      "label": "clear_header",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044F14",
+      "runtime_address": "0x08044F14",
+      "label": "write_payload",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044F64",
+      "runtime_address": "0x08044F64",
+      "label": "invalidate_header",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00044FB0",
+      "runtime_address": "0x08044FB0",
+      "label": "read_payload",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x0004504C",
+      "runtime_address": "0x0804504C",
+      "label": "load_validate",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x000450B4",
+      "runtime_address": "0x080450B4",
+      "label": "test_magic",
+      "mode": "Thumb",
+      "confidence": "confirmed"
+    },
+    {
+      "rom_offset": "0x000450E4",
+      "runtime_address": "0x080450E4",
+      "label": "validate_payload",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00045128",
+      "runtime_address": "0x08045128",
+      "label": "activate_loaded_save",
+      "mode": "Thumb",
+      "confidence": "candidate"
+    },
+    {
+      "rom_offset": "0x00045178",
+      "runtime_address": "0x08045178",
+      "label": "header_pointer_accessor",
+      "mode": "Thumb",
+      "confidence": "candidate"
+    },
+    {
+      "rom_offset": "0x00045198",
+      "runtime_address": "0x08045198",
+      "label": "runtime_to_save",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00045590",
+      "runtime_address": "0x08045590",
+      "label": "save_to_runtime",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    }
+  ]
+}

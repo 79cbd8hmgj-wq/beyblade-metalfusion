@@ -1,0 +1,4 @@
+start_block,end_block,byte_offset,byte_length,purpose,readers,writers,confidence
+0x000,0x002,0x0000,0x18,transaction_header,['0x08044A8C'],"['0x08044D2C', '0x08044F64']",confirmed
+0x003,0x3EE,0x0018,0x1F60,serialized_payload,['0x08044FB0'],['0x08044F14'],confirmed
+0x3EF,0x3FF,0x1F78,0x88,unreferenced_tail_not_free,[],[],strongly_supported

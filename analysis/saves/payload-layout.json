@@ -1,0 +1,20 @@
+{
+  "size": "0x1F60",
+  "ranges": [
+    {
+      "offset": "0x0000",
+      "length": "0x4",
+      "classification": "checksum",
+      "confidence": "confirmed"
+    },
+    {
+      "offset": "0x0004",
+      "length": "0x1F5C",
+      "classification": "unresolved_copied_region",
+      "copy_out": "0x08045198",
+      "copy_in": "0x08045590",
+      "confidence": "strongly_supported"
+    }
+  ],
+  "semantic_status": "Static copy paths bound persistence but controlled save/runtime comparisons remain required for player/inventory/progression field names."
+}

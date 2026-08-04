@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/save-diff.schema.json",
+  "title": "Save Diff",
+  "type": "object",
+  "required": [
+    "size",
+    "changed_byte_count",
+    "ranges"
+  ],
+  "properties": {
+    "size": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "changed_byte_count": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "ranges": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

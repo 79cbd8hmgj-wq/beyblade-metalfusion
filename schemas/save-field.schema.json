@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/save-field.schema.json",
+  "title": "Save Field",
+  "type": "object",
+  "required": [
+    "offset",
+    "size",
+    "name",
+    "confidence"
+  ],
+  "properties": {
+    "offset": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "size": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "name": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "confirmed",
+        "strongly_supported",
+        "candidate",
+        "unknown"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

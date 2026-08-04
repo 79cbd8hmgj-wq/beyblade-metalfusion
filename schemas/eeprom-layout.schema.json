@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/eeprom-layout.schema.json",
+  "title": "Eeprom Layout",
+  "type": "object",
+  "required": [
+    "capacity_bytes",
+    "block_size",
+    "block_count",
+    "ranges"
+  ],
+  "properties": {
+    "capacity_bytes": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "block_size": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "block_count": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "ranges": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

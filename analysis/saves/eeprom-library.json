@@ -1,0 +1,72 @@
+{
+  "signature": {
+    "text": "EEPROM_V124",
+    "rom_offset": "0x003A93BC",
+    "runtime_address": "0x083A93BC",
+    "confidence": "confirmed"
+  },
+  "selected_configuration": {
+    "selector": "0x40",
+    "capacity": "0x2000",
+    "address_bits": 14,
+    "maximum_block": "0x3FF",
+    "block_size": 8,
+    "confidence": "strongly_supported"
+  },
+  "functions": [
+    {
+      "rom_offset": "0x000674BC",
+      "runtime_address": "0x080674BC",
+      "label": "configure",
+      "interface": "r0=size selector; 0x40 selected",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00067584",
+      "runtime_address": "0x08067584",
+      "label": "read_dword",
+      "interface": "r0=block, r1=destination",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00067634",
+      "runtime_address": "0x08067634",
+      "label": "program_wrapper",
+      "interface": "block and 8-byte source",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00067648",
+      "runtime_address": "0x08067648",
+      "label": "program_extended",
+      "interface": "serial command/payload, completion wait",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x000677A8",
+      "runtime_address": "0x080677A8",
+      "label": "verify",
+      "interface": "0 success; 0x8000 mismatch",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    },
+    {
+      "rom_offset": "0x00067800",
+      "runtime_address": "0x08067800",
+      "label": "program_verify_retry",
+      "interface": "up to 3 attempts",
+      "mode": "Thumb",
+      "confidence": "strongly_supported"
+    }
+  ],
+  "hardware": {
+    "serial_port": "EEPROM mapped bus",
+    "dma": "transfer helper dependency; exact channel candidate",
+    "timer_interrupt": "completion timeout path requires runtime verification",
+    "confidence": "candidate"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/save-migration.schema.json",
+  "title": "Save Migration",
+  "type": "object",
+  "required": [
+    "strategy",
+    "assessment",
+    "evidence"
+  ],
+  "properties": {
+    "strategy": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "assessment": {
+      "enum": [
+        "safe",
+        "likely_safe",
+        "questionable",
+        "unsafe",
+        "unknown"
+      ]
+    },
+    "evidence": {
+      "type": [
+        "string",
+        "integer",
+        "array",
+        "object",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
