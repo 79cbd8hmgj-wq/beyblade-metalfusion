@@ -6,6 +6,7 @@ on:
       - re/g-revolution-foundation
     paths:
       - .foundation-bootstrap.tar.gz.b64
+      - .foundation-trigger
 
 permissions:
   contents: write
@@ -27,7 +28,7 @@ jobs:
           base64 --decode .foundation-bootstrap.tar.gz.b64 > /tmp/g-rev-foundation.tar.gz
           echo '658630dde5a7f8ed0cbd5a6679826725ac43321b3f38eb4a50518cbe724d7afe  /tmp/g-rev-foundation.tar.gz' | sha256sum --check
           tar -xzf /tmp/g-rev-foundation.tar.gz -C .
-          rm .foundation-bootstrap.tar.gz.b64
+          rm .foundation-bootstrap.tar.gz.b64 .foundation-trigger
 
       - name: Commit expanded toolkit
         shell: bash
