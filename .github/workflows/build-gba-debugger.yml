@@ -8,6 +8,9 @@ on:
         required: true
         default: "0.10.5"
         type: string
+  push:
+    branches:
+      - "assistant/task8-functional-custom-blader"
   pull_request:
     types: [synchronize, reopened]
     paths:
@@ -18,7 +21,7 @@ permissions:
 
 jobs:
   build-linux-x86_64:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.title, '[build-debugger]')
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.title, '[build-debugger]')
     name: Linux x86_64
     runs-on: ubuntu-24.04
     timeout-minutes: 45
