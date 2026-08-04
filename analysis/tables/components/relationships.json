@@ -1,0 +1,2907 @@
+[
+  {
+    "source": "beyblade:0:Dragoon S",
+    "target": "attack-rings:15",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:0:Dragoon S",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:0:Dragoon S",
+    "target": "blade-bases:7",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:0:Dragoon S",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:0:Dragoon S",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:1:Dragoon G",
+    "target": "attack-rings:35",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:1:Dragoon G",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:1:Dragoon G",
+    "target": "blade-bases:30",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:1:Dragoon G",
+    "target": "spin-gears:2",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:1:Dragoon G",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:2:Dragoon V2",
+    "target": "attack-rings:44",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:2:Dragoon V2",
+    "target": "weight-disks:15",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:2:Dragoon V2",
+    "target": "blade-bases:31",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:2:Dragoon V2",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:2:Dragoon V2",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:3:Dragoon Storm",
+    "target": "attack-rings:15",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:3:Dragoon Storm",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:3:Dragoon Storm",
+    "target": "blade-bases:7",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:3:Dragoon Storm",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:3:Dragoon Storm",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:4:Dragoon Fighter",
+    "target": "attack-rings:31",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:4:Dragoon Fighter",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:4:Dragoon Fighter",
+    "target": "blade-bases:19",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:4:Dragoon Fighter",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:4:Dragoon Fighter",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:5:Strata Dragoon G",
+    "target": "attack-rings:45",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:5:Strata Dragoon G",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:5:Strata Dragoon G",
+    "target": "blade-bases:32",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:5:Strata Dragoon G",
+    "target": "spin-gears:4",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:5:Strata Dragoon G",
+    "target": "bit-chip:39",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:6:Master Dragoon",
+    "target": "attack-rings:20",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:6:Master Dragoon",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:6:Master Dragoon",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:6:Master Dragoon",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:6:Master Dragoon",
+    "target": "bit-chip:31",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:7:Kids Dragoon",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:7:Kids Dragoon",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:7:Kids Dragoon",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:7:Kids Dragoon",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:7:Kids Dragoon",
+    "target": "bit-chip:19",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:8:Dragoon Galaxy Turbo",
+    "target": "attack-rings:47",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:8:Dragoon Galaxy Turbo",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:8:Dragoon Galaxy Turbo",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:8:Dragoon Galaxy Turbo",
+    "target": "spin-gears:2",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:8:Dragoon Galaxy Turbo",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:9:Driger F",
+    "target": "attack-rings:30",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:9:Driger F",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:9:Driger F",
+    "target": "blade-bases:18",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:9:Driger F",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:9:Driger F",
+    "target": "bit-chip:15",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:10:Driger S",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:10:Driger S",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:10:Driger S",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:10:Driger S",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:10:Driger S",
+    "target": "bit-chip:40",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:11:Driger G",
+    "target": "attack-rings:48",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:11:Driger G",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:11:Driger G",
+    "target": "blade-bases:34",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:11:Driger G",
+    "target": "spin-gears:6",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:11:Driger G",
+    "target": "bit-chip:15",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:12:Metal Driger",
+    "target": "attack-rings:27",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:12:Metal Driger",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:12:Metal Driger",
+    "target": "blade-bases:34",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:12:Metal Driger",
+    "target": "spin-gears:7",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:12:Metal Driger",
+    "target": "bit-chip:41",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:13:Master Driger",
+    "target": "attack-rings:50",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:13:Master Driger",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:13:Master Driger",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:13:Master Driger",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:13:Master Driger",
+    "target": "bit-chip:35",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:14:Dranzer F",
+    "target": "attack-rings:32",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:14:Dranzer F",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:14:Dranzer F",
+    "target": "blade-bases:20",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:14:Dranzer F",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:14:Dranzer F",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:15:Knight Dranzer",
+    "target": "attack-rings:18",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:15:Knight Dranzer",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:15:Knight Dranzer",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:15:Knight Dranzer",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:15:Knight Dranzer",
+    "target": "bit-chip:17",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:16:Master Dranzer",
+    "target": "attack-rings:19",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:16:Master Dranzer",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:16:Master Dranzer",
+    "target": "blade-bases:11",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:16:Master Dranzer",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:16:Master Dranzer",
+    "target": "bit-chip:32",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:17:Ultimate Frostic Dranzer",
+    "target": "attack-rings:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:17:Ultimate Frostic Dranzer",
+    "target": "weight-disks:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:17:Ultimate Frostic Dranzer",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:17:Ultimate Frostic Dranzer",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:17:Ultimate Frostic Dranzer",
+    "target": "bit-chip:3",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:18:Draciel S",
+    "target": "attack-rings:27",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:18:Draciel S",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:18:Draciel S",
+    "target": "blade-bases:6",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:18:Draciel S",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:18:Draciel S",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:19:Draciel V2",
+    "target": "attack-rings:51",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:19:Draciel V2",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:19:Draciel V2",
+    "target": "blade-bases:36",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:19:Draciel V2",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:19:Draciel V2",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:20:Draciel Fortress",
+    "target": "attack-rings:35",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:20:Draciel Fortress",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:20:Draciel Fortress",
+    "target": "blade-bases:22",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:20:Draciel Fortress",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:20:Draciel Fortress",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:21:Master Draciel",
+    "target": "attack-rings:34",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:21:Master Draciel",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:21:Master Draciel",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:21:Master Draciel",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:21:Master Draciel",
+    "target": "bit-chip:33",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:22:Draciel Metal",
+    "target": "attack-rings:52",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:22:Draciel Metal",
+    "target": "weight-disks:16",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:22:Draciel Metal",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:22:Draciel Metal",
+    "target": "spin-gears:9",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:22:Draciel Metal",
+    "target": "bit-chip:18",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:23:Wolborg",
+    "target": "attack-rings:25",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:23:Wolborg",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:23:Wolborg",
+    "target": "blade-bases:14",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:23:Wolborg",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:23:Wolborg",
+    "target": "bit-chip:24",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:24:Wolborg 2",
+    "target": "attack-rings:37",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:24:Wolborg 2",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:24:Wolborg 2",
+    "target": "blade-bases:24",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:24:Wolborg 2",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:24:Wolborg 2",
+    "target": "bit-chip:24",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:25:Seaborg",
+    "target": "attack-rings:26",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:25:Seaborg",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:25:Seaborg",
+    "target": "blade-bases:15",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:25:Seaborg",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:25:Seaborg",
+    "target": "bit-chip:25",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:26:Seaborg 2",
+    "target": "attack-rings:53",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:26:Seaborg 2",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:26:Seaborg 2",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:26:Seaborg 2",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:26:Seaborg 2",
+    "target": "bit-chip:25",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:27:Wyborg",
+    "target": "attack-rings:36",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:27:Wyborg",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:27:Wyborg",
+    "target": "blade-bases:5",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:27:Wyborg",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:27:Wyborg",
+    "target": "bit-chip:34",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:28:Trygle",
+    "target": "attack-rings:28",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:28:Trygle",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:28:Trygle",
+    "target": "blade-bases:17",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:28:Trygle",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:28:Trygle",
+    "target": "bit-chip:26",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:29:Bearing Stinger",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:29:Bearing Stinger",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:29:Bearing Stinger",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:29:Bearing Stinger",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:29:Bearing Stinger",
+    "target": "bit-chip:42",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:30:Grip Attacker",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:30:Grip Attacker",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:30:Grip Attacker",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:30:Grip Attacker",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:30:Grip Attacker",
+    "target": "bit-chip:43",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:31:Ultimate Saizo",
+    "target": "attack-rings:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:31:Ultimate Saizo",
+    "target": "weight-disks:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:31:Ultimate Saizo",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:31:Ultimate Saizo",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:31:Ultimate Saizo",
+    "target": "bit-chip:44",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:32:Spark Knight",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:32:Spark Knight",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:32:Spark Knight",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:32:Spark Knight",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:32:Spark Knight",
+    "target": "bit-chip:6",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:33:Roller Attacker",
+    "target": "attack-rings:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:33:Roller Attacker",
+    "target": "weight-disks:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:33:Roller Attacker",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:33:Roller Attacker",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:33:Roller Attacker",
+    "target": "bit-chip:45",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:34:Roller Defenser",
+    "target": "attack-rings:10",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:34:Roller Defenser",
+    "target": "weight-disks:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:34:Roller Defenser",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:34:Roller Defenser",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:34:Roller Defenser",
+    "target": "bit-chip:46",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:35:Wing Attacker",
+    "target": "attack-rings:12",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:35:Wing Attacker",
+    "target": "weight-disks:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:35:Wing Attacker",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:35:Wing Attacker",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:35:Wing Attacker",
+    "target": "bit-chip:47",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:36:Wing Defenser",
+    "target": "attack-rings:13",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:36:Wing Defenser",
+    "target": "weight-disks:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:36:Wing Defenser",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:36:Wing Defenser",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:36:Wing Defenser",
+    "target": "bit-chip:48",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:37:Bistool",
+    "target": "attack-rings:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:37:Bistool",
+    "target": "weight-disks:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:37:Bistool",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:37:Bistool",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:37:Bistool",
+    "target": "bit-chip:49",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:38:Polta",
+    "target": "attack-rings:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:38:Polta",
+    "target": "weight-disks:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:38:Polta",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:38:Polta",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:38:Polta",
+    "target": "bit-chip:7",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:39:Makendo",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:39:Makendo",
+    "target": "weight-disks:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:39:Makendo",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:39:Makendo",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:39:Makendo",
+    "target": "bit-chip:50",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:40:Bump King",
+    "target": "attack-rings:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:40:Bump King",
+    "target": "weight-disks:2",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:40:Bump King",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:40:Bump King",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:40:Bump King",
+    "target": "bit-chip:10",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:41:Bakushin-Oh",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:41:Bakushin-Oh",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:41:Bakushin-Oh",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:41:Bakushin-Oh",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:41:Bakushin-Oh",
+    "target": "bit-chip:51",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:42:Galeon Attacker",
+    "target": "attack-rings:54",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:42:Galeon Attacker",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:42:Galeon Attacker",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:42:Galeon Attacker",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:42:Galeon Attacker",
+    "target": "bit-chip:21",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:43:Galman",
+    "target": "attack-rings:55",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:43:Galman",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:43:Galman",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:43:Galman",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:43:Galman",
+    "target": "bit-chip:23",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:44:Galzzly",
+    "target": "attack-rings:23",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:44:Galzzly",
+    "target": "weight-disks:5",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:44:Galzzly",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:44:Galzzly",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:44:Galzzly",
+    "target": "bit-chip:22",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:45:Gekiryu-Oh",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:45:Gekiryu-Oh",
+    "target": "weight-disks:9",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:45:Gekiryu-Oh",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:45:Gekiryu-Oh",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:45:Gekiryu-Oh",
+    "target": "bit-chip:52",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:46:Megaro Arm",
+    "target": "attack-rings:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:46:Megaro Arm",
+    "target": "weight-disks:1",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:46:Megaro Arm",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:46:Megaro Arm",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:46:Megaro Arm",
+    "target": "bit-chip:5",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:47:Auto Change Balancer",
+    "target": "attack-rings:11",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:47:Auto Change Balancer",
+    "target": "weight-disks:0",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:47:Auto Change Balancer",
+    "target": "blade-bases:5",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:47:Auto Change Balancer",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:47:Auto Change Balancer",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:48:Flash Leopard",
+    "target": "attack-rings:39",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:48:Flash Leopard",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:48:Flash Leopard",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:48:Flash Leopard",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:48:Flash Leopard",
+    "target": "bit-chip:37",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:49:Rock Bison",
+    "target": "attack-rings:57",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:49:Rock Bison",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:49:Rock Bison",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:49:Rock Bison",
+    "target": "spin-gears:11",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:49:Rock Bison",
+    "target": "bit-chip:66",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:50:Zeus",
+    "target": "attack-rings:58",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:50:Zeus",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:50:Zeus",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:50:Zeus",
+    "target": "spin-gears:12",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:50:Zeus",
+    "target": "bit-chip:67",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:51:Trypio",
+    "target": "attack-rings:29",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:51:Trypio",
+    "target": "weight-disks:4",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:51:Trypio",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:51:Trypio",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:51:Trypio",
+    "target": "bit-chip:27",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:52:Dragoon V",
+    "target": "attack-rings:38",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:52:Dragoon V",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:52:Dragoon V",
+    "target": "blade-bases:25",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:52:Dragoon V",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:52:Dragoon V",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:53:Metal Dranzer",
+    "target": "attack-rings:59",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:53:Metal Dranzer",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:53:Metal Dranzer",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:53:Metal Dranzer",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:53:Metal Dranzer",
+    "target": "bit-chip:36",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:54:Driger V",
+    "target": "attack-rings:40",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:54:Driger V",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:54:Driger V",
+    "target": "blade-bases:26",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:54:Driger V",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:54:Driger V",
+    "target": "bit-chip:53",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:55:Dranzer V",
+    "target": "attack-rings:41",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:55:Dranzer V",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:55:Dranzer V",
+    "target": "blade-bases:27",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:55:Dranzer V",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:55:Dranzer V",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:56:Dranzer S",
+    "target": "attack-rings:21",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:56:Dranzer S",
+    "target": "weight-disks:3",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:56:Dranzer S",
+    "target": "blade-bases:13",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:56:Dranzer S",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:56:Dranzer S",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:57:Bound Defenser",
+    "target": "attack-rings:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:57:Bound Defenser",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:57:Bound Defenser",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:57:Bound Defenser",
+    "target": "spin-gears:0",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:57:Bound Defenser",
+    "target": "bit-chip:54",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:58:Metal Masters Draciel",
+    "target": "attack-rings:27",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:58:Metal Masters Draciel",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:58:Metal Masters Draciel",
+    "target": "blade-bases:6",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:58:Metal Masters Draciel",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:58:Metal Masters Draciel",
+    "target": "bit-chip:18",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:59:Griffolyon Hidden Spirit",
+    "target": "attack-rings:58",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:59:Griffolyon Hidden Spirit",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:59:Griffolyon Hidden Spirit",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:59:Griffolyon Hidden Spirit",
+    "target": "spin-gears:12",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:59:Griffolyon Hidden Spirit",
+    "target": "bit-chip:30",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:60:Hayate Hidden Spirit",
+    "target": "attack-rings:58",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:60:Hayate Hidden Spirit",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:60:Hayate Hidden Spirit",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:60:Hayate Hidden Spirit",
+    "target": "spin-gears:12",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:60:Hayate Hidden Spirit",
+    "target": "bit-chip:68",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:61:Zinrai Hidden Spirit",
+    "target": "attack-rings:58",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:61:Zinrai Hidden Spirit",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:61:Zinrai Hidden Spirit",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:61:Zinrai Hidden Spirit",
+    "target": "spin-gears:12",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:61:Zinrai Hidden Spirit",
+    "target": "bit-chip:69",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:62:Dranzer G",
+    "target": "attack-rings:60",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:62:Dranzer G",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:62:Dranzer G",
+    "target": "blade-bases:38",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:62:Dranzer G",
+    "target": "spin-gears:6",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:62:Dranzer G",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:63:Wolborg 4",
+    "target": "attack-rings:61",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:63:Wolborg 4",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:63:Wolborg 4",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:63:Wolborg 4",
+    "target": "spin-gears:13",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:63:Wolborg 4",
+    "target": "bit-chip:24",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:64:Torch Pegasus",
+    "target": "attack-rings:58",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:64:Torch Pegasus",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:64:Torch Pegasus",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:64:Torch Pegasus",
+    "target": "spin-gears:12",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:64:Torch Pegasus",
+    "target": "bit-chip:70",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:65:Dranzer GT",
+    "target": "attack-rings:62",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:65:Dranzer GT",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:65:Dranzer GT",
+    "target": "blade-bases:33",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:65:Dranzer GT",
+    "target": "spin-gears:14",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:65:Dranzer GT",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:66:Strata Dragoon MS",
+    "target": "attack-rings:63",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:66:Strata Dragoon MS",
+    "target": "weight-disks:17",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:66:Strata Dragoon MS",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:66:Strata Dragoon MS",
+    "target": "spin-gears:15",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:66:Strata Dragoon MS",
+    "target": "bit-chip:55",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:67:Driger MS",
+    "target": "attack-rings:64",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:67:Driger MS",
+    "target": "weight-disks:18",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:67:Driger MS",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:67:Driger MS",
+    "target": "spin-gears:16",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:67:Driger MS",
+    "target": "bit-chip:15",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:68:Draciel MS",
+    "target": "attack-rings:52",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:68:Draciel MS",
+    "target": "weight-disks:16",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:68:Draciel MS",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:68:Draciel MS",
+    "target": "spin-gears:9",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:68:Draciel MS",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:69:Dragoon MS",
+    "target": "attack-rings:65",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:69:Dragoon MS",
+    "target": "weight-disks:16",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:69:Dragoon MS",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:69:Dragoon MS",
+    "target": "spin-gears:5",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:69:Dragoon MS",
+    "target": "bit-chip:11",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:70:Gigars",
+    "target": "attack-rings:66",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:70:Gigars",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:70:Gigars",
+    "target": "blade-bases:39",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:70:Gigars",
+    "target": "spin-gears:17",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:70:Gigars",
+    "target": "bit-chip:56",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:71:Wyvern DJ",
+    "target": "attack-rings:67",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:71:Wyvern DJ",
+    "target": "weight-disks:18",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:71:Wyvern DJ",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:71:Wyvern DJ",
+    "target": "spin-gears:18",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:71:Wyvern DJ",
+    "target": "bit-chip:57",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:72:Dranzer MS",
+    "target": "attack-rings:68",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:72:Dranzer MS",
+    "target": "weight-disks:18",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:72:Dranzer MS",
+    "target": "blade-bases:0",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:72:Dranzer MS",
+    "target": "spin-gears:19",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:72:Dranzer MS",
+    "target": "bit-chip:13",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:73:Flash Leopard II",
+    "target": "attack-rings:69",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:73:Flash Leopard II",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:73:Flash Leopard II",
+    "target": "blade-bases:40",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:73:Flash Leopard II",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:73:Flash Leopard II",
+    "target": "bit-chip:58",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:74:Draciel V",
+    "target": "attack-rings:43",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:74:Draciel V",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:74:Draciel V",
+    "target": "blade-bases:29",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:74:Draciel V",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:74:Draciel V",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:75:Trygator",
+    "target": "attack-rings:70",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:75:Trygator",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:75:Trygator",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:75:Trygator",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:75:Trygator",
+    "target": "bit-chip:59",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:76:Galeon 2",
+    "target": "attack-rings:71",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:76:Galeon 2",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:76:Galeon 2",
+    "target": "blade-bases:10",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:76:Galeon 2",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:76:Galeon 2",
+    "target": "bit-chip:60",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:77:Thunder Pegasus",
+    "target": "attack-rings:56",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:77:Thunder Pegasus",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:77:Thunder Pegasus",
+    "target": "blade-bases:37",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:77:Thunder Pegasus",
+    "target": "spin-gears:10",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:77:Thunder Pegasus",
+    "target": "bit-chip:61",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:78:Dark Gargoyle",
+    "target": "attack-rings:72",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:78:Dark Gargoyle",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:78:Dark Gargoyle",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:78:Dark Gargoyle",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:78:Dark Gargoyle",
+    "target": "bit-chip:62",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:79:Rapid Eagle",
+    "target": "attack-rings:73",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:79:Rapid Eagle",
+    "target": "weight-disks:7",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:79:Rapid Eagle",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:79:Rapid Eagle",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:79:Rapid Eagle",
+    "target": "bit-chip:63",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:80:Trygle 2",
+    "target": "attack-rings:74",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:80:Trygle 2",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:80:Trygle 2",
+    "target": "blade-bases:12",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:80:Trygle 2",
+    "target": "spin-gears:1",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:80:Trygle 2",
+    "target": "bit-chip:64",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:81:Draciel G",
+    "target": "attack-rings:75",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:81:Draciel G",
+    "target": "weight-disks:8",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:81:Draciel G",
+    "target": "blade-bases:41",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:81:Draciel G",
+    "target": "spin-gears:20",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:81:Draciel G",
+    "target": "bit-chip:14",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:82:Rushing Boar",
+    "target": "attack-rings:76",
+    "relation": "equips",
+    "evidence": "template byte 0x1D falls exactly in confirmed attack-rings ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:82:Rushing Boar",
+    "target": "weight-disks:6",
+    "relation": "equips",
+    "evidence": "template byte 0x1E falls exactly in confirmed weight-disks ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:82:Rushing Boar",
+    "target": "blade-bases:9",
+    "relation": "equips",
+    "evidence": "template byte 0x20 falls exactly in confirmed blade-bases ID range",
+    "confidence": "strongly_supported"
+  },
+  {
+    "source": "beyblade:82:Rushing Boar",
+    "target": "spin-gears:21",
+    "relation": "equips_packed_candidate",
+    "evidence": "low six bits fit the 22-entry Spin Gear range; high bits act as flags",
+    "confidence": "candidate"
+  },
+  {
+    "source": "beyblade:82:Rushing Boar",
+    "target": "bit-chip:65",
+    "relation": "equips",
+    "evidence": "position follows four part IDs and has a distinct 3..70 namespace",
+    "confidence": "strongly_supported"
+  }
+]

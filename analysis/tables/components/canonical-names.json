@@ -1,0 +1,4002 @@
+[
+  {
+    "category": "spin-gears",
+    "local_id": 0,
+    "global_id": null,
+    "source_offset": "0x0007AF0C",
+    "runtime_address": "0x0807AF0C",
+    "display_names": {
+      "english": "Normal",
+      "french": "Normal",
+      "german": "Normal",
+      "italian": "Normal",
+      "spanish": "Normal"
+    },
+    "name_pointers": [
+      "0x0833D334",
+      "0x0833D334",
+      "0x0833D334",
+      "0x0833D334",
+      "0x0833D334"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 1,
+    "global_id": null,
+    "source_offset": "0x0007AF10",
+    "runtime_address": "0x0807AF10",
+    "display_names": {
+      "english": "Neo",
+      "french": "Neo",
+      "german": "Neo",
+      "italian": "Neo",
+      "spanish": "Neo"
+    },
+    "name_pointers": [
+      "0x0833D330",
+      "0x0833D330",
+      "0x0833D330",
+      "0x0833D330",
+      "0x0833D330"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 2,
+    "global_id": null,
+    "source_offset": "0x0007AF14",
+    "runtime_address": "0x0807AF14",
+    "display_names": {
+      "english": "Engine Gear",
+      "french": "Engine Gear",
+      "german": "Engine Gear",
+      "italian": "Engine Gear",
+      "spanish": "Engine Gear"
+    },
+    "name_pointers": [
+      "0x0833D324",
+      "0x0833D324",
+      "0x0833D324",
+      "0x0833D324",
+      "0x0833D324"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 3,
+    "global_id": null,
+    "source_offset": "0x0007AF18",
+    "runtime_address": "0x0807AF18",
+    "display_names": {
+      "english": "South",
+      "french": "South",
+      "german": "South",
+      "italian": "South",
+      "spanish": "South"
+    },
+    "name_pointers": [
+      "0x0833D31C",
+      "0x0833D31C",
+      "0x0833D31C",
+      "0x0833D31C",
+      "0x0833D31C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 4,
+    "global_id": null,
+    "source_offset": "0x0007AF1C",
+    "runtime_address": "0x0807AF1C",
+    "display_names": {
+      "english": "Metal Flat",
+      "french": "Metal Flat",
+      "german": "Metal Flat",
+      "italian": "Metal Flat",
+      "spanish": "Metal Flat"
+    },
+    "name_pointers": [
+      "0x0833D310",
+      "0x0833D310",
+      "0x0833D310",
+      "0x0833D310",
+      "0x0833D310"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 5,
+    "global_id": null,
+    "source_offset": "0x0007AF20",
+    "runtime_address": "0x0807AF20",
+    "display_names": {
+      "english": "Grip Flat Core",
+      "french": "Grip Flat Core",
+      "german": "Grip Flat Core",
+      "italian": "Grip Flat Core",
+      "spanish": "Grip Flat Core"
+    },
+    "name_pointers": [
+      "0x0833D300",
+      "0x0833D300",
+      "0x0833D300",
+      "0x0833D300",
+      "0x0833D300"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 6,
+    "global_id": null,
+    "source_offset": "0x0007AF24",
+    "runtime_address": "0x0807AF24",
+    "display_names": {
+      "english": "Metal Semi Flat",
+      "french": "Metal Semi Flat",
+      "german": "Metal Semi Flat",
+      "italian": "Metal Semi Flat",
+      "spanish": "Metal Semi Flat"
+    },
+    "name_pointers": [
+      "0x0833D2F0",
+      "0x0833D2F0",
+      "0x0833D2F0",
+      "0x0833D2F0",
+      "0x0833D2F0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 7,
+    "global_id": null,
+    "source_offset": "0x0007AF28",
+    "runtime_address": "0x0807AF28",
+    "display_names": {
+      "english": "Heavy Metal",
+      "french": "Heavy Metal",
+      "german": "Heavy Metal",
+      "italian": "Heavy Metal",
+      "spanish": "Heavy Metal"
+    },
+    "name_pointers": [
+      "0x0833D2E4",
+      "0x0833D2E4",
+      "0x0833D2E4",
+      "0x0833D2E4",
+      "0x0833D2E4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 8,
+    "global_id": null,
+    "source_offset": "0x0007AF2C",
+    "runtime_address": "0x0807AF2C",
+    "display_names": {
+      "english": "Semi Flat",
+      "french": "Semi Flat",
+      "german": "Semi Flat",
+      "italian": "Semi Flat",
+      "spanish": "Semi Flat"
+    },
+    "name_pointers": [
+      "0x0833D2D8",
+      "0x0833D2D8",
+      "0x0833D2D8",
+      "0x0833D2D8",
+      "0x0833D2D8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 9,
+    "global_id": null,
+    "source_offset": "0x0007AF30",
+    "runtime_address": "0x0807AF30",
+    "display_names": {
+      "english": "Sharp Core",
+      "french": "Sharp Core",
+      "german": "Sharp Core",
+      "italian": "Sharp Core",
+      "spanish": "Sharp Core"
+    },
+    "name_pointers": [
+      "0x0833D2CC",
+      "0x0833D2CC",
+      "0x0833D2CC",
+      "0x0833D2CC",
+      "0x0833D2CC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 10,
+    "global_id": null,
+    "source_offset": "0x0007AF34",
+    "runtime_address": "0x0807AF34",
+    "display_names": {
+      "english": "Gyro EG",
+      "french": "Gyro EG",
+      "german": "Gyro EG",
+      "italian": "Gyro EG",
+      "spanish": "Gyro EG"
+    },
+    "name_pointers": [
+      "0x0833D2C4",
+      "0x0833D2C4",
+      "0x0833D2C4",
+      "0x0833D2C4",
+      "0x0833D2C4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 11,
+    "global_id": null,
+    "source_offset": "0x0007AF38",
+    "runtime_address": "0x0807AF38",
+    "display_names": {
+      "english": "Circle Defenser",
+      "french": "Circle Defenser",
+      "german": "Circle Defenser",
+      "italian": "Circle Defenser",
+      "spanish": "Circle Defenser"
+    },
+    "name_pointers": [
+      "0x0833D2B4",
+      "0x0833D2B4",
+      "0x0833D2B4",
+      "0x0833D2B4",
+      "0x0833D2B4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 12,
+    "global_id": null,
+    "source_offset": "0x0007AF3C",
+    "runtime_address": "0x0807AF3C",
+    "display_names": {
+      "english": "EG Free Shaft",
+      "french": "CG Free Shaft",
+      "german": "CG Free Shaft",
+      "italian": "CG Free Shaft",
+      "spanish": "CG Free Shaft"
+    },
+    "name_pointers": [
+      "0x0833D2A4",
+      "0x0833D33C",
+      "0x0833D33C",
+      "0x0833D33C",
+      "0x0833D33C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 13,
+    "global_id": null,
+    "source_offset": "0x0007AF40",
+    "runtime_address": "0x0807AF40",
+    "display_names": {
+      "english": "EG Circle Survivor",
+      "french": "EG Circle Survivor",
+      "german": "EG Circle Survivor",
+      "italian": "EG Circle Survivor",
+      "spanish": "EG Circle Survivor"
+    },
+    "name_pointers": [
+      "0x0833D290",
+      "0x0833D290",
+      "0x0833D290",
+      "0x0833D290",
+      "0x0833D290"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 14,
+    "global_id": null,
+    "source_offset": "0x0007AF44",
+    "runtime_address": "0x0807AF44",
+    "display_names": {
+      "english": "EG Reverse",
+      "french": "EG Reverse",
+      "german": "EG Reverse",
+      "italian": "EG Reverse",
+      "spanish": "EG Reverse"
+    },
+    "name_pointers": [
+      "0x0833D284",
+      "0x0833D284",
+      "0x0833D284",
+      "0x0833D284",
+      "0x0833D284"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 15,
+    "global_id": null,
+    "source_offset": "0x0007AF48",
+    "runtime_address": "0x0807AF48",
+    "display_names": {
+      "english": "Flat Core",
+      "french": "Flat Core",
+      "german": "Flat Core",
+      "italian": "Flat Core",
+      "spanish": "Flat Core"
+    },
+    "name_pointers": [
+      "0x0833D278",
+      "0x0833D278",
+      "0x0833D278",
+      "0x0833D278",
+      "0x0833D278"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 16,
+    "global_id": null,
+    "source_offset": "0x0007AF4C",
+    "runtime_address": "0x0807AF4C",
+    "display_names": {
+      "english": "Semi Flat Core",
+      "french": "Semi Flat Core",
+      "german": "Semi Flat Core",
+      "italian": "Semi Flat Core",
+      "spanish": "Semi Flat Core"
+    },
+    "name_pointers": [
+      "0x0833D268",
+      "0x0833D268",
+      "0x0833D268",
+      "0x0833D268",
+      "0x0833D268"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 17,
+    "global_id": null,
+    "source_offset": "0x0007AF50",
+    "runtime_address": "0x0807AF50",
+    "display_names": {
+      "english": "Full Auto Clutch",
+      "french": "Full Auto Clutch",
+      "german": "Full Auto Clutch",
+      "italian": "Full Auto Clutch",
+      "spanish": "Full Auto Clutch"
+    },
+    "name_pointers": [
+      "0x0833D254",
+      "0x0833D254",
+      "0x0833D254",
+      "0x0833D254",
+      "0x0833D254"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 18,
+    "global_id": null,
+    "source_offset": "0x0007AF54",
+    "runtime_address": "0x0807AF54",
+    "display_names": {
+      "english": "Metal Sharp Core",
+      "french": "Metal Sharp Core",
+      "german": "Metal Sharp Core",
+      "italian": "Metal Sharp Core",
+      "spanish": "Metal Sharp Core"
+    },
+    "name_pointers": [
+      "0x0833D240",
+      "0x0833D240",
+      "0x0833D240",
+      "0x0833D240",
+      "0x0833D240"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 19,
+    "global_id": null,
+    "source_offset": "0x0007AF58",
+    "runtime_address": "0x0807AF58",
+    "display_names": {
+      "english": "Manual Change Core",
+      "french": "Manual Change Core",
+      "german": "Manual Change Core",
+      "italian": "Manual Change Core",
+      "spanish": "Manual Change Core"
+    },
+    "name_pointers": [
+      "0x0833D22C",
+      "0x0833D22C",
+      "0x0833D22C",
+      "0x0833D22C",
+      "0x0833D22C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 20,
+    "global_id": null,
+    "source_offset": "0x0007AF5C",
+    "runtime_address": "0x0807AF5C",
+    "display_names": {
+      "english": "EG Metal Ball",
+      "french": "EG Metal Ball",
+      "german": "EG Metal Ball",
+      "italian": "EG Metal Ball",
+      "spanish": "EG Metal Ball"
+    },
+    "name_pointers": [
+      "0x0833D21C",
+      "0x0833D21C",
+      "0x0833D21C",
+      "0x0833D21C",
+      "0x0833D21C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "spin-gears",
+    "local_id": 21,
+    "global_id": null,
+    "source_offset": "0x0007AF60",
+    "runtime_address": "0x0807AF60",
+    "display_names": {
+      "english": "SG Metal Weight",
+      "french": "SG Metal Weight",
+      "german": "SG Metal Weight",
+      "italian": "SG Metal Weight",
+      "spanish": "SG Metal Weight"
+    },
+    "name_pointers": [
+      "0x0833D20C",
+      "0x0833D20C",
+      "0x0833D20C",
+      "0x0833D20C",
+      "0x0833D20C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 0,
+    "global_id": null,
+    "source_offset": "0x0007B0D8",
+    "runtime_address": "0x0807B0D8",
+    "display_names": {
+      "english": "Cross Dragon",
+      "french": "Cross Dragon",
+      "german": "Cross Dragon",
+      "italian": "Cross Dragon",
+      "spanish": "Cross Dragon"
+    },
+    "name_pointers": [
+      "0x0833D89C",
+      "0x0833D89C",
+      "0x0833D89C",
+      "0x0833D89C",
+      "0x0833D89C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 1,
+    "global_id": null,
+    "source_offset": "0x0007B0DC",
+    "runtime_address": "0x0807B0DC",
+    "display_names": {
+      "english": "Tricutter",
+      "french": "Tricutter",
+      "german": "Tricutter",
+      "italian": "Tricutter",
+      "spanish": "Tricutter"
+    },
+    "name_pointers": [
+      "0x0833D890",
+      "0x0833D890",
+      "0x0833D890",
+      "0x0833D890",
+      "0x0833D890"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 2,
+    "global_id": null,
+    "source_offset": "0x0007B0E0",
+    "runtime_address": "0x0807B0E0",
+    "display_names": {
+      "english": "Wing Cross",
+      "french": "Wing Cross",
+      "german": "Wing Cross",
+      "italian": "Wing Cross",
+      "spanish": "Wing Cross"
+    },
+    "name_pointers": [
+      "0x0833D884",
+      "0x0833D884",
+      "0x0833D884",
+      "0x0833D884",
+      "0x0833D884"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 3,
+    "global_id": null,
+    "source_offset": "0x0007B0E4",
+    "runtime_address": "0x0807B0E4",
+    "display_names": {
+      "english": "Down Force Ring",
+      "french": "Down Force Ring",
+      "german": "Down Force Ring",
+      "italian": "Down Force Ring",
+      "spanish": "Down Force Ring"
+    },
+    "name_pointers": [
+      "0x0833D874",
+      "0x0833D874",
+      "0x0833D874",
+      "0x0833D874",
+      "0x0833D874"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 4,
+    "global_id": null,
+    "source_offset": "0x0007B0E8",
+    "runtime_address": "0x0807B0E8",
+    "display_names": {
+      "english": "Upper Force Ring",
+      "french": "Upper Force Ring",
+      "german": "Upper Force Ring",
+      "italian": "Upper Force Ring",
+      "spanish": "Upper Force Ring"
+    },
+    "name_pointers": [
+      "0x0833D860",
+      "0x0833D860",
+      "0x0833D860",
+      "0x0833D860",
+      "0x0833D860"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 5,
+    "global_id": null,
+    "source_offset": "0x0007B0EC",
+    "runtime_address": "0x0807B0EC",
+    "display_names": {
+      "english": "Dragon Head",
+      "french": "Dragon Head",
+      "german": "Dragon Head",
+      "italian": "Dragon Head",
+      "spanish": "Dragon Head"
+    },
+    "name_pointers": [
+      "0x0833D854",
+      "0x0833D854",
+      "0x0833D854",
+      "0x0833D854",
+      "0x0833D854"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 6,
+    "global_id": null,
+    "source_offset": "0x0007B0F0",
+    "runtime_address": "0x0807B0F0",
+    "display_names": {
+      "english": "Scissor Cutter",
+      "french": "Scissor Cutter",
+      "german": "Scissor Cutter",
+      "italian": "Scissor Cutter",
+      "spanish": "Scissor Cutter"
+    },
+    "name_pointers": [
+      "0x0833D844",
+      "0x0833D844",
+      "0x0833D844",
+      "0x0833D844",
+      "0x0833D844"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 7,
+    "global_id": null,
+    "source_offset": "0x0007B0F4",
+    "runtime_address": "0x0807B0F4",
+    "display_names": {
+      "english": "Bound Attack Ring",
+      "french": "Bound Attack Ring",
+      "german": "Bound Attack Ring",
+      "italian": "Bound Attack Ring",
+      "spanish": "Bound Attack Ring"
+    },
+    "name_pointers": [
+      "0x0833D830",
+      "0x0833D830",
+      "0x0833D830",
+      "0x0833D830",
+      "0x0833D830"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 8,
+    "global_id": null,
+    "source_offset": "0x0007B0F8",
+    "runtime_address": "0x0807B0F8",
+    "display_names": {
+      "english": "Bound Defense Ring",
+      "french": "Bound Defense Ring",
+      "german": "Bound Defense Ring",
+      "italian": "Bound Defense Ring",
+      "spanish": "Bound Defense Ring"
+    },
+    "name_pointers": [
+      "0x0833D81C",
+      "0x0833D81C",
+      "0x0833D81C",
+      "0x0833D81C",
+      "0x0833D81C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 9,
+    "global_id": null,
+    "source_offset": "0x0007B0FC",
+    "runtime_address": "0x0807B0FC",
+    "display_names": {
+      "english": "Roller Attack Ring",
+      "french": "Roller Attack Ring",
+      "german": "Roller Attack Ring",
+      "italian": "Roller Attack Ring",
+      "spanish": "Roller Attack Ring"
+    },
+    "name_pointers": [
+      "0x0833D808",
+      "0x0833D808",
+      "0x0833D808",
+      "0x0833D808",
+      "0x0833D808"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 10,
+    "global_id": null,
+    "source_offset": "0x0007B100",
+    "runtime_address": "0x0807B100",
+    "display_names": {
+      "english": "Roller Defense Ring",
+      "french": "Roller Defense Ring",
+      "german": "Roller Defense Ring",
+      "italian": "Roller Defense Ring",
+      "spanish": "Roller Defense Ring"
+    },
+    "name_pointers": [
+      "0x0833D7F4",
+      "0x0833D7F4",
+      "0x0833D7F4",
+      "0x0833D7F4",
+      "0x0833D7F4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 11,
+    "global_id": null,
+    "source_offset": "0x0007B104",
+    "runtime_address": "0x0807B104",
+    "display_names": {
+      "english": "Wing Cutter",
+      "french": "Wing Cutter",
+      "german": "Wing Cutter",
+      "italian": "Wing Cutter",
+      "spanish": "Wing Cutter"
+    },
+    "name_pointers": [
+      "0x0833D7E8",
+      "0x0833D7E8",
+      "0x0833D7E8",
+      "0x0833D7E8",
+      "0x0833D7E8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 12,
+    "global_id": null,
+    "source_offset": "0x0007B108",
+    "runtime_address": "0x0807B108",
+    "display_names": {
+      "english": "Wing Attack Ring",
+      "french": "Wing Attack Ring",
+      "german": "Wing Attack Ring",
+      "italian": "Wing Attack Ring",
+      "spanish": "Wing Attack Ring"
+    },
+    "name_pointers": [
+      "0x0833D7D4",
+      "0x0833D7D4",
+      "0x0833D7D4",
+      "0x0833D7D4",
+      "0x0833D7D4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 13,
+    "global_id": null,
+    "source_offset": "0x0007B10C",
+    "runtime_address": "0x0807B10C",
+    "display_names": {
+      "english": "Wing Defense Ring",
+      "french": "Wing Defense Ring",
+      "german": "Wing Defense Ring",
+      "italian": "Wing Defense Ring",
+      "spanish": "Wing Defense Ring"
+    },
+    "name_pointers": [
+      "0x0833D7C0",
+      "0x0833D7C0",
+      "0x0833D7C0",
+      "0x0833D7C0",
+      "0x0833D7C0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 14,
+    "global_id": null,
+    "source_offset": "0x0007B110",
+    "runtime_address": "0x0807B110",
+    "display_names": {
+      "english": "Max Shield",
+      "french": "Max Shield",
+      "german": "Max Shield",
+      "italian": "Max Shield",
+      "spanish": "Max Shield"
+    },
+    "name_pointers": [
+      "0x0833D7B4",
+      "0x0833D7B4",
+      "0x0833D7B4",
+      "0x0833D7B4",
+      "0x0833D7B4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 15,
+    "global_id": null,
+    "source_offset": "0x0007B114",
+    "runtime_address": "0x0807B114",
+    "display_names": {
+      "english": "Reverse Dragon",
+      "french": "Reverse Dragon",
+      "german": "Reverse Dragon",
+      "italian": "Reverse Dragon",
+      "spanish": "Reverse Dragon"
+    },
+    "name_pointers": [
+      "0x0833D7A4",
+      "0x0833D7A4",
+      "0x0833D7A4",
+      "0x0833D7A4",
+      "0x0833D7A4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 16,
+    "global_id": null,
+    "source_offset": "0x0007B118",
+    "runtime_address": "0x0807B118",
+    "display_names": {
+      "english": "Tiger Defender",
+      "french": "Tiger Defender",
+      "german": "Tiger Defender",
+      "italian": "Tiger Defender",
+      "spanish": "Tiger Defender"
+    },
+    "name_pointers": [
+      "0x0833D794",
+      "0x0833D794",
+      "0x0833D794",
+      "0x0833D794",
+      "0x0833D794"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 17,
+    "global_id": null,
+    "source_offset": "0x0007B11C",
+    "runtime_address": "0x0807B11C",
+    "display_names": {
+      "english": "Star Shape",
+      "french": "Star Shape",
+      "german": "Star Shape",
+      "italian": "Star Shape",
+      "spanish": "Star Shape"
+    },
+    "name_pointers": [
+      "0x0833D788",
+      "0x0833D788",
+      "0x0833D788",
+      "0x0833D788",
+      "0x0833D788"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 18,
+    "global_id": null,
+    "source_offset": "0x0007B120",
+    "runtime_address": "0x0807B120",
+    "display_names": {
+      "english": "Knight Crow's Ring",
+      "french": "Knight Crow's Ring",
+      "german": "Knight Crow's Ring",
+      "italian": "Knight Crow's Ring",
+      "spanish": "Knight Crow's Ring"
+    },
+    "name_pointers": [
+      "0x0833D774",
+      "0x0833D774",
+      "0x0833D774",
+      "0x0833D774",
+      "0x0833D774"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 19,
+    "global_id": null,
+    "source_offset": "0x0007B124",
+    "runtime_address": "0x0807B124",
+    "display_names": {
+      "english": "Turtle Survivor",
+      "french": "Turtle Survivor",
+      "german": "Turtle Survivor",
+      "italian": "Turtle Survivor",
+      "spanish": "Turtle Survivor"
+    },
+    "name_pointers": [
+      "0x0833D764",
+      "0x0833D764",
+      "0x0833D764",
+      "0x0833D764",
+      "0x0833D764"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 20,
+    "global_id": null,
+    "source_offset": "0x0007B128",
+    "runtime_address": "0x0807B128",
+    "display_names": {
+      "english": "Upper Dragoon",
+      "french": "Upper Dragoon",
+      "german": "Upper Dragoon",
+      "italian": "Upper Dragoon",
+      "spanish": "Upper Dragoon"
+    },
+    "name_pointers": [
+      "0x0833D754",
+      "0x0833D754",
+      "0x0833D754",
+      "0x0833D754",
+      "0x0833D754"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 21,
+    "global_id": null,
+    "source_offset": "0x0007B12C",
+    "runtime_address": "0x0807B12C",
+    "display_names": {
+      "english": "Double Wing",
+      "french": "Double Wing",
+      "german": "Double Wing",
+      "italian": "Double Wing",
+      "spanish": "Double Wing"
+    },
+    "name_pointers": [
+      "0x0833D748",
+      "0x0833D748",
+      "0x0833D748",
+      "0x0833D748",
+      "0x0833D748"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 22,
+    "global_id": null,
+    "source_offset": "0x0007B130",
+    "runtime_address": "0x0807B130",
+    "display_names": {
+      "english": "Roaring Lion",
+      "french": "Roaring Lion",
+      "german": "Roaring Lion",
+      "italian": "Roaring Lion",
+      "spanish": "Roaring Lion"
+    },
+    "name_pointers": [
+      "0x0833D738",
+      "0x0833D738",
+      "0x0833D738",
+      "0x0833D738",
+      "0x0833D738"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 23,
+    "global_id": null,
+    "source_offset": "0x0007B134",
+    "runtime_address": "0x0807B134",
+    "display_names": {
+      "english": "Roaring Bear",
+      "french": "Roaring Bear",
+      "german": "Roaring Bear",
+      "italian": "Roaring Bear",
+      "spanish": "Roaring Bear"
+    },
+    "name_pointers": [
+      "0x0833D728",
+      "0x0833D728",
+      "0x0833D728",
+      "0x0833D728",
+      "0x0833D728"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 24,
+    "global_id": null,
+    "source_offset": "0x0007B138",
+    "runtime_address": "0x0807B138",
+    "display_names": {
+      "english": "Roaring Monkey",
+      "french": "Roaring Monkey",
+      "german": "Roaring Monkey",
+      "italian": "Roaring Monkey",
+      "spanish": "Roaring Monkey"
+    },
+    "name_pointers": [
+      "0x0833D718",
+      "0x0833D718",
+      "0x0833D718",
+      "0x0833D718",
+      "0x0833D718"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 25,
+    "global_id": null,
+    "source_offset": "0x0007B13C",
+    "runtime_address": "0x0807B13C",
+    "display_names": {
+      "english": "Reverse Wolf",
+      "french": "Reverse Wolf",
+      "german": "Reverse Wolf",
+      "italian": "Reverse Wolf",
+      "spanish": "Reverse Wolf"
+    },
+    "name_pointers": [
+      "0x0833D708",
+      "0x0833D708",
+      "0x0833D708",
+      "0x0833D708",
+      "0x0833D708"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 26,
+    "global_id": null,
+    "source_offset": "0x0007B140",
+    "runtime_address": "0x0807B140",
+    "display_names": {
+      "english": "Whale Attacker",
+      "french": "Whale Attacker",
+      "german": "Whale Attacker",
+      "italian": "Whale Attacker",
+      "spanish": "Whale Attacker"
+    },
+    "name_pointers": [
+      "0x0833D6F8",
+      "0x0833D6F8",
+      "0x0833D6F8",
+      "0x0833D6F8",
+      "0x0833D6F8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 27,
+    "global_id": null,
+    "source_offset": "0x0007B144",
+    "runtime_address": "0x0807B144",
+    "display_names": {
+      "english": "Cross Spike",
+      "french": "Cross Spike",
+      "german": "Cross Spike",
+      "italian": "Cross Spike",
+      "spanish": "Cross Spike"
+    },
+    "name_pointers": [
+      "0x0833D6EC",
+      "0x0833D6EC",
+      "0x0833D6EC",
+      "0x0833D6EC",
+      "0x0833D6EC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 28,
+    "global_id": null,
+    "source_offset": "0x0007B148",
+    "runtime_address": "0x0807B148",
+    "display_names": {
+      "english": "Triple Wing",
+      "french": "Triple Wing",
+      "german": "Triple Wing",
+      "italian": "Triple Wing",
+      "spanish": "Triple Wing"
+    },
+    "name_pointers": [
+      "0x0833D6E0",
+      "0x0833D6E0",
+      "0x0833D6E0",
+      "0x0833D6E0",
+      "0x0833D6E0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 29,
+    "global_id": null,
+    "source_offset": "0x0007B14C",
+    "runtime_address": "0x0807B14C",
+    "display_names": {
+      "english": "Flying Defender",
+      "french": "Flying Defender",
+      "german": "Flying Defender",
+      "italian": "Flying Defender",
+      "spanish": "Flying Defender"
+    },
+    "name_pointers": [
+      "0x0833D6D0",
+      "0x0833D6D0",
+      "0x0833D6D0",
+      "0x0833D6D0",
+      "0x0833D6D0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 30,
+    "global_id": null,
+    "source_offset": "0x0007B150",
+    "runtime_address": "0x0807B150",
+    "display_names": {
+      "english": "Cross Fang",
+      "french": "Cross Fang",
+      "german": "Cross Fang",
+      "italian": "Cross Fang",
+      "spanish": "Cross Fang"
+    },
+    "name_pointers": [
+      "0x0833D6C4",
+      "0x0833D6C4",
+      "0x0833D6C4",
+      "0x0833D6C4",
+      "0x0833D6C4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 31,
+    "global_id": null,
+    "source_offset": "0x0007B154",
+    "runtime_address": "0x0807B154",
+    "display_names": {
+      "english": "Dual Dragon",
+      "french": "Dual Dragon",
+      "german": "Dual Dragon",
+      "italian": "Dual Dragon",
+      "spanish": "Dual Dragon"
+    },
+    "name_pointers": [
+      "0x0833D6B8",
+      "0x0833D6B8",
+      "0x0833D6B8",
+      "0x0833D6B8",
+      "0x0833D6B8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 32,
+    "global_id": null,
+    "source_offset": "0x0007B158",
+    "runtime_address": "0x0807B158",
+    "display_names": {
+      "english": "Flame Wing",
+      "french": "Flame Wing",
+      "german": "Flame Wing",
+      "italian": "Flame Wing",
+      "spanish": "Flame Wing"
+    },
+    "name_pointers": [
+      "0x0833D6AC",
+      "0x0833D6AC",
+      "0x0833D6AC",
+      "0x0833D6AC",
+      "0x0833D6AC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 33,
+    "global_id": null,
+    "source_offset": "0x0007B15C",
+    "runtime_address": "0x0807B15C",
+    "display_names": {
+      "english": "Cross Griffon",
+      "french": "Cross Griffon",
+      "german": "Cross Griffon",
+      "italian": "Cross Griffon",
+      "spanish": "Cross Griffon"
+    },
+    "name_pointers": [
+      "0x0833D69C",
+      "0x0833D69C",
+      "0x0833D69C",
+      "0x0833D69C",
+      "0x0833D69C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 34,
+    "global_id": null,
+    "source_offset": "0x0007B160",
+    "runtime_address": "0x0807B160",
+    "display_names": {
+      "english": "Smash Turtle",
+      "french": "Smash Turtle",
+      "german": "Smash Turtle",
+      "italian": "Smash Turtle",
+      "spanish": "Smash Turtle"
+    },
+    "name_pointers": [
+      "0x0833D68C",
+      "0x0833D68C",
+      "0x0833D68C",
+      "0x0833D68C",
+      "0x0833D68C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 35,
+    "global_id": null,
+    "source_offset": "0x0007B164",
+    "runtime_address": "0x0807B164",
+    "display_names": {
+      "english": "Eight Spikes",
+      "french": "Eight Spikes",
+      "german": "Eight Spikes",
+      "italian": "Eight Spikes",
+      "spanish": "Eight Spikes"
+    },
+    "name_pointers": [
+      "0x0833D67C",
+      "0x0833D67C",
+      "0x0833D67C",
+      "0x0833D67C",
+      "0x0833D67C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 36,
+    "global_id": null,
+    "source_offset": "0x0007B168",
+    "runtime_address": "0x0807B168",
+    "display_names": {
+      "english": "Double Snake",
+      "french": "Double Snake",
+      "german": "Double Snake",
+      "italian": "Double Snake",
+      "spanish": "Double Snake"
+    },
+    "name_pointers": [
+      "0x0833D66C",
+      "0x0833D66C",
+      "0x0833D66C",
+      "0x0833D66C",
+      "0x0833D66C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 37,
+    "global_id": null,
+    "source_offset": "0x0007B16C",
+    "runtime_address": "0x0807B16C",
+    "display_names": {
+      "english": "Upper Wolf",
+      "french": "Upper Wolf",
+      "german": "Upper Wolf",
+      "italian": "Upper Wolf",
+      "spanish": "Upper Wolf"
+    },
+    "name_pointers": [
+      "0x0833D660",
+      "0x0833D660",
+      "0x0833D660",
+      "0x0833D660",
+      "0x0833D660"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 38,
+    "global_id": null,
+    "source_offset": "0x0007B170",
+    "runtime_address": "0x0807B170",
+    "display_names": {
+      "english": "Eight Attackers",
+      "french": "Eight Attackers",
+      "german": "Eight Attackers",
+      "italian": "Eight Attackers",
+      "spanish": "Eight Attackers"
+    },
+    "name_pointers": [
+      "0x0833D650",
+      "0x0833D650",
+      "0x0833D650",
+      "0x0833D650",
+      "0x0833D650"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 39,
+    "global_id": null,
+    "source_offset": "0x0007B174",
+    "runtime_address": "0x0807B174",
+    "display_names": {
+      "english": "Panther Claw",
+      "french": "Panther Claw",
+      "german": "Panther Claw",
+      "italian": "Panther Claw",
+      "spanish": "Panther Claw"
+    },
+    "name_pointers": [
+      "0x0833D640",
+      "0x0833D640",
+      "0x0833D640",
+      "0x0833D640",
+      "0x0833D640"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 40,
+    "global_id": null,
+    "source_offset": "0x0007B178",
+    "runtime_address": "0x0807B178",
+    "display_names": {
+      "english": "Sonic Tiger",
+      "french": "Sonic Tiger",
+      "german": "Sonic Tiger",
+      "italian": "Sonic Tiger",
+      "spanish": "Sonic Tiger"
+    },
+    "name_pointers": [
+      "0x0833D634",
+      "0x0833D634",
+      "0x0833D634",
+      "0x0833D634",
+      "0x0833D634"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 41,
+    "global_id": null,
+    "source_offset": "0x0007B17C",
+    "runtime_address": "0x0807B17C",
+    "display_names": {
+      "english": "Cross Attacker",
+      "french": "Cross Attacker",
+      "german": "Cross Attacker",
+      "italian": "Cross Attacker",
+      "spanish": "Cross Attacker"
+    },
+    "name_pointers": [
+      "0x0833D624",
+      "0x0833D624",
+      "0x0833D624",
+      "0x0833D624",
+      "0x0833D624"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 42,
+    "global_id": null,
+    "source_offset": "0x0007B180",
+    "runtime_address": "0x0807B180",
+    "display_names": {
+      "english": "Cybernetic Dragon",
+      "french": "Cybernetic Dragon",
+      "german": "Cybernetic Dragon",
+      "italian": "Cybernetic Dragon",
+      "spanish": "Cybernetic Dragon"
+    },
+    "name_pointers": [
+      "0x0833D610",
+      "0x0833D610",
+      "0x0833D610",
+      "0x0833D610",
+      "0x0833D610"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 43,
+    "global_id": null,
+    "source_offset": "0x0007B184",
+    "runtime_address": "0x0807B184",
+    "display_names": {
+      "english": "Ten Spike",
+      "french": "Ten Spike",
+      "german": "Ten Spike",
+      "italian": "Ten Spike",
+      "spanish": "Ten Spike"
+    },
+    "name_pointers": [
+      "0x0833D604",
+      "0x0833D604",
+      "0x0833D604",
+      "0x0833D604",
+      "0x0833D604"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 44,
+    "global_id": null,
+    "source_offset": "0x0007B188",
+    "runtime_address": "0x0807B188",
+    "display_names": {
+      "english": "Spike Dragoon",
+      "french": "Spike Dragoon",
+      "german": "Spike Dragoon",
+      "italian": "Spike Dragoon",
+      "spanish": "Spike Dragoon"
+    },
+    "name_pointers": [
+      "0x0833D5F4",
+      "0x0833D5F4",
+      "0x0833D5F4",
+      "0x0833D5F4",
+      "0x0833D5F4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 45,
+    "global_id": null,
+    "source_offset": "0x0007B18C",
+    "runtime_address": "0x0807B18C",
+    "display_names": {
+      "english": "Dragoon Saucer",
+      "french": "Dragoon Saucer",
+      "german": "Dragoon Saucer",
+      "italian": "Dragoon Saucer",
+      "spanish": "Dragoon Saucer"
+    },
+    "name_pointers": [
+      "0x0833D5E4",
+      "0x0833D5E4",
+      "0x0833D5E4",
+      "0x0833D5E4",
+      "0x0833D5E4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 46,
+    "global_id": null,
+    "source_offset": "0x0007B190",
+    "runtime_address": "0x0807B190",
+    "display_names": {
+      "english": "Ultimate Attacker",
+      "french": "Ultimate Attacker",
+      "german": "Ultimate Attacker",
+      "italian": "Ultimate Attacker",
+      "spanish": "Ultimate Attacker"
+    },
+    "name_pointers": [
+      "0x0833D5D0",
+      "0x0833D5D0",
+      "0x0833D5D0",
+      "0x0833D5D0",
+      "0x0833D5D0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 47,
+    "global_id": null,
+    "source_offset": "0x0007B194",
+    "runtime_address": "0x0807B194",
+    "display_names": {
+      "english": "G Upper",
+      "french": "G Upper",
+      "german": "G Upper",
+      "italian": "G Upper",
+      "spanish": "G Upper"
+    },
+    "name_pointers": [
+      "0x0833D5C8",
+      "0x0833D5C8",
+      "0x0833D5C8",
+      "0x0833D5C8",
+      "0x0833D5C8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 48,
+    "global_id": null,
+    "source_offset": "0x0007B198",
+    "runtime_address": "0x0807B198",
+    "display_names": {
+      "english": "Triple Tiger",
+      "french": "Triple Tiger",
+      "german": "Triple Tiger",
+      "italian": "Triple Tiger",
+      "spanish": "Triple Tiger"
+    },
+    "name_pointers": [
+      "0x0833D5B8",
+      "0x0833D5B8",
+      "0x0833D5B8",
+      "0x0833D5B8",
+      "0x0833D5B8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 49,
+    "global_id": null,
+    "source_offset": "0x0007B19C",
+    "runtime_address": "0x0807B19C",
+    "display_names": {
+      "english": "Upper Claws",
+      "french": "Upper Claws",
+      "german": "Upper Claws",
+      "italian": "Upper Claws",
+      "spanish": "Upper Claws"
+    },
+    "name_pointers": [
+      "0x0833D5AC",
+      "0x0833D5AC",
+      "0x0833D5AC",
+      "0x0833D5AC",
+      "0x0833D5AC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 50,
+    "global_id": null,
+    "source_offset": "0x0007B1A0",
+    "runtime_address": "0x0807B1A0",
+    "display_names": {
+      "english": "Knight Claw Ring",
+      "french": "Knight Claw Ring",
+      "german": "Knight Claw Ring",
+      "italian": "Knight Claw Ring",
+      "spanish": "Knight Claw Ring"
+    },
+    "name_pointers": [
+      "0x0833D598",
+      "0x0833D598",
+      "0x0833D598",
+      "0x0833D598",
+      "0x0833D598"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 51,
+    "global_id": null,
+    "source_offset": "0x0007B1A4",
+    "runtime_address": "0x0807B1A4",
+    "display_names": {
+      "english": "Strike Turtle",
+      "french": "Strike Turtle",
+      "german": "Strike Turtle",
+      "italian": "Strike Turtle",
+      "spanish": "Strike Turtle"
+    },
+    "name_pointers": [
+      "0x0833D588",
+      "0x0833D588",
+      "0x0833D588",
+      "0x0833D588",
+      "0x0833D588"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 52,
+    "global_id": null,
+    "source_offset": "0x0007B1A8",
+    "runtime_address": "0x0807B1A8",
+    "display_names": {
+      "english": "Metal Defender",
+      "french": "Metal Defender",
+      "german": "Metal Defender",
+      "italian": "Metal Defender",
+      "spanish": "Metal Defender"
+    },
+    "name_pointers": [
+      "0x0833D578",
+      "0x0833D578",
+      "0x0833D578",
+      "0x0833D578",
+      "0x0833D578"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 53,
+    "global_id": null,
+    "source_offset": "0x0007B1AC",
+    "runtime_address": "0x0807B1AC",
+    "display_names": {
+      "english": "Whale Crusher",
+      "french": "Whale Crusher",
+      "german": "Whale Crusher",
+      "italian": "Whale Crusher",
+      "spanish": "Whale Crusher"
+    },
+    "name_pointers": [
+      "0x0833D568",
+      "0x0833D568",
+      "0x0833D568",
+      "0x0833D568",
+      "0x0833D568"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 54,
+    "global_id": null,
+    "source_offset": "0x0007B1B0",
+    "runtime_address": "0x0807B1B0",
+    "display_names": {
+      "english": "War Lion",
+      "french": "War Lion",
+      "german": "War Lion",
+      "italian": "War Lion",
+      "spanish": "War Lion"
+    },
+    "name_pointers": [
+      "0x0833D55C",
+      "0x0833D55C",
+      "0x0833D55C",
+      "0x0833D55C",
+      "0x0833D55C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 55,
+    "global_id": null,
+    "source_offset": "0x0007B1B4",
+    "runtime_address": "0x0807B1B4",
+    "display_names": {
+      "english": "War Monkey",
+      "french": "War Monkey",
+      "german": "War Monkey",
+      "italian": "War Monkey",
+      "spanish": "War Monkey"
+    },
+    "name_pointers": [
+      "0x0833D550",
+      "0x0833D550",
+      "0x0833D550",
+      "0x0833D550",
+      "0x0833D550"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 56,
+    "global_id": null,
+    "source_offset": "0x0007B1B8",
+    "runtime_address": "0x0807B1B8",
+    "display_names": {
+      "english": "Wing Upper",
+      "french": "Wing Upper",
+      "german": "Wing Upper",
+      "italian": "Wing Upper",
+      "spanish": "Wing Upper"
+    },
+    "name_pointers": [
+      "0x0833D544",
+      "0x0833D544",
+      "0x0833D544",
+      "0x0833D544",
+      "0x0833D544"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 57,
+    "global_id": null,
+    "source_offset": "0x0007B1BC",
+    "runtime_address": "0x0807B1BC",
+    "display_names": {
+      "english": "Double Horn",
+      "french": "Double Horn",
+      "german": "Double Horn",
+      "italian": "Double Horn",
+      "spanish": "Double Horn"
+    },
+    "name_pointers": [
+      "0x0833D538",
+      "0x0833D538",
+      "0x0833D538",
+      "0x0833D538",
+      "0x0833D538"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 58,
+    "global_id": null,
+    "source_offset": "0x0007B1C0",
+    "runtime_address": "0x0807B1C0",
+    "display_names": {
+      "english": "Holy Despell",
+      "french": "Holy Despell",
+      "german": "Holy Despell",
+      "italian": "Holy Despell",
+      "spanish": "Holy Despell"
+    },
+    "name_pointers": [
+      "0x0833D528",
+      "0x0833D528",
+      "0x0833D528",
+      "0x0833D528",
+      "0x0833D528"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 59,
+    "global_id": null,
+    "source_offset": "0x0007B1C4",
+    "runtime_address": "0x0807B1C4",
+    "display_names": {
+      "english": "Scissor Attacker",
+      "french": "Scissor Attacker",
+      "german": "Scissor Attacker",
+      "italian": "Scissor Attacker",
+      "spanish": "Scissor Attacker"
+    },
+    "name_pointers": [
+      "0x0833D514",
+      "0x0833D514",
+      "0x0833D514",
+      "0x0833D514",
+      "0x0833D514"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 60,
+    "global_id": null,
+    "source_offset": "0x0007B1C8",
+    "runtime_address": "0x0807B1C8",
+    "display_names": {
+      "english": "Wing Survivor",
+      "french": "Wing Survivor",
+      "german": "Wing Survivor",
+      "italian": "Wing Survivor",
+      "spanish": "Wing Survivor"
+    },
+    "name_pointers": [
+      "0x0833D504",
+      "0x0833D504",
+      "0x0833D504",
+      "0x0833D504",
+      "0x0833D504"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 61,
+    "global_id": null,
+    "source_offset": "0x0007B1CC",
+    "runtime_address": "0x0807B1CC",
+    "display_names": {
+      "english": "Star Wolf",
+      "french": "Star Wolf",
+      "german": "Star Wolf",
+      "italian": "Star Wolf",
+      "spanish": "Star Wolf"
+    },
+    "name_pointers": [
+      "0x0833D4F8",
+      "0x0833D4F8",
+      "0x0833D4F8",
+      "0x0833D4F8",
+      "0x0833D4F8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 62,
+    "global_id": null,
+    "source_offset": "0x0007B1D0",
+    "runtime_address": "0x0807B1D0",
+    "display_names": {
+      "english": "Triangle Wing",
+      "french": "Triangle Wing",
+      "german": "Triangle Wing",
+      "italian": "Triangle Wing",
+      "spanish": "Triangle Wing"
+    },
+    "name_pointers": [
+      "0x0833D4E8",
+      "0x0833D4E8",
+      "0x0833D4E8",
+      "0x0833D4E8",
+      "0x0833D4E8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 63,
+    "global_id": null,
+    "source_offset": "0x0007B1D4",
+    "runtime_address": "0x0807B1D4",
+    "display_names": {
+      "english": "Metal Saucer",
+      "french": "Metal Saucer",
+      "german": "Metal Saucer",
+      "italian": "Metal Saucer",
+      "spanish": "Metal Saucer"
+    },
+    "name_pointers": [
+      "0x0833D4D8",
+      "0x0833D4D8",
+      "0x0833D4D8",
+      "0x0833D4D8",
+      "0x0833D4D8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 64,
+    "global_id": null,
+    "source_offset": "0x0007B1D8",
+    "runtime_address": "0x0807B1D8",
+    "display_names": {
+      "english": "Metal Upper",
+      "french": "Metal Upper",
+      "german": "Metal Upper",
+      "italian": "Metal Upper",
+      "spanish": "Metal Upper"
+    },
+    "name_pointers": [
+      "0x0833D4CC",
+      "0x0833D4CC",
+      "0x0833D4CC",
+      "0x0833D4CC",
+      "0x0833D4CC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 65,
+    "global_id": null,
+    "source_offset": "0x0007B1DC",
+    "runtime_address": "0x0807B1DC",
+    "display_names": {
+      "english": "Metal Attacker",
+      "french": "Metal Attacker",
+      "german": "Metal Attacker",
+      "italian": "Metal Attacker",
+      "spanish": "Metal Attacker"
+    },
+    "name_pointers": [
+      "0x0833D4BC",
+      "0x0833D4BC",
+      "0x0833D4BC",
+      "0x0833D4BC",
+      "0x0833D4BC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 66,
+    "global_id": null,
+    "source_offset": "0x0007B1E0",
+    "runtime_address": "0x0807B1E0",
+    "display_names": {
+      "english": "Gigantic Claw",
+      "french": "Gigantic Claw",
+      "german": "Gigantic Claw",
+      "italian": "Gigantic Claw",
+      "spanish": "Gigantic Claw"
+    },
+    "name_pointers": [
+      "0x0833D4AC",
+      "0x0833D4AC",
+      "0x0833D4AC",
+      "0x0833D4AC",
+      "0x0833D4AC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 67,
+    "global_id": null,
+    "source_offset": "0x0007B1E4",
+    "runtime_address": "0x0807B1E4",
+    "display_names": {
+      "english": "DJ Spiker",
+      "french": "DJ Spiker",
+      "german": "DJ Spiker",
+      "italian": "DJ Spiker",
+      "spanish": "DJ Spiker"
+    },
+    "name_pointers": [
+      "0x0833D4A0",
+      "0x0833D4A0",
+      "0x0833D4A0",
+      "0x0833D4A0",
+      "0x0833D4A0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 68,
+    "global_id": null,
+    "source_offset": "0x0007B1E8",
+    "runtime_address": "0x0807B1E8",
+    "display_names": {
+      "english": "Spiral Upper",
+      "french": "Spiral Upper",
+      "german": "Spiral Upper",
+      "italian": "Spiral Upper",
+      "spanish": "Spiral Upper"
+    },
+    "name_pointers": [
+      "0x0833D490",
+      "0x0833D490",
+      "0x0833D490",
+      "0x0833D490",
+      "0x0833D490"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 69,
+    "global_id": null,
+    "source_offset": "0x0007B1EC",
+    "runtime_address": "0x0807B1EC",
+    "display_names": {
+      "english": "Panther Head",
+      "french": "Panther Head",
+      "german": "Panther Head",
+      "italian": "Panther Head",
+      "spanish": "Panther Head"
+    },
+    "name_pointers": [
+      "0x0833D480",
+      "0x0833D480",
+      "0x0833D480",
+      "0x0833D480",
+      "0x0833D480"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 70,
+    "global_id": null,
+    "source_offset": "0x0007B1F0",
+    "runtime_address": "0x0807B1F0",
+    "display_names": {
+      "english": "Jungle Shock",
+      "french": "Jungle Shock",
+      "german": "Jungle Shock",
+      "italian": "Jungle Shock",
+      "spanish": "Jungle Shock"
+    },
+    "name_pointers": [
+      "0x0833D470",
+      "0x0833D470",
+      "0x0833D470",
+      "0x0833D470",
+      "0x0833D470"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 71,
+    "global_id": null,
+    "source_offset": "0x0007B1F4",
+    "runtime_address": "0x0807B1F4",
+    "display_names": {
+      "english": "Howling Leo",
+      "french": "Howling Leo",
+      "german": "Howling Leo",
+      "italian": "Howling Leo",
+      "spanish": "Howling Leo"
+    },
+    "name_pointers": [
+      "0x0833D464",
+      "0x0833D464",
+      "0x0833D464",
+      "0x0833D464",
+      "0x0833D464"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 72,
+    "global_id": null,
+    "source_offset": "0x0007B1F8",
+    "runtime_address": "0x0807B1F8",
+    "display_names": {
+      "english": "Genocide Circle",
+      "french": "Genocide Circle",
+      "german": "Genocide Circle",
+      "italian": "Genocide Circle",
+      "spanish": "Genocide Circle"
+    },
+    "name_pointers": [
+      "0x0833D454",
+      "0x0833D454",
+      "0x0833D454",
+      "0x0833D454",
+      "0x0833D454"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 73,
+    "global_id": null,
+    "source_offset": "0x0007B1FC",
+    "runtime_address": "0x0807B1FC",
+    "display_names": {
+      "english": "Penta Wing",
+      "french": "Penta Wing",
+      "german": "Penta Wing",
+      "italian": "Penta Wing",
+      "spanish": "Penta Wing"
+    },
+    "name_pointers": [
+      "0x0833D448",
+      "0x0833D448",
+      "0x0833D448",
+      "0x0833D448",
+      "0x0833D448"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 74,
+    "global_id": null,
+    "source_offset": "0x0007B200",
+    "runtime_address": "0x0807B200",
+    "display_names": {
+      "english": "Triple Peak",
+      "french": "Triple Peak",
+      "german": "Triple Peak",
+      "italian": "Triple Peak",
+      "spanish": "Triple Peak"
+    },
+    "name_pointers": [
+      "0x0833D43C",
+      "0x0833D43C",
+      "0x0833D43C",
+      "0x0833D43C",
+      "0x0833D43C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 75,
+    "global_id": null,
+    "source_offset": "0x0007B204",
+    "runtime_address": "0x0807B204",
+    "display_names": {
+      "english": "Sheild Hammer",
+      "french": "Sheild Hammer",
+      "german": "Sheild Hammer",
+      "italian": "Sheild Hammer",
+      "spanish": "Sheild Hammer"
+    },
+    "name_pointers": [
+      "0x0833D42C",
+      "0x0833D42C",
+      "0x0833D42C",
+      "0x0833D42C",
+      "0x0833D42C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "attack-rings",
+    "local_id": 76,
+    "global_id": null,
+    "source_offset": "0x0007B208",
+    "runtime_address": "0x0807B208",
+    "display_names": {
+      "english": "Hammer Task",
+      "french": "Hammer Task",
+      "german": "Hammer Task",
+      "italian": "Hammer Task",
+      "spanish": "Hammer Task"
+    },
+    "name_pointers": [
+      "0x0833D420",
+      "0x0833D420",
+      "0x0833D420",
+      "0x0833D420",
+      "0x0833D420"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 0,
+    "global_id": null,
+    "source_offset": "0x0007B824",
+    "runtime_address": "0x0807B824",
+    "display_names": {
+      "english": "Flat",
+      "french": "Flat",
+      "german": "Flat",
+      "italian": "Flat",
+      "spanish": "Flat"
+    },
+    "name_pointers": [
+      "0x0833DB28",
+      "0x0833DB28",
+      "0x0833DB28",
+      "0x0833DB28",
+      "0x0833DB28"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 1,
+    "global_id": null,
+    "source_offset": "0x0007B828",
+    "runtime_address": "0x0807B828",
+    "display_names": {
+      "english": "Sharp",
+      "french": "Sharp",
+      "german": "Sharp",
+      "italian": "Sharp",
+      "spanish": "Sharp"
+    },
+    "name_pointers": [
+      "0x0833DB20",
+      "0x0833DB20",
+      "0x0833DB20",
+      "0x0833DB20",
+      "0x0833DB20"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 2,
+    "global_id": null,
+    "source_offset": "0x0007B82C",
+    "runtime_address": "0x0807B82C",
+    "display_names": {
+      "english": "Semi-Flat",
+      "french": "Semi-Flat",
+      "german": "Semi-Flat",
+      "italian": "Semi-Flat",
+      "spanish": "Semi-Flat"
+    },
+    "name_pointers": [
+      "0x0833DB14",
+      "0x0833DB14",
+      "0x0833DB14",
+      "0x0833DB14",
+      "0x0833DB14"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 3,
+    "global_id": null,
+    "source_offset": "0x0007B830",
+    "runtime_address": "0x0807B830",
+    "display_names": {
+      "english": "Grip",
+      "french": "Grip",
+      "german": "Grip",
+      "italian": "Grip",
+      "spanish": "Grip"
+    },
+    "name_pointers": [
+      "0x0833DB0C",
+      "0x0833DB0C",
+      "0x0833DB0C",
+      "0x0833DB0C",
+      "0x0833DB0C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 4,
+    "global_id": null,
+    "source_offset": "0x0007B834",
+    "runtime_address": "0x0807B834",
+    "display_names": {
+      "english": "Bearing",
+      "french": "Bearing",
+      "german": "Bearing",
+      "italian": "Bearing",
+      "spanish": "Bearing"
+    },
+    "name_pointers": [
+      "0x0833DB04",
+      "0x0833DB04",
+      "0x0833DB04",
+      "0x0833DB04",
+      "0x0833DB04"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 5,
+    "global_id": null,
+    "source_offset": "0x0007B838",
+    "runtime_address": "0x0807B838",
+    "display_names": {
+      "english": "Auto-Change",
+      "french": "Auto-Change",
+      "german": "Auto-Change",
+      "italian": "Auto-Change",
+      "spanish": "Auto-Change"
+    },
+    "name_pointers": [
+      "0x0833DAF8",
+      "0x0833DAF8",
+      "0x0833DAF8",
+      "0x0833DAF8",
+      "0x0833DAF8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 6,
+    "global_id": null,
+    "source_offset": "0x0007B83C",
+    "runtime_address": "0x0807B83C",
+    "display_names": {
+      "english": "Metal Ball",
+      "french": "Metal Ball",
+      "german": "Metal Ball",
+      "italian": "Metal Ball",
+      "spanish": "Metal Ball"
+    },
+    "name_pointers": [
+      "0x0833DAEC",
+      "0x0833DAEC",
+      "0x0833DAEC",
+      "0x0833DAEC",
+      "0x0833DAEC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 7,
+    "global_id": null,
+    "source_offset": "0x0007B840",
+    "runtime_address": "0x0807B840",
+    "display_names": {
+      "english": "Storm Grip",
+      "french": "Storm Grip",
+      "german": "Storm Grip",
+      "italian": "Storm Grip",
+      "spanish": "Storm Grip"
+    },
+    "name_pointers": [
+      "0x0833DAE0",
+      "0x0833DAE0",
+      "0x0833DAE0",
+      "0x0833DAE0",
+      "0x0833DAE0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 8,
+    "global_id": null,
+    "source_offset": "0x0007B844",
+    "runtime_address": "0x0807B844",
+    "display_names": {
+      "english": "Metal Change",
+      "french": "Metal Change",
+      "german": "Metal Change",
+      "italian": "Metal Change",
+      "spanish": "Metal Change"
+    },
+    "name_pointers": [
+      "0x0833DAD0",
+      "0x0833DAD0",
+      "0x0833DAD0",
+      "0x0833DAD0",
+      "0x0833DAD0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 9,
+    "global_id": null,
+    "source_offset": "0x0007B848",
+    "runtime_address": "0x0807B848",
+    "display_names": {
+      "english": "SG Sharp",
+      "french": "SG Sharp",
+      "german": "SG Sharp",
+      "italian": "SG Sharp",
+      "spanish": "SG Sharp"
+    },
+    "name_pointers": [
+      "0x0833DAC4",
+      "0x0833DAC4",
+      "0x0833DAC4",
+      "0x0833DAC4",
+      "0x0833DAC4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 10,
+    "global_id": null,
+    "source_offset": "0x0007B84C",
+    "runtime_address": "0x0807B84C",
+    "display_names": {
+      "english": "SG Semi-Flat",
+      "french": "SG Semi-Flat",
+      "german": "SG Semi-Flat",
+      "italian": "SG Semi-Flat",
+      "spanish": "SG Semi-Flat"
+    },
+    "name_pointers": [
+      "0x0833DAB4",
+      "0x0833DAB4",
+      "0x0833DAB4",
+      "0x0833DAB4",
+      "0x0833DAB4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 11,
+    "global_id": null,
+    "source_offset": "0x0007B850",
+    "runtime_address": "0x0807B850",
+    "display_names": {
+      "english": "Metal Sting",
+      "french": "Metal Sting",
+      "german": "Metal Sting",
+      "italian": "Metal Sting",
+      "spanish": "Metal Sting"
+    },
+    "name_pointers": [
+      "0x0833DAA8",
+      "0x0833DAA8",
+      "0x0833DAA8",
+      "0x0833DAA8",
+      "0x0833DAA8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 12,
+    "global_id": null,
+    "source_offset": "0x0007B854",
+    "runtime_address": "0x0807B854",
+    "display_names": {
+      "english": "SG Flat",
+      "french": "SG Flat",
+      "german": "SG Flat",
+      "italian": "SG Flat",
+      "spanish": "SG Flat"
+    },
+    "name_pointers": [
+      "0x0833DAA0",
+      "0x0833DAA0",
+      "0x0833DAA0",
+      "0x0833DAA0",
+      "0x0833DAA0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 13,
+    "global_id": null,
+    "source_offset": "0x0007B858",
+    "runtime_address": "0x0807B858",
+    "display_names": {
+      "english": "Spiral Change",
+      "french": "Spiral Change",
+      "german": "Spiral Change",
+      "italian": "Spiral Change",
+      "spanish": "Spiral Change"
+    },
+    "name_pointers": [
+      "0x0833DA90",
+      "0x0833DA90",
+      "0x0833DA90",
+      "0x0833DA90",
+      "0x0833DA90"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 14,
+    "global_id": null,
+    "source_offset": "0x0007B85C",
+    "runtime_address": "0x0807B85C",
+    "display_names": {
+      "english": "SG Bearing",
+      "french": "SG Bearing",
+      "german": "SG Bearing",
+      "italian": "SG Bearing",
+      "spanish": "SG Bearing"
+    },
+    "name_pointers": [
+      "0x0833DA84",
+      "0x0833DA84",
+      "0x0833DA84",
+      "0x0833DA84",
+      "0x0833DA84"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 15,
+    "global_id": null,
+    "source_offset": "0x0007B860",
+    "runtime_address": "0x0807B860",
+    "display_names": {
+      "english": "Defense Grip",
+      "french": "Defense Grip",
+      "german": "Defense Grip",
+      "italian": "Defense Grip",
+      "spanish": "Defense Grip"
+    },
+    "name_pointers": [
+      "0x0833DA74",
+      "0x0833DA74",
+      "0x0833DA74",
+      "0x0833DA74",
+      "0x0833DA74"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 16,
+    "global_id": null,
+    "source_offset": "0x0007B864",
+    "runtime_address": "0x0807B864",
+    "display_names": {
+      "english": "SG Metal Ball",
+      "french": "SG Metal Ball",
+      "german": "SG Metal Ball",
+      "italian": "SG Metal Ball",
+      "spanish": "SG Metal Ball"
+    },
+    "name_pointers": [
+      "0x0833DA64",
+      "0x0833DA64",
+      "0x0833DA64",
+      "0x0833DA64",
+      "0x0833DA64"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 17,
+    "global_id": null,
+    "source_offset": "0x0007B868",
+    "runtime_address": "0x0807B868",
+    "display_names": {
+      "english": "SG Jumping",
+      "french": "SG Jumping",
+      "german": "SG Jumping",
+      "italian": "SG Jumping",
+      "spanish": "SG Jumping"
+    },
+    "name_pointers": [
+      "0x0833DA58",
+      "0x0833DA58",
+      "0x0833DA58",
+      "0x0833DA58",
+      "0x0833DA58"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 18,
+    "global_id": null,
+    "source_offset": "0x0007B86C",
+    "runtime_address": "0x0807B86C",
+    "display_names": {
+      "english": "Full Auto-Clutch",
+      "french": "Full Auto-Clutch",
+      "german": "Full Auto-Clutch",
+      "italian": "Full Auto-Clutch",
+      "spanish": "Full Auto-Clutch"
+    },
+    "name_pointers": [
+      "0x0833DA44",
+      "0x0833DA44",
+      "0x0833DA44",
+      "0x0833DA44",
+      "0x0833DA44"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 19,
+    "global_id": null,
+    "source_offset": "0x0007B870",
+    "runtime_address": "0x0807B870",
+    "display_names": {
+      "english": "Phantom Grip",
+      "french": "Phantom Grip",
+      "german": "Phantom Grip",
+      "italian": "Phantom Grip",
+      "spanish": "Phantom Grip"
+    },
+    "name_pointers": [
+      "0x0833DA34",
+      "0x0833DA34",
+      "0x0833DA34",
+      "0x0833DA34",
+      "0x0833DA34"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 20,
+    "global_id": null,
+    "source_offset": "0x0007B874",
+    "runtime_address": "0x0807B874",
+    "display_names": {
+      "english": "Flame Change",
+      "french": "Flame Change",
+      "german": "Flame Change",
+      "italian": "Flame Change",
+      "spanish": "Flame Change"
+    },
+    "name_pointers": [
+      "0x0833DA24",
+      "0x0833DA24",
+      "0x0833DA24",
+      "0x0833DA24",
+      "0x0833DA24"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 21,
+    "global_id": null,
+    "source_offset": "0x0007B878",
+    "runtime_address": "0x0807B878",
+    "display_names": {
+      "english": "Griffolyon Base",
+      "french": "Griffolyon Base",
+      "german": "Griffolyon Base",
+      "italian": "Griffolyon Base",
+      "spanish": "Griffolyon Base"
+    },
+    "name_pointers": [
+      "0x0833DA14",
+      "0x0833DA14",
+      "0x0833DA14",
+      "0x0833DA14",
+      "0x0833DA14"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 22,
+    "global_id": null,
+    "source_offset": "0x0007B87C",
+    "runtime_address": "0x0807B87C",
+    "display_names": {
+      "english": "Fortress",
+      "french": "Fortress",
+      "german": "Fortress",
+      "italian": "Fortress",
+      "spanish": "Fortress"
+    },
+    "name_pointers": [
+      "0x0833DA08",
+      "0x0833DA08",
+      "0x0833DA08",
+      "0x0833DA08",
+      "0x0833DA08"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 23,
+    "global_id": null,
+    "source_offset": "0x0007B880",
+    "runtime_address": "0x0807B880",
+    "display_names": {
+      "english": "SG Auto-Change",
+      "french": "SG Auto-Change",
+      "german": "SG Auto-Change",
+      "italian": "SG Auto-Change",
+      "spanish": "SG Auto-Change"
+    },
+    "name_pointers": [
+      "0x0833D9F8",
+      "0x0833D9F8",
+      "0x0833D9F8",
+      "0x0833D9F8",
+      "0x0833D9F8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 24,
+    "global_id": null,
+    "source_offset": "0x0007B884",
+    "runtime_address": "0x0807B884",
+    "display_names": {
+      "english": "Defense Grip 2",
+      "french": "Defense Grip 2",
+      "german": "Defense Grip 2",
+      "italian": "Defense Grip 2",
+      "spanish": "Defense Grip 2"
+    },
+    "name_pointers": [
+      "0x0833D9E8",
+      "0x0833D9E8",
+      "0x0833D9E8",
+      "0x0833D9E8",
+      "0x0833D9E8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 25,
+    "global_id": null,
+    "source_offset": "0x0007B888",
+    "runtime_address": "0x0807B888",
+    "display_names": {
+      "english": "Magne Flat",
+      "french": "Magne Flat",
+      "german": "Magne Flat",
+      "italian": "Magne Flat",
+      "spanish": "Magne Flat"
+    },
+    "name_pointers": [
+      "0x0833D9DC",
+      "0x0833D9DC",
+      "0x0833D9DC",
+      "0x0833D9DC",
+      "0x0833D9DC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 26,
+    "global_id": null,
+    "source_offset": "0x0007B88C",
+    "runtime_address": "0x0807B88C",
+    "display_names": {
+      "english": "SG Metal Flat",
+      "french": "SG Metal Flat",
+      "german": "SG Metal Flat",
+      "italian": "SG Metal Flat",
+      "spanish": "SG Metal Flat"
+    },
+    "name_pointers": [
+      "0x0833D9CC",
+      "0x0833D9CC",
+      "0x0833D9CC",
+      "0x0833D9CC",
+      "0x0833D9CC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 27,
+    "global_id": null,
+    "source_offset": "0x0007B890",
+    "runtime_address": "0x0807B890",
+    "display_names": {
+      "english": "Volcano Change",
+      "french": "Volcano Change",
+      "german": "Volcano Change",
+      "italian": "Volcano Change",
+      "spanish": "Volcano Change"
+    },
+    "name_pointers": [
+      "0x0833D9BC",
+      "0x0833D9BC",
+      "0x0833D9BC",
+      "0x0833D9BC",
+      "0x0833D9BC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 28,
+    "global_id": null,
+    "source_offset": "0x0007B894",
+    "runtime_address": "0x0807B894",
+    "display_names": {
+      "english": "Jumping Base 2",
+      "french": "Jumping Base 2",
+      "german": "Jumping Base 2",
+      "italian": "Jumping Base 2",
+      "spanish": "Jumping Base 2"
+    },
+    "name_pointers": [
+      "0x0833D9AC",
+      "0x0833D9AC",
+      "0x0833D9AC",
+      "0x0833D9AC",
+      "0x0833D9AC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 29,
+    "global_id": null,
+    "source_offset": "0x0007B898",
+    "runtime_address": "0x0807B898",
+    "display_names": {
+      "english": "Viper Metal Ball",
+      "french": "Viper Metal Ball",
+      "german": "Viper Metal Ball",
+      "italian": "Viper Metal Ball",
+      "spanish": "Viper Metal Ball"
+    },
+    "name_pointers": [
+      "0x0833D998",
+      "0x0833D998",
+      "0x0833D998",
+      "0x0833D998",
+      "0x0833D998"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 30,
+    "global_id": null,
+    "source_offset": "0x0007B89C",
+    "runtime_address": "0x0807B89C",
+    "display_names": {
+      "english": "Fast Clutch Base",
+      "french": "Fast Clutch Base",
+      "german": "Fast Clutch Base",
+      "italian": "Fast Clutch Base",
+      "spanish": "Fast Clutch Base"
+    },
+    "name_pointers": [
+      "0x0833D984",
+      "0x0833D984",
+      "0x0833D984",
+      "0x0833D984",
+      "0x0833D984"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 31,
+    "global_id": null,
+    "source_offset": "0x0007B8A0",
+    "runtime_address": "0x0807B8A0",
+    "display_names": {
+      "english": "Customize Grip",
+      "french": "Customize Grip",
+      "german": "Customize Grip",
+      "italian": "Customize Grip",
+      "spanish": "Customize Grip"
+    },
+    "name_pointers": [
+      "0x0833D974",
+      "0x0833D974",
+      "0x0833D974",
+      "0x0833D974",
+      "0x0833D974"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 32,
+    "global_id": null,
+    "source_offset": "0x0007B8A4",
+    "runtime_address": "0x0807B8A4",
+    "display_names": {
+      "english": "Final Clutch Strata",
+      "french": "Final Clutch Strata",
+      "german": "Final Clutch Strata",
+      "italian": "Final Clutch Strata",
+      "spanish": "Final Clutch Strata"
+    },
+    "name_pointers": [
+      "0x0833D960",
+      "0x0833D960",
+      "0x0833D960",
+      "0x0833D960",
+      "0x0833D960"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 33,
+    "global_id": null,
+    "source_offset": "0x0007B8A8",
+    "runtime_address": "0x0807B8A8",
+    "display_names": {
+      "english": "First Crush Base",
+      "french": "First Crush Base",
+      "german": "First Crush Base",
+      "italian": "First Crush Base",
+      "spanish": "First Crush Base"
+    },
+    "name_pointers": [
+      "0x0833D94C",
+      "0x0833D94C",
+      "0x0833D94C",
+      "0x0833D94C",
+      "0x0833D94C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 34,
+    "global_id": null,
+    "source_offset": "0x0007B8AC",
+    "runtime_address": "0x0807B8AC",
+    "display_names": {
+      "english": "First Base Clutch",
+      "french": "First Base Clutch",
+      "german": "First Base Clutch",
+      "italian": "First Base Clutch",
+      "spanish": "First Base Clutch"
+    },
+    "name_pointers": [
+      "0x0833D938",
+      "0x0833D938",
+      "0x0833D938",
+      "0x0833D938",
+      "0x0833D938"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 35,
+    "global_id": null,
+    "source_offset": "0x0007B8B0",
+    "runtime_address": "0x0807B8B0",
+    "display_names": {
+      "english": "Customize Change",
+      "french": "Customize Change",
+      "german": "Customize Change",
+      "italian": "Customize Change",
+      "spanish": "Customize Change"
+    },
+    "name_pointers": [
+      "0x0833D924",
+      "0x0833D924",
+      "0x0833D924",
+      "0x0833D924",
+      "0x0833D924"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 36,
+    "global_id": null,
+    "source_offset": "0x0007B8B4",
+    "runtime_address": "0x0807B8B4",
+    "display_names": {
+      "english": "Custom Metal Ball",
+      "french": "Custom Metal Ball",
+      "german": "Custom Metal Ball",
+      "italian": "Custom Metal Ball",
+      "spanish": "Custom Metal Ball"
+    },
+    "name_pointers": [
+      "0x0833D910",
+      "0x0833D910",
+      "0x0833D910",
+      "0x0833D910",
+      "0x0833D910"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 37,
+    "global_id": null,
+    "source_offset": "0x0007B8B8",
+    "runtime_address": "0x0807B8B8",
+    "display_names": {
+      "english": "Engine Stopper",
+      "french": "Engine Stopper",
+      "german": "Engine Stopper",
+      "italian": "Engine Stopper",
+      "spanish": "Engine Stopper"
+    },
+    "name_pointers": [
+      "0x0833D900",
+      "0x0833D900",
+      "0x0833D900",
+      "0x0833D900",
+      "0x0833D900"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 38,
+    "global_id": null,
+    "source_offset": "0x0007B8BC",
+    "runtime_address": "0x0807B8BC",
+    "display_names": {
+      "english": "Final Clutch Dranzer G",
+      "french": "Final Clutch Dranzer G",
+      "german": "Final Clutch Dranzer G",
+      "italian": "Final Clutch Dranzer G",
+      "spanish": "Final Clutch Dranzer G"
+    },
+    "name_pointers": [
+      "0x0833D8E8",
+      "0x0833D8E8",
+      "0x0833D8E8",
+      "0x0833D8E8",
+      "0x0833D8E8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 39,
+    "global_id": null,
+    "source_offset": "0x0007B8C0",
+    "runtime_address": "0x0807B8C0",
+    "display_names": {
+      "english": "Final Crush Base",
+      "french": "Final Crush Base",
+      "german": "Final Crush Base",
+      "italian": "Final Crush Base",
+      "spanish": "Final Crush Base"
+    },
+    "name_pointers": [
+      "0x0833D8D4",
+      "0x0833D8D4",
+      "0x0833D8D4",
+      "0x0833D8D4",
+      "0x0833D8D4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 40,
+    "global_id": null,
+    "source_offset": "0x0007B8C4",
+    "runtime_address": "0x0807B8C4",
+    "display_names": {
+      "english": "Sharp Metal Base",
+      "french": "Sharp Metal Base",
+      "german": "Sharp Metal Base",
+      "italian": "Sharp Metal Base",
+      "spanish": "Sharp Metal Base"
+    },
+    "name_pointers": [
+      "0x0833D8C0",
+      "0x0833D8C0",
+      "0x0833D8C0",
+      "0x0833D8C0",
+      "0x0833D8C0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "blade-bases",
+    "local_id": 41,
+    "global_id": null,
+    "source_offset": "0x0007B8C8",
+    "runtime_address": "0x0807B8C8",
+    "display_names": {
+      "english": "Final Clutch Base",
+      "french": "Final Clutch Base",
+      "german": "Final Clutch Base",
+      "italian": "Final Clutch Base",
+      "spanish": "Final Clutch Base"
+    },
+    "name_pointers": [
+      "0x0833D8AC",
+      "0x0833D8AC",
+      "0x0833D8AC",
+      "0x0833D8AC",
+      "0x0833D8AC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 0,
+    "global_id": null,
+    "source_offset": "0x0007BC28",
+    "runtime_address": "0x0807BC28",
+    "display_names": {
+      "english": "6 Balance",
+      "french": "6 Balance",
+      "german": "6 Balance",
+      "italian": "6 Balance",
+      "spanish": "6 Balance"
+    },
+    "name_pointers": [
+      "0x0833DC0C",
+      "0x0833DC0C",
+      "0x0833DC0C",
+      "0x0833DC0C",
+      "0x0833DC0C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 1,
+    "global_id": null,
+    "source_offset": "0x0007BC2C",
+    "runtime_address": "0x0807BC2C",
+    "display_names": {
+      "english": "6 Heavy",
+      "french": "6 Heavy",
+      "german": "6 Heavy",
+      "italian": "6 Heavy",
+      "spanish": "6 Heavy"
+    },
+    "name_pointers": [
+      "0x0833DC04",
+      "0x0833DC04",
+      "0x0833DC04",
+      "0x0833DC04",
+      "0x0833DC04"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 2,
+    "global_id": null,
+    "source_offset": "0x0007BC30",
+    "runtime_address": "0x0807BC30",
+    "display_names": {
+      "english": "6 Wide",
+      "french": "6 Wide",
+      "german": "6 Wide",
+      "italian": "6 Wide",
+      "spanish": "6 Wide"
+    },
+    "name_pointers": [
+      "0x0833DBFC",
+      "0x0833DBFC",
+      "0x0833DBFC",
+      "0x0833DBFC",
+      "0x0833DBFC"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 3,
+    "global_id": null,
+    "source_offset": "0x0007BC34",
+    "runtime_address": "0x0807BC34",
+    "display_names": {
+      "english": "8 Balance",
+      "french": "8 Balance",
+      "german": "8 Balance",
+      "italian": "8 Balance",
+      "spanish": "8 Balance"
+    },
+    "name_pointers": [
+      "0x0833DBF0",
+      "0x0833DBF0",
+      "0x0833DBF0",
+      "0x0833DBF0",
+      "0x0833DBF0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 4,
+    "global_id": null,
+    "source_offset": "0x0007BC38",
+    "runtime_address": "0x0807BC38",
+    "display_names": {
+      "english": "8 Heavy",
+      "french": "8 Heavy",
+      "german": "8 Heavy",
+      "italian": "8 Heavy",
+      "spanish": "8 Heavy"
+    },
+    "name_pointers": [
+      "0x0833DBE8",
+      "0x0833DBE8",
+      "0x0833DBE8",
+      "0x0833DBE8",
+      "0x0833DBE8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 5,
+    "global_id": null,
+    "source_offset": "0x0007BC3C",
+    "runtime_address": "0x0807BC3C",
+    "display_names": {
+      "english": "8 Wide",
+      "french": "8 Wide",
+      "german": "8 Wide",
+      "italian": "8 Wide",
+      "spanish": "8 Wide"
+    },
+    "name_pointers": [
+      "0x0833DBE0",
+      "0x0833DBE0",
+      "0x0833DBE0",
+      "0x0833DBE0",
+      "0x0833DBE0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 6,
+    "global_id": null,
+    "source_offset": "0x0007BC40",
+    "runtime_address": "0x0807BC40",
+    "display_names": {
+      "english": "10 Balance",
+      "french": "10 Balance",
+      "german": "10 Balance",
+      "italian": "10 Balance",
+      "spanish": "10 Balance"
+    },
+    "name_pointers": [
+      "0x0833DBD4",
+      "0x0833DBD4",
+      "0x0833DBD4",
+      "0x0833DBD4",
+      "0x0833DBD4"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 7,
+    "global_id": null,
+    "source_offset": "0x0007BC44",
+    "runtime_address": "0x0807BC44",
+    "display_names": {
+      "english": "10 Heavy",
+      "french": "10 Heavy",
+      "german": "10 Heavy",
+      "italian": "10 Heavy",
+      "spanish": "10 Heavy"
+    },
+    "name_pointers": [
+      "0x0833DBC8",
+      "0x0833DBC8",
+      "0x0833DBC8",
+      "0x0833DBC8",
+      "0x0833DBC8"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 8,
+    "global_id": null,
+    "source_offset": "0x0007BC48",
+    "runtime_address": "0x0807BC48",
+    "display_names": {
+      "english": "10 Wide",
+      "french": "10 Wide",
+      "german": "10 Wide",
+      "italian": "10 Wide",
+      "spanish": "10 Wide"
+    },
+    "name_pointers": [
+      "0x0833DBC0",
+      "0x0833DBC0",
+      "0x0833DBC0",
+      "0x0833DBC0",
+      "0x0833DBC0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 9,
+    "global_id": null,
+    "source_offset": "0x0007BC4C",
+    "runtime_address": "0x0807BC4C",
+    "display_names": {
+      "english": "Heavy attack",
+      "french": "Heavy attack",
+      "german": "Heavy attack",
+      "italian": "Heavy attack",
+      "spanish": "Heavy attack"
+    },
+    "name_pointers": [
+      "0x0833DBB0",
+      "0x0833DBB0",
+      "0x0833DBB0",
+      "0x0833DBB0",
+      "0x0833DBB0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 10,
+    "global_id": null,
+    "source_offset": "0x0007BC50",
+    "runtime_address": "0x0807BC50",
+    "display_names": {
+      "english": "Revolver attack",
+      "french": "Revolver attack",
+      "german": "Revolver attack",
+      "italian": "Revolver attack",
+      "spanish": "Revolver attack"
+    },
+    "name_pointers": [
+      "0x0833DBA0",
+      "0x0833DBA0",
+      "0x0833DBA0",
+      "0x0833DBA0",
+      "0x0833DBA0"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 11,
+    "global_id": null,
+    "source_offset": "0x0007BC54",
+    "runtime_address": "0x0807BC54",
+    "display_names": {
+      "english": "Star attack",
+      "french": "Star attack",
+      "german": "Star attack",
+      "italian": "Star attack",
+      "spanish": "Star attack"
+    },
+    "name_pointers": [
+      "0x0833DB94",
+      "0x0833DB94",
+      "0x0833DB94",
+      "0x0833DB94",
+      "0x0833DB94"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 12,
+    "global_id": null,
+    "source_offset": "0x0007BC58",
+    "runtime_address": "0x0807BC58",
+    "display_names": {
+      "english": "Wide attack",
+      "french": "Wide attack",
+      "german": "Wide attack",
+      "italian": "Wide attack",
+      "spanish": "Wide attack"
+    },
+    "name_pointers": [
+      "0x0833DB88",
+      "0x0833DB88",
+      "0x0833DB88",
+      "0x0833DB88",
+      "0x0833DB88"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 13,
+    "global_id": null,
+    "source_offset": "0x0007BC5C",
+    "runtime_address": "0x0807BC5C",
+    "display_names": {
+      "english": "Wide defense",
+      "french": "Wide defense",
+      "german": "Wide defense",
+      "italian": "Wide defense",
+      "spanish": "Wide defense"
+    },
+    "name_pointers": [
+      "0x0833DB78",
+      "0x0833DB78",
+      "0x0833DB78",
+      "0x0833DB78",
+      "0x0833DB78"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 14,
+    "global_id": null,
+    "source_offset": "0x0007BC60",
+    "runtime_address": "0x0807BC60",
+    "display_names": {
+      "english": "Wide survivor",
+      "french": "Wide survivor",
+      "german": "Wide survivor",
+      "italian": "Wide survivor",
+      "spanish": "Wide survivor"
+    },
+    "name_pointers": [
+      "0x0833DB68",
+      "0x0833DB68",
+      "0x0833DB68",
+      "0x0833DB68",
+      "0x0833DB68"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 15,
+    "global_id": null,
+    "source_offset": "0x0007BC64",
+    "runtime_address": "0x0807BC64",
+    "display_names": {
+      "english": "Magnetic WD",
+      "french": "Magnetic WD",
+      "german": "Magnetic WD",
+      "italian": "Magnetic WD",
+      "spanish": "Magnetic WD"
+    },
+    "name_pointers": [
+      "0x0833DB5C",
+      "0x0833DB5C",
+      "0x0833DB5C",
+      "0x0833DB5C",
+      "0x0833DB5C"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 16,
+    "global_id": null,
+    "source_offset": "0x0007BC68",
+    "runtime_address": "0x0807BC68",
+    "display_names": {
+      "english": "Circle Wide",
+      "french": "Circle Wide",
+      "german": "Circle Wide",
+      "italian": "Circle Wide",
+      "spanish": "Circle Wide"
+    },
+    "name_pointers": [
+      "0x0833DB50",
+      "0x0833DB50",
+      "0x0833DB50",
+      "0x0833DB50",
+      "0x0833DB50"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 17,
+    "global_id": null,
+    "source_offset": "0x0007BC6C",
+    "runtime_address": "0x0807BC6C",
+    "display_names": {
+      "english": "Circle Heavy",
+      "french": "Circle Heavy",
+      "german": "Circle Heavy",
+      "italian": "Circle Heavy",
+      "spanish": "Circle Heavy"
+    },
+    "name_pointers": [
+      "0x0833DB40",
+      "0x0833DB40",
+      "0x0833DB40",
+      "0x0833DB40",
+      "0x0833DB40"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  },
+  {
+    "category": "weight-disks",
+    "local_id": 18,
+    "global_id": null,
+    "source_offset": "0x0007BC70",
+    "runtime_address": "0x0807BC70",
+    "display_names": {
+      "english": "Circle Balance",
+      "french": "Circle Balance",
+      "german": "Circle Balance",
+      "italian": "Circle Balance",
+      "spanish": "Circle Balance"
+    },
+    "name_pointers": [
+      "0x0833DB30",
+      "0x0833DB30",
+      "0x0833DB30",
+      "0x0833DB30",
+      "0x0833DB30"
+    ],
+    "confidence": "confirmed",
+    "evidence": [
+      "five language-major pointer arrays; IDs correlate with complete-template field"
+    ]
+  }
+]

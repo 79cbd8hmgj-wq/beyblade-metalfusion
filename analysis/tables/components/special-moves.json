@@ -1,0 +1,1346 @@
+[
+  {
+    "pair_id": 0,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079CF4",
+      "runtime_address": "0x08079CF4",
+      "pointers": [
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60"
+      ],
+      "names": {
+        "english": "Dragoon",
+        "french": "Dragoon",
+        "german": "Dragoon",
+        "italian": "Dragoon",
+        "spanish": "Dragoon"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079D08",
+      "runtime_address": "0x08079D08",
+      "pointers": [
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04"
+      ],
+      "names": {
+        "english": "Gaia Storm",
+        "french": "Gaia Storm",
+        "german": "Gaia Storm",
+        "italian": "Gaia Storm",
+        "spanish": "Gaia Storm"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 1,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079D1C",
+      "runtime_address": "0x08079D1C",
+      "pointers": [
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38"
+      ],
+      "names": {
+        "english": "Driger",
+        "french": "Driger",
+        "german": "Driger",
+        "italian": "Driger",
+        "spanish": "Driger"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079D30",
+      "runtime_address": "0x08079D30",
+      "pointers": [
+        "0x0833CBA4",
+        "0x0833CBA4",
+        "0x0833CBA4",
+        "0x0833CBA4",
+        "0x0833CBA4"
+      ],
+      "names": {
+        "english": "Driger Slash",
+        "french": "Driger Slash",
+        "german": "Driger Slash",
+        "italian": "Driger Slash",
+        "spanish": "Driger Slash"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 2,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079D44",
+      "runtime_address": "0x08079D44",
+      "pointers": [
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38"
+      ],
+      "names": {
+        "english": "Driger",
+        "french": "Driger",
+        "german": "Driger",
+        "italian": "Driger",
+        "spanish": "Driger"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079D58",
+      "runtime_address": "0x08079D58",
+      "pointers": [
+        "0x0833CAF4",
+        "0x0833CAF4",
+        "0x0833CAF4",
+        "0x0833CAF4",
+        "0x0833CAF4"
+      ],
+      "names": {
+        "english": "Driger Disaster",
+        "french": "Driger Disaster",
+        "german": "Driger Disaster",
+        "italian": "Driger Disaster",
+        "spanish": "Driger Disaster"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 3,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079D6C",
+      "runtime_address": "0x08079D6C",
+      "pointers": [
+        "0x0833CAEC",
+        "0x0833CAEC",
+        "0x0833CAEC",
+        "0x0833CAEC",
+        "0x0833CAEC"
+      ],
+      "names": {
+        "english": "Stinger",
+        "french": "Stinger",
+        "german": "Stinger",
+        "italian": "Stinger",
+        "spanish": "Stinger"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079D80",
+      "runtime_address": "0x08079D80",
+      "pointers": [
+        "0x0833CADC",
+        "0x0833CADC",
+        "0x0833CADC",
+        "0x0833CADC",
+        "0x0833CADC"
+      ],
+      "names": {
+        "english": "Stinger Strike",
+        "french": "Stinger Strike",
+        "german": "Stinger Strike",
+        "italian": "Stinger Strike",
+        "spanish": "Stinger Strike"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 4,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079D94",
+      "runtime_address": "0x08079D94",
+      "pointers": [
+        "0x0833CAD4",
+        "0x0833CAD4",
+        "0x0833CAD4",
+        "0x0833CAD4",
+        "0x0833CAD4"
+      ],
+      "names": {
+        "english": "Grip",
+        "french": "Grip",
+        "german": "Grip",
+        "italian": "Grip",
+        "spanish": "Grip"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079DA8",
+      "runtime_address": "0x08079DA8",
+      "pointers": [
+        "0x0833CAC4",
+        "0x0833CAC4",
+        "0x0833CAC4",
+        "0x0833CAC4",
+        "0x0833CAC4"
+      ],
+      "names": {
+        "english": "Grip Force Stun",
+        "french": "Grip Force Stun",
+        "german": "Grip Force Stun",
+        "italian": "Grip Force Stun",
+        "spanish": "Grip Force Stun"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 5,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079DBC",
+      "runtime_address": "0x08079DBC",
+      "pointers": [
+        "0x0833CCC8",
+        "0x0833CCC8",
+        "0x0833CCC8",
+        "0x0833CCC8",
+        "0x0833CCC8"
+      ],
+      "names": {
+        "english": "Saizo",
+        "french": "Saizo",
+        "german": "Saizo",
+        "italian": "Saizo",
+        "spanish": "Saizo"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079DD0",
+      "runtime_address": "0x08079DD0",
+      "pointers": [
+        "0x0833CAB0",
+        "0x0833CAB0",
+        "0x0833CAB0",
+        "0x0833CAB0",
+        "0x0833CAB0"
+      ],
+      "names": {
+        "english": "Super Saizo Sting",
+        "french": "Super Saizo Sting",
+        "german": "Super Saizo Sting",
+        "italian": "Super Saizo Sting",
+        "spanish": "Super Saizo Sting"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 6,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079DE4",
+      "runtime_address": "0x08079DE4",
+      "pointers": [
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8"
+      ],
+      "names": {
+        "english": "Roller",
+        "french": "Roller",
+        "german": "Roller",
+        "italian": "Roller",
+        "spanish": "Roller"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079DF8",
+      "runtime_address": "0x08079DF8",
+      "pointers": [
+        "0x0833CA98",
+        "0x0833CA98",
+        "0x0833CA98",
+        "0x0833CA98",
+        "0x0833CA98"
+      ],
+      "names": {
+        "english": "Roller Recoil",
+        "french": "Roller Recoil",
+        "german": "Roller Recoil",
+        "italian": "Roller Recoil",
+        "spanish": "Roller Recoil"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 7,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079E0C",
+      "runtime_address": "0x08079E0C",
+      "pointers": [
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8",
+        "0x0833CAA8"
+      ],
+      "names": {
+        "english": "Roller",
+        "french": "Roller",
+        "german": "Roller",
+        "italian": "Roller",
+        "spanish": "Roller"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079E20",
+      "runtime_address": "0x08079E20",
+      "pointers": [
+        "0x0833CA88",
+        "0x0833CA88",
+        "0x0833CA88",
+        "0x0833CA88",
+        "0x0833CA88"
+      ],
+      "names": {
+        "english": "Roller Repel",
+        "french": "Roller Repel",
+        "german": "Roller Repel",
+        "italian": "Roller Repel",
+        "spanish": "Roller Repel"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 8,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079E34",
+      "runtime_address": "0x08079E34",
+      "pointers": [
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80"
+      ],
+      "names": {
+        "english": "Wing",
+        "french": "Wing",
+        "german": "Wing",
+        "italian": "Wing",
+        "spanish": "Wing"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079E48",
+      "runtime_address": "0x08079E48",
+      "pointers": [
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C"
+      ],
+      "names": {
+        "english": "Wing Flux Summon",
+        "french": "Wing Flux Summon",
+        "german": "Wing Flux Summon",
+        "italian": "Wing Flux Summon",
+        "spanish": "Wing Flux Summon"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 9,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079E5C",
+      "runtime_address": "0x08079E5C",
+      "pointers": [
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80",
+        "0x0833CA80"
+      ],
+      "names": {
+        "english": "Wing",
+        "french": "Wing",
+        "german": "Wing",
+        "italian": "Wing",
+        "spanish": "Wing"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079E70",
+      "runtime_address": "0x08079E70",
+      "pointers": [
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C",
+        "0x0833CA6C"
+      ],
+      "names": {
+        "english": "Wing Flux Summon",
+        "french": "Wing Flux Summon",
+        "german": "Wing Flux Summon",
+        "italian": "Wing Flux Summon",
+        "spanish": "Wing Flux Summon"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 10,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079E84",
+      "runtime_address": "0x08079E84",
+      "pointers": [
+        "0x0833CA64",
+        "0x0833CA64",
+        "0x0833CA64",
+        "0x0833CA64",
+        "0x0833CA64"
+      ],
+      "names": {
+        "english": "Bistool",
+        "french": "Bistool",
+        "german": "Bistool",
+        "italian": "Bistool",
+        "spanish": "Bistool"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079E98",
+      "runtime_address": "0x08079E98",
+      "pointers": [
+        "0x0833CA54",
+        "0x0833CA54",
+        "0x0833CA54",
+        "0x0833CA54",
+        "0x0833CA54"
+      ],
+      "names": {
+        "english": "Bistool Blitz",
+        "french": "Bistool Blitz",
+        "german": "Bistool Blitz",
+        "italian": "Bistool Blitz",
+        "spanish": "Bistool Blitz"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 11,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079EAC",
+      "runtime_address": "0x08079EAC",
+      "pointers": [
+        "0x0833CA4C",
+        "0x0833CA4C",
+        "0x0833CA4C",
+        "0x0833CA4C",
+        "0x0833CA4C"
+      ],
+      "names": {
+        "english": "Makendo",
+        "french": "Makendo",
+        "german": "Makendo",
+        "italian": "Makendo",
+        "spanish": "Makendo"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079EC0",
+      "runtime_address": "0x08079EC0",
+      "pointers": [
+        "0x0833CA3C",
+        "0x0833CA3C",
+        "0x0833CA3C",
+        "0x0833CA3C",
+        "0x0833CA3C"
+      ],
+      "names": {
+        "english": "Makendo Slash",
+        "french": "Makendo Slash",
+        "german": "Makendo Slash",
+        "italian": "Makendo Slash",
+        "spanish": "Makendo Slash"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 12,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079ED4",
+      "runtime_address": "0x08079ED4",
+      "pointers": [
+        "0x0833CA30",
+        "0x0833CA30",
+        "0x0833CA30",
+        "0x0833CA30",
+        "0x0833CA30"
+      ],
+      "names": {
+        "english": "Bakushin",
+        "french": "Bakushin",
+        "german": "Bakushin",
+        "italian": "Bakushin",
+        "spanish": "Bakushin"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079EE8",
+      "runtime_address": "0x08079EE8",
+      "pointers": [
+        "0x0833CA20",
+        "0x0833CA20",
+        "0x0833CA20",
+        "0x0833CA20",
+        "0x0833CA20"
+      ],
+      "names": {
+        "english": "Bakushin Bolt",
+        "french": "Bakushin Bolt",
+        "german": "Bakushin Bolt",
+        "italian": "Bakushin Bolt",
+        "spanish": "Bakushin Bolt"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 13,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079EFC",
+      "runtime_address": "0x08079EFC",
+      "pointers": [
+        "0x0833CA18",
+        "0x0833CA18",
+        "0x0833CA18",
+        "0x0833CA18",
+        "0x0833CA18"
+      ],
+      "names": {
+        "english": "Gekiryu",
+        "french": "Gekiryu",
+        "german": "Gekiryu",
+        "italian": "Gekiryu",
+        "spanish": "Gekiryu"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079F10",
+      "runtime_address": "0x08079F10",
+      "pointers": [
+        "0x0833CA08",
+        "0x0833CA08",
+        "0x0833CA08",
+        "0x0833CA08",
+        "0x0833CA08"
+      ],
+      "names": {
+        "english": "Gekiryu Blade",
+        "french": "Gekiryu Blade",
+        "german": "Gekiryu Blade",
+        "italian": "Gekiryu Blade",
+        "spanish": "Gekiryu Blade"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 14,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079F24",
+      "runtime_address": "0x08079F24",
+      "pointers": [
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38",
+        "0x0833CC38"
+      ],
+      "names": {
+        "english": "Driger",
+        "french": "Driger",
+        "german": "Driger",
+        "italian": "Driger",
+        "spanish": "Driger"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079F38",
+      "runtime_address": "0x08079F38",
+      "pointers": [
+        "0x0833C9F8",
+        "0x0833C9F8",
+        "0x0833C9F8",
+        "0x0833C9F8",
+        "0x0833C9F8"
+      ],
+      "names": {
+        "english": "Driger Volcano",
+        "french": "Driger Volcano",
+        "german": "Driger Volcano",
+        "italian": "Driger Volcano",
+        "spanish": "Driger Volcano"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 15,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079F4C",
+      "runtime_address": "0x08079F4C",
+      "pointers": [
+        "0x0833C9F0",
+        "0x0833C9F0",
+        "0x0833C9F0",
+        "0x0833C9F0",
+        "0x0833C9F0"
+      ],
+      "names": {
+        "english": "Bound",
+        "french": "Bound",
+        "german": "Bound",
+        "italian": "Bound",
+        "spanish": "Bound"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079F60",
+      "runtime_address": "0x08079F60",
+      "pointers": [
+        "0x0833C9E0",
+        "0x0833C9E0",
+        "0x0833C9E0",
+        "0x0833C9E0",
+        "0x0833C9E0"
+      ],
+      "names": {
+        "english": "Bound Deluxe",
+        "french": "Bound Deluxe",
+        "german": "Bound Deluxe",
+        "italian": "Bound Deluxe",
+        "spanish": "Bound Deluxe"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 16,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079F74",
+      "runtime_address": "0x08079F74",
+      "pointers": [
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60",
+        "0x0833CC60"
+      ],
+      "names": {
+        "english": "Dragoon",
+        "french": "Dragoon",
+        "german": "Dragoon",
+        "italian": "Dragoon",
+        "spanish": "Dragoon"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079F88",
+      "runtime_address": "0x08079F88",
+      "pointers": [
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04",
+        "0x0833CB04"
+      ],
+      "names": {
+        "english": "Gaia Storm",
+        "french": "Gaia Storm",
+        "german": "Gaia Storm",
+        "italian": "Gaia Storm",
+        "spanish": "Gaia Storm"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 17,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079F9C",
+      "runtime_address": "0x08079F9C",
+      "pointers": [
+        "0x0833C9D8",
+        "0x0833C9D8",
+        "0x0833C9D8",
+        "0x0833C9D8",
+        "0x0833C9D8"
+      ],
+      "names": {
+        "english": "Gigars",
+        "french": "Gigars",
+        "german": "Gigars",
+        "italian": "Gigars",
+        "spanish": "Gigars"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079FB0",
+      "runtime_address": "0x08079FB0",
+      "pointers": [
+        "0x0833C9CC",
+        "0x0833C9CC",
+        "0x0833C9CC",
+        "0x0833C9CC",
+        "0x0833C9CC"
+      ],
+      "names": {
+        "english": "Gigar Blitz",
+        "french": "Gigar Blitz",
+        "german": "Gigar Blitz",
+        "italian": "Gigar Blitz",
+        "spanish": "Gigar Blitz"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 18,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079FC4",
+      "runtime_address": "0x08079FC4",
+      "pointers": [
+        "0x0833C9C4",
+        "0x0833C9C4",
+        "0x0833C9C4",
+        "0x0833C9C4",
+        "0x0833C9C4"
+      ],
+      "names": {
+        "english": "Wyvern",
+        "french": "Wyvern",
+        "german": "Wyvern",
+        "italian": "Wyvern",
+        "spanish": "Wyvern"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x00079FD8",
+      "runtime_address": "0x08079FD8",
+      "pointers": [
+        "0x0833C9B4",
+        "0x0833C9B4",
+        "0x0833C9B4",
+        "0x0833C9B4",
+        "0x0833C9B4"
+      ],
+      "names": {
+        "english": "Lizards Curse",
+        "french": "Lizards Curse",
+        "german": "Lizards Curse",
+        "italian": "Lizards Curse",
+        "spanish": "Lizards Curse"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 19,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x00079FEC",
+      "runtime_address": "0x08079FEC",
+      "pointers": [
+        "0x0833C9AC",
+        "0x0833C9AC",
+        "0x0833C9AC",
+        "0x0833C9AC",
+        "0x0833C9AC"
+      ],
+      "names": {
+        "english": "Leopard",
+        "french": "Leopard",
+        "german": "Leopard",
+        "italian": "Leopard",
+        "spanish": "Leopard"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A000",
+      "runtime_address": "0x0807A000",
+      "pointers": [
+        "0x0833C998",
+        "0x0833C998",
+        "0x0833C998",
+        "0x0833C998",
+        "0x0833C998"
+      ],
+      "names": {
+        "english": "Turbo Leopard Swipe",
+        "french": "Turbo Leopard Swipe",
+        "german": "Turbo Leopard Swipe",
+        "italian": "Turbo Leopard Swipe",
+        "spanish": "Turbo Leopard Swipe"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 20,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A014",
+      "runtime_address": "0x0807A014",
+      "pointers": [
+        "0x0833C98C",
+        "0x0833C98C",
+        "0x0833C98C",
+        "0x0833C98C",
+        "0x0833C98C"
+      ],
+      "names": {
+        "english": "Trygator",
+        "french": "Trygator",
+        "german": "Trygator",
+        "italian": "Trygator",
+        "spanish": "Trygator"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A028",
+      "runtime_address": "0x0807A028",
+      "pointers": [
+        "0x0833C97C",
+        "0x0833C97C",
+        "0x0833C97C",
+        "0x0833C97C",
+        "0x0833C97C"
+      ],
+      "names": {
+        "english": "Trygator Snap",
+        "french": "Trygator Snap",
+        "german": "Trygator Snap",
+        "italian": "Trygator Snap",
+        "spanish": "Trygator Snap"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 21,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A03C",
+      "runtime_address": "0x0807A03C",
+      "pointers": [
+        "0x0833CBE4",
+        "0x0833CBE4",
+        "0x0833CBE4",
+        "0x0833CBE4",
+        "0x0833CBE4"
+      ],
+      "names": {
+        "english": "Galeon",
+        "french": "Galeon",
+        "german": "Galeon",
+        "italian": "Galeon",
+        "spanish": "Galeon"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A050",
+      "runtime_address": "0x0807A050",
+      "pointers": [
+        "0x0833C96C",
+        "0x0833C96C",
+        "0x0833C96C",
+        "0x0833C96C",
+        "0x0833C96C"
+      ],
+      "names": {
+        "english": "Armada Assault",
+        "french": "Armada Assault",
+        "german": "Armada Assault",
+        "italian": "Armada Assault",
+        "spanish": "Armada Assault"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 22,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A064",
+      "runtime_address": "0x0807A064",
+      "pointers": [
+        "0x0833C964",
+        "0x0833C964",
+        "0x0833C964",
+        "0x0833C964",
+        "0x0833C964"
+      ],
+      "names": {
+        "english": "Pegasus",
+        "french": "Pegasus",
+        "german": "Pegasus",
+        "italian": "Pegasus",
+        "spanish": "Pegasus"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A078",
+      "runtime_address": "0x0807A078",
+      "pointers": [
+        "0x0833C954",
+        "0x0833C954",
+        "0x0833C954",
+        "0x0833C954",
+        "0x0833C954"
+      ],
+      "names": {
+        "english": "Pegasus Dance",
+        "french": "Pegasus Dance",
+        "german": "Pegasus Dance",
+        "italian": "Pegasus Dance",
+        "spanish": "Pegasus Dance"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 23,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A08C",
+      "runtime_address": "0x0807A08C",
+      "pointers": [
+        "0x0833C948",
+        "0x0833C948",
+        "0x0833C948",
+        "0x0833C948",
+        "0x0833C948"
+      ],
+      "names": {
+        "english": "Gargoyle",
+        "french": "Gargoyle",
+        "german": "Gargoyle",
+        "italian": "Gargoyle",
+        "spanish": "Gargoyle"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A0A0",
+      "runtime_address": "0x0807A0A0",
+      "pointers": [
+        "0x0833C938",
+        "0x0833C938",
+        "0x0833C938",
+        "0x0833C938",
+        "0x0833C938"
+      ],
+      "names": {
+        "english": "Gargoyle Slide",
+        "french": "Gargoyle Slide",
+        "german": "Gargoyle Slide",
+        "italian": "Gargoyle Slide",
+        "spanish": "Gargoyle Slide"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 24,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A0B4",
+      "runtime_address": "0x0807A0B4",
+      "pointers": [
+        "0x0833C930",
+        "0x0833C930",
+        "0x0833C930",
+        "0x0833C930",
+        "0x0833C930"
+      ],
+      "names": {
+        "english": "Eagle",
+        "french": "Eagle",
+        "german": "Eagle",
+        "italian": "Eagle",
+        "spanish": "Eagle"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A0C8",
+      "runtime_address": "0x0807A0C8",
+      "pointers": [
+        "0x0833C920",
+        "0x0833C920",
+        "0x0833C920",
+        "0x0833C920",
+        "0x0833C920"
+      ],
+      "names": {
+        "english": "Eagles Talon",
+        "french": "Eagles Talon",
+        "german": "Eagles Talon",
+        "italian": "Eagles Talon",
+        "spanish": "Eagles Talon"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 25,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A0DC",
+      "runtime_address": "0x0807A0DC",
+      "pointers": [
+        "0x0833CBBC",
+        "0x0833CBBC",
+        "0x0833CBBC",
+        "0x0833CBBC",
+        "0x0833CBBC"
+      ],
+      "names": {
+        "english": "Trygle",
+        "french": "Trygle",
+        "german": "Trygle",
+        "italian": "Trygle",
+        "spanish": "Trygle"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A0F0",
+      "runtime_address": "0x0807A0F0",
+      "pointers": [
+        "0x0833C910",
+        "0x0833C910",
+        "0x0833C910",
+        "0x0833C910",
+        "0x0833C910"
+      ],
+      "names": {
+        "english": "Trygle Vortex",
+        "french": "Trygle Vortex",
+        "german": "Trygle Vortex",
+        "italian": "Trygle Vortex",
+        "spanish": "Trygle Vortex"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 26,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A104",
+      "runtime_address": "0x0807A104",
+      "pointers": [
+        "0x0833C908",
+        "0x0833C908",
+        "0x0833C908",
+        "0x0833C908",
+        "0x0833C908"
+      ],
+      "names": {
+        "english": "Boar",
+        "french": "Boar",
+        "german": "Boar",
+        "italian": "Boar",
+        "spanish": "Boar"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A118",
+      "runtime_address": "0x0807A118",
+      "pointers": [
+        "0x0833C8FC",
+        "0x0833C8FC",
+        "0x0833C8FC",
+        "0x0833C8FC",
+        "0x0833C8FC"
+      ],
+      "names": {
+        "english": "Boar Claws",
+        "french": "Boar Claws",
+        "german": "Boar Claws",
+        "italian": "Boar Claws",
+        "spanish": "Boar Claws"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 27,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A12C",
+      "runtime_address": "0x0807A12C",
+      "pointers": [
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0"
+      ],
+      "names": {
+        "english": "Rock Bison",
+        "french": "Rock Bison",
+        "german": "Rock Bison",
+        "italian": "Rock Bison",
+        "spanish": "Rock Bison"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A140",
+      "runtime_address": "0x0807A140",
+      "pointers": [
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0",
+        "0x0833C8F0"
+      ],
+      "names": {
+        "english": "Rock Bison",
+        "french": "Rock Bison",
+        "german": "Rock Bison",
+        "italian": "Rock Bison",
+        "spanish": "Rock Bison"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 28,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A154",
+      "runtime_address": "0x0807A154",
+      "pointers": [
+        "0x0833C8E8",
+        "0x0833C8E8",
+        "0x0833C8E8",
+        "0x0833C8E8",
+        "0x0833C8E8"
+      ],
+      "names": {
+        "english": "Zeus",
+        "french": "Zeus",
+        "german": "Zeus",
+        "italian": "Zeus",
+        "spanish": "Zeus"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A168",
+      "runtime_address": "0x0807A168",
+      "pointers": [
+        "0x0833C8DC",
+        "0x0833C8DC",
+        "0x0833C8DC",
+        "0x0833C8DC",
+        "0x0833C8DC"
+      ],
+      "names": {
+        "english": "Zeus Claws",
+        "french": "Zeus Claws",
+        "german": "Zeus Claws",
+        "italian": "Zeus Claws",
+        "spanish": "Zeus Claws"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 29,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A17C",
+      "runtime_address": "0x0807A17C",
+      "pointers": [
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC"
+      ],
+      "names": {
+        "english": "Hayate Spirit",
+        "french": "Hayate Spirit",
+        "german": "Hayate Spirit",
+        "italian": "Hayate Spirit",
+        "spanish": "Hayate Spirit"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A190",
+      "runtime_address": "0x0807A190",
+      "pointers": [
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC",
+        "0x0833C8CC"
+      ],
+      "names": {
+        "english": "Hayate Spirit",
+        "french": "Hayate Spirit",
+        "german": "Hayate Spirit",
+        "italian": "Hayate Spirit",
+        "spanish": "Hayate Spirit"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 30,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A1A4",
+      "runtime_address": "0x0807A1A4",
+      "pointers": [
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC"
+      ],
+      "names": {
+        "english": "Zinrai Spirit",
+        "french": "Zinrai Spirit",
+        "german": "Zinrai Spirit",
+        "italian": "Zinrai Spirit",
+        "spanish": "Zinrai Spirit"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A1B8",
+      "runtime_address": "0x0807A1B8",
+      "pointers": [
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC",
+        "0x0833C8BC"
+      ],
+      "names": {
+        "english": "Zinrai Spirit",
+        "french": "Zinrai Spirit",
+        "german": "Zinrai Spirit",
+        "italian": "Zinrai Spirit",
+        "spanish": "Zinrai Spirit"
+      }
+    },
+    "confidence": "strongly_supported"
+  },
+  {
+    "pair_id": 31,
+    "bit_beast": {
+      "kind": "bit_beast",
+      "source_offset": "0x0007A1CC",
+      "runtime_address": "0x0807A1CC",
+      "pointers": [
+        "0x0833C8AC",
+        "0x0833C8AC",
+        "0x0833C8AC",
+        "0x0833C8AC",
+        "0x0833C8AC"
+      ],
+      "names": {
+        "english": "Torch Pegasus",
+        "french": "Torch Pegasus",
+        "german": "Torch Pegasus",
+        "italian": "Torch Pegasus",
+        "spanish": "Torch Pegasus"
+      }
+    },
+    "special_move": {
+      "kind": "special_move",
+      "source_offset": "0x0007A1E0",
+      "runtime_address": "0x0807A1E0",
+      "pointers": [
+        "0x0833C89C",
+        "0x0833C89C",
+        "0x0833C89C",
+        "0x0833C89C",
+        "0x0833C89C"
+      ],
+      "names": {
+        "english": "Pegasus Flame",
+        "french": "Pegasus Flame",
+        "german": "Pegasus Flame",
+        "italian": "Pegasus Flame",
+        "spanish": "Pegasus Flame"
+      }
+    },
+    "confidence": "strongly_supported"
+  }
+]

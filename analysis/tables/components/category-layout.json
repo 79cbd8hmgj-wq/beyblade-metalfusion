@@ -1,0 +1,47 @@
+{
+  "localization_model": "five language-major pointer arrays",
+  "id_namespace": "category-local, zero-based",
+  "sentinel": "no sentinel row in the four arrays",
+  "categories": [
+    {
+      "category": "spin-gears",
+      "start": "0x0007AF0C",
+      "runtime_start": "0x0807AF0C",
+      "end_exclusive": "0x0007B0C4",
+      "count": 22,
+      "pointer_count": 110,
+      "stride_representation": "parallel 4-byte pointer arrays",
+      "confidence": "confirmed"
+    },
+    {
+      "category": "attack-rings",
+      "start": "0x0007B0D8",
+      "runtime_start": "0x0807B0D8",
+      "end_exclusive": "0x0007B6DC",
+      "count": 77,
+      "pointer_count": 385,
+      "stride_representation": "parallel 4-byte pointer arrays",
+      "confidence": "confirmed"
+    },
+    {
+      "category": "blade-bases",
+      "start": "0x0007B824",
+      "runtime_start": "0x0807B824",
+      "end_exclusive": "0x0007BB6C",
+      "count": 42,
+      "pointer_count": 210,
+      "stride_representation": "parallel 4-byte pointer arrays",
+      "confidence": "confirmed"
+    },
+    {
+      "category": "weight-disks",
+      "start": "0x0007BC28",
+      "runtime_start": "0x0807BC28",
+      "end_exclusive": "0x0007BDA4",
+      "count": 19,
+      "pointer_count": 95,
+      "stride_representation": "parallel 4-byte pointer arrays",
+      "confidence": "confirmed"
+    }
+  ]
+}

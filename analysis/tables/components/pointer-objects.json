@@ -1,0 +1,1358 @@
+[
+  {
+    "field": "field_14_ptr",
+    "count": 83,
+    "start": "0x0027FA30",
+    "last_start": "0x00299C90",
+    "objects": [
+      {
+        "source_offset": "0x0027FA30",
+        "runtime_address": "0x0827FA30",
+        "inferred_end": "0x0027FEC0",
+        "inferred_size": 1168,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.348
+      },
+      {
+        "source_offset": "0x0027FEC0",
+        "runtime_address": "0x0827FEC0",
+        "inferred_end": "0x002803FC",
+        "inferred_size": 1340,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.62
+      },
+      {
+        "source_offset": "0x002803FC",
+        "runtime_address": "0x082803FC",
+        "inferred_end": "0x00280940",
+        "inferred_size": 1348,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.537
+      },
+      {
+        "source_offset": "0x00280940",
+        "runtime_address": "0x08280940",
+        "inferred_end": "0x00280E2C",
+        "inferred_size": 1260,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.173
+      },
+      {
+        "source_offset": "0x00280E2C",
+        "runtime_address": "0x08280E2C",
+        "inferred_end": "0x002812D4",
+        "inferred_size": 1192,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.272
+      },
+      {
+        "source_offset": "0x002812D4",
+        "runtime_address": "0x082812D4",
+        "inferred_end": "0x0028175C",
+        "inferred_size": 1160,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.822
+      },
+      {
+        "source_offset": "0x0028175C",
+        "runtime_address": "0x0828175C",
+        "inferred_end": "0x00281CAC",
+        "inferred_size": 1360,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.252
+      },
+      {
+        "source_offset": "0x00281CAC",
+        "runtime_address": "0x08281CAC",
+        "inferred_end": "0x0028222C",
+        "inferred_size": 1408,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.476
+      },
+      {
+        "source_offset": "0x0028222C",
+        "runtime_address": "0x0828222C",
+        "inferred_end": "0x0028275C",
+        "inferred_size": 1328,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.214
+      },
+      {
+        "source_offset": "0x0028275C",
+        "runtime_address": "0x0828275C",
+        "inferred_end": "0x00282C2C",
+        "inferred_size": 1232,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.366
+      },
+      {
+        "source_offset": "0x00282C2C",
+        "runtime_address": "0x08282C2C",
+        "inferred_end": "0x00283168",
+        "inferred_size": 1340,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.454
+      },
+      {
+        "source_offset": "0x00283168",
+        "runtime_address": "0x08283168",
+        "inferred_end": "0x00283628",
+        "inferred_size": 1216,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.359
+      },
+      {
+        "source_offset": "0x00283628",
+        "runtime_address": "0x08283628",
+        "inferred_end": "0x00283BC8",
+        "inferred_size": 1440,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.286
+      },
+      {
+        "source_offset": "0x00283BC8",
+        "runtime_address": "0x08283BC8",
+        "inferred_end": "0x002840FC",
+        "inferred_size": 1332,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.439
+      },
+      {
+        "source_offset": "0x002840FC",
+        "runtime_address": "0x082840FC",
+        "inferred_end": "0x00284678",
+        "inferred_size": 1404,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.141
+      },
+      {
+        "source_offset": "0x00284678",
+        "runtime_address": "0x08284678",
+        "inferred_end": "0x00284BD4",
+        "inferred_size": 1372,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.318
+      },
+      {
+        "source_offset": "0x00284BD4",
+        "runtime_address": "0x08284BD4",
+        "inferred_end": "0x00285130",
+        "inferred_size": 1372,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.181
+      },
+      {
+        "source_offset": "0x00285130",
+        "runtime_address": "0x08285130",
+        "inferred_end": "0x002855A4",
+        "inferred_size": 1140,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.28
+      },
+      {
+        "source_offset": "0x002855A4",
+        "runtime_address": "0x082855A4",
+        "inferred_end": "0x00285A58",
+        "inferred_size": 1204,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.763
+      },
+      {
+        "source_offset": "0x00285A58",
+        "runtime_address": "0x08285A58",
+        "inferred_end": "0x00285F7C",
+        "inferred_size": 1316,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.966
+      },
+      {
+        "source_offset": "0x00285F7C",
+        "runtime_address": "0x08285F7C",
+        "inferred_end": "0x0028652C",
+        "inferred_size": 1456,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.638
+      },
+      {
+        "source_offset": "0x0028652C",
+        "runtime_address": "0x0828652C",
+        "inferred_end": "0x00286A0C",
+        "inferred_size": 1248,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.221
+      },
+      {
+        "source_offset": "0x00286A0C",
+        "runtime_address": "0x08286A0C",
+        "inferred_end": "0x00286F84",
+        "inferred_size": 1400,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.054
+      },
+      {
+        "source_offset": "0x00286F84",
+        "runtime_address": "0x08286F84",
+        "inferred_end": "0x00287564",
+        "inferred_size": 1504,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.541
+      },
+      {
+        "source_offset": "0x00287564",
+        "runtime_address": "0x08287564",
+        "inferred_end": "0x00287A90",
+        "inferred_size": 1324,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.351
+      },
+      {
+        "source_offset": "0x00287A90",
+        "runtime_address": "0x08287A90",
+        "inferred_end": "0x00287F70",
+        "inferred_size": 1248,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.647
+      },
+      {
+        "source_offset": "0x00287F70",
+        "runtime_address": "0x08287F70",
+        "inferred_end": "0x002884E0",
+        "inferred_size": 1392,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.327
+      },
+      {
+        "source_offset": "0x002884E0",
+        "runtime_address": "0x082884E0",
+        "inferred_end": "0x0028897C",
+        "inferred_size": 1180,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.541
+      },
+      {
+        "source_offset": "0x0028897C",
+        "runtime_address": "0x0828897C",
+        "inferred_end": "0x00288F44",
+        "inferred_size": 1480,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.696
+      },
+      {
+        "source_offset": "0x00288F44",
+        "runtime_address": "0x08288F44",
+        "inferred_end": "0x002894C0",
+        "inferred_size": 1404,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.423
+      },
+      {
+        "source_offset": "0x002894C0",
+        "runtime_address": "0x082894C0",
+        "inferred_end": "0x00289A48",
+        "inferred_size": 1416,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.467
+      },
+      {
+        "source_offset": "0x00289A48",
+        "runtime_address": "0x08289A48",
+        "inferred_end": "0x00289F38",
+        "inferred_size": 1264,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.243
+      },
+      {
+        "source_offset": "0x00289F38",
+        "runtime_address": "0x08289F38",
+        "inferred_end": "0x0028A48C",
+        "inferred_size": 1364,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.339
+      },
+      {
+        "source_offset": "0x0028A48C",
+        "runtime_address": "0x0828A48C",
+        "inferred_end": "0x0028A958",
+        "inferred_size": 1228,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.254
+      },
+      {
+        "source_offset": "0x0028A958",
+        "runtime_address": "0x0828A958",
+        "inferred_end": "0x0028AE84",
+        "inferred_size": 1324,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.004
+      },
+      {
+        "source_offset": "0x0028AE84",
+        "runtime_address": "0x0828AE84",
+        "inferred_end": "0x0028B3CC",
+        "inferred_size": 1352,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.349
+      },
+      {
+        "source_offset": "0x0028B3CC",
+        "runtime_address": "0x0828B3CC",
+        "inferred_end": "0x0028B910",
+        "inferred_size": 1348,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.57
+      },
+      {
+        "source_offset": "0x0028B910",
+        "runtime_address": "0x0828B910",
+        "inferred_end": "0x0028BEA4",
+        "inferred_size": 1428,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.987
+      },
+      {
+        "source_offset": "0x0028BEA4",
+        "runtime_address": "0x0828BEA4",
+        "inferred_end": "0x0028C428",
+        "inferred_size": 1412,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.943
+      },
+      {
+        "source_offset": "0x0028C428",
+        "runtime_address": "0x0828C428",
+        "inferred_end": "0x0028C9E0",
+        "inferred_size": 1464,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.541
+      },
+      {
+        "source_offset": "0x0028C9E0",
+        "runtime_address": "0x0828C9E0",
+        "inferred_end": "0x0028CF74",
+        "inferred_size": 1428,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.497
+      },
+      {
+        "source_offset": "0x0028CF74",
+        "runtime_address": "0x0828CF74",
+        "inferred_end": "0x0028D500",
+        "inferred_size": 1420,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.455
+      },
+      {
+        "source_offset": "0x0028D500",
+        "runtime_address": "0x0828D500",
+        "inferred_end": "0x0028D99C",
+        "inferred_size": 1180,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.148
+      },
+      {
+        "source_offset": "0x0028D99C",
+        "runtime_address": "0x0828D99C",
+        "inferred_end": "0x0028DED4",
+        "inferred_size": 1336,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.168
+      },
+      {
+        "source_offset": "0x0028DED4",
+        "runtime_address": "0x0828DED4",
+        "inferred_end": "0x0028E3B4",
+        "inferred_size": 1248,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.76
+      },
+      {
+        "source_offset": "0x0028E3B4",
+        "runtime_address": "0x0828E3B4",
+        "inferred_end": "0x0028E8C0",
+        "inferred_size": 1292,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.528
+      },
+      {
+        "source_offset": "0x0028E8C0",
+        "runtime_address": "0x0828E8C0",
+        "inferred_end": "0x0028EE4C",
+        "inferred_size": 1420,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.369
+      },
+      {
+        "source_offset": "0x0028EE4C",
+        "runtime_address": "0x0828EE4C",
+        "inferred_end": "0x0028F36C",
+        "inferred_size": 1312,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.473
+      },
+      {
+        "source_offset": "0x0028F36C",
+        "runtime_address": "0x0828F36C",
+        "inferred_end": "0x0028F928",
+        "inferred_size": 1468,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.434
+      },
+      {
+        "source_offset": "0x0028F928",
+        "runtime_address": "0x0828F928",
+        "inferred_end": "0x0028FE8C",
+        "inferred_size": 1380,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.573
+      },
+      {
+        "source_offset": "0x0028FE8C",
+        "runtime_address": "0x0828FE8C",
+        "inferred_end": "0x0029033C",
+        "inferred_size": 1200,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.318
+      },
+      {
+        "source_offset": "0x0029033C",
+        "runtime_address": "0x0829033C",
+        "inferred_end": "0x0029081C",
+        "inferred_size": 1248,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.143
+      },
+      {
+        "source_offset": "0x0029081C",
+        "runtime_address": "0x0829081C",
+        "inferred_end": "0x00290CF8",
+        "inferred_size": 1244,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 5.538
+      },
+      {
+        "source_offset": "0x00290CF8",
+        "runtime_address": "0x08290CF8",
+        "inferred_end": "0x002911B4",
+        "inferred_size": 1212,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.273
+      },
+      {
+        "source_offset": "0x002911B4",
+        "runtime_address": "0x082911B4",
+        "inferred_end": "0x00291674",
+        "inferred_size": 1216,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.432
+      },
+      {
+        "source_offset": "0x00291674",
+        "runtime_address": "0x08291674",
+        "inferred_end": "0x00291BF8",
+        "inferred_size": 1412,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.38
+      },
+      {
+        "source_offset": "0x00291BF8",
+        "runtime_address": "0x08291BF8",
+        "inferred_end": "0x002920BC",
+        "inferred_size": 1220,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.557
+      },
+      {
+        "source_offset": "0x002920BC",
+        "runtime_address": "0x082920BC",
+        "inferred_end": "0x00292564",
+        "inferred_size": 1192,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.398
+      },
+      {
+        "source_offset": "0x00292564",
+        "runtime_address": "0x08292564",
+        "inferred_end": "0x00292A90",
+        "inferred_size": 1324,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.837
+      },
+      {
+        "source_offset": "0x00292A90",
+        "runtime_address": "0x08292A90",
+        "inferred_end": "0x00292F90",
+        "inferred_size": 1280,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.421
+      },
+      {
+        "source_offset": "0x00292F90",
+        "runtime_address": "0x08292F90",
+        "inferred_end": "0x00293520",
+        "inferred_size": 1424,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.906
+      },
+      {
+        "source_offset": "0x00293520",
+        "runtime_address": "0x08293520",
+        "inferred_end": "0x002939B8",
+        "inferred_size": 1176,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.365
+      },
+      {
+        "source_offset": "0x002939B8",
+        "runtime_address": "0x082939B8",
+        "inferred_end": "0x00293ED0",
+        "inferred_size": 1304,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.675
+      },
+      {
+        "source_offset": "0x00293ED0",
+        "runtime_address": "0x08293ED0",
+        "inferred_end": "0x002943CC",
+        "inferred_size": 1276,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.271
+      },
+      {
+        "source_offset": "0x002943CC",
+        "runtime_address": "0x082943CC",
+        "inferred_end": "0x00294838",
+        "inferred_size": 1132,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.292
+      },
+      {
+        "source_offset": "0x00294838",
+        "runtime_address": "0x08294838",
+        "inferred_end": "0x00294D40",
+        "inferred_size": 1288,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.331
+      },
+      {
+        "source_offset": "0x00294D40",
+        "runtime_address": "0x08294D40",
+        "inferred_end": "0x00295244",
+        "inferred_size": 1284,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.427
+      },
+      {
+        "source_offset": "0x00295244",
+        "runtime_address": "0x08295244",
+        "inferred_end": "0x00295700",
+        "inferred_size": 1212,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.589
+      },
+      {
+        "source_offset": "0x00295700",
+        "runtime_address": "0x08295700",
+        "inferred_end": "0x00295C60",
+        "inferred_size": 1376,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.503
+      },
+      {
+        "source_offset": "0x00295C60",
+        "runtime_address": "0x08295C60",
+        "inferred_end": "0x00296170",
+        "inferred_size": 1296,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.452
+      },
+      {
+        "source_offset": "0x00296170",
+        "runtime_address": "0x08296170",
+        "inferred_end": "0x002966DC",
+        "inferred_size": 1388,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.979
+      },
+      {
+        "source_offset": "0x002966DC",
+        "runtime_address": "0x082966DC",
+        "inferred_end": "0x00296BF4",
+        "inferred_size": 1304,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.448
+      },
+      {
+        "source_offset": "0x00296BF4",
+        "runtime_address": "0x08296BF4",
+        "inferred_end": "0x00297100",
+        "inferred_size": 1292,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.128
+      },
+      {
+        "source_offset": "0x00297100",
+        "runtime_address": "0x08297100",
+        "inferred_end": "0x002975CC",
+        "inferred_size": 1228,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.357
+      },
+      {
+        "source_offset": "0x002975CC",
+        "runtime_address": "0x082975CC",
+        "inferred_end": "0x00297ACC",
+        "inferred_size": 1280,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.761
+      },
+      {
+        "source_offset": "0x00297ACC",
+        "runtime_address": "0x08297ACC",
+        "inferred_end": "0x00297F98",
+        "inferred_size": 1228,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.354
+      },
+      {
+        "source_offset": "0x00297F98",
+        "runtime_address": "0x08297F98",
+        "inferred_end": "0x00298480",
+        "inferred_size": 1256,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.45
+      },
+      {
+        "source_offset": "0x00298480",
+        "runtime_address": "0x08298480",
+        "inferred_end": "0x0029894C",
+        "inferred_size": 1228,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.327
+      },
+      {
+        "source_offset": "0x0029894C",
+        "runtime_address": "0x0829894C",
+        "inferred_end": "0x00298DD4",
+        "inferred_size": 1160,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.129
+      },
+      {
+        "source_offset": "0x00298DD4",
+        "runtime_address": "0x08298DD4",
+        "inferred_end": "0x00299290",
+        "inferred_size": 1212,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.347
+      },
+      {
+        "source_offset": "0x00299290",
+        "runtime_address": "0x08299290",
+        "inferred_end": "0x002997C0",
+        "inferred_size": 1328,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.354
+      },
+      {
+        "source_offset": "0x002997C0",
+        "runtime_address": "0x082997C0",
+        "inferred_end": "0x00299C90",
+        "inferred_size": 1232,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 6.297
+      },
+      {
+        "source_offset": "0x00299C90",
+        "runtime_address": "0x08299C90",
+        "inferred_end": "0x00299D1C",
+        "inferred_size": 140,
+        "header_hex": "03000000202009980200000001041000",
+        "entropy": 2.081
+      }
+    ],
+    "classification": "sprite/animation resource container",
+    "confidence": "strongly_supported",
+    "evidence": [
+      "83 unique one-to-one targets",
+      "common 03 00 00 00 header"
+    ]
+  },
+  {
+    "field": "field_18_ptr",
+    "count": 83,
+    "start": "0x0029A18C",
+    "last_start": "0x002A458C",
+    "objects": [
+      {
+        "source_offset": "0x0029A18C",
+        "runtime_address": "0x0829A18C",
+        "inferred_end": "0x0029A38C",
+        "inferred_size": 512,
+        "header_hex": "e0033b6b795e744ab451ae354d292821",
+        "entropy": 0.598
+      },
+      {
+        "source_offset": "0x0029A38C",
+        "runtime_address": "0x0829A38C",
+        "inferred_end": "0x0029A58C",
+        "inferred_size": 512,
+        "header_hex": "00035973b56a32522f5acb4da5512645",
+        "entropy": 0.662
+      },
+      {
+        "source_offset": "0x0029A58C",
+        "runtime_address": "0x0829A58C",
+        "inferred_end": "0x0029A78C",
+        "inferred_size": 512,
+        "header_hex": "3f7c386b9366106f887b4373a166415a",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x0029A78C",
+        "runtime_address": "0x0829A78C",
+        "inferred_end": "0x0029A98C",
+        "inferred_size": 512,
+        "header_hex": "1f7cdd6ffa5294524f2f462647290721",
+        "entropy": 0.622
+      },
+      {
+        "source_offset": "0x0029A98C",
+        "runtime_address": "0x0829A98C",
+        "inferred_end": "0x0029AB8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cbc5b3953975691562f32551dbb09",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x0029AB8C",
+        "runtime_address": "0x0829AB8C",
+        "inferred_end": "0x0029AD8C",
+        "inferred_size": 512,
+        "header_hex": "e003de4efd2d7d051a01f7007200d409",
+        "entropy": 0.553
+      },
+      {
+        "source_offset": "0x0029AD8C",
+        "runtime_address": "0x0829AD8C",
+        "inferred_end": "0x0029AF8C",
+        "inferred_size": 512,
+        "header_hex": "7f7cf55e917f0f738c66453dc545464e",
+        "entropy": 0.626
+      },
+      {
+        "source_offset": "0x0029AF8C",
+        "runtime_address": "0x0829AF8C",
+        "inferred_end": "0x0029B18C",
+        "inferred_size": 512,
+        "header_hex": "e003df7f3c739862af492c39b0586c44",
+        "entropy": 0.642
+      },
+      {
+        "source_offset": "0x0029B18C",
+        "runtime_address": "0x0829B18C",
+        "inferred_end": "0x0029B38C",
+        "inferred_size": 512,
+        "header_hex": "e0037b2b3f591a499538af288a18c638",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x0029B38C",
+        "runtime_address": "0x0829B38C",
+        "inferred_end": "0x0029B58C",
+        "inferred_size": 512,
+        "header_hex": "e17f9d5674362b42e662dd7b32537511",
+        "entropy": 0.605
+      },
+      {
+        "source_offset": "0x0029B58C",
+        "runtime_address": "0x0829B58C",
+        "inferred_end": "0x0029B78C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff7f7b6ff75e734ece394a29e002",
+        "entropy": 0.974
+      },
+      {
+        "source_offset": "0x0029B78C",
+        "runtime_address": "0x0829B78C",
+        "inferred_end": "0x0029B98C",
+        "inferred_size": 512,
+        "header_hex": "e003dd6f3d37d556cd3d1236ff37ad41",
+        "entropy": 1.539
+      },
+      {
+        "source_offset": "0x0029B98C",
+        "runtime_address": "0x0829B98C",
+        "inferred_end": "0x0029BB8C",
+        "inferred_size": 512,
+        "header_hex": "e00388514a7e0972aa7ee530df360000",
+        "entropy": 1.492
+      },
+      {
+        "source_offset": "0x0029BB8C",
+        "runtime_address": "0x0829BB8C",
+        "inferred_end": "0x0029BD8C",
+        "inferred_size": 512,
+        "header_hex": "5d64714a4d4dad38c31443154222a522",
+        "entropy": 0.616
+      },
+      {
+        "source_offset": "0x0029BD8C",
+        "runtime_address": "0x0829BD8C",
+        "inferred_end": "0x0029BF8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff1fff4bbf179a5fb8335f0e9172",
+        "entropy": 2.057
+      },
+      {
+        "source_offset": "0x0029BF8C",
+        "runtime_address": "0x0829BF8C",
+        "inferred_end": "0x0029C18C",
+        "inferred_size": 512,
+        "header_hex": "1f7c314a1867ff7fdf03bf02bf019f00",
+        "entropy": 1.519
+      },
+      {
+        "source_offset": "0x0029C18C",
+        "runtime_address": "0x0829C18C",
+        "inferred_end": "0x0029C38C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff3756279f2b947f1f23394e6d7e",
+        "entropy": 0.549
+      },
+      {
+        "source_offset": "0x0029C38C",
+        "runtime_address": "0x0829C38C",
+        "inferred_end": "0x0029C58C",
+        "inferred_size": 512,
+        "header_hex": "1f7c21089c7f841808258c315947de53",
+        "entropy": 1.57
+      },
+      {
+        "source_offset": "0x0029C58C",
+        "runtime_address": "0x0829C58C",
+        "inferred_end": "0x0029C78C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff1b1f23b1334e7f2d33751aaa2e",
+        "entropy": 1.538
+      },
+      {
+        "source_offset": "0x0029C78C",
+        "runtime_address": "0x0829C78C",
+        "inferred_end": "0x0029C98C",
+        "inferred_size": 512,
+        "header_hex": "1e787b6fde0fde07d65a913b1c063146",
+        "entropy": 0.548
+      },
+      {
+        "source_offset": "0x0029C98C",
+        "runtime_address": "0x0829C98C",
+        "inferred_end": "0x0029CB8C",
+        "inferred_size": 512,
+        "header_hex": "e0033967b202d65a734ecf39686a1200",
+        "entropy": 1.564
+      },
+      {
+        "source_offset": "0x0029CB8C",
+        "runtime_address": "0x0829CB8C",
+        "inferred_end": "0x0029CD8C",
+        "inferred_size": 512,
+        "header_hex": "e003dd7f7f2300001763ff13d20cbf1d",
+        "entropy": 0.561
+      },
+      {
+        "source_offset": "0x0029CD8C",
+        "runtime_address": "0x0829CD8C",
+        "inferred_end": "0x0029CF8C",
+        "inferred_size": 512,
+        "header_hex": "3f7c2929e720631400000000fe7fff7f",
+        "entropy": 1.56
+      },
+      {
+        "source_offset": "0x0029CF8C",
+        "runtime_address": "0x0829CF8C",
+        "inferred_end": "0x0029D18C",
+        "inferred_size": 512,
+        "header_hex": "007cff033f07df02b5561c027805045e",
+        "entropy": 0.504
+      },
+      {
+        "source_offset": "0x0029D18C",
+        "runtime_address": "0x0829D18C",
+        "inferred_end": "0x0029D38C",
+        "inferred_size": 512,
+        "header_hex": "e003bc1bbd773a63b84e123e6c296662",
+        "entropy": 0.602
+      },
+      {
+        "source_offset": "0x0029D38C",
+        "runtime_address": "0x0829D38C",
+        "inferred_end": "0x0029D58C",
+        "inferred_size": 512,
+        "header_hex": "3f782c27b45ca641cb40c328542d0451",
+        "entropy": 0.642
+      },
+      {
+        "source_offset": "0x0029D58C",
+        "runtime_address": "0x0829D58C",
+        "inferred_end": "0x0029D78C",
+        "inferred_size": 512,
+        "header_hex": "e30bff7ff77ee1760452bf0bb6167f2d",
+        "entropy": 0.612
+      },
+      {
+        "source_offset": "0x0029D78C",
+        "runtime_address": "0x0829D78C",
+        "inferred_end": "0x0029D98C",
+        "inferred_size": 512,
+        "header_hex": "e003975a6e4dad30653c4455226ef01a",
+        "entropy": 0.602
+      },
+      {
+        "source_offset": "0x0029D98C",
+        "runtime_address": "0x0829D98C",
+        "inferred_end": "0x0029DB8C",
+        "inferred_size": 512,
+        "header_hex": "1f7ce8244c39b049145a776efa72df7f",
+        "entropy": 1.565
+      },
+      {
+        "source_offset": "0x0029DB8C",
+        "runtime_address": "0x0829DB8C",
+        "inferred_end": "0x0029DD8C",
+        "inferred_size": 512,
+        "header_hex": "e003aa4a1c00a5186a350f4ed5624459",
+        "entropy": 0.626
+      },
+      {
+        "source_offset": "0x0029DD8C",
+        "runtime_address": "0x0829DD8C",
+        "inferred_end": "0x0029DF8C",
+        "inferred_size": 512,
+        "header_hex": "e00350415140a8285356411c8a4d0149",
+        "entropy": 0.598
+      },
+      {
+        "source_offset": "0x0029DF8C",
+        "runtime_address": "0x0829DF8C",
+        "inferred_end": "0x0029E18C",
+        "inferred_size": 512,
+        "header_hex": "1f7c26490015002a663acc4e335f996f",
+        "entropy": 0.565
+      },
+      {
+        "source_offset": "0x0029E18C",
+        "runtime_address": "0x0829E18C",
+        "inferred_end": "0x0029E38C",
+        "inferred_size": 512,
+        "header_hex": "e0077e0688487e0171085b009f17fd00",
+        "entropy": 0.594
+      },
+      {
+        "source_offset": "0x0029E38C",
+        "runtime_address": "0x0829E38C",
+        "inferred_end": "0x0029E58C",
+        "inferred_size": 512,
+        "header_hex": "1f7c9c53bf2bbf175f0b9a0693055708",
+        "entropy": 0.602
+      },
+      {
+        "source_offset": "0x0029E58C",
+        "runtime_address": "0x0829E58C",
+        "inferred_end": "0x0029E78C",
+        "inferred_size": 512,
+        "header_hex": "1f7cdd7f5a6fd65e3252ae412a31c472",
+        "entropy": 1.494
+      },
+      {
+        "source_offset": "0x0029E78C",
+        "runtime_address": "0x0829E78C",
+        "inferred_end": "0x0029E98C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff7f396b52526b39fe52ef7f0c73",
+        "entropy": 1.555
+      },
+      {
+        "source_offset": "0x0029E98C",
+        "runtime_address": "0x0829E98C",
+        "inferred_end": "0x0029EB8C",
+        "inferred_size": 512,
+        "header_hex": "1f7c1f319431000000002a42421c8b5d",
+        "entropy": 1.552
+      },
+      {
+        "source_offset": "0x0029EB8C",
+        "runtime_address": "0x0829EB8C",
+        "inferred_end": "0x0029ED8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff7fc61cd1769118490c0000ff2f",
+        "entropy": 0.517
+      },
+      {
+        "source_offset": "0x0029ED8C",
+        "runtime_address": "0x0829ED8C",
+        "inferred_end": "0x0029EF8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cbc7bf76a525a8c49e7206b7faa7a",
+        "entropy": 1.548
+      },
+      {
+        "source_offset": "0x0029EF8C",
+        "runtime_address": "0x0829EF8C",
+        "inferred_end": "0x0029F18C",
+        "inferred_size": 512,
+        "header_hex": "1f7c3b114e52c6618161415902458318",
+        "entropy": 0.602
+      },
+      {
+        "source_offset": "0x0029F18C",
+        "runtime_address": "0x0829F18C",
+        "inferred_end": "0x0029F38C",
+        "inferred_size": 512,
+        "header_hex": "1f7c0000073a444da26e6b527a6f620d",
+        "entropy": 0.598
+      },
+      {
+        "source_offset": "0x0029F38C",
+        "runtime_address": "0x0829F38C",
+        "inferred_end": "0x0029F58C",
+        "inferred_size": 512,
+        "header_hex": "1f7cc254ec61012ea129157342369658",
+        "entropy": 0.682
+      },
+      {
+        "source_offset": "0x0029F58C",
+        "runtime_address": "0x0829F58C",
+        "inferred_end": "0x0029F78C",
+        "inferred_size": 512,
+        "header_hex": "e07fbd239c2270035a3af0417a259e7b",
+        "entropy": 0.537
+      },
+      {
+        "source_offset": "0x0029F78C",
+        "runtime_address": "0x0829F78C",
+        "inferred_end": "0x0029F98C",
+        "inferred_size": 512,
+        "header_hex": "e07f0000c5309f0fc5540000170dbf12",
+        "entropy": 0.521
+      },
+      {
+        "source_offset": "0x0029F98C",
+        "runtime_address": "0x0829F98C",
+        "inferred_end": "0x0029FB8C",
+        "inferred_size": 512,
+        "header_hex": "3f7c8248ff7fa261fc7fc17eff07ff7f",
+        "entropy": 1.543
+      },
+      {
+        "source_offset": "0x0029FB8C",
+        "runtime_address": "0x0829FB8C",
+        "inferred_end": "0x0029FD8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cbe2b3b639573d8523e4205775442",
+        "entropy": 0.634
+      },
+      {
+        "source_offset": "0x0029FD8C",
+        "runtime_address": "0x0829FD8C",
+        "inferred_end": "0x0029FF8C",
+        "inferred_size": 512,
+        "header_hex": "1f7ca42e22042b1900005d0ddc08df1b",
+        "entropy": 0.484
+      },
+      {
+        "source_offset": "0x0029FF8C",
+        "runtime_address": "0x0829FF8C",
+        "inferred_end": "0x002A018C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff7f0000eb658d7eff337f2aff7f",
+        "entropy": 1.561
+      },
+      {
+        "source_offset": "0x002A018C",
+        "runtime_address": "0x082A018C",
+        "inferred_end": "0x002A038C",
+        "inferred_size": 512,
+        "header_hex": "1f7c05492f56615eeb0e7d07b74eae31",
+        "entropy": 1.579
+      },
+      {
+        "source_offset": "0x002A038C",
+        "runtime_address": "0x082A038C",
+        "inferred_end": "0x002A058C",
+        "inferred_size": 512,
+        "header_hex": "1f7c3e13fd0d01237a77bc046765ee18",
+        "entropy": 1.568
+      },
+      {
+        "source_offset": "0x002A058C",
+        "runtime_address": "0x082A058C",
+        "inferred_end": "0x002A078C",
+        "inferred_size": 512,
+        "header_hex": "ea0bb5522c3e5963a835662d09310421",
+        "entropy": 0.646
+      },
+      {
+        "source_offset": "0x002A078C",
+        "runtime_address": "0x082A078C",
+        "inferred_end": "0x002A098C",
+        "inferred_size": 512,
+        "header_hex": "1f7cbe0793521f02ef3dcf41bc776b29",
+        "entropy": 0.519
+      },
+      {
+        "source_offset": "0x002A098C",
+        "runtime_address": "0x082A098C",
+        "inferred_end": "0x002A0B8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff0fff7fbd335a6bb452ff7fef39",
+        "entropy": 1.438
+      },
+      {
+        "source_offset": "0x002A0B8C",
+        "runtime_address": "0x082A0B8C",
+        "inferred_end": "0x002A0D8C",
+        "inferred_size": 512,
+        "header_hex": "e207dd56dd395e319e205b2ab6261b23",
+        "entropy": 1.57
+      },
+      {
+        "source_offset": "0x002A0D8C",
+        "runtime_address": "0x082A0D8C",
+        "inferred_end": "0x002A0F8C",
+        "inferred_size": 512,
+        "header_hex": "3f70375fb7564f52485e66416c29942d",
+        "entropy": 0.646
+      },
+      {
+        "source_offset": "0x002A0F8C",
+        "runtime_address": "0x082A0F8C",
+        "inferred_end": "0x002A118C",
+        "inferred_size": 512,
+        "header_hex": "1f7cff03d5468c31df028f232b17e80a",
+        "entropy": 1.557
+      },
+      {
+        "source_offset": "0x002A118C",
+        "runtime_address": "0x082A118C",
+        "inferred_end": "0x002A138C",
+        "inferred_size": 512,
+        "header_hex": "e107660a5508742d3d089e12dd109f23",
+        "entropy": 1.574
+      },
+      {
+        "source_offset": "0x002A138C",
+        "runtime_address": "0x082A138C",
+        "inferred_end": "0x002A158C",
+        "inferred_size": 512,
+        "header_hex": "7f7cdf02d45a714e8d35672504156310",
+        "entropy": 0.605
+      },
+      {
+        "source_offset": "0x002A158C",
+        "runtime_address": "0x082A158C",
+        "inferred_end": "0x002A178C",
+        "inferred_size": 512,
+        "header_hex": "1a785b775677ef765466523a2f3eab41",
+        "entropy": 1.558
+      },
+      {
+        "source_offset": "0x002A178C",
+        "runtime_address": "0x082A178C",
+        "inferred_end": "0x002A198C",
+        "inferred_size": 512,
+        "header_hex": "1b7cff7b36675d17524a9349cb594572",
+        "entropy": 0.65
+      },
+      {
+        "source_offset": "0x002A198C",
+        "runtime_address": "0x082A198C",
+        "inferred_end": "0x002A1B8C",
+        "inferred_size": 512,
+        "header_hex": "e3073c6f3973b3660d6269614a35c61d",
+        "entropy": 1.579
+      },
+      {
+        "source_offset": "0x002A1B8C",
+        "runtime_address": "0x082A1B8C",
+        "inferred_end": "0x002A1D8C",
+        "inferred_size": 512,
+        "header_hex": "1f7cbb6b612cc13802456251a35de003",
+        "entropy": 0.561
+      },
+      {
+        "source_offset": "0x002A1D8C",
+        "runtime_address": "0x082A1D8C",
+        "inferred_end": "0x002A1F8C",
+        "inferred_size": 512,
+        "header_hex": "1c7cde5ed36ad56f6c73ca6aaa718342",
+        "entropy": 1.568
+      },
+      {
+        "source_offset": "0x002A1F8C",
+        "runtime_address": "0x082A1F8C",
+        "inferred_end": "0x002A218C",
+        "inferred_size": 512,
+        "header_hex": "1b7854574d4eab558b2d941d97169e25",
+        "entropy": 1.568
+      },
+      {
+        "source_offset": "0x002A218C",
+        "runtime_address": "0x082A218C",
+        "inferred_end": "0x002A238C",
+        "inferred_size": 512,
+        "header_hex": "1f6cbd77d65e545a4f62ef66a7694b3d",
+        "entropy": 1.579
+      },
+      {
+        "source_offset": "0x002A238C",
+        "runtime_address": "0x082A238C",
+        "inferred_end": "0x002A258C",
+        "inferred_size": 512,
+        "header_hex": "e3071667b45a52522e424a2daa20a418",
+        "entropy": 0.561
+      },
+      {
+        "source_offset": "0x002A258C",
+        "runtime_address": "0x082A258C",
+        "inferred_end": "0x002A278C",
+        "inferred_size": 512,
+        "header_hex": "1c7c3e33fe2fd52b8e22ac2d6e292a21",
+        "entropy": 0.598
+      },
+      {
+        "source_offset": "0x002A278C",
+        "runtime_address": "0x082A278C",
+        "inferred_end": "0x002A298C",
+        "inferred_size": 512,
+        "header_hex": "e107830e732067294b1ca4149a222338",
+        "entropy": 0.646
+      },
+      {
+        "source_offset": "0x002A298C",
+        "runtime_address": "0x082A298C",
+        "inferred_end": "0x002A2B8C",
+        "inferred_size": 512,
+        "header_hex": "e10ffb5e536f8c5ae73d8e2df4317936",
+        "entropy": 1.579
+      },
+      {
+        "source_offset": "0x002A2B8C",
+        "runtime_address": "0x082A2B8C",
+        "inferred_end": "0x002A2D8C",
+        "inferred_size": 512,
+        "header_hex": "3f7cb26a4d6b646a845d8b49a248a221",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x002A2D8C",
+        "runtime_address": "0x082A2D8C",
+        "inferred_end": "0x002A2F8C",
+        "inferred_size": 512,
+        "header_hex": "3f6c416ab442627341108b5ac2766329",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x002A2F8C",
+        "runtime_address": "0x082A2F8C",
+        "inferred_end": "0x002A318C",
+        "inferred_size": 512,
+        "header_hex": "c203dd46da3e5b36de1dbd0c9608cb14",
+        "entropy": 0.598
+      },
+      {
+        "source_offset": "0x002A318C",
+        "runtime_address": "0x082A318C",
+        "inferred_end": "0x002A338C",
+        "inferred_size": 512,
+        "header_hex": "1f789477536a0000827ae47ea2594b39",
+        "entropy": 1.566
+      },
+      {
+        "source_offset": "0x002A338C",
+        "runtime_address": "0x082A338C",
+        "inferred_end": "0x002A358C",
+        "inferred_size": 512,
+        "header_hex": "3e7450568c4d2b3a0d31ac2491203325",
+        "entropy": 1.579
+      },
+      {
+        "source_offset": "0x002A358C",
+        "runtime_address": "0x082A358C",
+        "inferred_end": "0x002A378C",
+        "inferred_size": 512,
+        "header_hex": "e107df5e3f6a9d513a55ba4cd551c465",
+        "entropy": 0.638
+      },
+      {
+        "source_offset": "0x002A378C",
+        "runtime_address": "0x082A378C",
+        "inferred_end": "0x002A398C",
+        "inferred_size": 512,
+        "header_hex": "e207bc5a736610775c13cc7a4676c469",
+        "entropy": 0.642
+      },
+      {
+        "source_offset": "0x002A398C",
+        "runtime_address": "0x082A398C",
+        "inferred_end": "0x002A3B8C",
+        "inferred_size": 512,
+        "header_hex": "3f6c5a63d4732c6bd35653528e59294e",
+        "entropy": 1.583
+      },
+      {
+        "source_offset": "0x002A3B8C",
+        "runtime_address": "0x082A3B8C",
+        "inferred_end": "0x002A3D8C",
+        "inferred_size": 512,
+        "header_hex": "e107a5065f1abf1734089f09937b995e",
+        "entropy": 0.642
+      },
+      {
+        "source_offset": "0x002A3D8C",
+        "runtime_address": "0x082A3D8C",
+        "inferred_end": "0x002A3F8C",
+        "inferred_size": 512,
+        "header_hex": "e107d966155b0f4acc55cd392735a528",
+        "entropy": 1.576
+      },
+      {
+        "source_offset": "0x002A3F8C",
+        "runtime_address": "0x082A3F8C",
+        "inferred_end": "0x002A418C",
+        "inferred_size": 512,
+        "header_hex": "e30314535152ee417041d7515b465b22",
+        "entropy": 1.568
+      },
+      {
+        "source_offset": "0x002A418C",
+        "runtime_address": "0x082A418C",
+        "inferred_end": "0x002A438C",
+        "inferred_size": 512,
+        "header_hex": "c0033373ad7aa6598a31261d690c4208",
+        "entropy": 1.539
+      },
+      {
+        "source_offset": "0x002A438C",
+        "runtime_address": "0x082A438C",
+        "inferred_end": "0x002A458C",
+        "inferred_size": 512,
+        "header_hex": "1d7cd23b8a23ca2ae925a74dac5dac62",
+        "entropy": 0.605
+      },
+      {
+        "source_offset": "0x002A458C",
+        "runtime_address": "0x082A458C",
+        "inferred_end": "0x002A478C",
+        "inferred_size": 512,
+        "header_hex": "1e684402b922d32bda6334208a0ffc27",
+        "entropy": 0.65
+      }
+    ],
+    "classification": "512-byte presentation graphics planes",
+    "confidence": "strongly_supported",
+    "evidence": [
+      "83 unique one-to-one targets",
+      "sorted targets have invariant 0x200 spacing"
+    ]
+  }
+]

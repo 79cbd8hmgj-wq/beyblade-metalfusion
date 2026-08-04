@@ -1,0 +1,7 @@
+runtime_address,mode,label,confidence
+0x0803DCFC,Thumb,getBeyBladeWithIndex,confirmed
+0x08079CF4,data,bitBeastSpecialMovePresentationPairs,strongly_supported
+0x0807AF0C,data,spinGearNamePointers,confirmed
+0x0807B0D8,data,attackRingNamePointers,confirmed
+0x0807B824,data,bladeBaseNamePointers,confirmed
+0x0807BC28,data,weightDiskNamePointers,confirmed
