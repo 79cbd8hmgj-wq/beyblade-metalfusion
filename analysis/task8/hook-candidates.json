@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "anchors": [
+    {
+      "id": "new-game",
+      "text": "NEW GAME",
+      "string_offset": "0x003A3150",
+      "runtime_address": "0x083A3150",
+      "direct_pointer_references": ["0x00096A80"],
+      "second_level_pointer_references": ["0x00064F38", "0x000B8FF8"],
+      "code_candidates": [
+        {
+          "function_start": "0x00064E10",
+          "runtime_start": "0x08064E10",
+          "instruction_offset": "0x00064E7A",
+          "literal_offset": "0x00064F38",
+          "confidence": "candidate",
+          "evidence": "Thumb literal load resolves the localized NEW GAME row pointer."
+        },
+        {
+          "function_start": "0x000654B8",
+          "runtime_start": "0x080654B8",
+          "instruction_offset": "0x0006552C",
+          "literal_offset": "0x00065550",
+          "descriptor_offset": "0x000B8FF4",
+          "descriptor_field_delta": 4,
+          "confidence": "candidate",
+          "evidence": "Thumb code loads a nearby descriptor containing the NEW GAME localized-row pointer."
+        }
+      ]
+    },
+    {
+      "id": "name-label",
+      "text": "Name:",
+      "string_offset": "0x003A34F0",
+      "runtime_address": "0x083A34F0",
+      "direct_pointer_references": ["0x00096C10", "0x00096C20"],
+      "second_level_pointer_references": ["0x00048C70"],
+      "code_candidates": [
+        {
+          "function_start": "0x00048AB8",
+          "runtime_start": "0x08048AB8",
+          "instruction_offset": "0x00048B98",
+          "literal_offset": "0x00048C70",
+          "confidence": "candidate",
+          "evidence": "Thumb literal load resolves a localized Name label row."
+        }
+      ]
+    },
+    {
+      "id": "enter-name",
+      "text": "Enter name",
+      "string_offset": "0x003A3760",
+      "runtime_address": "0x083A3760",
+      "direct_pointer_references": ["0x00096D00"],
+      "descriptor_candidates": [
+        {
+          "descriptor_offset": "0x000BAE54",
+          "runtime_address": "0x080BAE54",
+          "field_delta": 20,
+          "pointer_literal_offsets": ["0x0006664C", "0x00066974", "0x000669D8"],
+          "code_candidates": [
+            {
+              "function_start": "0x0006645C",
+              "runtime_start": "0x0806645C",
+              "instruction_offset": "0x000665A2"
+            },
+            {
+              "function_start": "0x000668C8",
+              "runtime_start": "0x080668C8",
+              "instruction_offset": "0x0006692A"
+            },
+            {
+              "function_start": "0x00066984",
+              "runtime_start": "0x08066984",
+              "instruction_offset": "0x000669C4"
+            }
+          ],
+          "confidence": "strongly_supported",
+          "evidence": "Three Thumb functions load the same descriptor whose +0x14 field points to the Enter name localized row. Descriptor semantics and destination buffer remain unresolved."
+        }
+      ]
+    },
+    {
+      "id": "protagonist-name-row",
+      "table_start": "0x00077F10",
+      "table_end_exclusive": "0x00077F24",
+      "runtime_start": "0x08077F10",
+      "entries": [
+        {"language_index": 0, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 1, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 2, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 3, "text": "Takao", "string_offset": "0x0033BF84"},
+        {"language_index": 4, "text": "Tyson", "string_offset": "0x0033BF8C"}
+      ],
+      "code_candidates": [
+        {
+          "function_start": "0x0002E4DC",
+          "runtime_start": "0x0802E4DC",
+          "instruction_offset": "0x0002E598",
+          "literal_offset": "0x0002E5F0",
+          "confidence": "strongly_supported",
+          "evidence": "Function loads the five-pointer protagonist row, indexes it through a runtime language value, and passes the resolved string to a text routine."
+        }
+      ]
+    }
+  ],
+  "status": {
+    "static_analysis": "executed",
+    "native_hook_sites": "not_confirmed",
+    "runtime_breakpoints": "required",
+    "source_rom_modified": false
+  }
+}
