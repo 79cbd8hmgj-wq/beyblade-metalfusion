@@ -1,0 +1,43 @@
+name: Bootstrap G-Revolution Foundation
+
+on:
+  push:
+    branches:
+      - re/g-revolution-foundation
+    paths:
+      - .foundation-bootstrap.tar.gz.b64
+
+permissions:
+  contents: write
+
+jobs:
+  expand-foundation:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify and expand foundation archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 --decode .foundation-bootstrap.tar.gz.b64 > /tmp/g-rev-foundation.tar.gz
+          echo '658630dde5a7f8ed0cbd5a6679826725ac43321b3f38eb4a50518cbe724d7afe  /tmp/g-rev-foundation.tar.gz' | sha256sum --check
+          tar -xzf /tmp/g-rev-foundation.tar.gz -C .
+          rm .foundation-bootstrap.tar.gz.b64
+
+      - name: Commit expanded toolkit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'feat: add G-Revolution reverse-engineering foundation'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
