@@ -1,0 +1,164 @@
+name: Build GBA GDB Debugger Bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      mgba_ref:
+        description: mGBA tag, branch, or commit to build
+        required: true
+        default: "0.10.5"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build-linux-x86_64:
+    name: Linux x86_64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out bundle sources
+        uses: actions/checkout@v4
+
+      - name: Install build and verification dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential \
+            ca-certificates \
+            cmake \
+            file \
+            gdb-multiarch \
+            git \
+            libedit-dev \
+            libelf-dev \
+            libsdl2-dev \
+            netcat-openbsd \
+            ninja-build \
+            pkg-config \
+            python3 \
+            xz-utils \
+            zlib1g-dev
+
+      - name: Fetch pinned mGBA source
+        env:
+          MGBA_REF: ${{ inputs.mgba_ref }}
+        run: |
+          set -euxo pipefail
+          git init mgba-src
+          git -C mgba-src remote add origin https://github.com/mgba-emu/mgba.git
+          git -C mgba-src fetch --depth=1 origin "${MGBA_REF}"
+          git -C mgba-src checkout --detach FETCH_HEAD
+          git -C mgba-src submodule update --init --recursive --depth=1
+          echo "MGBA_COMMIT=$(git -C mgba-src rev-parse HEAD)" >> "${GITHUB_ENV}"
+
+      - name: Configure mGBA with ARM GDB support
+        run: |
+          cmake -S mgba-src -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DBUILD_QT=OFF \
+            -DBUILD_SDL=ON \
+            -DBUILD_SHARED=OFF \
+            -DBUILD_STATIC=ON \
+            -DBUILD_GL=OFF \
+            -DBUILD_GLES2=OFF \
+            -DBUILD_GLES3=OFF \
+            -DBUILD_LTO=OFF \
+            -DBUILD_TEST=OFF \
+            -DBUILD_SUITE=OFF \
+            -DBUILD_ROM_TEST=OFF \
+            -DBUILD_PYTHON=OFF \
+            -DUSE_DEBUGGERS=ON \
+            -DUSE_GDB_STUB=ON \
+            -DUSE_EDITLINE=ON \
+            -DUSE_ELF=ON \
+            -DUSE_FFMPEG=OFF \
+            -DUSE_LUA=OFF \
+            -DENABLE_SCRIPTING=OFF \
+            -DUSE_DISCORD_RPC=OFF \
+            -DUSE_SQLITE3=OFF \
+            -DUSE_LIBZIP=OFF \
+            -DUSE_MINIZIP=OFF \
+            -DUSE_LZMA=OFF \
+            -DUSE_PNG=OFF \
+            -DUSE_PIXMAN=OFF \
+            -DUSE_EPOXY=OFF
+
+      - name: Compile mGBA
+        run: |
+          cmake --build build --target mgba --parallel "$(nproc)"
+          test -x build/mgba
+
+      - name: Assemble portable debugger bundle
+        env:
+          REQUESTED_MGBA_REF: ${{ inputs.mgba_ref }}
+        run: |
+          set -euxo pipefail
+          BUNDLE="bundle/mgba-debug"
+          mkdir -p "${BUNDLE}/lib" "${BUNDLE}/gdb" dist
+
+          cp build/mgba "${BUNDLE}/mgba"
+          cp debugger-bundle/run-mgba-gdb.sh "${BUNDLE}/"
+          cp debugger-bundle/run-mgba-gdb-headless.sh "${BUNDLE}/"
+          cp debugger-bundle/connect-gdb.sh "${BUNDLE}/"
+          cp debugger-bundle/gba.gdbinit "${BUNDLE}/gdb/"
+          cp debugger-bundle/GBA_MEMORY_MAP.txt "${BUNDLE}/"
+          cp debugger-bundle/README.txt "${BUNDLE}/"
+          cp mgba-src/LICENSE "${BUNDLE}/license.txt"
+          chmod +x "${BUNDLE}/mgba" "${BUNDLE}"/*.sh
+
+          scripts/collect-runtime-libs.sh "${BUNDLE}/mgba" "${BUNDLE}/lib"
+
+          file "${BUNDLE}/mgba" > "${BUNDLE}/mgba-file.txt"
+          ldd "${BUNDLE}/mgba" > "${BUNDLE}/mgba-ldd.txt"
+
+          set +e
+          SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
+            "${BUNDLE}/mgba" --help > "${BUNDLE}/mgba-help.txt" 2>&1
+          HELP_STATUS=$?
+          set -e
+
+          cat > "${BUNDLE}/BUILD_INFO.txt" <<EOF
+          Requested mGBA ref: ${REQUESTED_MGBA_REF}
+          Resolved mGBA commit: ${MGBA_COMMIT}
+          Runner OS: ubuntu-24.04
+          Architecture: x86_64
+          Compiler: $(cc --version | head -n 1)
+          CMake version: $(cmake --version | head -n 1)
+          Configure: SDL frontend, RelWithDebInfo, USE_DEBUGGERS=ON, USE_GDB_STUB=ON, USE_EDITLINE=ON, USE_ELF=ON
+          Workflow repository commit: ${GITHUB_SHA}
+          Build timestamp UTC: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          Help exit status: ${HELP_STATUS}
+          GDB endpoint: 127.0.0.1:2345
+          EOF
+
+      - name: Verify ARM GDB server end to end
+        run: |
+          python3 scripts/make-test-rom.py test-gdb.gba
+          scripts/verify-gdb-bundle.sh bundle/mgba-debug test-gdb.gba
+
+      - name: Generate checksums and archive
+        run: |
+          set -euxo pipefail
+          (
+            cd bundle/mgba-debug
+            find . -type f ! -name SHA256SUMS -print0 \
+              | sort -z \
+              | xargs -0 sha256sum > SHA256SUMS
+          )
+          tar -C bundle -cJf dist/mgba-linux-gdb-x86_64.tar.xz mgba-debug
+          sha256sum dist/mgba-linux-gdb-x86_64.tar.xz \
+            > dist/mgba-linux-gdb-x86_64.tar.xz.sha256
+
+      - name: Upload debugger bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: mgba-linux-gdb-x86_64
+          path: |
+            dist/mgba-linux-gdb-x86_64.tar.xz
+            dist/mgba-linux-gdb-x86_64.tar.xz.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
