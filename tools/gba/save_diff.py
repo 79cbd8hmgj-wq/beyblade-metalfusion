@@ -11,5 +11,9 @@ def diff(before:bytes,after:bytes):
  if start is not None:ranges.append({'offset':start,'length':len(before)-start,'before':before[start:].hex(),'after':after[start:].hex()})
  return {'size':len(before),'changed_byte_count':sum(r['length'] for r in ranges),'ranges':ranges}
 def main(argv=None):
- p=argparse.ArgumentParser();p.add_argument('--before',required=True);p.add_argument('--after',required=True);p.add_argument('--output',required=True);a=p.parse_args();d=diff(Path(a.before).read_bytes(),Path(a.after).read_bytes());Path(a.output).write_text(json.dumps(d,indent=2,sort_keys=True)+'\n')
+ p=argparse.ArgumentParser();p.add_argument('--before',required=True);p.add_argument('--after',required=True);p.add_argument('--output',required=True);p.add_argument('--custom-extension',action='store_true');a=p.parse_args();d=diff(Path(a.before).read_bytes(),Path(a.after).read_bytes());
+ if a.custom_extension:
+  from .custom_save_extension import extension_report
+  d['custom_extension']={'before':extension_report(Path(a.before).read_bytes()),'after':extension_report(Path(a.after).read_bytes())}
+ Path(a.output).write_text(json.dumps(d,indent=2,sort_keys=True)+'\n')
 if __name__=='__main__':main()

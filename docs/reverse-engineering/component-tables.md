@@ -94,3 +94,7 @@ python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --tab
 python3 -m tools.gba.table_extract --rom "Beyblade G-Revolution (USA).gba" --table bit-beasts-and-moves --output analysis/generated/tables/moves
 ```
 
+
+## Task 8 Blank Core boundary
+
+The complete-Beyblade table remains count `83` at ROM `0x0007A1F4`, stride `0x28`; byte `+0x21` remains the Bit Chip identity foundation. Task 8 uses a virtual Blank Core ID `0xF0` in custom state only; no retail Bit Chip record is repurposed.

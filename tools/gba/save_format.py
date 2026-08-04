@@ -60,9 +60,12 @@ def write_copy(source:Path,dest:Path,image:SaveImage):
  if source.resolve()==dest.resolve(): raise SaveFormatError('refusing in-place write')
  dest.write_bytes(image.to_bytes())
 def main(argv=None):
- p=argparse.ArgumentParser(); p.add_argument('--rom');p.add_argument('--save');p.add_argument('--output',required=True);p.add_argument('--research-override',action='store_true');p.add_argument('--allow-padding',action='store_true')
+ p=argparse.ArgumentParser(); p.add_argument('--rom');p.add_argument('--save');p.add_argument('--output',required=True);p.add_argument('--research-override',action='store_true');p.add_argument('--allow-padding',action='store_true');p.add_argument('--custom-extension',action='store_true')
  a=p.parse_args(argv)
  if bool(a.rom)==bool(a.save):p.error('choose exactly one of --rom or --save')
  result=static_report(Path(a.rom).read_bytes(),a.research_override) if a.rom else SaveImage.parse(Path(a.save).read_bytes(),a.allow_padding).report()
+ if a.save and a.custom_extension:
+  from .custom_save_extension import extension_report
+  result['custom_extension']=extension_report(Path(a.save).read_bytes())
  out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
 if __name__=='__main__':main()
