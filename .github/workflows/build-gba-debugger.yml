@@ -135,6 +135,7 @@ jobs:
 
       - name: Verify ARM GDB server end to end
         run: |
+          bash tests/test-verify-gdb-script.sh
           python3 scripts/make-test-rom.py test-gdb.gba
           bash scripts/verify-gdb-bundle.sh bundle/mgba-debug test-gdb.gba
 
