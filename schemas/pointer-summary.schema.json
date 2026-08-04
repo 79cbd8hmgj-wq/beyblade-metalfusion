@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Pointer scan summary","type":"object","required":["aligned_candidate_count","run_count","target_regions"],"properties":{"aligned_candidate_count":{"type":"integer"},"run_count":{"type":"integer"},"target_regions":{"type":"object"}}}

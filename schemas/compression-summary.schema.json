@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Validated compression summary","type":"object","required":["validated_count","by_type","candidates"],"properties":{"validated_count":{"type":"integer"},"by_type":{"type":"object"},"candidates":{"type":"array"}}}

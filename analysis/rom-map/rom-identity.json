@@ -1,0 +1,23 @@
+{
+  "calculated_checksum": 131,
+  "checksum_valid": true,
+  "confidence": "confirmed",
+  "crc32": "33afdbe8",
+  "entry_point_destination": "0x080000C0",
+  "entry_point_raw": "0xEA00002E",
+  "evidence_type": "direct_binary_evidence",
+  "fixed_value": 150,
+  "game_code": "BB2E",
+  "header_checksum": 131,
+  "image_assessment": "valid",
+  "internal_title": "BEYBLADEGREV",
+  "likely_capacity": 4194304,
+  "maker_code": "70",
+  "nintendo_logo_valid": true,
+  "path": "Beyblade G-Revolution (USA).gba",
+  "sha1": "a89f7b4eb77dc986022201db51a676451ba7c5e4",
+  "sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "size": 4194304,
+  "software_version": 0,
+  "trailing_ff_bytes": 0
+}

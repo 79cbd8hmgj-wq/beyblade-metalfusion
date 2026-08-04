@@ -1,0 +1,66 @@
+start_offset,end_offset,start_address,end_address,classification,confidence,evidence
+0x00000000,0x000000C0,0x08000000,0x080000C0,header,confirmed,validated GBA header
+0x000000C0,0x000100C0,0x080000C0,0x080100C0,string pool,strongly_supported,strings=260; pointers=821; validated_compression=0; entropy=4.782; dominant_byte_fraction=0.368
+0x000100C0,0x000200C0,0x080100C0,0x080200C0,string pool,strongly_supported,strings=314; pointers=1003; validated_compression=0; entropy=5.780; dominant_byte_fraction=0.184
+0x000200C0,0x000300C0,0x080200C0,0x080300C0,string pool,strongly_supported,strings=216; pointers=902; validated_compression=0; entropy=6.008; dominant_byte_fraction=0.208
+0x000300C0,0x000400C0,0x080300C0,0x080400C0,string pool,strongly_supported,strings=805; pointers=1349; validated_compression=0; entropy=6.545; dominant_byte_fraction=0.113
+0x000400C0,0x000500C0,0x080400C0,0x080500C0,string pool,strongly_supported,strings=480; pointers=1531; validated_compression=0; entropy=6.448; dominant_byte_fraction=0.118
+0x000500C0,0x000600C0,0x080500C0,0x080600C0,string pool,strongly_supported,strings=358; pointers=1399; validated_compression=0; entropy=6.432; dominant_byte_fraction=0.115
+0x000600C0,0x000700C0,0x080600C0,0x080700C0,string pool,strongly_supported,strings=757; pointers=1180; validated_compression=0; entropy=6.616; dominant_byte_fraction=0.098
+0x000700C0,0x000800C0,0x080700C0,0x080800C0,string pool,strongly_supported,strings=237; pointers=7342; validated_compression=0; entropy=6.039; dominant_byte_fraction=0.165
+0x000800C0,0x000900C0,0x080800C0,0x080900C0,mixed code/literal pool,candidate,strings=0; pointers=13873; validated_compression=0; entropy=5.578; dominant_byte_fraction=0.250
+0x000900C0,0x000A00C0,0x080900C0,0x080A00C0,mixed code/literal pool,candidate,strings=5; pointers=5031; validated_compression=0; entropy=3.857; dominant_byte_fraction=0.549
+0x000A00C0,0x000B00C0,0x080A00C0,0x080B00C0,mixed code/literal pool,candidate,strings=0; pointers=2169; validated_compression=0; entropy=3.185; dominant_byte_fraction=0.634
+0x000B00C0,0x000C00C0,0x080B00C0,0x080C00C0,compressed data candidate,strongly_supported,strings=311; pointers=2166; validated_compression=16; entropy=4.894; dominant_byte_fraction=0.452
+0x000C00C0,0x000D00C0,0x080C00C0,0x080D00C0,compressed data candidate,strongly_supported,strings=909; pointers=484; validated_compression=41; entropy=6.817; dominant_byte_fraction=0.131
+0x000D00C0,0x000E00C0,0x080D00C0,0x080E00C0,compressed data candidate,strongly_supported,strings=790; pointers=360; validated_compression=10; entropy=5.259; dominant_byte_fraction=0.222
+0x000E00C0,0x000F00C0,0x080E00C0,0x080F00C0,string pool,strongly_supported,strings=401; pointers=546; validated_compression=0; entropy=3.208; dominant_byte_fraction=0.303
+0x000F00C0,0x001000C0,0x080F00C0,0x081000C0,string pool,strongly_supported,strings=1330; pointers=236; validated_compression=0; entropy=3.102; dominant_byte_fraction=0.447
+0x001000C0,0x001100C0,0x081000C0,0x081100C0,string pool,strongly_supported,strings=1396; pointers=59; validated_compression=0; entropy=2.962; dominant_byte_fraction=0.538
+0x001100C0,0x001200C0,0x081100C0,0x081200C0,string pool,strongly_supported,strings=1088; pointers=130; validated_compression=0; entropy=4.312; dominant_byte_fraction=0.372
+0x001200C0,0x001300C0,0x081200C0,0x081300C0,compressed data candidate,strongly_supported,strings=1591; pointers=38; validated_compression=6; entropy=6.199; dominant_byte_fraction=0.217
+0x001300C0,0x001400C0,0x081300C0,0x081400C0,string pool,strongly_supported,strings=2930; pointers=7; validated_compression=0; entropy=6.829; dominant_byte_fraction=0.038
+0x001400C0,0x001500C0,0x081400C0,0x081500C0,string pool,strongly_supported,strings=1705; pointers=13; validated_compression=0; entropy=6.803; dominant_byte_fraction=0.063
+0x001500C0,0x001600C0,0x081500C0,0x081600C0,string pool,strongly_supported,strings=1551; pointers=23; validated_compression=0; entropy=7.265; dominant_byte_fraction=0.020
+0x001600C0,0x001700C0,0x081600C0,0x081700C0,string pool,strongly_supported,strings=3375; pointers=11; validated_compression=0; entropy=6.823; dominant_byte_fraction=0.032
+0x001700C0,0x001800C0,0x081700C0,0x081800C0,string pool,strongly_supported,strings=2765; pointers=13; validated_compression=0; entropy=6.914; dominant_byte_fraction=0.028
+0x001800C0,0x001900C0,0x081800C0,0x081900C0,string pool,strongly_supported,strings=2606; pointers=28; validated_compression=0; entropy=7.162; dominant_byte_fraction=0.023
+0x001900C0,0x001A00C0,0x081900C0,0x081A00C0,string pool,strongly_supported,strings=1466; pointers=58; validated_compression=0; entropy=7.257; dominant_byte_fraction=0.019
+0x001A00C0,0x001B00C0,0x081A00C0,0x081B00C0,string pool,strongly_supported,strings=1116; pointers=71; validated_compression=0; entropy=7.125; dominant_byte_fraction=0.026
+0x001B00C0,0x001C00C0,0x081B00C0,0x081C00C0,string pool,strongly_supported,strings=1061; pointers=65; validated_compression=0; entropy=7.193; dominant_byte_fraction=0.019
+0x001C00C0,0x001D00C0,0x081C00C0,0x081D00C0,string pool,strongly_supported,strings=971; pointers=52; validated_compression=0; entropy=7.103; dominant_byte_fraction=0.052
+0x001D00C0,0x001E00C0,0x081D00C0,0x081E00C0,string pool,strongly_supported,strings=1010; pointers=61; validated_compression=0; entropy=7.143; dominant_byte_fraction=0.022
+0x001E00C0,0x001F00C0,0x081E00C0,0x081F00C0,string pool,strongly_supported,strings=1061; pointers=68; validated_compression=0; entropy=7.167; dominant_byte_fraction=0.021
+0x001F00C0,0x002000C0,0x081F00C0,0x082000C0,string pool,strongly_supported,strings=1533; pointers=39; validated_compression=0; entropy=7.249; dominant_byte_fraction=0.021
+0x002000C0,0x002100C0,0x082000C0,0x082100C0,compressed data candidate,strongly_supported,strings=967; pointers=346; validated_compression=31; entropy=7.214; dominant_byte_fraction=0.101
+0x002100C0,0x002200C0,0x082100C0,0x082200C0,compressed data candidate,strongly_supported,strings=1066; pointers=251; validated_compression=17; entropy=6.174; dominant_byte_fraction=0.287
+0x002200C0,0x002300C0,0x082200C0,0x082300C0,compressed data candidate,strongly_supported,strings=707; pointers=322; validated_compression=15; entropy=7.175; dominant_byte_fraction=0.080
+0x002300C0,0x002400C0,0x082300C0,0x082400C0,compressed data candidate,strongly_supported,strings=1133; pointers=433; validated_compression=27; entropy=7.035; dominant_byte_fraction=0.123
+0x002400C0,0x002500C0,0x082400C0,0x082500C0,compressed data candidate,strongly_supported,strings=503; pointers=131; validated_compression=12; entropy=6.105; dominant_byte_fraction=0.147
+0x002500C0,0x002600C0,0x082500C0,0x082600C0,string pool,strongly_supported,strings=1131; pointers=147; validated_compression=0; entropy=5.938; dominant_byte_fraction=0.256
+0x002600C0,0x002700C0,0x082600C0,0x082700C0,string pool,strongly_supported,strings=1089; pointers=131; validated_compression=0; entropy=6.629; dominant_byte_fraction=0.183
+0x002700C0,0x002800C0,0x082700C0,0x082800C0,string pool,strongly_supported,strings=492; pointers=291; validated_compression=0; entropy=6.164; dominant_byte_fraction=0.098
+0x002800C0,0x002900C0,0x082800C0,0x082900C0,string pool,strongly_supported,strings=1069; pointers=179; validated_compression=0; entropy=7.270; dominant_byte_fraction=0.127
+0x002900C0,0x002A00C0,0x082900C0,0x082A00C0,compressed data candidate,strongly_supported,strings=689; pointers=89; validated_compression=1; entropy=5.762; dominant_byte_fraction=0.346
+0x002A00C0,0x002B00C0,0x082A00C0,0x082B00C0,string pool,strongly_supported,strings=1108; pointers=202; validated_compression=0; entropy=4.766; dominant_byte_fraction=0.281
+0x002B00C0,0x002C00C0,0x082B00C0,0x082C00C0,compressed data candidate,strongly_supported,strings=1021; pointers=495; validated_compression=4; entropy=6.217; dominant_byte_fraction=0.266
+0x002C00C0,0x002D00C0,0x082C00C0,0x082D00C0,compressed data candidate,strongly_supported,strings=724; pointers=315; validated_compression=29; entropy=6.059; dominant_byte_fraction=0.261
+0x002D00C0,0x002E00C0,0x082D00C0,0x082E00C0,compressed data candidate,strongly_supported,strings=585; pointers=602; validated_compression=15; entropy=5.693; dominant_byte_fraction=0.347
+0x002E00C0,0x002F00C0,0x082E00C0,0x082F00C0,mixed code/literal pool,candidate,strings=0; pointers=881; validated_compression=0; entropy=1.800; dominant_byte_fraction=0.789
+0x002F00C0,0x003000C0,0x082F00C0,0x083000C0,compressed data candidate,strongly_supported,strings=117; pointers=536; validated_compression=1; entropy=3.403; dominant_byte_fraction=0.580
+0x003000C0,0x003100C0,0x083000C0,0x083100C0,string pool,strongly_supported,strings=1087; pointers=224; validated_compression=0; entropy=6.231; dominant_byte_fraction=0.230
+0x003100C0,0x003200C0,0x083100C0,0x083200C0,string pool,strongly_supported,strings=1413; pointers=301; validated_compression=0; entropy=6.003; dominant_byte_fraction=0.207
+0x003200C0,0x003300C0,0x083200C0,0x083300C0,compressed data candidate,strongly_supported,strings=643; pointers=586; validated_compression=1; entropy=6.507; dominant_byte_fraction=0.130
+0x003300C0,0x003400C0,0x083300C0,0x083400C0,string pool,strongly_supported,strings=1513; pointers=314; validated_compression=0; entropy=5.294; dominant_byte_fraction=0.317
+0x003400C0,0x003500C0,0x083400C0,0x083500C0,string pool,strongly_supported,strings=2191; pointers=0; validated_compression=0; entropy=4.875; dominant_byte_fraction=0.147
+0x003500C0,0x003600C0,0x083500C0,0x083600C0,string pool,strongly_supported,strings=2034; pointers=0; validated_compression=0; entropy=4.865; dominant_byte_fraction=0.146
+0x003600C0,0x003700C0,0x083600C0,0x083700C0,string pool,strongly_supported,strings=2304; pointers=0; validated_compression=0; entropy=4.912; dominant_byte_fraction=0.141
+0x003700C0,0x003800C0,0x083700C0,0x083800C0,string pool,strongly_supported,strings=2218; pointers=0; validated_compression=0; entropy=4.917; dominant_byte_fraction=0.142
+0x003800C0,0x003900C0,0x083800C0,0x083900C0,string pool,strongly_supported,strings=2126; pointers=11; validated_compression=0; entropy=4.903; dominant_byte_fraction=0.149
+0x003900C0,0x003A00C0,0x083900C0,0x083A00C0,string pool,strongly_supported,strings=1982; pointers=0; validated_compression=0; entropy=4.832; dominant_byte_fraction=0.145
+0x003A00C0,0x003B00C0,0x083A00C0,0x083B00C0,string pool,strongly_supported,strings=1960; pointers=31; validated_compression=0; entropy=5.168; dominant_byte_fraction=0.277
+0x003B00C0,0x003C00C0,0x083B00C0,0x083C00C0,unknown,unknown,strings=0; pointers=0; validated_compression=0; entropy=2.533; dominant_byte_fraction=0.290
+0x003C00C0,0x003D00C0,0x083C00C0,0x083D00C0,unknown,unknown,strings=10; pointers=45; validated_compression=0; entropy=5.169; dominant_byte_fraction=0.289
+0x003D00C0,0x003E00C0,0x083D00C0,0x083E00C0,string pool,strongly_supported,strings=73; pointers=168; validated_compression=0; entropy=2.507; dominant_byte_fraction=0.753
+0x003E00C0,0x003F00C0,0x083E00C0,0x083F00C0,padding,strongly_supported,strings=0; pointers=0; validated_compression=0; entropy=-0.000; dominant_byte_fraction=1.000
+0x003F00C0,0x00400000,0x083F00C0,0x08400000,padding,strongly_supported,strings=0; pointers=0; validated_compression=0; entropy=-0.000; dominant_byte_fraction=1.000
