@@ -36,6 +36,24 @@ chmod +x "${BUNDLE}/run-mgba-gdb-headless.sh"
 
 cat > "${BIN_DIR}/gdb-multiarch" <<'GDB'
 #!/usr/bin/env bash
+set -euo pipefail
+
+saw_disconnect=0
+for argument in "$@"; do
+  if [[ "${argument}" == "detach" ]]; then
+    echo "The simulated mGBA stub does not support the GDB detach packet." >&2
+    exit 97
+  fi
+  if [[ "${argument}" == "disconnect" ]]; then
+    saw_disconnect=1
+  fi
+done
+
+if [[ ${saw_disconnect} -ne 1 ]]; then
+  echo "The verifier did not close the remote connection with disconnect." >&2
+  exit 98
+fi
+
 printf 'r0             0x00000000\npc             0x080000c0\n'
 GDB
 chmod +x "${BIN_DIR}/gdb-multiarch"
