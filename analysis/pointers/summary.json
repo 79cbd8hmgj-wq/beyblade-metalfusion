@@ -1,0 +1,15 @@
+{
+  "aligned_candidate_count": 48159,
+  "confidence": "confirmed",
+  "raw_output": "analysis/generated/pointers/all.json",
+  "run_count": 1341,
+  "target_regions": {
+    "EWRAM": 1064,
+    "Game Pak ROM": 35810,
+    "Game Pak save memory": 5262,
+    "IWRAM": 5127,
+    "OAM": 81,
+    "VRAM": 626,
+    "palette RAM": 189
+  }
+}

@@ -1,0 +1,7 @@
+work/
+dumps/
+analysis/generated/
+analysis/runtime/
+__pycache__/
+*.py[cod]
+

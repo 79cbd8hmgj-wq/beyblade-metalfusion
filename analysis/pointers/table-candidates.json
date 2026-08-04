@@ -1,0 +1,1017 @@
+[
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 612,
+    "entries": 6,
+    "runtime_address": 134218316,
+    "start_offset": 588,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 2,
+      "IWRAM": 4
+    },
+    "unique_targets": 6,
+    "valid_targets": 6
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 1384,
+    "entries": 4,
+    "runtime_address": 134219096,
+    "start_offset": 1368,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 1644,
+    "entries": 4,
+    "runtime_address": 134219356,
+    "start_offset": 1628,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 1868,
+    "entries": 4,
+    "runtime_address": 134219580,
+    "start_offset": 1852,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 2104,
+    "entries": 4,
+    "runtime_address": 134219816,
+    "start_offset": 2088,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 2320,
+    "entries": 4,
+    "runtime_address": 134220032,
+    "start_offset": 2304,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 2544,
+    "entries": 4,
+    "runtime_address": 134220256,
+    "start_offset": 2528,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "strongly_supported",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 2760,
+    "entries": 10,
+    "runtime_address": 134220448,
+    "start_offset": 2720,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 10
+    },
+    "unique_targets": 10,
+    "valid_targets": 10
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 5148,
+    "entries": 4,
+    "runtime_address": 134222860,
+    "start_offset": 5132,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 6256,
+    "entries": 4,
+    "runtime_address": 134223968,
+    "start_offset": 6240,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7064,
+    "entries": 3,
+    "runtime_address": 134224780,
+    "start_offset": 7052,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7204,
+    "entries": 3,
+    "runtime_address": 134224920,
+    "start_offset": 7192,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7220,
+    "entries": 3,
+    "runtime_address": 134224936,
+    "start_offset": 7208,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7448,
+    "entries": 3,
+    "runtime_address": 134225164,
+    "start_offset": 7436,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7600,
+    "entries": 3,
+    "runtime_address": 134225316,
+    "start_offset": 7588,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "strongly_supported",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 7760,
+    "entries": 8,
+    "runtime_address": 134225456,
+    "start_offset": 7728,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 8
+    },
+    "unique_targets": 8,
+    "valid_targets": 8
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 8332,
+    "entries": 5,
+    "runtime_address": 134226040,
+    "start_offset": 8312,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 5
+    },
+    "unique_targets": 5,
+    "valid_targets": 5
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 8668,
+    "entries": 3,
+    "runtime_address": 134226384,
+    "start_offset": 8656,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 8708,
+    "entries": 7,
+    "runtime_address": 134226408,
+    "start_offset": 8680,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 7
+    },
+    "unique_targets": 7,
+    "valid_targets": 7
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 9024,
+    "entries": 7,
+    "runtime_address": 134226724,
+    "start_offset": 8996,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 7
+    },
+    "unique_targets": 7,
+    "valid_targets": 7
+  },
+  {
+    "alignment": 0,
+    "confidence": "strongly_supported",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 9300,
+    "entries": 13,
+    "runtime_address": 134226976,
+    "start_offset": 9248,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 13
+    },
+    "unique_targets": 13,
+    "valid_targets": 13
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 10092,
+    "entries": 6,
+    "runtime_address": 134227796,
+    "start_offset": 10068,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 6
+    },
+    "unique_targets": 6,
+    "valid_targets": 6
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 10112,
+    "entries": 3,
+    "runtime_address": 134227828,
+    "start_offset": 10100,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 10488,
+    "entries": 4,
+    "runtime_address": 134228200,
+    "start_offset": 10472,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 10712,
+    "entries": 3,
+    "runtime_address": 134228428,
+    "start_offset": 10700,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 11396,
+    "entries": 3,
+    "runtime_address": 134229112,
+    "start_offset": 11384,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 11576,
+    "entries": 3,
+    "runtime_address": 134229292,
+    "start_offset": 11564,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 11756,
+    "entries": 3,
+    "runtime_address": 134229472,
+    "start_offset": 11744,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 12000,
+    "entries": 3,
+    "runtime_address": 134229716,
+    "start_offset": 11988,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "strongly_supported",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 12392,
+    "entries": 8,
+    "runtime_address": 134230088,
+    "start_offset": 12360,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 8
+    },
+    "unique_targets": 8,
+    "valid_targets": 8
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 12428,
+    "entries": 6,
+    "runtime_address": 134230132,
+    "start_offset": 12404,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 6
+    },
+    "unique_targets": 6,
+    "valid_targets": 6
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 12804,
+    "entries": 4,
+    "runtime_address": 134230516,
+    "start_offset": 12788,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 13008,
+    "entries": 4,
+    "runtime_address": 134230720,
+    "start_offset": 12992,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 4
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 13348,
+    "entries": 6,
+    "runtime_address": 134231052,
+    "start_offset": 13324,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 6
+    },
+    "unique_targets": 6,
+    "valid_targets": 6
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 13648,
+    "entries": 7,
+    "runtime_address": 134231348,
+    "start_offset": 13620,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 7
+    },
+    "unique_targets": 7,
+    "valid_targets": 7
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 13680,
+    "entries": 3,
+    "runtime_address": 134231396,
+    "start_offset": 13668,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 14084,
+    "entries": 3,
+    "runtime_address": 134231800,
+    "start_offset": 14072,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 36328,
+    "entries": 3,
+    "runtime_address": 134254044,
+    "start_offset": 36316,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 1,
+      "Game Pak ROM": 1,
+      "Game Pak save memory": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 40760,
+    "entries": 4,
+    "runtime_address": 134258472,
+    "start_offset": 40744,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 4
+    },
+    "unique_targets": 3,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 49400,
+    "entries": 3,
+    "runtime_address": 134267116,
+    "start_offset": 49388,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 1,
+      "Game Pak ROM": 1,
+      "Game Pak save memory": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 49808,
+    "entries": 3,
+    "runtime_address": 134267524,
+    "start_offset": 49796,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 49912,
+    "entries": 3,
+    "runtime_address": 134267628,
+    "start_offset": 49900,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 1,
+      "Game Pak ROM": 2
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 81232,
+    "entries": 3,
+    "runtime_address": 134298948,
+    "start_offset": 81220,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 2,
+      "palette RAM": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 81564,
+    "entries": 3,
+    "runtime_address": 134299280,
+    "start_offset": 81552,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 98188,
+    "entries": 4,
+    "runtime_address": 134315900,
+    "start_offset": 98172,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 1,
+      "Game Pak save memory": 2,
+      "VRAM": 1
+    },
+    "unique_targets": 4,
+    "valid_targets": 4
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 98292,
+    "entries": 3,
+    "runtime_address": 134316008,
+    "start_offset": 98280,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak save memory": 3
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 98968,
+    "entries": 3,
+    "runtime_address": 134316684,
+    "start_offset": 98956,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 1,
+      "Game Pak ROM": 1,
+      "IWRAM": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 123728,
+    "entries": 3,
+    "runtime_address": 134341444,
+    "start_offset": 123716,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 1,
+      "Game Pak ROM": 1,
+      "Game Pak save memory": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 137888,
+    "entries": 7,
+    "runtime_address": 134355588,
+    "start_offset": 137860,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "EWRAM": 6,
+      "IWRAM": 1
+    },
+    "unique_targets": 6,
+    "valid_targets": 7
+  },
+  {
+    "alignment": 0,
+    "confidence": "candidate",
+    "counterevidence": [
+      "static scan cannot prove table semantics"
+    ],
+    "end_offset": 138336,
+    "entries": 3,
+    "runtime_address": 134356052,
+    "start_offset": 138324,
+    "stride": 4,
+    "supporting_evidence": [
+      "consecutive aligned pointer-like words"
+    ],
+    "target_region_distribution": {
+      "Game Pak ROM": 2,
+      "Game Pak save memory": 1
+    },
+    "unique_targets": 3,
+    "valid_targets": 3
+  }
+]

@@ -1,0 +1,917 @@
+{
+  "by_type": {
+    "LZ77 0x10": 226
+  },
+  "candidates": [
+    {
+      "alignment": 0,
+      "compressed_length": 353,
+      "confidence": "confirmed",
+      "decompressed_size": 732,
+      "entropy": 5.5201,
+      "offset": 768204,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3174,
+      "confidence": "confirmed",
+      "decompressed_size": 7572,
+      "entropy": 6.7801,
+      "offset": 768560,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 170,
+      "confidence": "confirmed",
+      "decompressed_size": 356,
+      "entropy": 4.5573,
+      "offset": 771736,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3526,
+      "confidence": "confirmed",
+      "decompressed_size": 11436,
+      "entropy": 6.528,
+      "offset": 771908,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 341,
+      "confidence": "confirmed",
+      "decompressed_size": 788,
+      "entropy": 4.7254,
+      "offset": 775436,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 320,
+      "confidence": "confirmed",
+      "decompressed_size": 644,
+      "entropy": 4.6248,
+      "offset": 775780,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 417,
+      "confidence": "confirmed",
+      "decompressed_size": 976,
+      "entropy": 5.1793,
+      "offset": 776100,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2566,
+      "confidence": "confirmed",
+      "decompressed_size": 6048,
+      "entropy": 6.6694,
+      "offset": 776520,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1830,
+      "confidence": "confirmed",
+      "decompressed_size": 4836,
+      "entropy": 6.4302,
+      "offset": 779088,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 297,
+      "confidence": "confirmed",
+      "decompressed_size": 880,
+      "entropy": 4.587,
+      "offset": 780920,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 327,
+      "confidence": "confirmed",
+      "decompressed_size": 500,
+      "entropy": 5.2978,
+      "offset": 781220,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2611,
+      "confidence": "confirmed",
+      "decompressed_size": 5468,
+      "entropy": 6.7142,
+      "offset": 781548,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 231,
+      "confidence": "confirmed",
+      "decompressed_size": 396,
+      "entropy": 4.7582,
+      "offset": 784160,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 203,
+      "confidence": "confirmed",
+      "decompressed_size": 352,
+      "entropy": 4.8091,
+      "offset": 784392,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1519,
+      "confidence": "confirmed",
+      "decompressed_size": 3288,
+      "entropy": 6.3518,
+      "offset": 784596,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 559,
+      "confidence": "confirmed",
+      "decompressed_size": 832,
+      "entropy": 5.5188,
+      "offset": 786116,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 10196,
+      "confidence": "confirmed",
+      "decompressed_size": 19328,
+      "entropy": 7.039,
+      "offset": 786676,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 213,
+      "confidence": "confirmed",
+      "decompressed_size": 428,
+      "entropy": 4.647,
+      "offset": 796872,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 352,
+      "confidence": "confirmed",
+      "decompressed_size": 732,
+      "entropy": 5.5473,
+      "offset": 797088,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3191,
+      "confidence": "confirmed",
+      "decompressed_size": 7672,
+      "entropy": 6.8102,
+      "offset": 797440,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 204,
+      "confidence": "confirmed",
+      "decompressed_size": 464,
+      "entropy": 4.8128,
+      "offset": 800632,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 1020,
+      "confidence": "confirmed",
+      "decompressed_size": 1792,
+      "entropy": 5.9916,
+      "offset": 800830,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 642,
+      "confidence": "confirmed",
+      "decompressed_size": 1172,
+      "entropy": 5.9271,
+      "offset": 800836,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 7097,
+      "confidence": "confirmed",
+      "decompressed_size": 15232,
+      "entropy": 6.9905,
+      "offset": 801480,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 225,
+      "confidence": "confirmed",
+      "decompressed_size": 440,
+      "entropy": 4.7378,
+      "offset": 808580,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4261,
+      "confidence": "confirmed",
+      "decompressed_size": 12888,
+      "entropy": 6.712,
+      "offset": 808808,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 341,
+      "confidence": "confirmed",
+      "decompressed_size": 788,
+      "entropy": 4.7254,
+      "offset": 813072,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 329,
+      "confidence": "confirmed",
+      "decompressed_size": 676,
+      "entropy": 4.7422,
+      "offset": 813416,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 450,
+      "confidence": "confirmed",
+      "decompressed_size": 1104,
+      "entropy": 5.2911,
+      "offset": 813748,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2594,
+      "confidence": "confirmed",
+      "decompressed_size": 6116,
+      "entropy": 6.6991,
+      "offset": 814200,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1696,
+      "confidence": "confirmed",
+      "decompressed_size": 4672,
+      "entropy": 6.3767,
+      "offset": 816796,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 317,
+      "confidence": "confirmed",
+      "decompressed_size": 904,
+      "entropy": 4.566,
+      "offset": 818492,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 369,
+      "confidence": "confirmed",
+      "decompressed_size": 684,
+      "entropy": 5.4495,
+      "offset": 818812,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2342,
+      "confidence": "confirmed",
+      "decompressed_size": 5172,
+      "entropy": 6.6165,
+      "offset": 819184,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 230,
+      "confidence": "confirmed",
+      "decompressed_size": 396,
+      "entropy": 4.6735,
+      "offset": 821528,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 203,
+      "confidence": "confirmed",
+      "decompressed_size": 352,
+      "entropy": 4.8091,
+      "offset": 821760,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1409,
+      "confidence": "confirmed",
+      "decompressed_size": 3188,
+      "entropy": 6.2386,
+      "offset": 821964,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3558,
+      "confidence": "confirmed",
+      "decompressed_size": 11436,
+      "entropy": 6.5313,
+      "offset": 823376,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 341,
+      "confidence": "confirmed",
+      "decompressed_size": 788,
+      "entropy": 4.7254,
+      "offset": 826936,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 323,
+      "confidence": "confirmed",
+      "decompressed_size": 644,
+      "entropy": 4.6723,
+      "offset": 827280,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2955,
+      "confidence": "confirmed",
+      "decompressed_size": 6444,
+      "entropy": 6.8279,
+      "offset": 827604,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 441,
+      "confidence": "confirmed",
+      "decompressed_size": 1048,
+      "entropy": 5.263,
+      "offset": 830560,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1816,
+      "confidence": "confirmed",
+      "decompressed_size": 4804,
+      "entropy": 6.4338,
+      "offset": 831004,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 300,
+      "confidence": "confirmed",
+      "decompressed_size": 900,
+      "entropy": 4.5468,
+      "offset": 832820,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 372,
+      "confidence": "confirmed",
+      "decompressed_size": 656,
+      "entropy": 5.4666,
+      "offset": 833120,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2982,
+      "confidence": "confirmed",
+      "decompressed_size": 6128,
+      "entropy": 6.7836,
+      "offset": 833492,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 230,
+      "confidence": "confirmed",
+      "decompressed_size": 396,
+      "entropy": 4.6735,
+      "offset": 836476,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 203,
+      "confidence": "confirmed",
+      "decompressed_size": 352,
+      "entropy": 4.8091,
+      "offset": 836708,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1514,
+      "confidence": "confirmed",
+      "decompressed_size": 3288,
+      "entropy": 6.3353,
+      "offset": 836912,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 357,
+      "confidence": "confirmed",
+      "decompressed_size": 604,
+      "entropy": 5.1858,
+      "offset": 838428,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3873,
+      "confidence": "confirmed",
+      "decompressed_size": 11008,
+      "entropy": 6.7539,
+      "offset": 838788,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3895,
+      "confidence": "confirmed",
+      "decompressed_size": 12096,
+      "entropy": 6.6419,
+      "offset": 842664,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 341,
+      "confidence": "confirmed",
+      "decompressed_size": 788,
+      "entropy": 4.7254,
+      "offset": 846560,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 306,
+      "confidence": "confirmed",
+      "decompressed_size": 612,
+      "entropy": 4.5201,
+      "offset": 846904,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 439,
+      "confidence": "confirmed",
+      "decompressed_size": 1064,
+      "entropy": 5.2271,
+      "offset": 847212,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 2865,
+      "confidence": "confirmed",
+      "decompressed_size": 6248,
+      "entropy": 6.8037,
+      "offset": 847652,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1832,
+      "confidence": "confirmed",
+      "decompressed_size": 4836,
+      "entropy": 6.4405,
+      "offset": 850520,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 300,
+      "confidence": "confirmed",
+      "decompressed_size": 900,
+      "entropy": 4.5468,
+      "offset": 852352,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 345,
+      "confidence": "confirmed",
+      "decompressed_size": 572,
+      "entropy": 5.436,
+      "offset": 852652,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 119899,
+      "confidence": "confirmed",
+      "decompressed_size": 404480,
+      "entropy": 4.6272,
+      "offset": 852984,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1951,
+      "confidence": "confirmed",
+      "decompressed_size": 4608,
+      "entropy": 6.4787,
+      "offset": 853000,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 230,
+      "confidence": "confirmed",
+      "decompressed_size": 396,
+      "entropy": 4.6735,
+      "offset": 854952,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 203,
+      "confidence": "confirmed",
+      "decompressed_size": 352,
+      "entropy": 4.8059,
+      "offset": 855184,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1462,
+      "confidence": "confirmed",
+      "decompressed_size": 3400,
+      "entropy": 6.3369,
+      "offset": 855388,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1316,
+      "confidence": "confirmed",
+      "decompressed_size": 2372,
+      "entropy": 6.1476,
+      "offset": 856852,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 5306,
+      "confidence": "confirmed",
+      "decompressed_size": 12888,
+      "entropy": 6.951,
+      "offset": 858168,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 214,
+      "confidence": "confirmed",
+      "decompressed_size": 440,
+      "entropy": 4.636,
+      "offset": 863476,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 0.9373,
+      "offset": 1207854,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 0.8031,
+      "offset": 1208090,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 1.0951,
+      "offset": 1208154,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 0.9373,
+      "offset": 1209406,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 0.8031,
+      "offset": 1209642,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 2,
+      "compressed_length": 63,
+      "confidence": "confirmed",
+      "decompressed_size": 53,
+      "entropy": 0.8666,
+      "offset": 1209706,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1092,
+      "confidence": "confirmed",
+      "decompressed_size": 2980,
+      "entropy": 6.6115,
+      "offset": 2105520,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4035,
+      "confidence": "confirmed",
+      "decompressed_size": 10620,
+      "entropy": 7.0476,
+      "offset": 2106612,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 863,
+      "confidence": "confirmed",
+      "decompressed_size": 1856,
+      "entropy": 6.3964,
+      "offset": 2110648,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1094,
+      "confidence": "confirmed",
+      "decompressed_size": 2780,
+      "entropy": 6.4822,
+      "offset": 2111512,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3965,
+      "confidence": "confirmed",
+      "decompressed_size": 10552,
+      "entropy": 7.021,
+      "offset": 2112608,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 857,
+      "confidence": "confirmed",
+      "decompressed_size": 1952,
+      "entropy": 6.359,
+      "offset": 2116576,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1139,
+      "confidence": "confirmed",
+      "decompressed_size": 3100,
+      "entropy": 6.5676,
+      "offset": 2117436,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3962,
+      "confidence": "confirmed",
+      "decompressed_size": 10552,
+      "entropy": 7.0444,
+      "offset": 2118576,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 913,
+      "confidence": "confirmed",
+      "decompressed_size": 2164,
+      "entropy": 6.4981,
+      "offset": 2122540,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1183,
+      "confidence": "confirmed",
+      "decompressed_size": 3140,
+      "entropy": 6.6031,
+      "offset": 2123456,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4440,
+      "confidence": "confirmed",
+      "decompressed_size": 11412,
+      "entropy": 7.0318,
+      "offset": 2124640,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 909,
+      "confidence": "confirmed",
+      "decompressed_size": 2132,
+      "entropy": 6.402,
+      "offset": 2129080,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1180,
+      "confidence": "confirmed",
+      "decompressed_size": 3296,
+      "entropy": 6.6254,
+      "offset": 2129992,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4172,
+      "confidence": "confirmed",
+      "decompressed_size": 10948,
+      "entropy": 7.078,
+      "offset": 2131172,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 872,
+      "confidence": "confirmed",
+      "decompressed_size": 1832,
+      "entropy": 6.2685,
+      "offset": 2135344,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1175,
+      "confidence": "confirmed",
+      "decompressed_size": 3312,
+      "entropy": 6.559,
+      "offset": 2136216,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4086,
+      "confidence": "confirmed",
+      "decompressed_size": 10816,
+      "entropy": 7.0783,
+      "offset": 2137392,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 843,
+      "confidence": "confirmed",
+      "decompressed_size": 1804,
+      "entropy": 6.2831,
+      "offset": 2141480,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1122,
+      "confidence": "confirmed",
+      "decompressed_size": 3272,
+      "entropy": 6.3151,
+      "offset": 2142324,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3991,
+      "confidence": "confirmed",
+      "decompressed_size": 10584,
+      "entropy": 6.9666,
+      "offset": 2143448,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 786,
+      "confidence": "confirmed",
+      "decompressed_size": 1796,
+      "entropy": 6.2517,
+      "offset": 2147440,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1226,
+      "confidence": "confirmed",
+      "decompressed_size": 3316,
+      "entropy": 6.6733,
+      "offset": 2148228,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 4597,
+      "confidence": "confirmed",
+      "decompressed_size": 12036,
+      "entropy": 7.0618,
+      "offset": 2149456,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 1044,
+      "confidence": "confirmed",
+      "decompressed_size": 2900,
+      "entropy": 6.504,
+      "offset": 2154056,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 467,
+      "confidence": "confirmed",
+      "decompressed_size": 1012,
+      "entropy": 5.7894,
+      "offset": 2155100,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 3622,
+      "confidence": "confirmed",
+      "decompressed_size": 9644,
+      "entropy": 6.8143,
+      "offset": 2155568,
+      "type": "LZ77 0x10"
+    },
+    {
+      "alignment": 0,
+      "compressed_length": 291,
+      "confidence": "confirmed",
+      "decompressed_size": 736,
+      "entropy": 4.8347,
+      "offset": 2159192,
+      "type": "LZ77 0x10"
+    }
+  ],
+  "confidence": "confirmed",
+  "plausible_header_counts": {
+    "Huffman 0x20": 200586,
+    "LZ77 0x10": 152487,
+    "RLE 0x30": 106545,
+    "differential/filter 0x80": 48877
+  },
+  "raw_output": "analysis/generated/compression/all.json",
+  "validated_count": 226,
+  "validation_scope": "LZ77 streams are fully decoded; Huffman, RLE, and differential tags are scanned but remain unvalidated candidates until format-specific bounded parsers accept them."
+}

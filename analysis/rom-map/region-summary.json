@@ -1,0 +1,11 @@
+{
+  "confidence": "structural inference; classifications retain per-region confidence",
+  "counts": {
+    "compressed data candidate": 15,
+    "header": 1,
+    "mixed code/literal pool": 4,
+    "padding": 2,
+    "string pool": 41,
+    "unknown": 2
+  }
+}

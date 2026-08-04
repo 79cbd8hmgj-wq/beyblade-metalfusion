@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"String scan summary","type":"object","required":["total_string_count","counts_by_classification","referenced_by_pointers"],"properties":{"total_string_count":{"type":"integer"},"counts_by_classification":{"type":"object"},"referenced_by_pointers":{"type":"integer"}}}

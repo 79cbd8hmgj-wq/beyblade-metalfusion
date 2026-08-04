@@ -1,0 +1,976 @@
+{
+  "regions": [
+    {
+      "classification": "header",
+      "confidence": "confirmed",
+      "end_address": 134217920,
+      "end_offset": 192,
+      "evidence": [
+        "validated GBA header"
+      ],
+      "start_address": 134217728,
+      "start_offset": 0
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134283456,
+      "end_offset": 65728,
+      "evidence": [
+        "strings=260",
+        "pointers=821",
+        "validated_compression=0",
+        "entropy=4.782",
+        "dominant_byte_fraction=0.368"
+      ],
+      "start_address": 134217920,
+      "start_offset": 192
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134348992,
+      "end_offset": 131264,
+      "evidence": [
+        "strings=314",
+        "pointers=1003",
+        "validated_compression=0",
+        "entropy=5.780",
+        "dominant_byte_fraction=0.184"
+      ],
+      "start_address": 134283456,
+      "start_offset": 65728
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134414528,
+      "end_offset": 196800,
+      "evidence": [
+        "strings=216",
+        "pointers=902",
+        "validated_compression=0",
+        "entropy=6.008",
+        "dominant_byte_fraction=0.208"
+      ],
+      "start_address": 134348992,
+      "start_offset": 131264
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134480064,
+      "end_offset": 262336,
+      "evidence": [
+        "strings=805",
+        "pointers=1349",
+        "validated_compression=0",
+        "entropy=6.545",
+        "dominant_byte_fraction=0.113"
+      ],
+      "start_address": 134414528,
+      "start_offset": 196800
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134545600,
+      "end_offset": 327872,
+      "evidence": [
+        "strings=480",
+        "pointers=1531",
+        "validated_compression=0",
+        "entropy=6.448",
+        "dominant_byte_fraction=0.118"
+      ],
+      "start_address": 134480064,
+      "start_offset": 262336
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134611136,
+      "end_offset": 393408,
+      "evidence": [
+        "strings=358",
+        "pointers=1399",
+        "validated_compression=0",
+        "entropy=6.432",
+        "dominant_byte_fraction=0.115"
+      ],
+      "start_address": 134545600,
+      "start_offset": 327872
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134676672,
+      "end_offset": 458944,
+      "evidence": [
+        "strings=757",
+        "pointers=1180",
+        "validated_compression=0",
+        "entropy=6.616",
+        "dominant_byte_fraction=0.098"
+      ],
+      "start_address": 134611136,
+      "start_offset": 393408
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 134742208,
+      "end_offset": 524480,
+      "evidence": [
+        "strings=237",
+        "pointers=7342",
+        "validated_compression=0",
+        "entropy=6.039",
+        "dominant_byte_fraction=0.165"
+      ],
+      "start_address": 134676672,
+      "start_offset": 458944
+    },
+    {
+      "classification": "mixed code/literal pool",
+      "confidence": "candidate",
+      "end_address": 134807744,
+      "end_offset": 590016,
+      "evidence": [
+        "strings=0",
+        "pointers=13873",
+        "validated_compression=0",
+        "entropy=5.578",
+        "dominant_byte_fraction=0.250"
+      ],
+      "start_address": 134742208,
+      "start_offset": 524480
+    },
+    {
+      "classification": "mixed code/literal pool",
+      "confidence": "candidate",
+      "end_address": 134873280,
+      "end_offset": 655552,
+      "evidence": [
+        "strings=5",
+        "pointers=5031",
+        "validated_compression=0",
+        "entropy=3.857",
+        "dominant_byte_fraction=0.549"
+      ],
+      "start_address": 134807744,
+      "start_offset": 590016
+    },
+    {
+      "classification": "mixed code/literal pool",
+      "confidence": "candidate",
+      "end_address": 134938816,
+      "end_offset": 721088,
+      "evidence": [
+        "strings=0",
+        "pointers=2169",
+        "validated_compression=0",
+        "entropy=3.185",
+        "dominant_byte_fraction=0.634"
+      ],
+      "start_address": 134873280,
+      "start_offset": 655552
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 135004352,
+      "end_offset": 786624,
+      "evidence": [
+        "strings=311",
+        "pointers=2166",
+        "validated_compression=16",
+        "entropy=4.894",
+        "dominant_byte_fraction=0.452"
+      ],
+      "start_address": 134938816,
+      "start_offset": 721088
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 135069888,
+      "end_offset": 852160,
+      "evidence": [
+        "strings=909",
+        "pointers=484",
+        "validated_compression=41",
+        "entropy=6.817",
+        "dominant_byte_fraction=0.131"
+      ],
+      "start_address": 135004352,
+      "start_offset": 786624
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 135135424,
+      "end_offset": 917696,
+      "evidence": [
+        "strings=790",
+        "pointers=360",
+        "validated_compression=10",
+        "entropy=5.259",
+        "dominant_byte_fraction=0.222"
+      ],
+      "start_address": 135069888,
+      "start_offset": 852160
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135200960,
+      "end_offset": 983232,
+      "evidence": [
+        "strings=401",
+        "pointers=546",
+        "validated_compression=0",
+        "entropy=3.208",
+        "dominant_byte_fraction=0.303"
+      ],
+      "start_address": 135135424,
+      "start_offset": 917696
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135266496,
+      "end_offset": 1048768,
+      "evidence": [
+        "strings=1330",
+        "pointers=236",
+        "validated_compression=0",
+        "entropy=3.102",
+        "dominant_byte_fraction=0.447"
+      ],
+      "start_address": 135200960,
+      "start_offset": 983232
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135332032,
+      "end_offset": 1114304,
+      "evidence": [
+        "strings=1396",
+        "pointers=59",
+        "validated_compression=0",
+        "entropy=2.962",
+        "dominant_byte_fraction=0.538"
+      ],
+      "start_address": 135266496,
+      "start_offset": 1048768
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135397568,
+      "end_offset": 1179840,
+      "evidence": [
+        "strings=1088",
+        "pointers=130",
+        "validated_compression=0",
+        "entropy=4.312",
+        "dominant_byte_fraction=0.372"
+      ],
+      "start_address": 135332032,
+      "start_offset": 1114304
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 135463104,
+      "end_offset": 1245376,
+      "evidence": [
+        "strings=1591",
+        "pointers=38",
+        "validated_compression=6",
+        "entropy=6.199",
+        "dominant_byte_fraction=0.217"
+      ],
+      "start_address": 135397568,
+      "start_offset": 1179840
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135528640,
+      "end_offset": 1310912,
+      "evidence": [
+        "strings=2930",
+        "pointers=7",
+        "validated_compression=0",
+        "entropy=6.829",
+        "dominant_byte_fraction=0.038"
+      ],
+      "start_address": 135463104,
+      "start_offset": 1245376
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135594176,
+      "end_offset": 1376448,
+      "evidence": [
+        "strings=1705",
+        "pointers=13",
+        "validated_compression=0",
+        "entropy=6.803",
+        "dominant_byte_fraction=0.063"
+      ],
+      "start_address": 135528640,
+      "start_offset": 1310912
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135659712,
+      "end_offset": 1441984,
+      "evidence": [
+        "strings=1551",
+        "pointers=23",
+        "validated_compression=0",
+        "entropy=7.265",
+        "dominant_byte_fraction=0.020"
+      ],
+      "start_address": 135594176,
+      "start_offset": 1376448
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135725248,
+      "end_offset": 1507520,
+      "evidence": [
+        "strings=3375",
+        "pointers=11",
+        "validated_compression=0",
+        "entropy=6.823",
+        "dominant_byte_fraction=0.032"
+      ],
+      "start_address": 135659712,
+      "start_offset": 1441984
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135790784,
+      "end_offset": 1573056,
+      "evidence": [
+        "strings=2765",
+        "pointers=13",
+        "validated_compression=0",
+        "entropy=6.914",
+        "dominant_byte_fraction=0.028"
+      ],
+      "start_address": 135725248,
+      "start_offset": 1507520
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135856320,
+      "end_offset": 1638592,
+      "evidence": [
+        "strings=2606",
+        "pointers=28",
+        "validated_compression=0",
+        "entropy=7.162",
+        "dominant_byte_fraction=0.023"
+      ],
+      "start_address": 135790784,
+      "start_offset": 1573056
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135921856,
+      "end_offset": 1704128,
+      "evidence": [
+        "strings=1466",
+        "pointers=58",
+        "validated_compression=0",
+        "entropy=7.257",
+        "dominant_byte_fraction=0.019"
+      ],
+      "start_address": 135856320,
+      "start_offset": 1638592
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 135987392,
+      "end_offset": 1769664,
+      "evidence": [
+        "strings=1116",
+        "pointers=71",
+        "validated_compression=0",
+        "entropy=7.125",
+        "dominant_byte_fraction=0.026"
+      ],
+      "start_address": 135921856,
+      "start_offset": 1704128
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136052928,
+      "end_offset": 1835200,
+      "evidence": [
+        "strings=1061",
+        "pointers=65",
+        "validated_compression=0",
+        "entropy=7.193",
+        "dominant_byte_fraction=0.019"
+      ],
+      "start_address": 135987392,
+      "start_offset": 1769664
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136118464,
+      "end_offset": 1900736,
+      "evidence": [
+        "strings=971",
+        "pointers=52",
+        "validated_compression=0",
+        "entropy=7.103",
+        "dominant_byte_fraction=0.052"
+      ],
+      "start_address": 136052928,
+      "start_offset": 1835200
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136184000,
+      "end_offset": 1966272,
+      "evidence": [
+        "strings=1010",
+        "pointers=61",
+        "validated_compression=0",
+        "entropy=7.143",
+        "dominant_byte_fraction=0.022"
+      ],
+      "start_address": 136118464,
+      "start_offset": 1900736
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136249536,
+      "end_offset": 2031808,
+      "evidence": [
+        "strings=1061",
+        "pointers=68",
+        "validated_compression=0",
+        "entropy=7.167",
+        "dominant_byte_fraction=0.021"
+      ],
+      "start_address": 136184000,
+      "start_offset": 1966272
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136315072,
+      "end_offset": 2097344,
+      "evidence": [
+        "strings=1533",
+        "pointers=39",
+        "validated_compression=0",
+        "entropy=7.249",
+        "dominant_byte_fraction=0.021"
+      ],
+      "start_address": 136249536,
+      "start_offset": 2031808
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136380608,
+      "end_offset": 2162880,
+      "evidence": [
+        "strings=967",
+        "pointers=346",
+        "validated_compression=31",
+        "entropy=7.214",
+        "dominant_byte_fraction=0.101"
+      ],
+      "start_address": 136315072,
+      "start_offset": 2097344
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136446144,
+      "end_offset": 2228416,
+      "evidence": [
+        "strings=1066",
+        "pointers=251",
+        "validated_compression=17",
+        "entropy=6.174",
+        "dominant_byte_fraction=0.287"
+      ],
+      "start_address": 136380608,
+      "start_offset": 2162880
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136511680,
+      "end_offset": 2293952,
+      "evidence": [
+        "strings=707",
+        "pointers=322",
+        "validated_compression=15",
+        "entropy=7.175",
+        "dominant_byte_fraction=0.080"
+      ],
+      "start_address": 136446144,
+      "start_offset": 2228416
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136577216,
+      "end_offset": 2359488,
+      "evidence": [
+        "strings=1133",
+        "pointers=433",
+        "validated_compression=27",
+        "entropy=7.035",
+        "dominant_byte_fraction=0.123"
+      ],
+      "start_address": 136511680,
+      "start_offset": 2293952
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136642752,
+      "end_offset": 2425024,
+      "evidence": [
+        "strings=503",
+        "pointers=131",
+        "validated_compression=12",
+        "entropy=6.105",
+        "dominant_byte_fraction=0.147"
+      ],
+      "start_address": 136577216,
+      "start_offset": 2359488
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136708288,
+      "end_offset": 2490560,
+      "evidence": [
+        "strings=1131",
+        "pointers=147",
+        "validated_compression=0",
+        "entropy=5.938",
+        "dominant_byte_fraction=0.256"
+      ],
+      "start_address": 136642752,
+      "start_offset": 2425024
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136773824,
+      "end_offset": 2556096,
+      "evidence": [
+        "strings=1089",
+        "pointers=131",
+        "validated_compression=0",
+        "entropy=6.629",
+        "dominant_byte_fraction=0.183"
+      ],
+      "start_address": 136708288,
+      "start_offset": 2490560
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136839360,
+      "end_offset": 2621632,
+      "evidence": [
+        "strings=492",
+        "pointers=291",
+        "validated_compression=0",
+        "entropy=6.164",
+        "dominant_byte_fraction=0.098"
+      ],
+      "start_address": 136773824,
+      "start_offset": 2556096
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 136904896,
+      "end_offset": 2687168,
+      "evidence": [
+        "strings=1069",
+        "pointers=179",
+        "validated_compression=0",
+        "entropy=7.270",
+        "dominant_byte_fraction=0.127"
+      ],
+      "start_address": 136839360,
+      "start_offset": 2621632
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 136970432,
+      "end_offset": 2752704,
+      "evidence": [
+        "strings=689",
+        "pointers=89",
+        "validated_compression=1",
+        "entropy=5.762",
+        "dominant_byte_fraction=0.346"
+      ],
+      "start_address": 136904896,
+      "start_offset": 2687168
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137035968,
+      "end_offset": 2818240,
+      "evidence": [
+        "strings=1108",
+        "pointers=202",
+        "validated_compression=0",
+        "entropy=4.766",
+        "dominant_byte_fraction=0.281"
+      ],
+      "start_address": 136970432,
+      "start_offset": 2752704
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 137101504,
+      "end_offset": 2883776,
+      "evidence": [
+        "strings=1021",
+        "pointers=495",
+        "validated_compression=4",
+        "entropy=6.217",
+        "dominant_byte_fraction=0.266"
+      ],
+      "start_address": 137035968,
+      "start_offset": 2818240
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 137167040,
+      "end_offset": 2949312,
+      "evidence": [
+        "strings=724",
+        "pointers=315",
+        "validated_compression=29",
+        "entropy=6.059",
+        "dominant_byte_fraction=0.261"
+      ],
+      "start_address": 137101504,
+      "start_offset": 2883776
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 137232576,
+      "end_offset": 3014848,
+      "evidence": [
+        "strings=585",
+        "pointers=602",
+        "validated_compression=15",
+        "entropy=5.693",
+        "dominant_byte_fraction=0.347"
+      ],
+      "start_address": 137167040,
+      "start_offset": 2949312
+    },
+    {
+      "classification": "mixed code/literal pool",
+      "confidence": "candidate",
+      "end_address": 137298112,
+      "end_offset": 3080384,
+      "evidence": [
+        "strings=0",
+        "pointers=881",
+        "validated_compression=0",
+        "entropy=1.800",
+        "dominant_byte_fraction=0.789"
+      ],
+      "start_address": 137232576,
+      "start_offset": 3014848
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 137363648,
+      "end_offset": 3145920,
+      "evidence": [
+        "strings=117",
+        "pointers=536",
+        "validated_compression=1",
+        "entropy=3.403",
+        "dominant_byte_fraction=0.580"
+      ],
+      "start_address": 137298112,
+      "start_offset": 3080384
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137429184,
+      "end_offset": 3211456,
+      "evidence": [
+        "strings=1087",
+        "pointers=224",
+        "validated_compression=0",
+        "entropy=6.231",
+        "dominant_byte_fraction=0.230"
+      ],
+      "start_address": 137363648,
+      "start_offset": 3145920
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137494720,
+      "end_offset": 3276992,
+      "evidence": [
+        "strings=1413",
+        "pointers=301",
+        "validated_compression=0",
+        "entropy=6.003",
+        "dominant_byte_fraction=0.207"
+      ],
+      "start_address": 137429184,
+      "start_offset": 3211456
+    },
+    {
+      "classification": "compressed data candidate",
+      "confidence": "strongly_supported",
+      "end_address": 137560256,
+      "end_offset": 3342528,
+      "evidence": [
+        "strings=643",
+        "pointers=586",
+        "validated_compression=1",
+        "entropy=6.507",
+        "dominant_byte_fraction=0.130"
+      ],
+      "start_address": 137494720,
+      "start_offset": 3276992
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137625792,
+      "end_offset": 3408064,
+      "evidence": [
+        "strings=1513",
+        "pointers=314",
+        "validated_compression=0",
+        "entropy=5.294",
+        "dominant_byte_fraction=0.317"
+      ],
+      "start_address": 137560256,
+      "start_offset": 3342528
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137691328,
+      "end_offset": 3473600,
+      "evidence": [
+        "strings=2191",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=4.875",
+        "dominant_byte_fraction=0.147"
+      ],
+      "start_address": 137625792,
+      "start_offset": 3408064
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137756864,
+      "end_offset": 3539136,
+      "evidence": [
+        "strings=2034",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=4.865",
+        "dominant_byte_fraction=0.146"
+      ],
+      "start_address": 137691328,
+      "start_offset": 3473600
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137822400,
+      "end_offset": 3604672,
+      "evidence": [
+        "strings=2304",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=4.912",
+        "dominant_byte_fraction=0.141"
+      ],
+      "start_address": 137756864,
+      "start_offset": 3539136
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137887936,
+      "end_offset": 3670208,
+      "evidence": [
+        "strings=2218",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=4.917",
+        "dominant_byte_fraction=0.142"
+      ],
+      "start_address": 137822400,
+      "start_offset": 3604672
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 137953472,
+      "end_offset": 3735744,
+      "evidence": [
+        "strings=2126",
+        "pointers=11",
+        "validated_compression=0",
+        "entropy=4.903",
+        "dominant_byte_fraction=0.149"
+      ],
+      "start_address": 137887936,
+      "start_offset": 3670208
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 138019008,
+      "end_offset": 3801280,
+      "evidence": [
+        "strings=1982",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=4.832",
+        "dominant_byte_fraction=0.145"
+      ],
+      "start_address": 137953472,
+      "start_offset": 3735744
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 138084544,
+      "end_offset": 3866816,
+      "evidence": [
+        "strings=1960",
+        "pointers=31",
+        "validated_compression=0",
+        "entropy=5.168",
+        "dominant_byte_fraction=0.277"
+      ],
+      "start_address": 138019008,
+      "start_offset": 3801280
+    },
+    {
+      "classification": "unknown",
+      "confidence": "unknown",
+      "end_address": 138150080,
+      "end_offset": 3932352,
+      "evidence": [
+        "strings=0",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=2.533",
+        "dominant_byte_fraction=0.290"
+      ],
+      "start_address": 138084544,
+      "start_offset": 3866816
+    },
+    {
+      "classification": "unknown",
+      "confidence": "unknown",
+      "end_address": 138215616,
+      "end_offset": 3997888,
+      "evidence": [
+        "strings=10",
+        "pointers=45",
+        "validated_compression=0",
+        "entropy=5.169",
+        "dominant_byte_fraction=0.289"
+      ],
+      "start_address": 138150080,
+      "start_offset": 3932352
+    },
+    {
+      "classification": "string pool",
+      "confidence": "strongly_supported",
+      "end_address": 138281152,
+      "end_offset": 4063424,
+      "evidence": [
+        "strings=73",
+        "pointers=168",
+        "validated_compression=0",
+        "entropy=2.507",
+        "dominant_byte_fraction=0.753"
+      ],
+      "start_address": 138215616,
+      "start_offset": 3997888
+    },
+    {
+      "classification": "padding",
+      "confidence": "strongly_supported",
+      "end_address": 138346688,
+      "end_offset": 4128960,
+      "evidence": [
+        "strings=0",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=-0.000",
+        "dominant_byte_fraction=1.000"
+      ],
+      "start_address": 138281152,
+      "start_offset": 4063424
+    },
+    {
+      "classification": "padding",
+      "confidence": "strongly_supported",
+      "end_address": 138412032,
+      "end_offset": 4194304,
+      "evidence": [
+        "strings=0",
+        "pointers=0",
+        "validated_compression=0",
+        "entropy=-0.000",
+        "dominant_byte_fraction=1.000"
+      ],
+      "start_address": 138346688,
+      "start_offset": 4128960
+    }
+  ],
+  "rom_size": 4194304
+}

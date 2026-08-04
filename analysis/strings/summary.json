@@ -1,0 +1,20 @@
+{
+  "cluster_count": 2572,
+  "confidence": "confirmed",
+  "counts_by_classification": {
+    "Beyblade names": 638,
+    "assertions and errors": 32,
+    "debug/function identifiers": 15,
+    "dialogue candidates": 3534,
+    "enum-like identifiers": 3270,
+    "menu/interface text": 36,
+    "move and attack names": 121,
+    "source filenames and build paths": 5,
+    "unknown": 58703
+  },
+  "duplicate_texts": 14626,
+  "raw_output": "analysis/generated/strings/all.json",
+  "referenced_by_pointers": 10583,
+  "regeneration_command": "python3 -m tools.gba.rom_map --rom \"Beyblade G-Revolution (USA).gba\" --tracked-output analysis --generated-output analysis/generated --clean-generated",
+  "total_string_count": 66354
+}

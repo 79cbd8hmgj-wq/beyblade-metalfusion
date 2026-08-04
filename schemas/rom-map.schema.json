@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Compact GBA ROM map","type":"object","required":["rom_size","regions"],"properties":{"rom_size":{"type":"integer"},"regions":{"type":"array","items":{"type":"object","required":["start_offset","end_offset","classification","confidence"]}}}}

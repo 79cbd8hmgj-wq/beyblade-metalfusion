@@ -1,0 +1,7 @@
+{
+  "heuristic_asset_classification": "unknown",
+  "notes": [
+    "Palette/tile/tilemap/audio byte patterns are non-unique and are not assigned semantics without references or runtime evidence."
+  ],
+  "validated_compressed_regions": 226
+}

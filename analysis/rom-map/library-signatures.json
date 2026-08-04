@@ -1,0 +1,14 @@
+{
+  "rejected_interpretations": [
+    "No audio engine is named solely from instruction/data heuristics."
+  ],
+  "signatures": [
+    {
+      "address": 138056636,
+      "confidence": "confirmed",
+      "evidence_type": "direct_binary_evidence",
+      "offset": 3838908,
+      "signature": "EEPROM_V"
+    }
+  ]
+}

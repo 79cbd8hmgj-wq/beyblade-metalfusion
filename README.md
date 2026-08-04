@@ -40,4 +40,14 @@ Connect from another terminal:
 ./connect-gdb.sh
 ```
 
-The repository and debugger artifact contain no commercial ROM, save file, or extracted copyrighted game asset.
+## Task 1: reproducible ROM map
+
+The supplied ROM is an immutable research input. Run the compact and full ignored analysis together with:
+
+```bash
+python3 -m tools.gba.rom_map --rom "Beyblade G-Revolution (USA).gba" --tracked-output analysis --generated-output analysis/generated --clean-generated
+```
+
+Tracked reports are under `analysis/`; the complete reproducible listings are ignored under `analysis/generated/`. See the [methodology](docs/reverse-engineering/methodology.md), [header validation](docs/reverse-engineering/rom-header.md), [ROM map](docs/reverse-engineering/rom-map.md), and [unresolved questions](docs/reverse-engineering/unresolved.md). The driver refuses an unsupported hash unless `--allow-unsupported-rom` is explicitly supplied.
+
+No extracted copyrighted game asset is added by the analysis.
