@@ -1,0 +1,65 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/relocation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "depends_on": {
+      "items": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "encoding": {
+      "enum": [
+        "rom_pointer",
+        "thumb_pointer",
+        "file_offset"
+      ]
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "pointer_sites",
+        "fixed_table"
+      ]
+    },
+    "old_target": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "sites": {
+      "items": {
+        "pattern": "^0x(?:0|[0-9a-f]+)$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "target_allocation": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "target_offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "sites",
+    "old_target",
+    "target_allocation",
+    "encoding"
+  ],
+  "type": "object"
+}

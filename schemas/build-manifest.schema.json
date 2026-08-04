@@ -1,0 +1,162 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/build-manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allocations": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "assets": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "bps": {
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size": {
+          "type": "integer"
+        },
+        "verified": {
+          "const": true
+        }
+      },
+      "required": [
+        "sha256",
+        "size",
+        "verified"
+      ],
+      "type": "object"
+    },
+    "build_id": {
+      "pattern": "^[0-9a-f]{16}$",
+      "type": "string"
+    },
+    "changed_ranges": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "expansion": {
+      "type": "object"
+    },
+    "hooks": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "metadata": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "modules": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "output_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "output_size": {
+      "type": "integer"
+    },
+    "patches": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "profile_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "profile_id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "relocations": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "smoke_test": {
+      "type": "object"
+    },
+    "source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tables": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "texts": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "tool_version": {
+      "type": "string"
+    },
+    "toolchain": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "build_id",
+    "profile_id",
+    "profile_hash",
+    "source_sha256",
+    "output_size",
+    "output_sha256",
+    "expansion",
+    "allocations",
+    "assets",
+    "tables",
+    "texts",
+    "modules",
+    "patches",
+    "relocations",
+    "hooks",
+    "changed_ranges",
+    "metadata",
+    "bps",
+    "validation",
+    "smoke_test",
+    "toolchain",
+    "warnings",
+    "tool_version"
+  ],
+  "type": "object"
+}

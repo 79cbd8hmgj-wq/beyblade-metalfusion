@@ -1,0 +1,727 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/build-profile.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "allocation_regions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "allow_internal": {
+            "type": "boolean"
+          },
+          "end": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "evidence": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "expected_fill": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "start": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "start",
+          "end"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "allocations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "alignment": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "branch_reach": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "class": {
+            "enum": [
+              "data",
+              "arm",
+              "thumb"
+            ]
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "fixed_offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "maximum_address": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "proximity_to": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "size": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "size",
+          "alignment",
+          "class"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "assets": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "encoding": {
+            "enum": [
+              "raw",
+              "hex"
+            ]
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "allocation",
+          "path",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "expansion": {
+      "additionalProperties": false,
+      "properties": {
+        "fill": {
+          "pattern": "^0x(?:0|[0-9a-f]+)$",
+          "type": "string"
+        },
+        "reservations": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end": {
+                "pattern": "^0x(?:0|[0-9a-f]+)$",
+                "type": "string"
+              },
+              "id": {
+                "pattern": "^[a-z0-9][a-z0-9-]*$",
+                "type": "string"
+              },
+              "start": {
+                "pattern": "^0x(?:0|[0-9a-f]+)$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "start",
+              "end"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "target_size": {
+          "pattern": "^0x(?:0|[0-9a-f]+)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "target_size",
+        "fill",
+        "reservations"
+      ],
+      "type": "object"
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "hooks": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "destination_allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "destination_offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "expected": {
+            "pattern": "^(?:[0-9a-f]{2})+$",
+            "type": "string"
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "thumb_b",
+              "thumb_bl",
+              "arm_b",
+              "arm_bl"
+            ]
+          },
+          "site": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "veneer_allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "site",
+          "expected",
+          "destination_allocation"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "allocation": {
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "extension_metadata": {
+          "type": "object"
+        },
+        "id": {
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "type": "string"
+        },
+        "project_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "enabled"
+      ],
+      "type": "object"
+    },
+    "modules": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "encoding": {
+            "enum": [
+              "raw",
+              "hex"
+            ]
+          },
+          "entry_offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "thumb": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "allocation",
+          "path",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "bps_name": {
+          "pattern": "^[^/]+\\.bps$",
+          "type": "string"
+        },
+        "rom_name": {
+          "pattern": "^[^/]+\\.gba$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rom_name",
+        "bps_name"
+      ],
+      "type": "object"
+    },
+    "patches": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "pattern": "^(?:[0-9a-f]{2})*$",
+            "type": "string"
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "expected": {
+            "pattern": "^(?:[0-9a-f]{2})*$",
+            "type": "string"
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "write_bytes",
+              "replace_exact",
+              "fill",
+              "write_u8",
+              "write_u16",
+              "write_u32",
+              "write_rom_pointer",
+              "write_thumb_pointer"
+            ]
+          },
+          "offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "target_allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "target_offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "thumb": {
+            "type": "boolean"
+          },
+          "value": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "offset",
+          "expected"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "profile_id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "project": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "relocations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "encoding": {
+            "enum": [
+              "rom_pointer",
+              "thumb_pointer",
+              "file_offset"
+            ]
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "pointer_sites",
+              "fixed_table"
+            ]
+          },
+          "old_target": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "sites": {
+            "items": {
+              "pattern": "^0x(?:0|[0-9a-f]+)$",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "target_allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "target_offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "sites",
+          "old_target",
+          "target_allocation",
+          "encoding"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "smoke_test": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "extension_metadata": {
+          "type": "object"
+        },
+        "gdb": {
+          "type": "string"
+        },
+        "mgba": {
+          "type": "string"
+        },
+        "port": {
+          "maximum": 65535,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "timeout": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "enabled"
+      ],
+      "type": "object"
+    },
+    "source_rom": {
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size": {
+          "pattern": "^0x(?:0|[0-9a-f]+)$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sha256",
+        "size"
+      ],
+      "type": "object"
+    },
+    "tables": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "field_count": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "beyblade",
+              "component_names",
+              "presentation_pairs",
+              "event_named_record",
+              "event_word_stream",
+              "event_bindings"
+            ]
+          },
+          "mode": {
+            "enum": [
+              "validate-only",
+              "in-place-same-size",
+              "relocate"
+            ]
+          },
+          "offset": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "reference_sites": {
+            "items": {
+              "pattern": "^0x(?:0|[0-9a-f]+)$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "size": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "mode"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "texts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "alignment": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "allocation": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "deduplicate": {
+            "type": "boolean"
+          },
+          "depends_on": {
+            "items": {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "entries": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "extension_metadata": {
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "const": "string_pool"
+          },
+          "padding": {
+            "pattern": "^0x(?:0|[0-9a-f]+)$",
+            "type": "string"
+          },
+          "pointer_sites": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "allocation",
+          "entries"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "validation": {
+      "additionalProperties": false,
+      "properties": {
+        "allow_invalid_header": {
+          "type": "boolean"
+        },
+        "extension_metadata": {
+          "type": "object"
+        },
+        "require_base_unchanged": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "allow_invalid_header"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "project",
+    "profile_id",
+    "source_rom",
+    "output",
+    "expansion",
+    "allocation_regions",
+    "assets",
+    "tables",
+    "texts",
+    "modules",
+    "patches",
+    "relocations",
+    "hooks",
+    "metadata",
+    "validation",
+    "smoke_test"
+  ],
+  "type": "object"
+}

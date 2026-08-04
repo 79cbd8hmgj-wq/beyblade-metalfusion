@@ -1,0 +1,63 @@
+{
+  "$id": "https://spirit-unbound.invalid/schemas/allocation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "alignment": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "branch_reach": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "class": {
+      "enum": [
+        "data",
+        "arm",
+        "thumb"
+      ]
+    },
+    "depends_on": {
+      "items": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "extension_metadata": {
+      "type": "object"
+    },
+    "fixed_offset": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "maximum_address": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "proximity_to": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    },
+    "size": {
+      "pattern": "^0x(?:0|[0-9a-f]+)$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "size",
+    "alignment",
+    "class"
+  ],
+  "type": "object"
+}

@@ -26,7 +26,7 @@ The machine map provides every window’s entropy, dominant-byte fraction, strin
 
 All 13 requested anchors were located. Tournament names occupy `0x0033BE50`–`0x0033BF70`, battle names `0x0033C274`–`0x0033C77C`, and collection names `0x0033D1C4`–`0x0033D358`; `initBeybladeMenu` is at `0x003A8990`. The aligned pointer scan found 48,159 candidates and 1,341 runs. A ten-entry ROM-target run begins at `0x00000AA0`, but table purpose remains a candidate.
 
-There are 226 structurally validated bounded LZ77 streams. The first credible one starts at `0x000BB8CC`, consumes 353 bytes, and claims 732 output bytes. Category assignment remains unknown because no decompression destination or consumer was observed. The sole tracked save signature is `EEPROM_V` at `0x003A937C` / `0x083A937C`. No audio engine is named from ambiguous static patterns.
+There are 226 structurally validated bounded LZ77 streams. The first credible one starts at `0x000BB8CC`, consumes 353 bytes, and claims 732 output bytes. Category assignment remains unknown because no decompression destination or consumer was observed. The sole tracked save signature is `EEPROM_V124` at `0x003A93BC` / `0x083A93BC` (**confirmed**). No audio engine is named from ambiguous static patterns.
 
 ## Boundaries and regeneration
 

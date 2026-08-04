@@ -1,0 +1,35 @@
+{
+  "assets": [
+    {
+      "alignment": "0x4",
+      "allocation_class": "data",
+      "compressed_size": 38,
+      "dependencies": [],
+      "format": "ASCII",
+      "id": "public-fixture",
+      "path": "data/build/fixtures/public-domain.txt",
+      "provenance": "Project-created synthetic fixture; CC0",
+      "runtime_consumers": [],
+      "sha256": "db0cc60e9a08f3250447210106243e4371ec73fe96ef43951d06a0cee0481271",
+      "type": "raw_binary",
+      "uncompressed_size": 38
+    },
+    {
+      "alignment": "0x2",
+      "allocation_class": "thumb",
+      "compressed_size": 4,
+      "decoded_sha256": "a7ddd513d149ea16fdd4db3f82267f83087aeaddd06b5dde5468adb704205fc4",
+      "dependencies": [],
+      "encoding": "hex",
+      "format": "Thumb-1 raw binary",
+      "id": "thumb-return",
+      "path": "data/build/fixtures/thumb-return.hex",
+      "provenance": "Project-created synthetic fixture; CC0",
+      "runtime_consumers": [],
+      "source_sha256": "d436d6a523b4d34e5af5aaa624895a61cdadf8fb1b978f1c0989798dfe5be7f5",
+      "type": "code_module",
+      "uncompressed_size": 4
+    }
+  ],
+  "schema_version": 1
+}

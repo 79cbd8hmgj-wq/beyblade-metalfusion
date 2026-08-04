@@ -4,4 +4,10 @@ analysis/generated/
 analysis/runtime/
 __pycache__/
 *.py[cod]
-
+build/generated/
+build/reports/
+build/patches/
+build/temp/
+*.gba
+*.sav
+*.ss[0-9]
