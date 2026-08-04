@@ -1,0 +1,6 @@
+runtime_address,label,confidence
+0x0802FF48,battle_debug_print,strongly_supported
+0x0802FFAC,resolve_exchange_candidate,strongly_supported
+0x080300D4,select_move_value,confirmed
+0x0803019C,battle_setup_candidate,candidate
+0x080302E0,packed_core_flag_consumer,strongly_supported

@@ -1,0 +1,7 @@
+{
+  "evidence": "direct pointer tables plus instruction consumers",
+  "confidence": "strongly_supported",
+  "move_table": {"rom": "0x00077F44", "runtime": "0x08077F44", "values": ["RPS_MOVE_ATTACK", "RPS_MOVE_DEFENSE", "RPS_MOVE_ENDURANCE", "RPS_MOVE_BIT_BEAST", "RPS_MOVE_BIT_BEAST_TARGET", "RPS_MOVE_JUMP", "RPS_MOVE_DODGE"]},
+  "type_table": {"rom": "0x00077F24", "runtime": "0x08077F24", "values": ["RPS_TYPE_ATTACK", "RPS_TYPE_DEFEND", "RPS_TYPE_COMBO", "RPS_TYPE_BIT_BEAST", "RPS_TYPE_OTHER", "RPS_TYPE_IDLE", "RPS_TYPE_COMBO_TARGET", "RPS_TYPE_HURT"]},
+  "qualification": "The names are confirmed diagnostic strings. Gameplay storage as 32-bit values at participant +0x2C8/+0x2CC is strongly supported by the printer and selector; runtime correlation remains unperformed. Other requested phase/outcome enums remain unknown."
+}

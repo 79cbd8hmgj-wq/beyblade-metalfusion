@@ -1,0 +1,6 @@
+{
+  "function":"0x080300D4","confidence":"confirmed","dispatch_field":"participant+0x2CC:u32",
+  "cases":{"0":"move 0 => f10; move 1 => f10<<1; move 2 => f14; otherwise 0","1":"move 0 => f14; move 1 => f10<<1; move 2 => f14+(f14<<1); otherwise 0","2":"arithmetic f10>>1","3":"move==3 ? f10+f14+f18 : 0","4":"0","5":"same destination as case 1","6":"rng(4)"},
+  "integer_notes":"32-bit loads and add/shift instructions; no saturation in helper. Signed negative clamp occurs later in resolver.",
+  "exchange":"At 0x08030030 both computed residuals are clamped to zero before nested +0x0C subtraction. The complete semantic formula remains strongly_supported rather than confirmed because helper callees and runtime values were unavailable."
+}
