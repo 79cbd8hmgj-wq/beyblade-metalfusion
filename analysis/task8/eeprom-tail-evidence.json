@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "candidate_range": {
+    "start_block": "0x3EF",
+    "end_block": "0x3FF",
+    "start_byte": "0x1F78",
+    "end_byte_exclusive": "0x2000",
+    "size": "0x88"
+  },
+  "static_evidence": {
+    "status": "strongly_supported",
+    "main_payload_last_block": "0x3EE",
+    "identified_direct_game_access_above_0x3EE": false,
+    "computed_or_indirect_access_disproven": false,
+    "conclusion": "The retail high-level payload loops end at block 0x3EE, but static analysis alone does not prove the tail safe for native writes."
+  },
+  "runtime_evidence": {
+    "status": "not_executed",
+    "required_scenarios": [
+      "blank EEPROM boot",
+      "valid save boot",
+      "New Game initialization",
+      "three normal save/load cycles",
+      "component purchase and equip",
+      "battle completion",
+      "tournament result",
+      "settings change",
+      "seeded-tail preservation"
+    ],
+    "observed_tail_reads": null,
+    "observed_tail_writes": null,
+    "seeded_tail_preserved": null
+  },
+  "release_gate": {
+    "native_extension_enabled": false,
+    "required_runtime_status": "confirmed",
+    "required_observed_retail_max_block": "0x3EE",
+    "required_seeded_save_cycles": 3,
+    "fallback": "Keep the custom extension tooling-only and refuse native EEPROM hooks."
+  }
+}
