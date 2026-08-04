@@ -1,0 +1,36 @@
+{
+  "encoding": "aligned little-endian u32 action words",
+  "entries": [
+    {
+      "confidence": "unknown",
+      "name": "command_0x04",
+      "value": "0x00000004"
+    },
+    {
+      "confidence": "unknown",
+      "name": "command_0x0E",
+      "value": "0x0000000E"
+    },
+    {
+      "confidence": "unknown",
+      "name": "command_0x0F",
+      "value": "0x0000000F"
+    },
+    {
+      "confidence": "unknown",
+      "name": "command_0x11",
+      "value": "0x00000011"
+    },
+    {
+      "confidence": "candidate",
+      "name": "pointer-bearing command candidate",
+      "value": "0x00000016"
+    },
+    {
+      "confidence": "unknown",
+      "name": "command_0xCF",
+      "value": "0x000000CF"
+    }
+  ],
+  "note": "Values are occurrences, not asserted opcodes; tooling preserves raw words."
+}

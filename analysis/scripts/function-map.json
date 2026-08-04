@@ -1,0 +1,76 @@
+{
+  "functions": [
+    {
+      "confidence": "confirmed",
+      "end_offset": "0x0002C704",
+      "mode": "thumb",
+      "name": "initTournament",
+      "rom_offset": "0x0002C6AC",
+      "runtime_address": "0x0802C6AC"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x0002C8B8",
+      "mode": "thumb",
+      "name": "addTournamentPoints",
+      "rom_offset": "0x0002C70C",
+      "runtime_address": "0x0802C70C"
+    },
+    {
+      "confidence": "confirmed",
+      "end_offset": "0x0002CCC4",
+      "mode": "thumb",
+      "name": "ResetTournament",
+      "rom_offset": "0x0002CC58",
+      "runtime_address": "0x0802CC58"
+    },
+    {
+      "confidence": "confirmed",
+      "end_offset": "0x0002CCFC",
+      "mode": "thumb",
+      "name": "ReInitTournament",
+      "rom_offset": "0x0002CCC4",
+      "runtime_address": "0x0802CCC4"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x0002D184",
+      "mode": "thumb",
+      "name": "getWinningTeam",
+      "rom_offset": "0x0002D144",
+      "runtime_address": "0x0802D144"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x0002D1C4",
+      "mode": "thumb",
+      "name": "getLosingTeam",
+      "rom_offset": "0x0002D184",
+      "runtime_address": "0x0802D184"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x0002D258",
+      "mode": "thumb",
+      "name": "getTeamAhead",
+      "rom_offset": "0x0002D1C4",
+      "runtime_address": "0x0802D1C4"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x0002D2C0",
+      "mode": "thumb",
+      "name": "getPointsDifference",
+      "rom_offset": "0x0002D258",
+      "runtime_address": "0x0802D258"
+    },
+    {
+      "confidence": "strongly_supported",
+      "end_offset": "0x00042F48",
+      "mode": "thumb",
+      "name": "experience_raise_helper",
+      "rom_offset": "0x00042F08",
+      "runtime_address": "0x08042F08"
+    }
+  ]
+}

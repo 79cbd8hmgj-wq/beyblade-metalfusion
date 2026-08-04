@@ -1,0 +1,32 @@
+{
+  "edges": [
+    {
+      "confidence": "candidate",
+      "source": "atDojo",
+      "target": "atExitToStreets",
+      "trigger": "map-authored adjacency candidate"
+    }
+  ],
+  "nodes": [
+    {
+      "confidence": "confirmed",
+      "id": "atDojo",
+      "kind": "event"
+    },
+    {
+      "confidence": "confirmed",
+      "id": "atExitToStreets",
+      "kind": "event"
+    },
+    {
+      "confidence": "confirmed",
+      "id": "TriggerBattle",
+      "kind": "reusable_event"
+    },
+    {
+      "confidence": "strongly_supported",
+      "id": "tournament",
+      "kind": "native_subsystem"
+    }
+  ]
+}

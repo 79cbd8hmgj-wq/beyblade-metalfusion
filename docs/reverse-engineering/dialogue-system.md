@@ -1,0 +1,9 @@
+# Dialogue and localization
+
+Dialogue dispatch remains **candidate**. Action streams contain small integers
+and ROM pointers, but static evidence gathered here does not safely distinguish
+text IDs, speaker IDs, portraits, expressions, or choice results. No bulk text
+was extracted. `dialogue_tables` supplies a byte-preserving tokenizer for
+isolated control streams: NUL terminators, known synthetic two-byte controls
+`0x01`–`0x03`, and all other control bytes survive round trip. These synthetic
+rules are tooling contracts, not claims about retail meanings.

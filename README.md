@@ -93,3 +93,12 @@ instruction evidence from candidates and unknown runtime-only behavior.
 ## Task 5 save tooling
 
 The dependency-free `tools.gba.save_format` model validates the supported ROM and parses/rebuilds an 8-KiB EEPROM image without discarding unknown bytes. `tools.gba.save_diff` creates deterministic changed-range reports. See [save layout](docs/reverse-engineering/save-layout.md), [transactions](docs/reverse-engineering/save-transactions.md), and [payload status](docs/reverse-engineering/save-payload.md). Never run experiments on a user's only save.
+
+### Task 6 event/story analysis
+
+Task 6 establishes a strongly supported hybrid architecture: authored named
+records select aligned action-word streams, while tournament and progression
+logic is native Thumb. Compact evidence is in `analysis/scripts/`; lossless,
+hash-gated tools are in `tools/gba/`; the report begins at
+`docs/reverse-engineering/script-engine.md`. Unknown opcode and save semantics
+remain neutral and byte-preserved.

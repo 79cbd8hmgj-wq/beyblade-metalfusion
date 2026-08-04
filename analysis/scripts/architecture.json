@@ -1,0 +1,9 @@
+{
+  "architecture": "hybrid native action-word streams selected by name bindings, plus hardcoded native subsystems",
+  "confidence": "strongly_supported",
+  "evidence": [
+    "bindings are pairs of ROM string pointer and ROM data pointer",
+    "targets begin aligned 32-bit action words, not ARM/Thumb prologues"
+  ],
+  "interpreter_status": "central interpreter boundary remains candidate; no numeric semantics promoted without consumer proof"
+}

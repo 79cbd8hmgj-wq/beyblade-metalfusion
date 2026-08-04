@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "confidence": "candidate",
+      "meaning": "team/index selector byte",
+      "offset": "0x000015C8"
+    },
+    {
+      "confidence": "strongly_supported",
+      "meaning": "score halfword A",
+      "offset": "0x000015D0"
+    },
+    {
+      "confidence": "strongly_supported",
+      "meaning": "score halfword B",
+      "offset": "0x000015D2"
+    }
+  ],
+  "persistence": "unknown",
+  "state_base_pointer_literal": "0x03000198",
+  "tie": "comparison helpers retain an equality path"
+}

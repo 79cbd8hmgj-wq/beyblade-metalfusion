@@ -1,0 +1,20 @@
+{
+  "$id": "https://example.invalid/schemas/callback-entry.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "confidence": {
+      "enum": [
+        "confirmed",
+        "strongly_supported",
+        "candidate",
+        "unknown"
+      ]
+    }
+  },
+  "required": [
+    "confidence"
+  ],
+  "title": "Callback Entry",
+  "type": "object"
+}

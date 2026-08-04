@@ -1,0 +1,13 @@
+{
+  "findings": [
+    {
+      "confidence": "strongly_supported",
+      "experience_offset": "0x0A within each record",
+      "function": "0x08042F08",
+      "iterations": 55,
+      "operation": "adds signed input then clamps to signed maximum derived from 0x3FFF0000",
+      "record_stride": "0x30"
+    }
+  ],
+  "persistence": "unknown"
+}

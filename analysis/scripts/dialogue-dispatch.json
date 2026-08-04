@@ -1,0 +1,6 @@
+{
+  "bulk_text_exported": false,
+  "control_codes": "unknown",
+  "status": "candidate",
+  "storage": "action streams contain small IDs and ROM pointers; localization consumer not bounded"
+}

@@ -1,0 +1,5 @@
+{
+  "confidence": "unknown",
+  "note": "No bit receives a semantic name without runtime or serializer data flow.",
+  "resolved_flags": []
+}
