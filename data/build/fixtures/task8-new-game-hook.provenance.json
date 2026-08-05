@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "src/native/task8/task8_hooks.S",
+  "decoded_sha256": "2b6b9674e65bffaeb3040740e4aaf5b2cfdf5432d4a02ecda114b780bc37df6e",
+  "decoded_size": 8,
+  "encoding": "hex",
+  "load_address": "0x08400000",
+  "rom_offset": "0x00400000",
+  "entry_symbol": "Task8_NewGameHook",
+  "entry_address": "0x08400001",
+  "retail_symbol": "Retail_SelectNewGameDescriptor",
+  "retail_target": "0x08066390",
+  "instructions": [
+    "push {lr}",
+    "bl 0x08066390",
+    "pop {pc}"
+  ],
+  "local_verification": {
+    "compiler": "clang 17.0.0 --target=arm-none-eabi",
+    "linker": "LLD 17.0.0",
+    "objcopy": "llvm-objcopy",
+    "load_vma": "0x08400000",
+    "result_hex": "00b566f4c5f900bd"
+  },
+  "behavior": "Preserves the original New Game scene-descriptor selection call and returns without adding gameplay behavior.",
+  "release_status": "research-only"
+}
