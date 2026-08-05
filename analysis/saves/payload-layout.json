@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "size": "0x1F60",
   "ranges": [
     {
@@ -9,12 +10,73 @@
     },
     {
       "offset": "0x0004",
-      "length": "0x1F5C",
-      "classification": "unresolved_copied_region",
-      "copy_out": "0x08045198",
-      "copy_in": "0x08045590",
+      "length": "0x50",
+      "classification": "serialized_or_translated_fields",
       "confidence": "strongly_supported"
+    },
+    {
+      "offset": "0x0054",
+      "length": "0x4",
+      "classification": "serializer_deserializer_untouched_hole",
+      "confidence": "confirmed"
+    },
+    {
+      "offset": "0x0058",
+      "length": "0x28F",
+      "classification": "serialized_or_translated_fields",
+      "confidence": "strongly_supported"
+    },
+    {
+      "offset": "0x02E7",
+      "length": "0x1",
+      "classification": "serializer_deserializer_untouched_alignment_gap",
+      "confidence": "confirmed"
+    },
+    {
+      "offset": "0x02E8",
+      "length": "0x3E4",
+      "classification": "translated_83_record_table",
+      "record_count": 83,
+      "record_stride": "0x0C",
+      "serialized_bytes_per_record": "0x0A",
+      "padding_bytes_per_record": "0x02",
+      "confidence": "confirmed"
+    },
+    {
+      "offset": "0x06CC",
+      "length": "0x1893",
+      "classification": "serialized_or_translated_fields",
+      "confidence": "strongly_supported"
+    },
+    {
+      "offset": "0x1F5F",
+      "length": "0x1",
+      "classification": "serializer_deserializer_untouched_trailing_byte",
+      "confidence": "confirmed"
     }
   ],
-  "semantic_status": "Static copy paths bound persistence but controlled save/runtime comparisons remain required for player/inventory/progression field names."
+  "translated_record_table": {
+    "payload_base": "0x02E8",
+    "payload_end_exclusive": "0x06CC",
+    "record_count": 83,
+    "payload_stride": "0x0C",
+    "runtime_stride": "0x28",
+    "serializer_loop": "0x08045412-0x080454A0",
+    "deserializer_loop": "0x08045844-0x08045954",
+    "record_data": "+0x00-+0x09",
+    "record_padding": "+0x0A-+0x0B",
+    "confidence": "confirmed"
+  },
+  "task8_custom_slot": {
+    "format": "SU8C",
+    "size": "0x40",
+    "mapping": "padding pairs from translated records 0 through 31",
+    "first_payload_offset": "0x02F2",
+    "last_payload_offset": "0x0467",
+    "covered_by_payload_checksum": true,
+    "covered_by_retail_save_transaction": true,
+    "native_eeprom_tail_required": false,
+    "confidence": "confirmed"
+  },
+  "semantic_status": "Most copied fields remain unnamed. Runtime multi-seed serializer experiments and the inverse loop now prove 176 untouched bytes, including two padding bytes in each of 83 translated records."
 }
