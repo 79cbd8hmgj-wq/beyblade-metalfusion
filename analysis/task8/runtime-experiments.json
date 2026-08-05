@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
   "emulator": {
     "name": "mGBA",
@@ -39,6 +39,41 @@
       },
       "conclusion": "The invalid-save path attempted repeated writes to the three header blocks only. Exact retry semantics remain bounded by the existing Task 5 analysis.",
       "confidence": "confirmed"
+    },
+    {
+      "id": "serializer-multi-seed-preservation",
+      "status": "executed",
+      "trigger": "At the initialized title state, derive the payload buffer through *[0x03000198] + 0x168C, seed all 0x1F60 bytes, invoke 0x08045198 manually, and dump the result.",
+      "entry": "0x08045198",
+      "observations": {
+        "runtime_root_pointer_global": "0x03000198",
+        "observed_runtime_root": "0x02000804",
+        "payload_pointer_field_offset": "0x168C",
+        "observed_payload_pointer": "0x02003218",
+        "payload_size": "0x1F60",
+        "serializer_modes": [0, 1],
+        "seed_values": ["0xA5", "0x5A", "0x3C"],
+        "intersection_untouched_bytes": 176,
+        "isolated_untouched_ranges": ["0x0000-0x0003", "0x0054-0x0057", "0x02E7", "0x1F5F"],
+        "record_table_base": "0x02E8",
+        "record_count": 83,
+        "payload_record_stride": "0x0C",
+        "serialized_bytes_per_record": 10,
+        "untouched_padding_per_record": 2,
+        "first_padding": "0x02F2-0x02F3",
+        "last_padding": "0x06CA-0x06CB",
+        "custom_slot_mapping": "first 32 padding pairs, sparse offsets 0x02F2 through 0x0467"
+      },
+      "static_cross_check": {
+        "serializer_loop": "0x08045412-0x080454A0",
+        "deserializer_loop": "0x08045844-0x08045954",
+        "deserializer_reads_padding": false,
+        "deserializer_payload_stride": "0x0C",
+        "deserializer_runtime_stride": "0x28"
+      },
+      "conclusion": "The repeated two-byte tails are confirmed serializer/deserializer padding. The first 32 pairs hold one 64-byte SU8C slot inside the original payload checksum and transaction, so Task 8 no longer requires direct EEPROM-tail writes.",
+      "confidence": "confirmed",
+      "compact_report": "analysis/task8/payload-padding-evidence.json"
     },
     {
       "id": "title-main-menu-consumer",
@@ -116,12 +151,10 @@
     }
   ],
   "remaining_runtime_gates": [
-    "trace EEPROM blocks during three valid save/load cycles",
-    "trace component purchase and equip",
-    "trace battle completion",
-    "trace tournament result",
-    "trace settings save",
-    "verify a seeded tail pattern remains byte-identical",
+    "hook the retail serializer after its normal writes and before checksum calculation",
+    "hook the retail load path after validation and deserialization",
+    "verify one SU8C slot survives three complete retail save/load cycles",
+    "prove no unrelated high-level routine mutates the selected payload padding pairs",
     "trigger the existing Enter name descriptor with live UI input and inspect its allocated buffer",
     "trace full native wrapper call-through and return with a debugger that resumes reliably from expansion breakpoints",
     "trigger player sprite and portrait lookup paths",
