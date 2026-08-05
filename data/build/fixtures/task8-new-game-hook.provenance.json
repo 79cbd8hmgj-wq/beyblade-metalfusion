@@ -1,27 +1,80 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source": "src/native/task8/task8_hooks.S",
-  "decoded_sha256": "2b6b9674e65bffaeb3040740e4aaf5b2cfdf5432d4a02ecda114b780bc37df6e",
-  "decoded_size": 8,
+  "decoded_sha256": "78b18bad83aa49bca3f61f7efa5c829b4bd070177411ddbdb3c19b01ae11120d",
+  "decoded_size": 124,
   "encoding": "hex",
   "load_address": "0x08400000",
   "rom_offset": "0x00400000",
   "entry_symbol": "Task8_NewGameHook",
   "entry_address": "0x08400001",
-  "retail_symbol": "Retail_SelectNewGameDescriptor",
-  "retail_target": "0x08066390",
-  "instructions": [
-    "push {lr}",
-    "bl 0x08066390",
-    "pop {pc}"
+  "entry_symbols": {
+    "Task8_NewGameHook": "0x00000000",
+    "Task8_SavePayloadHook": "0x00000008",
+    "Task8_LoadPayloadHook": "0x00000030"
+  },
+  "retail_symbols": {
+    "Retail_SelectNewGameDescriptor": "0x08066391",
+    "Retail_SerializeSavePayload": "0x08045199",
+    "Retail_DeserializeSavePayload": "0x08045591"
+  },
+  "runtime_storage": {
+    "root_pointer_global": "0x03000198",
+    "root_allocation_literal_rom_offset": "0x0004612C",
+    "root_allocation_old_size": "0x18C8",
+    "root_allocation_new_size": "0x1908",
+    "custom_slot_offset": "0x18C8",
+    "custom_slot_size": 64
+  },
+  "payload_storage": {
+    "payload_size": "0x1F60",
+    "translated_record_base": "0x02E8",
+    "record_stride": "0x0C",
+    "serialized_bytes_per_record": 10,
+    "padding_bytes_per_record": 2,
+    "first_payload_offset": "0x02F2",
+    "records_used": 32,
+    "slot_size": 64,
+    "covered_by_retail_checksum": true,
+    "covered_by_retail_transaction": true
+  },
+  "hook_sites": {
+    "new_game": {
+      "rom_offset": "0x000652FA",
+      "expected": "01f049f8",
+      "destination": "0x08400000"
+    },
+    "save_payload": {
+      "rom_offset": "0x00044E80",
+      "expected": "00f08af9",
+      "destination": "0x08400008"
+    },
+    "load_payload": {
+      "rom_offset": "0x00045092",
+      "expected": "00f07dfa",
+      "destination": "0x08400030"
+    }
+  },
+  "disassembly": [
+    "0x08400000 Task8_NewGameHook: preserve the retail descriptor-selector call",
+    "0x08400008 Task8_SavePayloadHook: call retail serializer, then scatter 64 runtime bytes into 32 payload padding pairs",
+    "0x08400030 Task8_LoadPayloadHook: call retail deserializer, then gather 32 payload padding pairs into the runtime slot",
+    "0x08400058-0x08400062: local Thumb veneers using odd retail function pointers"
   ],
   "local_verification": {
     "compiler": "clang 17.0.0 --target=arm-none-eabi",
     "linker": "LLD 17.0.0",
     "objcopy": "llvm-objcopy",
     "load_vma": "0x08400000",
-    "result_hex": "00b566f4c5f900bd"
+    "source_and_checked_hex_equal": true,
+    "result_hex": "00b500f029f800bdf0b5041c00f026f8144d2d6814482d18144824182026287820706878607002350c34013ef7d1f0bdf0b5041c00f014f80a4d2d680a482d180a482418202620782870607868700c340235013ef7d1f0bd054b1847054b1847054b184798010003c8180000f2020000916306089951040891550408"
   },
-  "behavior": "Preserves the original New Game scene-descriptor selection call and returns without adding gameplay behavior.",
+  "runtime_verification": {
+    "save_hook": "confirmed: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
+    "load_hook": "confirmed: high-level load reached the native gather loop; a write watchpoint on runtime custom-slot byte 63 triggered at 0x0840004E during the final iteration",
+    "direct_deserializer_call": "rejected: calling the retail deserializer outside its validated high-level context deadlocked or crashed because required load state was absent",
+    "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait"
+  },
+  "behavior": "Preserves New Game behavior and integrates one custom-state slot with the original payload checksum and transaction. It does not yet expose creator UI or custom gameplay behavior.",
   "release_status": "research-only"
 }
