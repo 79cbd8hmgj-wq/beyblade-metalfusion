@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "candidate_range": {
     "start_block": "0x3EF",
     "end_block": "0x3FF",
@@ -28,7 +28,7 @@
       "unique_blocks_recorded": 1006,
       "instrumentation_gap": "Block 0x1F4 was crossed during an RSP reconnect; the surrounding sequential payload reads were observed."
     },
-    "required_scenarios": [
+    "required_scenarios_for_tail_use": [
       "blank EEPROM boot",
       "valid save boot",
       "New Game initialization",
@@ -46,11 +46,18 @@
     "observed_tail_writes": 0,
     "seeded_tail_preserved": null
   },
-  "release_gate": {
-    "native_extension_enabled": false,
+  "task8_decision": {
+    "native_tail_extension_enabled": false,
+    "tail_required_for_custom_state": false,
+    "primary_storage": "64-byte SU8C slot mapped into confirmed retail payload record padding",
+    "primary_storage_evidence": "analysis/task8/payload-padding-evidence.json",
+    "reason": "The payload padding path is covered by the retail checksum and transaction and does not require new low-level EEPROM accesses."
+  },
+  "future_release_gate": {
+    "applies_only_if_tail_is_reconsidered": true,
     "required_runtime_status": "confirmed",
     "required_observed_retail_max_block": "0x3EE",
     "required_seeded_save_cycles": 3,
-    "fallback": "Keep the custom extension tooling-only and refuse native EEPROM hooks."
+    "fallback": "Continue using the confirmed retail payload padding and refuse native EEPROM-tail hooks."
   }
 }
