@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "project": "Spirit Unbound",
+  "profile_id": "task8-research",
+  "source_rom": {
+    "sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "size": "0x00400000"
+  },
+  "output": {
+    "rom_name": "spirit-unbound-task8-research.gba",
+    "bps_name": "spirit-unbound-task8-research.bps"
+  },
+  "expansion": {
+    "target_size": "0x00800000",
+    "fill": "0xff",
+    "reservations": [
+      {
+        "id": "reserved-future",
+        "start": "0x00600000",
+        "end": "0x00610000"
+      }
+    ]
+  },
+  "allocation_regions": [
+    {
+      "id": "expansion",
+      "start": "0x00400000",
+      "end": "0x00800000"
+    }
+  ],
+  "allocations": [
+    {
+      "id": "task8-new-game-hook",
+      "size": "0x8",
+      "alignment": "0x4",
+      "class": "thumb",
+      "fixed_offset": "0x00400000"
+    },
+    {
+      "id": "task8-research-metadata",
+      "size": "0x90",
+      "alignment": "0x10",
+      "class": "data",
+      "fixed_offset": "0x00400100"
+    }
+  ],
+  "assets": [],
+  "tables": [],
+  "texts": [],
+  "modules": [
+    {
+      "id": "insert-task8-new-game-hook",
+      "allocation": "task8-new-game-hook",
+      "path": "data/build/fixtures/task8-new-game-hook.hex",
+      "sha256": "2b6b9674e65bffaeb3040740e4aaf5b2cfdf5432d4a02ecda114b780bc37df6e",
+      "encoding": "hex",
+      "entry_offset": "0x0",
+      "thumb": true
+    }
+  ],
+  "patches": [],
+  "relocations": [],
+  "hooks": [
+    {
+      "id": "hook-new-game-descriptor-selection",
+      "kind": "thumb_bl",
+      "site": "0x000652fa",
+      "expected": "01f049f8",
+      "destination_allocation": "task8-new-game-hook",
+      "destination_offset": "0x0",
+      "depends_on": [
+        "insert-task8-new-game-hook"
+      ]
+    }
+  ],
+  "metadata": {
+    "enabled": true,
+    "id": "write-task8-research-metadata",
+    "allocation": "task8-research-metadata",
+    "project_version": "0.8.1-research"
+  },
+  "validation": {
+    "allow_invalid_header": false,
+    "require_base_unchanged": false
+  },
+  "smoke_test": {
+    "enabled": false
+  },
+  "extension_metadata": {
+    "task": "8",
+    "release_status": "research-only",
+    "behavior": "The only original-ROM change redirects the confirmed New Game descriptor-selection BL through a behavior-preserving expansion wrapper.",
+    "native_save_extension_enabled": false,
+    "creator_enabled": false
+  }
+}
