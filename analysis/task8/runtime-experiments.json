@@ -55,6 +55,46 @@
       "confidence": "confirmed"
     },
     {
+      "id": "new-game-transition",
+      "status": "executed",
+      "trigger": "Press A while NEW GAME is selected on a blank-save main menu.",
+      "breakpoint": "0x080652F8",
+      "observations": {
+        "selection_value": 1,
+        "menu_state": "0x03007BE0",
+        "descriptor_selector_call_site": "0x080652FA",
+        "descriptor_selector_argument": 10,
+        "retail_descriptor_selector": "0x08066390",
+        "scene_request_call_site": "0x08065316",
+        "scene_request_argument": 3
+      },
+      "conclusion": "The branch at 0x080652F8 is the confirmed New Game path. The four-byte BL at 0x080652FA is the first practical creator interception site.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "native-new-game-research-hook",
+      "status": "executed_partial",
+      "trigger": "Run an 8-MiB research image whose guarded BL at 0x080652FA targets the checked expansion module at 0x08400000, then force the already-confirmed branch from an initialized title-menu state to avoid nondeterministic UI timing.",
+      "breakpoints": ["0x080000C0", "0x08064558", "0x08064E10", "0x08400000"],
+      "research_image": {
+        "source_sha256_before": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        "source_sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        "output_sha256": "3e70c62bb874885962ad4fdcb7fb9d8624505523da6ebe6dacaa3cde6819ce11",
+        "output_size": "0x00800000",
+        "hook_bytes": "9af381fe",
+        "module_bytes": "00b566f4c5f900bd"
+      },
+      "observations": {
+        "module_entry": "0x08400000",
+        "r0": 10,
+        "lr": "0x080652FF",
+        "sp": "0x03007BE0",
+        "module_bytes_read_at_runtime": "00b566f4c5f900bd"
+      },
+      "conclusion": "Runtime confirms that the guarded retail BL reaches the expansion module with the original descriptor index and correct return address. Full call-through and return tracing was not completed because mGBA 0.10.5 repeatedly stalled when resuming from a software breakpoint at the expansion entry; static disassembly independently confirms the wrapper calls 0x08066390 and pops PC.",
+      "confidence": "runtime_observed"
+    },
+    {
       "id": "early-intro-name-paths",
       "status": "executed",
       "trigger": "Select NEW GAME and advance through the initial bedroom dialogue.",
@@ -82,8 +122,8 @@
     "trace tournament result",
     "trace settings save",
     "verify a seeded tail pattern remains byte-identical",
-    "locate the actual New Game transition call after menu confirmation",
-    "trigger the existing Enter name descriptor and identify its destination buffer",
+    "trigger the existing Enter name descriptor with live UI input and inspect its allocated buffer",
+    "trace full native wrapper call-through and return with a debugger that resumes reliably from expansion breakpoints",
     "trigger player sprite and portrait lookup paths",
     "trigger all player-side Bit Chip consumers"
   ]
