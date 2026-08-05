@@ -15,8 +15,17 @@
           "runtime_start": "0x08064E10",
           "instruction_offset": "0x00064E7A",
           "literal_offset": "0x00064F38",
-          "confidence": "candidate",
-          "evidence": "Thumb literal load resolves the localized NEW GAME row pointer."
+          "confidence": "confirmed",
+          "evidence": "Thumb literal load resolves the localized NEW GAME row pointer. Runtime execution triggered after pressing Start and before the main menu appeared.",
+          "runtime_evidence": {
+            "trigger": "Press Start on title screen",
+            "caller_lr": "0x0804106B",
+            "r0": "0x03007BE0",
+            "r2": "0x03007EB7",
+            "screen_after_return": "Main menu with NEW GAME selected",
+            "selection_retriggered_function": false,
+            "semantic_boundary": "main-menu initialization or rendering; not the final New Game transition hook"
+          }
         },
         {
           "function_start": "0x000654B8",
@@ -26,7 +35,7 @@
           "descriptor_offset": "0x000B8FF4",
           "descriptor_field_delta": 4,
           "confidence": "candidate",
-          "evidence": "Thumb code loads a nearby descriptor containing the NEW GAME localized-row pointer."
+          "evidence": "Thumb code loads a nearby descriptor containing the NEW GAME localized-row pointer. No hit was observed during title entry, menu display, selection, or the early intro."
         }
       ]
     },
@@ -44,7 +53,7 @@
           "instruction_offset": "0x00048B98",
           "literal_offset": "0x00048C70",
           "confidence": "candidate",
-          "evidence": "Thumb literal load resolves a localized Name label row."
+          "evidence": "Thumb literal load resolves a localized Name label row. Runtime trigger remains unresolved."
         }
       ]
     },
@@ -78,7 +87,7 @@
             }
           ],
           "confidence": "strongly_supported",
-          "evidence": "Three Thumb functions load the same descriptor whose +0x14 field points to the Enter name localized row. Descriptor semantics and destination buffer remain unresolved."
+          "evidence": "Three Thumb functions load the same descriptor whose +0x14 field points to the Enter name localized row. None triggered during title entry, New Game selection, or the observed opening dialogue; destination buffer and owner remain unresolved."
         }
       ]
     },
@@ -101,15 +110,16 @@
           "instruction_offset": "0x0002E598",
           "literal_offset": "0x0002E5F0",
           "confidence": "strongly_supported",
-          "evidence": "Function loads the five-pointer protagonist row, indexes it through a runtime language value, and passes the resolved string to a text routine."
+          "evidence": "Function loads the five-pointer protagonist row, indexes it through a runtime language value, and passes the resolved string to a text routine. It did not trigger during the observed fixed-Tyson opening dialogue, so that dialogue uses a separate text path."
         }
       ]
     }
   ],
   "status": {
     "static_analysis": "executed",
+    "runtime_experiments": "partial",
     "native_hook_sites": "not_confirmed",
-    "runtime_breakpoints": "required",
+    "actual_new_game_transition_hook": "unknown",
     "source_rom_modified": false
   }
 }
