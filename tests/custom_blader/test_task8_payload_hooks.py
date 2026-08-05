@@ -17,9 +17,9 @@ class Task8PayloadHookTests(unittest.TestCase):
             "Task8_CustomSlotOffset",
         ):
             self.assertIn(symbol, source)
-        self.assertIn("0x02F2", source)
-        self.assertIn("0x0C", source)
-        self.assertIn("32", source)
+        self.assertIn("Task8_PayloadSlotFirstOffset, 0x000002F2", source)
+        self.assertIn("advances by 0x0C bytes", source)
+        self.assertIn("movs r6, #32", source)
 
     def test_profile_expands_runtime_root_and_installs_three_guarded_hooks(self):
         profile = load("data/build/profiles/task8-research.json")
