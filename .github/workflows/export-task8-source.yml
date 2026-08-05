@@ -24,10 +24,10 @@ jobs:
             --exclude=dumps \
             --exclude=analysis/generated \
             --exclude=analysis/runtime \
-            -czf task8-source.tar.gz .
+            -czf "$RUNNER_TEMP/task8-source.tar.gz" .
       - uses: actions/upload-artifact@v4
         with:
           name: task8-source-${{ github.sha }}
-          path: task8-source.tar.gz
+          path: ${{ runner.temp }}/task8-source.tar.gz
           if-no-files-found: error
           retention-days: 1
