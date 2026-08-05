@@ -37,7 +37,46 @@
           "confidence": "candidate",
           "evidence": "Thumb code loads a nearby descriptor containing the NEW GAME localized-row pointer. No hit was observed during title entry, menu display, selection, or the early intro."
         }
-      ]
+      ],
+      "runtime_transition": {
+        "menu_frame_callback": {
+          "thumb_pointer": "0x080650CD",
+          "function_start": "0x080650CC",
+          "caller_site": "0x0804104E",
+          "indirect_call_helper": "0x08073C44",
+          "evidence": "The title state machine loaded this callback every frame while the main menu was active."
+        },
+        "selection_field_offset": "0x2D5",
+        "new_game_selection_value": 1,
+        "new_game_branch": "0x080652F8",
+        "confirmed_original_bytes": "0a2001f049f801f04df8011c",
+        "candidate_hook_site": {
+          "runtime_address": "0x080652FA",
+          "rom_offset": "0x000652FA",
+          "width": 4,
+          "expected_bytes": "01f049f8",
+          "instruction": "Thumb BL 0x08066390",
+          "reason": "The preceding `movs r0,#10` remains intact. Replacing this BL can call a custom creator entry that preserves the original descriptor-selection call before returning to 0x080652FE.",
+          "range_to_early_expansion": "within Thumb BL reach when the module is allocated near 0x08400000",
+          "confidence": "strongly_supported"
+        },
+        "subsequent_calls": [
+          {"site": "0x080652FA", "target": "0x08066390", "r0": 10},
+          {"site": "0x080652FE", "target": "0x0806639C"},
+          {"site": "0x08065306", "target": "0x0804109C"},
+          {"site": "0x08065316", "target": "0x08062BF0", "r0": 3}
+        ],
+        "runtime_evidence": {
+          "trigger": "Press A while NEW GAME is selected on a blank-save main menu.",
+          "breakpoint_hit": "0x080652F8",
+          "r0": "0x00000001",
+          "r6_menu_state": "0x03007BE0",
+          "scene_request_hit": "0x08062BF0",
+          "scene_request_r0": 3,
+          "scene_request_caller_lr": "0x0806531B"
+        },
+        "confidence": "confirmed"
+      }
     },
     {
       "id": "name-label",
@@ -118,8 +157,8 @@
   "status": {
     "static_analysis": "executed",
     "runtime_experiments": "partial",
-    "native_hook_sites": "not_confirmed",
-    "actual_new_game_transition_hook": "unknown",
+    "native_hook_sites": "new-game candidate strongly supported; remaining hooks unresolved",
+    "actual_new_game_transition_hook": "0x080652FA candidate BL replacement",
     "source_rom_modified": false
   }
 }
