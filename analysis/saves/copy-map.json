@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "serializer": {
     "address": "0x08045198",
     "extent_end": "0x08045590",
@@ -11,9 +12,74 @@
   },
   "regions": [
     {
-      "payload": "0x0004-0x1F5F",
-      "classification": "unresolved copied/translated fields",
-      "confidence": "unknown"
+      "payload": "0x0000-0x0003",
+      "classification": "payload_checksum_written_by_caller",
+      "writer": "0x08044E54",
+      "confidence": "confirmed"
+    },
+    {
+      "payload": "0x0004-0x0053",
+      "classification": "serialized_or_translated_fields",
+      "confidence": "strongly_supported"
+    },
+    {
+      "payload": "0x0054-0x0057",
+      "classification": "serializer_and_deserializer_untouched_hole",
+      "confidence": "confirmed"
+    },
+    {
+      "payload": "0x0058-0x02E6",
+      "classification": "serialized_or_translated_fields",
+      "confidence": "strongly_supported"
+    },
+    {
+      "payload": "0x02E7",
+      "classification": "serializer_and_deserializer_untouched_alignment_gap",
+      "confidence": "confirmed"
+    },
+    {
+      "payload": "0x02E8-0x06CB",
+      "classification": "83_record_translated_table",
+      "record_count": 83,
+      "record_stride": "0x0C",
+      "serialized_bytes_per_record": "0x0A",
+      "padding_bytes_per_record": "0x02",
+      "serializer_loop": "0x08045412-0x080454A0",
+      "deserializer_loop": "0x08045844-0x08045954",
+      "runtime_record_stride": "0x28",
+      "padding_mapping": "record i padding is payload[0x02E8 + i*0x0C + 0x0A : 0x02E8 + i*0x0C + 0x0C]",
+      "confidence": "confirmed"
+    },
+    {
+      "payload": "0x06CC-0x1F5E",
+      "classification": "serialized_or_translated_fields",
+      "confidence": "strongly_supported"
+    },
+    {
+      "payload": "0x1F5F",
+      "classification": "serializer_and_deserializer_untouched_trailing_byte",
+      "confidence": "confirmed"
     }
-  ]
+  ],
+  "runtime_preservation_experiment": {
+    "method": "Seed every payload byte, invoke the retail serializer, and intersect unchanged offsets across seed values 0xA5, 0x5A, and 0x3C in serializer modes 0 and 1.",
+    "preserved_byte_count": 176,
+    "record_padding_byte_count": 166,
+    "other_preserved_byte_count": 10,
+    "confidence": "confirmed",
+    "report": "analysis/task8/payload-padding-evidence.json",
+    "regenerator": "python3 -m tools.gba.save_copy_map"
+  },
+  "task8_custom_slot": {
+    "format": "SU8C",
+    "size": 64,
+    "payload_mapping": "first 32 record padding pairs",
+    "first_payload_offset": "0x02F2",
+    "last_payload_offset": "0x0467",
+    "covered_by_retail_checksum": true,
+    "covered_by_retail_transaction": true,
+    "native_eeprom_tail_required": false,
+    "confidence": "confirmed"
+  },
+  "scope_limit": "No other high-level routine has yet been runtime-proven to ignore these RAM payload padding bytes. Native hooks remain gated until the serializer and deserializer integration path is implemented and exercised."
 }
