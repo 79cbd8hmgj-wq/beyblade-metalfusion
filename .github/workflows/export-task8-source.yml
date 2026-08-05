@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - assistant/task8-functional-custom-blader
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: read
