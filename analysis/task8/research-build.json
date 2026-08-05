@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "profile": "data/build/profiles/task8-research.json",
+  "source": {
+    "size": 4194304,
+    "sha256_before": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "immutable": true
+  },
+  "native_module": {
+    "source": "src/native/task8/task8_hooks.S",
+    "checked_hex": "data/build/fixtures/task8-new-game-hook.hex",
+    "load_offset": "0x00400000",
+    "load_address": "0x08400000",
+    "size": 8,
+    "bytes": "00b566f4c5f900bd",
+    "decoded_sha256": "2b6b9674e65bffaeb3040740e4aaf5b2cfdf5432d4a02ecda114b780bc37df6e",
+    "compiler_verification": {
+      "status": "passed",
+      "provider": "llvm-arm-none-eabi",
+      "compiler": "clang 17.0.0",
+      "linker": "LLD 17.0.0",
+      "objcopy": "llvm-objcopy",
+      "entry_symbol": "Task8_NewGameHook",
+      "entry_address": "0x08400001",
+      "disassembly": [
+        "0x08400000: push {lr}",
+        "0x08400002: bl 0x08066390",
+        "0x08400006: pop {pc}"
+      ],
+      "source_and_checked_hex_equal": true
+    }
+  },
+  "guarded_hook": {
+    "site_offset": "0x000652FA",
+    "site_address": "0x080652FA",
+    "expected_original_bytes": "01f049f8",
+    "emitted_bytes": "9af381fe",
+    "destination_offset": "0x00400000",
+    "destination_address": "0x08400000",
+    "kind": "thumb_bl"
+  },
+  "build": {
+    "status": "passed",
+    "build_id": "22f67760820a9c8e",
+    "output_size": 8388608,
+    "output_sha256": "9080c993b96709e4791168b3ab3f826b238c851a591972d3cd23a407e2a9c10f",
+    "bps_size": 4194359,
+    "bps_sha256": "bfd1a85bc735964cf3a0224e2a9b292dbd17bbcdbd0f6ff674829d06329e83a5",
+    "bps_reconstruction": "passed",
+    "header_validation": "passed",
+    "expansion_fill_audit": "passed",
+    "original_changed_offsets": [
+      "0x000652FA",
+      "0x000652FB",
+      "0x000652FC",
+      "0x000652FD"
+    ]
+  },
+  "determinism": {
+    "status": "passed",
+    "independent_clean_builds": 2,
+    "byte_identical_artifacts": [
+      "ROM",
+      "BPS",
+      "build manifest",
+      "allocation map JSON",
+      "allocation map CSV",
+      "changed ranges",
+      "hooks",
+      "modules",
+      "validation",
+      "build report"
+    ]
+  },
+  "runtime": {
+    "status": "partial_pass",
+    "emulator": "mGBA 0.10.5",
+    "module_entry_observed": "0x08400000",
+    "r0": 10,
+    "lr": "0x080652FF",
+    "sp": "0x03007BE0",
+    "runtime_module_bytes": "00b566f4c5f900bd",
+    "conclusion": "The deterministic builder output reaches the expansion wrapper from the guarded New Game hook. Full wrapper-return tracing remains unexecuted because resuming from the expansion software breakpoint repeatedly stalled in this mGBA build."
+  },
+  "tests": {
+    "full_suite": "101 passed, 1 conditional real-ROM test skipped when the ROM environment variable is absent",
+    "real_rom_conditional_test": "7 passed with BEYBLADE_GREV_ROM supplied"
+  },
+  "release_status": "research-only",
+  "creator_enabled": false,
+  "native_save_extension_enabled": false
+}
