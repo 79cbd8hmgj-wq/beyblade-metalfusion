@@ -20,7 +20,6 @@ class Task8NativeBuildTests(unittest.TestCase):
     SAVE_HOOK_SITE = 0x00044E80
     LOAD_HOOK_SITE = 0x00045092
     ROOT_SIZE_SITE = 0x0004612C
-    ORIGINAL_NEW_GAME_TARGET = 0x00066390
     MODULE_BYTES = bytes.fromhex(
         "00b500f029f800bdf0b5041c00f026f8144d2d6814482d181448241820262878"
         "20706878607002350c34013ef7d1f0bdf0b5041c00f014f80a4d2d680a482d18"
@@ -28,6 +27,16 @@ class Task8NativeBuildTests(unittest.TestCase):
         "054b184798010003c8180000f2020000916306089951040891550408"
     )
     MODULE_SHA256 = "78b18bad83aa49bca3f61f7efa5c829b4bd070177411ddbdb3c19b01ae11120d"
+
+    @staticmethod
+    def changed_offsets_for_replacement(offset, before, after):
+        if len(before) != len(after):
+            raise ValueError("replacement extents differ")
+        return [
+            offset + index
+            for index, pair in enumerate(zip(before, after))
+            if pair[0] != pair[1]
+        ]
 
     def test_checked_module_has_explained_source_and_exact_bytes(self):
         source = Path("src/native/task8/task8_hooks.S").read_text(encoding="utf-8")
@@ -50,11 +59,13 @@ class Task8NativeBuildTests(unittest.TestCase):
             encoding="hex",
         )
         self.assertEqual(module["bytes"], self.MODULE_BYTES)
-        self.assertEqual(hashlib.sha256(module["bytes"]).hexdigest(), self.MODULE_SHA256)
+        self.assertEqual(
+            hashlib.sha256(module["bytes"]).hexdigest(),
+            self.MODULE_SHA256,
+        )
         self.assertEqual(len(module["bytes"]), 0x7C)
 
-    def test_module_internal_new_game_call_returns_to_retail_selector(self):
-        # push {lr}; BL from module+2 to the local veneer at module+0x58.
+    def test_module_internal_new_game_call_targets_local_thumb_veneer(self):
         self.assertEqual(
             self.MODULE_BYTES[2:6],
             thumb_bl(self.MODULE_OFFSET + 2, self.MODULE_OFFSET + 0x58),
@@ -97,15 +108,23 @@ class Task8NativeBuildTests(unittest.TestCase):
             "0x00045092",
         )
         for hook in hooks.values():
-            self.assertEqual(hook["destination_allocation"], "task8-native-hooks")
+            self.assertEqual(
+                hook["destination_allocation"],
+                "task8-native-hooks",
+            )
             self.assertEqual(hook["kind"], "thumb_bl")
         root_patch = profile["patches"][0]
         self.assertEqual(root_patch["offset"], "0x0004612c")
         self.assertEqual(root_patch["expected"], "c8180000")
         self.assertEqual(root_patch["value"], "0x00001908")
         self.assertFalse(profile["smoke_test"]["enabled"])
-        self.assertEqual(profile["extension_metadata"]["release_status"], "research-only")
-        self.assertFalse(profile["extension_metadata"]["native_eeprom_tail_enabled"])
+        self.assertEqual(
+            profile["extension_metadata"]["release_status"],
+            "research-only",
+        )
+        self.assertFalse(
+            profile["extension_metadata"]["native_eeprom_tail_enabled"]
+        )
 
     def test_toolchain_discovery_prefers_gnu_then_llvm(self):
         gnu = {
@@ -120,16 +139,25 @@ class Task8NativeBuildTests(unittest.TestCase):
             "llvm-objcopy": "/llvm/llvm-objcopy",
         }
 
-        with patch("tools.build.toolchain.shutil.which", side_effect=lambda name: gnu.get(name) or llvm.get(name)):
+        with patch(
+            "tools.build.toolchain.shutil.which",
+            side_effect=lambda name: gnu.get(name) or llvm.get(name),
+        ):
             info = discover()
         self.assertTrue(info["available"])
         self.assertEqual(info["provider"], "gnu-arm-none-eabi")
 
-        with patch("tools.build.toolchain.shutil.which", side_effect=lambda name: llvm.get(name)):
+        with patch(
+            "tools.build.toolchain.shutil.which",
+            side_effect=lambda name: llvm.get(name),
+        ):
             info = discover()
         self.assertTrue(info["available"])
         self.assertEqual(info["provider"], "llvm-arm-none-eabi")
-        self.assertEqual(set(info["tools"]), {"clang", "ld.lld", "llvm-objcopy"})
+        self.assertEqual(
+            set(info["tools"]),
+            {"clang", "ld.lld", "llvm-objcopy"},
+        )
 
         with patch("tools.build.toolchain.shutil.which", return_value=None):
             info = discover()
@@ -138,15 +166,25 @@ class Task8NativeBuildTests(unittest.TestCase):
 
     def test_module_provenance_matches_checked_hex(self):
         provenance = json.loads(
-            Path("data/build/fixtures/task8-new-game-hook.provenance.json").read_text(encoding="utf-8")
+            Path(
+                "data/build/fixtures/task8-new-game-hook.provenance.json"
+            ).read_text(encoding="utf-8")
         )
         self.assertEqual(provenance["decoded_sha256"], self.MODULE_SHA256)
         self.assertEqual(provenance["load_address"], "0x08400000")
         self.assertEqual(provenance["entry_symbol"], "Task8_NewGameHook")
-        self.assertEqual(provenance["entry_symbols"]["Task8_SavePayloadHook"], "0x00000008")
-        self.assertEqual(provenance["entry_symbols"]["Task8_LoadPayloadHook"], "0x00000030")
+        self.assertEqual(
+            provenance["entry_symbols"]["Task8_SavePayloadHook"],
+            "0x00000008",
+        )
+        self.assertEqual(
+            provenance["entry_symbols"]["Task8_LoadPayloadHook"],
+            "0x00000030",
+        )
         self.assertEqual(provenance["decoded_size"], len(self.MODULE_BYTES))
-        self.assertTrue(provenance["local_verification"]["source_and_checked_hex_equal"])
+        self.assertTrue(
+            provenance["local_verification"]["source_and_checked_hex_equal"]
+        )
 
     def test_real_research_profile_when_rom_is_supplied(self):
         rom_value = os.environ.get("BEYBLADE_GREV_ROM")
@@ -189,43 +227,81 @@ class Task8NativeBuildTests(unittest.TestCase):
                 "build-report.md",
             ]
             for name in deterministic_files:
-                self.assertEqual((output_a / name).read_bytes(), (output_b / name).read_bytes(), name)
-            built = (output_a / "spirit-unbound-task8-research.gba").read_bytes()
-            patch_bytes = (output_a / "spirit-unbound-task8-research.bps").read_bytes()
+                self.assertEqual(
+                    (output_a / name).read_bytes(),
+                    (output_b / name).read_bytes(),
+                    name,
+                )
+            built = (
+                output_a / "spirit-unbound-task8-research.gba"
+            ).read_bytes()
+            patch_bytes = (
+                output_a / "spirit-unbound-task8-research.bps"
+            ).read_bytes()
             self.assertEqual(len(built), 0x00800000)
+
+            replacements = [
+                (
+                    self.SAVE_HOOK_SITE,
+                    bytes.fromhex("00f08af9"),
+                    bytes.fromhex("bbf3c2f8"),
+                ),
+                (
+                    self.LOAD_HOOK_SITE,
+                    bytes.fromhex("00f07dfa"),
+                    bytes.fromhex("baf3cdff"),
+                ),
+                (
+                    self.ROOT_SIZE_SITE,
+                    bytes.fromhex("c8180000"),
+                    bytes.fromhex("08190000"),
+                ),
+                (
+                    self.NEW_GAME_HOOK_SITE,
+                    bytes.fromhex("01f049f8"),
+                    bytes.fromhex("9af381fe"),
+                ),
+            ]
+            expected_changed_offsets = []
+            for offset, original, replacement in replacements:
+                self.assertEqual(
+                    built[offset : offset + len(replacement)],
+                    replacement,
+                )
+                expected_changed_offsets.extend(
+                    self.changed_offsets_for_replacement(
+                        offset,
+                        original,
+                        replacement,
+                    )
+                )
+            expected_changed_offsets.sort()
+
             self.assertEqual(
-                built[self.NEW_GAME_HOOK_SITE:self.NEW_GAME_HOOK_SITE + 4],
-                bytes.fromhex("9af381fe"),
-            )
-            self.assertEqual(
-                built[self.SAVE_HOOK_SITE:self.SAVE_HOOK_SITE + 4],
-                bytes.fromhex("bbf3c2f8"),
-            )
-            self.assertEqual(
-                built[self.LOAD_HOOK_SITE:self.LOAD_HOOK_SITE + 4],
-                bytes.fromhex("baf3cdff"),
-            )
-            self.assertEqual(
-                built[self.ROOT_SIZE_SITE:self.ROOT_SIZE_SITE + 4],
-                bytes.fromhex("08190000"),
-            )
-            self.assertEqual(
-                built[self.MODULE_OFFSET:self.MODULE_OFFSET + len(self.MODULE_BYTES)],
+                built[
+                    self.MODULE_OFFSET : self.MODULE_OFFSET
+                    + len(self.MODULE_BYTES)
+                ],
                 self.MODULE_BYTES,
             )
-            expected_changed_offsets = [
-                *range(self.SAVE_HOOK_SITE, self.SAVE_HOOK_SITE + 4),
-                *range(self.LOAD_HOOK_SITE, self.LOAD_HOOK_SITE + 4),
-                *range(self.ROOT_SIZE_SITE, self.ROOT_SIZE_SITE + 4),
-                *range(self.NEW_GAME_HOOK_SITE, self.NEW_GAME_HOOK_SITE + 4),
+            actual_changed_offsets = [
+                index
+                for index, pair in enumerate(zip(source_before, built))
+                if pair[0] != pair[1]
             ]
             self.assertEqual(
-                [index for index, (before, after) in enumerate(zip(source_before, built)) if before != after],
+                actual_changed_offsets,
                 expected_changed_offsets,
             )
             self.assertEqual(apply_bps(patch_bytes, source_before), built)
-            self.assertEqual(manifest_a["build_id"], manifest_b["build_id"])
-            self.assertEqual(manifest_a["output_sha256"], manifest_b["output_sha256"])
+            self.assertEqual(
+                manifest_a["build_id"],
+                manifest_b["build_id"],
+            )
+            self.assertEqual(
+                manifest_a["output_sha256"],
+                manifest_b["output_sha256"],
+            )
         self.assertEqual(rom.read_bytes(), source_before)
 
 
