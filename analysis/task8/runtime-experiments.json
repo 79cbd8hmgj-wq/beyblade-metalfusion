@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "emulator": {
+    "name": "mGBA",
+    "version": "0.10.5",
+    "gdb_endpoint": "127.0.0.1:2345",
+    "bundle_provenance": "Build GBA GDB Debugger Bundle workflow artifact"
+  },
+  "experiments": [
+    {
+      "id": "boot-eeprom-block-trace",
+      "status": "executed",
+      "trigger": "Boot with the supplied copied 8-KiB save image.",
+      "breakpoint": "0x08067584",
+      "observations": {
+        "header_read_caller_lr": "0x08044AF3",
+        "header_blocks": "0x000-0x002",
+        "payload_read_caller_lr": "0x08044FFD",
+        "payload_blocks": "0x003-0x3EE",
+        "minimum_observed_block": "0x000",
+        "maximum_observed_block": "0x3EE",
+        "observed_block_above_0x3EE": false,
+        "unique_blocks_recorded": 1006,
+        "instrumentation_gap": "Block 0x1F4 was crossed while reconnecting the RSP client; the surrounding payload-loop sequence was 0x1F3 then 0x1F5."
+      },
+      "conclusion": "Runtime confirms the known boot header reads and the payload loop ending at block 0x3EE. This single boot scenario does not prove the tail unused by every subsystem.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "invalid-save-header-clear",
+      "status": "executed",
+      "trigger": "Continue boot after the copied save failed retail validation.",
+      "breakpoint": "0x08067634",
+      "observations": {
+        "caller_lr": "0x08044F7F",
+        "block_sequence": ["0x000", "0x001", "0x002", "0x000", "0x001", "0x002", "0x000", "0x001", "0x002"],
+        "source_pointer": "0x08096938"
+      },
+      "conclusion": "The invalid-save path attempted repeated writes to the three header blocks only. Exact retry semantics remain bounded by the existing Task 5 analysis.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "title-main-menu-consumer",
+      "status": "executed",
+      "trigger": "Press Start on the title screen before the main menu appears.",
+      "breakpoint": "0x08064E10",
+      "observations": {
+        "caller_lr": "0x0804106B",
+        "r0": "0x03007BE0",
+        "r2": "0x03007EB7",
+        "screen_after_return": "Main menu with NEW GAME selected"
+      },
+      "conclusion": "0x08064E10 participates in main-menu initialization or rendering. Selecting NEW GAME did not call it again, so it is not the final creator interception site.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "early-intro-name-paths",
+      "status": "executed",
+      "trigger": "Select NEW GAME and advance through the initial bedroom dialogue.",
+      "breakpoints": [
+        "0x0802E4DC",
+        "0x080654B8",
+        "0x0806645C",
+        "0x080668C8",
+        "0x08066984"
+      ],
+      "observations": {
+        "fixed_tyson_dialogue_visible": true,
+        "protagonist_lookup_hits": 0,
+        "enter_name_consumer_hits": 0,
+        "secondary_new_game_consumer_hits": 0
+      },
+      "conclusion": "The opening dialogue's Tyson text does not pass through the candidate protagonist lookup during the observed segment. The Enter name descriptor is not part of the initial New Game sequence.",
+      "confidence": "strongly_supported"
+    }
+  ],
+  "remaining_runtime_gates": [
+    "trace EEPROM blocks during three valid save/load cycles",
+    "trace component purchase and equip",
+    "trace battle completion",
+    "trace tournament result",
+    "trace settings save",
+    "verify a seeded tail pattern remains byte-identical",
+    "locate the actual New Game transition call after menu confirmation",
+    "trigger the existing Enter name descriptor and identify its destination buffer",
+    "trigger player sprite and portrait lookup paths",
+    "trigger all player-side Bit Chip consumers"
+  ]
+}
