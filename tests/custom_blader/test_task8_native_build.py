@@ -1,9 +1,13 @@
 import hashlib
 import json
+import os
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from tools.build.bps import apply as apply_bps
+from tools.build.build_rom import build
 from tools.build.hooks import thumb_bl
 from tools.build.modules import load_raw
 from tools.build.profile import load
@@ -95,6 +99,62 @@ class Task8NativeBuildTests(unittest.TestCase):
         self.assertEqual(provenance["entry_symbol"], "Task8_NewGameHook")
         self.assertEqual(provenance["retail_target"], "0x08066390")
         self.assertEqual(provenance["decoded_size"], len(self.MODULE_BYTES))
+
+    def test_real_research_profile_when_rom_is_supplied(self):
+        rom_value = os.environ.get("BEYBLADE_GREV_ROM")
+        if not rom_value:
+            self.skipTest("BEYBLADE_GREV_ROM is not set")
+        rom = Path(rom_value)
+        if not rom.is_file():
+            self.skipTest("BEYBLADE_GREV_ROM does not point to a file")
+        source_before = rom.read_bytes()
+        self.assertEqual(
+            hashlib.sha256(source_before).hexdigest(),
+            "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output_a = root / "a"
+            output_b = root / "b"
+            manifest_a = build(
+                rom,
+                "data/build/profiles/task8-research.json",
+                output_a,
+                clean=True,
+            )
+            manifest_b = build(
+                rom,
+                "data/build/profiles/task8-research.json",
+                output_b,
+                clean=True,
+            )
+            deterministic_files = [
+                "spirit-unbound-task8-research.gba",
+                "spirit-unbound-task8-research.bps",
+                "build-manifest.json",
+                "allocation-map.json",
+                "allocation-map.csv",
+                "changed-ranges.json",
+                "hooks.json",
+                "modules.json",
+                "validation.json",
+                "build-report.md",
+            ]
+            for name in deterministic_files:
+                self.assertEqual((output_a / name).read_bytes(), (output_b / name).read_bytes(), name)
+            built = (output_a / "spirit-unbound-task8-research.gba").read_bytes()
+            patch = (output_a / "spirit-unbound-task8-research.bps").read_bytes()
+            self.assertEqual(len(built), 0x00800000)
+            self.assertEqual(built[self.HOOK_SITE:self.HOOK_SITE + 4], bytes.fromhex("9af381fe"))
+            self.assertEqual(built[self.MODULE_OFFSET:self.MODULE_OFFSET + 8], self.MODULE_BYTES)
+            self.assertEqual(
+                [index for index, (before, after) in enumerate(zip(source_before, built)) if before != after],
+                list(range(self.HOOK_SITE, self.HOOK_SITE + 4)),
+            )
+            self.assertEqual(apply_bps(patch, source_before), built)
+            self.assertEqual(manifest_a["build_id"], manifest_b["build_id"])
+            self.assertEqual(manifest_a["output_sha256"], manifest_b["output_sha256"])
+        self.assertEqual(rom.read_bytes(), source_before)
 
 
 if __name__ == "__main__":
