@@ -78,7 +78,7 @@
       "breakpoints": ["0x080000C0", "0x08064558", "0x08064E10", "0x08400000"],
       "research_image": {
         "source_sha256_before": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
-        "source_sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        "source_sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
         "output_sha256": "3e70c62bb874885962ad4fdcb7fb9d8624505523da6ebe6dacaa3cde6819ce11",
         "output_size": "0x00800000",
         "hook_bytes": "9af381fe",
