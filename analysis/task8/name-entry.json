@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "scene_system": {
+    "descriptor_pointer_table": "0x080BA1A8",
+    "descriptor_pointer_table_rom_offset": "0x000BA1A8",
+    "descriptor_count": 55,
+    "descriptor_width": "0x50",
+    "descriptor_stride": "0x50",
+    "name_entry_scene_index": 10,
+    "name_entry_descriptor": "0x080B9398",
+    "confidence": "confirmed"
+  },
+  "callbacks": [
+    {"descriptor_field": "0x00", "pointer": "0x0806645D", "function": "0x0806645C", "role": "scene initialization", "confidence": "strongly_supported"},
+    {"descriptor_field": "0x04", "pointer": "0x08066665", "function": "0x08066664", "role": "scene update", "confidence": "candidate"},
+    {"descriptor_field": "0x08", "pointer": "0x080667ED", "function": "0x080667EC", "role": "scene draw or transition update", "confidence": "candidate"},
+    {"descriptor_field": "0x0C", "pointer": "0x08065349", "function": "0x08065348", "role": "shared scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x18", "pointer": "0x080669F5", "function": "0x080669F4", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x1C", "pointer": "0x08066A2D", "function": "0x08066A2C", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x20", "pointer": "0x08066A65", "function": "0x08066A64", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x24", "pointer": "0x08066A9D", "function": "0x08066A9C", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x28", "pointer": "0x080668C9", "function": "0x080668C8", "role": "selection and confirm handler", "confidence": "strongly_supported"},
+    {"descriptor_field": "0x2C", "pointer": "0x08066985", "function": "0x08066984", "role": "delete or back handler", "confidence": "strongly_supported"}
+  ],
+  "localized_text": {
+    "english_string": "Enter name",
+    "english_string_rom_offset": "0x003A3760",
+    "localized_row_rom_offset": "0x00096D00",
+    "descriptor_containing_row": "0x080BAE54",
+    "descriptor_field_offset": "0x14",
+    "confidence": "strongly_supported"
+  },
+  "input_contract": {
+    "symbol_handler": "0x08066B10",
+    "confirm_code": 7,
+    "delete_code": 8,
+    "case_toggle_code": 9,
+    "case_flag_address": "0x030009A8",
+    "buffer_pointer_address": "0x030009AC",
+    "maximum_characters": 15,
+    "buffer_bytes": 16,
+    "empty_confirm_allowed": false,
+    "confidence": "strongly_supported",
+    "evidence": [
+      "The append path compares the current string length with 14 and rejects appends only when it is greater than 14.",
+      "The confirm path for symbol code 7 checks that the current string length is greater than zero before returning success.",
+      "Symbol code 8 calls the retail string-delete helper.",
+      "Symbol code 9 toggles the byte at 0x030009A8 and refreshes the keyboard layout."
+    ]
+  },
+  "commit_contract": {
+    "handler": "0x080668C8",
+    "runtime_base_pointer_address": "0x03000198",
+    "runtime_name_offset": "0x0858",
+    "runtime_name_size": 16,
+    "operation": "Clear 16 bytes at *[0x03000198]+0x858, then copy 16 bytes from *[0x030009AC].",
+    "confidence": "confirmed_static"
+  },
+  "new_game_relationship": {
+    "menu_selection_branch": "0x080652F8",
+    "descriptor_selector_argument": 10,
+    "descriptor_selector_call": "0x080652FA",
+    "scene_request_argument": 3,
+    "scene_request_call": "0x08065316",
+    "confidence": "confirmed",
+    "runtime_observation": "Selecting NEW GAME hit the branch with selection value 1 and subsequently requested scene 3."
+  },
+  "persistence": {
+    "status": "unresolved",
+    "serializer": "0x08045198",
+    "deserializer": "0x08045590",
+    "direct_serializer_literal_for_runtime_offset_0x858": false,
+    "direct_deserializer_literal_for_runtime_offset_0x858": false,
+    "next_experiment": "Enter a distinctive name, break on 0x080668C8 after the buffer exists, save on a copied EEPROM image, and correlate reads of runtime +0x858 with serializer output."
+  },
+  "semantic_owner": {
+    "status": "strongly_supported",
+    "candidate": "new-profile or player name",
+    "counterevidence": "The observed opening story dialogue still rendered fixed Tyson text and did not call the candidate protagonist-name lookup at 0x0802E4DC.",
+    "conclusion": "The retail field is an existing New Game name, but it is not sufficient by itself to replace all Tyson dialogue."
+  }
+}
