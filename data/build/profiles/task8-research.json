@@ -30,8 +30,8 @@
   ],
   "allocations": [
     {
-      "id": "task8-new-game-hook",
-      "size": "0x8",
+      "id": "task8-native-hooks",
+      "size": "0x80",
       "alignment": "0x4",
       "class": "thumb",
       "fixed_offset": "0x00400000"
@@ -49,16 +49,24 @@
   "texts": [],
   "modules": [
     {
-      "id": "insert-task8-new-game-hook",
-      "allocation": "task8-new-game-hook",
+      "id": "insert-task8-native-hooks",
+      "allocation": "task8-native-hooks",
       "path": "data/build/fixtures/task8-new-game-hook.hex",
-      "sha256": "2b6b9674e65bffaeb3040740e4aaf5b2cfdf5432d4a02ecda114b780bc37df6e",
+      "sha256": "78b18bad83aa49bca3f61f7efa5c829b4bd070177411ddbdb3c19b01ae11120d",
       "encoding": "hex",
       "entry_offset": "0x0",
       "thumb": true
     }
   ],
-  "patches": [],
+  "patches": [
+    {
+      "id": "extend-runtime-root-for-custom-slot",
+      "kind": "write_u32",
+      "offset": "0x0004612c",
+      "expected": "c8180000",
+      "value": "0x00001908"
+    }
+  ],
   "relocations": [],
   "hooks": [
     {
@@ -66,10 +74,34 @@
       "kind": "thumb_bl",
       "site": "0x000652fa",
       "expected": "01f049f8",
-      "destination_allocation": "task8-new-game-hook",
+      "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x0",
       "depends_on": [
-        "insert-task8-new-game-hook"
+        "insert-task8-native-hooks"
+      ]
+    },
+    {
+      "id": "hook-save-payload-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00044e80",
+      "expected": "00f08af9",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x8",
+      "depends_on": [
+        "insert-task8-native-hooks",
+        "extend-runtime-root-for-custom-slot"
+      ]
+    },
+    {
+      "id": "hook-load-payload-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00045092",
+      "expected": "00f07dfa",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x30",
+      "depends_on": [
+        "insert-task8-native-hooks",
+        "extend-runtime-root-for-custom-slot"
       ]
     }
   ],
@@ -77,7 +109,7 @@
     "enabled": true,
     "id": "write-task8-research-metadata",
     "allocation": "task8-research-metadata",
-    "project_version": "0.8.1-research"
+    "project_version": "0.8.2-research"
   },
   "validation": {
     "allow_invalid_header": false,
@@ -89,8 +121,10 @@
   "extension_metadata": {
     "task": "8",
     "release_status": "research-only",
-    "behavior": "The only original-ROM change redirects the confirmed New Game descriptor-selection BL through a behavior-preserving expansion wrapper.",
-    "native_save_extension_enabled": false,
+    "behavior": "Preserve the confirmed New Game transition and integrate one 64-byte SU8C state slot with the retail payload serializer and deserializer.",
+    "custom_state_storage": "retail payload record padding",
+    "custom_slot_runtime_offset": "0x18C8",
+    "native_eeprom_tail_enabled": false,
     "creator_enabled": false
   }
 }
