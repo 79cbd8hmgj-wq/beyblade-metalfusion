@@ -18,12 +18,12 @@ jobs:
       - name: Create source-only archive
         run: |
           tar \
-            --exclude=.git \
-            --exclude=build \
-            --exclude=work \
-            --exclude=dumps \
-            --exclude=analysis/generated \
-            --exclude=analysis/runtime \
+            --exclude=./.git \
+            --exclude=./build \
+            --exclude=./work \
+            --exclude=./dumps \
+            --exclude=./analysis/generated \
+            --exclude=./analysis/runtime \
             -czf "$RUNNER_TEMP/task8-source.tar.gz" .
       - uses: actions/upload-artifact@v4
         with:
