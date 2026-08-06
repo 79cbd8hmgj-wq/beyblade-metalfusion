@@ -57,14 +57,25 @@ def _compile_command(provider, tools, source, output):
         '-ffreestanding',
         '-fno-ident',
         '-fno-asynchronous-unwind-tables',
+        '-fno-builtin',
+        '-fomit-frame-pointer',
+        '-fno-stack-protector',
+        '-ffunction-sections',
+        '-fdata-sections',
     ]
     if provider == 'gnu-arm-none-eabi':
-        return [tools['arm-none-eabi-gcc'], *common, '-frandom-seed=spirit-unbound']
+        return [
+            tools['arm-none-eabi-gcc'],
+            *common,
+            '-Os',
+            '-frandom-seed=spirit-unbound',
+        ]
     if provider == 'llvm-arm-none-eabi':
         return [
             tools['clang'],
             '--target=arm-none-eabi',
             *common,
+            '-Oz',
             '-frandom-seed=spirit-unbound',
         ]
     raise RuntimeError(f'unsupported ARM toolchain provider: {provider}')
@@ -108,6 +119,7 @@ def compile_module(
             toolchain['tools']['arm-none-eabi-ld'],
             '-T',
             str(script),
+            '--gc-sections',
             '-Map',
             str(map_file),
             '-o',
@@ -120,6 +132,7 @@ def compile_module(
             toolchain['tools']['ld.lld'],
             '-T',
             str(script),
+            '--gc-sections',
             f'-Map={map_file}',
             '-o',
             str(elf),
