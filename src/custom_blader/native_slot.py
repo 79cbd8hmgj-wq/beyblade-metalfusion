@@ -169,3 +169,10 @@ def commit_player_name(raw: bytes, retail_buffer: bytes) -> tuple[bytes, str]:
         return seal_slot(bytes(output)), "committed"
     except ValueError:
         return default_slot(), "defaulted"
+
+
+def select_player_name(raw: bytes, fallback: str) -> str:
+    """Return the validated persistent player name or the retail fallback."""
+    if validate_slot(raw):
+        return _name_bytes(raw, 10, 22).decode("ascii")
+    return fallback
