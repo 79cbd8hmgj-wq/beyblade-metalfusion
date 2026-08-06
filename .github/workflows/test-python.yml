@@ -41,7 +41,6 @@ jobs:
           find scripts debugger-bundle -type f \( -name '*.sh' -o -name '*.bash' \) -print0 2>/dev/null \
             | xargs -0 -r -n1 bash -n
       - name: Upload Task 8 source snapshot
-        if: github.ref == 'refs/heads/assistant/task8-functional-custom-blader'
         uses: actions/upload-artifact@v4
         with:
           name: task8-source-${{ github.sha }}
