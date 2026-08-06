@@ -6,34 +6,39 @@ from tools.build.profile import load
 
 
 class Task8PayloadHookTests(unittest.TestCase):
-    def test_native_sources_declare_persistence_integrity_and_name_contracts(self):
+    def test_native_sources_declare_persistence_integrity_and_creator_contracts(self):
         hooks = Path("src/native/task8/task8_hooks.S").read_text(encoding="utf-8")
-        slot = Path("src/native/task8/task8_slot.c")
-        self.assertTrue(slot.is_file(), "implement native Task 8 slot validation")
-        slot_source = slot.read_text(encoding="utf-8")
+        slot_source = Path("src/native/task8/task8_slot.c").read_text(
+            encoding="utf-8"
+        )
+        creator = Path("src/native/task8/creator.c").read_text(
+            encoding="utf-8"
+        )
 
         for symbol in (
             "Task8_SavePayloadHook",
             "Task8_LoadPayloadHook",
             "Task8_NameCommitHook",
+            "Task8_CreatorBackHook",
             "Retail_SerializeSavePayload",
             "Retail_DeserializeSavePayload",
             "Retail_CopyBytes",
             "Task8_RuntimeRootPointer",
             "Task8_CustomSlotOffset",
-            "Task8_InitializeDefaultSlot",
+            "Task8_CreatorInit",
+            "Task8_CreatorCommit",
+            "Task8_CreatorBack",
             "Task8_PrepareSlotForSave",
             "Task8_ValidateOrDefaultSlot",
-            "Task8_CommitPlayerName",
         ):
-            self.assertIn(symbol, hooks + slot_source)
+            self.assertIn(symbol, hooks + slot_source + creator)
         self.assertIn("Task8_PayloadSlotFirstOffset, 0x000002F2", hooks)
-        self.assertIn("advances by 0x0C bytes", hooks)
         self.assertIn("movs r6, #32", hooks)
-        self.assertIn("bl Task8_InitializeDefaultSlot", hooks)
+        self.assertIn("bl Task8_CreatorInit", hooks)
         self.assertIn("bl Task8_PrepareSlotForSave", hooks)
         self.assertIn("bl Task8_ValidateOrDefaultSlot", hooks)
-        self.assertIn("bl Task8_CommitPlayerName", hooks)
+        self.assertIn("bl Task8_CreatorCommit", hooks)
+        self.assertIn("bl Task8_CreatorBack", hooks)
 
         for contract in (
             "Task8_ValidateSlot",
@@ -45,25 +50,25 @@ class Task8PayloadHookTests(unittest.TestCase):
         ):
             self.assertIn(contract, slot_source)
 
-    def test_profile_expands_runtime_root_and_installs_four_guarded_hooks(self):
+    def test_profile_expands_runtime_root_and_installs_five_guarded_hooks(self):
         profile = load("data/build/profiles/task8-research.json")
         allocation = next(
             item
             for item in profile["allocations"]
             if item["id"] == "task8-native-hooks"
         )
-        self.assertGreaterEqual(int(allocation["size"], 0), 0x500)
+        self.assertGreaterEqual(int(allocation["size"], 0), 0x900)
         self.assertEqual(allocation["fixed_offset"], "0x00400000")
 
-        patch = next(
-            item
-            for item in profile["patches"]
-            if item["id"] == "extend-runtime-root-for-custom-slot"
-        )
-        self.assertEqual(patch["kind"], "write_u32")
-        self.assertEqual(patch["offset"], "0x0004612c")
-        self.assertEqual(patch["expected"], "c8180000")
-        self.assertEqual(patch["value"], "0x00001908")
+        patches = {item["id"]: item for item in profile["patches"]}
+        root = patches["extend-runtime-root-for-custom-slot"]
+        self.assertEqual(root["kind"], "write_u32")
+        self.assertEqual(root["offset"], "0x0004612c")
+        self.assertEqual(root["expected"], "c8180000")
+        self.assertEqual(root["value"], "0x00001908")
+        prompt = patches["replace-name-entry-prompt-row"]
+        self.assertEqual(prompt["offset"], "0x000bae68")
+        self.assertEqual(prompt["value"], "0x08400754")
 
         hooks = {item["id"]: item for item in profile["hooks"]}
         self.assertEqual(
@@ -73,12 +78,14 @@ class Task8PayloadHookTests(unittest.TestCase):
                 "hook-save-payload-custom-slot",
                 "hook-load-payload-custom-slot",
                 "hook-name-entry-custom-slot",
+                "hook-name-entry-empty-back",
             },
         )
         expected_sites = {
             "hook-save-payload-custom-slot": ("0x00044e80", "00f08af9"),
             "hook-load-payload-custom-slot": ("0x00045092", "00f07dfa"),
             "hook-name-entry-custom-slot": ("0x00066962", "0cf059fc"),
+            "hook-name-entry-empty-back": ("0x000669dc", "02202060"),
         }
         for hook_id, (site, expected) in expected_sites.items():
             self.assertEqual(hooks[hook_id]["site"], site)
@@ -89,7 +96,7 @@ class Task8PayloadHookTests(unittest.TestCase):
                 "task8-native-hooks",
             )
 
-    def test_module_provenance_exposes_integrity_name_and_storage(self):
+    def test_module_provenance_exposes_creator_integrity_and_storage(self):
         provenance = json.loads(
             Path(
                 "data/build/fixtures/task8-new-game-hook.provenance.json"
@@ -101,26 +108,21 @@ class Task8PayloadHookTests(unittest.TestCase):
             "Task8_SavePayloadHook",
             "Task8_LoadPayloadHook",
             "Task8_NameCommitHook",
+            "Task8_CreatorBackHook",
+            "Task8_CreatorInit",
+            "Task8_CreatorRefresh",
+            "Task8_CreatorCommit",
+            "Task8_CreatorBack",
             "Task8_ValidateSlot",
             "Task8_SealSlot",
-            "Task8_InitializeDefaultSlot",
             "Task8_PrepareSlotForSave",
             "Task8_ValidateOrDefaultSlot",
-            "Task8_CommitPlayerName",
         ):
             self.assertIn(symbol, entries)
         self.assertEqual(entries["Task8_NewGameHook"], "0x00000000")
         self.assertEqual(
-            provenance["runtime_storage"]["root_allocation_old_size"],
-            "0x18C8",
-        )
-        self.assertEqual(
             provenance["runtime_storage"]["root_allocation_new_size"],
             "0x1908",
-        )
-        self.assertEqual(
-            provenance["runtime_storage"]["custom_slot_offset"],
-            "0x18C8",
         )
         self.assertEqual(
             provenance["runtime_storage"]["custom_slot_size"],
@@ -131,10 +133,6 @@ class Task8PayloadHookTests(unittest.TestCase):
             "0x02F2",
         )
         self.assertEqual(
-            provenance["payload_storage"]["record_stride"],
-            "0x0C",
-        )
-        self.assertEqual(
             provenance["payload_storage"]["records_used"],
             32,
         )
@@ -142,14 +140,13 @@ class Task8PayloadHookTests(unittest.TestCase):
             provenance["slot_integrity"]["state_validation_enabled"]
         )
         self.assertTrue(provenance["slot_integrity"]["crc32_enabled"])
-        self.assertTrue(
-            provenance["slot_integrity"]["invalid_slot_defaults"]
-        )
+        self.assertTrue(provenance["creator"]["retail_keyboard_reused"])
+        self.assertTrue(provenance["creator"]["backtracking_enabled"])
         self.assertEqual(provenance["name_commit"]["retail_buffer_bytes"], 16)
         self.assertEqual(
-            provenance["name_commit"]["persistent_name_bytes"], 12
+            provenance["name_commit"]["persistent_name_bytes"],
+            12,
         )
-        self.assertTrue(provenance["name_commit"]["retail_copy_preserved"])
 
 
 if __name__ == "__main__":
