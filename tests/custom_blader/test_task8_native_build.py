@@ -29,10 +29,13 @@ ENTRY_OFFSETS = {
 
 class Task8NativeBuildTests(unittest.TestCase):
     MODULE_OFFSET = 0x00400000
-    NEW_GAME_HOOK_SITE = 0x000652FA
-    SAVE_HOOK_SITE = 0x00044E80
-    LOAD_HOOK_SITE = 0x00045092
     ROOT_SIZE_SITE = 0x0004612C
+    HOOK_ENTRY_SYMBOLS = {
+        "hook-new-game-descriptor-selection": "Task8_NewGameHook",
+        "hook-save-payload-custom-slot": "Task8_SavePayloadHook",
+        "hook-load-payload-custom-slot": "Task8_LoadPayloadHook",
+        "hook-name-entry-custom-slot": "Task8_NameCommitHook",
+    }
 
     @staticmethod
     def changed_offsets_for_replacement(offset, before, after):
@@ -55,14 +58,17 @@ class Task8NativeBuildTests(unittest.TestCase):
             "Task8_NewGameHook",
             "Task8_SavePayloadHook",
             "Task8_LoadPayloadHook",
+            "Task8_NameCommitHook",
             "Task8_CallSelectNewGameDescriptor",
             "Task8_CallSerializeSavePayload",
             "Task8_CallDeserializeSavePayload",
+            "Task8_CallRetailCopyBytes",
             "Task8_ValidateSlot",
             "Task8_SealSlot",
             "Task8_InitializeDefaultSlot",
             "Task8_PrepareSlotForSave",
             "Task8_ValidateOrDefaultSlot",
+            "Task8_CommitPlayerName",
         ):
             self.assertIn(symbol, hooks + slot)
         self.assertIn("push {r4, lr}", hooks)
@@ -80,94 +86,108 @@ class Task8NativeBuildTests(unittest.TestCase):
             MODULE_SHA256,
         )
         self.assertEqual(len(module["bytes"]), PROVENANCE["decoded_size"])
-        self.assertLessEqual(len(module["bytes"]), 0x400)
 
-    def test_module_internal_calls_and_retail_veneer_are_stable(self):
-        self.assertEqual(
-            MODULE_BYTES[0x0C:0x10],
-            thumb_bl(
-                self.MODULE_OFFSET + 0x0C,
-                self.MODULE_OFFSET + ENTRY_OFFSETS["Task8_InitializeDefaultSlot"],
-            ),
-        )
-        self.assertEqual(
-            MODULE_BYTES[0x12:0x16],
-            thumb_bl(self.MODULE_OFFSET + 0x12, self.MODULE_OFFSET + 0x78),
-        )
-        self.assertEqual(
-            int.from_bytes(MODULE_BYTES[0x90:0x94], "little"),
-            0x08066391,
-        )
-
-    def test_guarded_hook_branches_target_module_entries(self):
-        self.assertEqual(
-            thumb_bl(
-                self.NEW_GAME_HOOK_SITE,
-                self.MODULE_OFFSET + ENTRY_OFFSETS["Task8_NewGameHook"],
-            ),
-            bytes.fromhex("9af381fe"),
-        )
-        self.assertEqual(
-            thumb_bl(
-                self.SAVE_HOOK_SITE,
-                self.MODULE_OFFSET + ENTRY_OFFSETS["Task8_SavePayloadHook"],
-            ),
-            bytes.fromhex("bbf3caf8"),
-        )
-        self.assertEqual(
-            thumb_bl(
-                self.LOAD_HOOK_SITE,
-                self.MODULE_OFFSET + ENTRY_OFFSETS["Task8_LoadPayloadHook"],
-            ),
-            bytes.fromhex("baf3d9ff"),
-        )
-
-    def test_research_profile_installs_persistence_hooks_and_root_extension(self):
         profile = load("data/build/profiles/task8-research.json")
-        self.assertEqual(profile["profile_id"], "task8-research")
-        self.assertEqual(len(profile["hooks"]), 3)
-        self.assertEqual(len(profile["patches"]), 1)
-        hooks = {hook["id"]: hook for hook in profile["hooks"]}
-        self.assertEqual(
-            hooks["hook-new-game-descriptor-selection"]["site"],
-            "0x000652fa",
-        )
-        self.assertEqual(
-            hooks["hook-save-payload-custom-slot"]["site"],
-            "0x00044e80",
-        )
-        self.assertEqual(
-            hooks["hook-load-payload-custom-slot"]["site"],
-            "0x00045092",
-        )
-        self.assertEqual(
-            int(hooks["hook-save-payload-custom-slot"]["destination_offset"], 0),
-            ENTRY_OFFSETS["Task8_SavePayloadHook"],
-        )
-        self.assertEqual(
-            int(hooks["hook-load-payload-custom-slot"]["destination_offset"], 0),
-            ENTRY_OFFSETS["Task8_LoadPayloadHook"],
-        )
-        for hook in hooks.values():
-            self.assertEqual(
-                hook["destination_allocation"],
-                "task8-native-hooks",
-            )
-            self.assertEqual(hook["kind"], "thumb_bl")
-        root_patch = profile["patches"][0]
-        self.assertEqual(root_patch["offset"], "0x0004612c")
-        self.assertEqual(root_patch["expected"], "c8180000")
-        self.assertEqual(root_patch["value"], "0x00001908")
         allocation = next(
             item
             for item in profile["allocations"]
             if item["id"] == "task8-native-hooks"
         )
-        self.assertGreaterEqual(int(allocation["size"], 0), len(MODULE_BYTES))
+        self.assertLessEqual(len(MODULE_BYTES), int(allocation["size"], 0))
+        self.assertEqual(
+            PROVENANCE["allocation_size"],
+            allocation["size"],
+        )
+
+    def test_module_internal_calls_and_retail_literals_are_stable(self):
+        self.assertEqual(
+            MODULE_BYTES[0x0C:0x10],
+            thumb_bl(
+                self.MODULE_OFFSET + 0x0C,
+                self.MODULE_OFFSET
+                + ENTRY_OFFSETS["Task8_InitializeDefaultSlot"],
+            ),
+        )
+        self.assertEqual(
+            MODULE_BYTES[0x12:0x16],
+            thumb_bl(self.MODULE_OFFSET + 0x12, self.MODULE_OFFSET + 0x90),
+        )
+        self.assertEqual(
+            MODULE_BYTES[0x7C:0x80],
+            thumb_bl(self.MODULE_OFFSET + 0x7C, self.MODULE_OFFSET + 0x9C),
+        )
+        self.assertEqual(
+            MODULE_BYTES[0x8A:0x8E],
+            thumb_bl(
+                self.MODULE_OFFSET + 0x8A,
+                self.MODULE_OFFSET + ENTRY_OFFSETS["Task8_CommitPlayerName"],
+            ),
+        )
+        literal_values = {
+            int.from_bytes(MODULE_BYTES[offset : offset + 4], "little")
+            for offset in range(0, len(MODULE_BYTES) - 3, 4)
+        }
+        for address in (
+            0x03000198,
+            0x08066391,
+            0x08045199,
+            0x08045591,
+            0x08073219,
+        ):
+            self.assertIn(address, literal_values)
+
+    def test_guarded_hook_branches_target_module_entries(self):
+        profile = load("data/build/profiles/task8-research.json")
+        hooks = {item["id"]: item for item in profile["hooks"]}
+        self.assertEqual(set(hooks), set(self.HOOK_ENTRY_SYMBOLS))
+
+        expected_patch_bytes = {
+            "hook-new-game-descriptor-selection": "9af381fe",
+            "hook-save-payload-custom-slot": "bbf3caf8",
+            "hook-load-payload-custom-slot": "baf3d9ff",
+            "hook-name-entry-custom-slot": "99f389fb",
+        }
+        for hook_id, entry_symbol in self.HOOK_ENTRY_SYMBOLS.items():
+            hook = hooks[hook_id]
+            site = int(hook["site"], 0)
+            destination_offset = int(hook["destination_offset"], 0)
+            self.assertEqual(destination_offset, ENTRY_OFFSETS[entry_symbol])
+            self.assertEqual(
+                thumb_bl(site, self.MODULE_OFFSET + destination_offset),
+                bytes.fromhex(expected_patch_bytes[hook_id]),
+            )
+
+    def test_research_profile_installs_name_and_persistence_hooks(self):
+        profile = load("data/build/profiles/task8-research.json")
+        self.assertEqual(profile["profile_id"], "task8-research")
+        self.assertEqual(len(profile["hooks"]), 4)
+        self.assertEqual(len(profile["patches"]), 1)
+        hooks = {hook["id"]: hook for hook in profile["hooks"]}
+        expected_sites = {
+            "hook-new-game-descriptor-selection": "0x000652fa",
+            "hook-save-payload-custom-slot": "0x00044e80",
+            "hook-load-payload-custom-slot": "0x00045092",
+            "hook-name-entry-custom-slot": "0x00066962",
+        }
+        for hook_id, site in expected_sites.items():
+            self.assertEqual(hooks[hook_id]["site"], site)
+            self.assertEqual(hooks[hook_id]["kind"], "thumb_bl")
+            self.assertEqual(
+                hooks[hook_id]["destination_allocation"],
+                "task8-native-hooks",
+            )
+
+        root_patch = profile["patches"][0]
+        self.assertEqual(root_patch["offset"], "0x0004612c")
+        self.assertEqual(root_patch["expected"], "c8180000")
+        self.assertEqual(root_patch["value"], "0x00001908")
         self.assertFalse(profile["smoke_test"]["enabled"])
         self.assertEqual(
             profile["extension_metadata"]["release_status"],
             "research-only",
+        )
+        self.assertTrue(
+            profile["extension_metadata"]["retail_name_capture_enabled"]
         )
         self.assertFalse(
             profile["extension_metadata"]["native_eeprom_tail_enabled"]
@@ -215,22 +235,22 @@ class Task8NativeBuildTests(unittest.TestCase):
         self.assertEqual(PROVENANCE["decoded_sha256"], MODULE_SHA256)
         self.assertEqual(PROVENANCE["load_address"], "0x08400000")
         self.assertEqual(PROVENANCE["entry_symbol"], "Task8_NewGameHook")
-        self.assertEqual(
-            ENTRY_OFFSETS["Task8_SavePayloadHook"],
-            0x18,
-        )
-        self.assertEqual(
-            ENTRY_OFFSETS["Task8_LoadPayloadHook"],
-            0x48,
-        )
+        self.assertEqual(ENTRY_OFFSETS["Task8_SavePayloadHook"], 0x18)
+        self.assertEqual(ENTRY_OFFSETS["Task8_LoadPayloadHook"], 0x48)
+        self.assertEqual(ENTRY_OFFSETS["Task8_NameCommitHook"], 0x78)
+        self.assertEqual(ENTRY_OFFSETS["Task8_CommitPlayerName"], 0x2F8)
         self.assertEqual(PROVENANCE["decoded_size"], len(MODULE_BYTES))
         self.assertTrue(
             PROVENANCE["local_verification"]["source_and_checked_hex_equal"]
+        )
+        self.assertTrue(
+            PROVENANCE["local_verification"]["host_name_commit_validation"]
         )
         self.assertTrue(PROVENANCE["slot_integrity"]["crc32_enabled"])
         self.assertTrue(
             PROVENANCE["slot_integrity"]["invalid_slot_defaults"]
         )
+        self.assertTrue(PROVENANCE["name_commit"]["retail_copy_preserved"])
 
     def test_real_research_profile_when_rom_is_supplied(self):
         rom_value = os.environ.get("BEYBLADE_GREV_ROM")
@@ -287,21 +307,18 @@ class Task8NativeBuildTests(unittest.TestCase):
             self.assertEqual(len(built), 0x00800000)
 
             profile = load("data/build/profiles/task8-research.json")
-            hook_by_site = {
-                int(item["site"], 0): item for item in profile["hooks"]
-            }
             replacements = []
-            for site, original in (
-                (self.SAVE_HOOK_SITE, bytes.fromhex("00f08af9")),
-                (self.LOAD_HOOK_SITE, bytes.fromhex("00f07dfa")),
-                (self.NEW_GAME_HOOK_SITE, bytes.fromhex("01f049f8")),
-            ):
-                hook = hook_by_site[site]
+            for hook in profile["hooks"]:
+                site = int(hook["site"], 0)
                 destination = self.MODULE_OFFSET + int(
                     hook["destination_offset"], 0
                 )
                 replacements.append(
-                    (site, original, thumb_bl(site, destination))
+                    (
+                        site,
+                        bytes.fromhex(hook["expected"]),
+                        thumb_bl(site, destination),
+                    )
                 )
             replacements.append(
                 (
@@ -338,10 +355,7 @@ class Task8NativeBuildTests(unittest.TestCase):
                 for index, pair in enumerate(zip(source_before, built))
                 if pair[0] != pair[1]
             ]
-            self.assertEqual(
-                actual_changed_offsets,
-                expected_changed_offsets,
-            )
+            self.assertEqual(actual_changed_offsets, expected_changed_offsets)
             self.assertEqual(apply_bps(patch_bytes, source_before), built)
             self.assertEqual(
                 manifest_a["build_id"],
