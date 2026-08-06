@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "anchors": [
+    {
+      "id": "new-game",
+      "text": "NEW GAME",
+      "string_offset": "0x003A3150",
+      "runtime_address": "0x083A3150",
+      "direct_pointer_references": ["0x00096A80"],
+      "second_level_pointer_references": ["0x00064F38", "0x000B8FF8"],
+      "code_candidates": [
+        {
+          "function_start": "0x00064E10",
+          "runtime_start": "0x08064E10",
+          "instruction_offset": "0x00064E7A",
+          "literal_offset": "0x00064F38",
+          "confidence": "confirmed",
+          "evidence": "Thumb literal load resolves the localized NEW GAME row pointer. Runtime execution triggered after pressing Start and before the main menu appeared.",
+          "runtime_evidence": {
+            "trigger": "Press Start on title screen",
+            "caller_lr": "0x0804106B",
+            "r0": "0x03007BE0",
+            "r2": "0x03007EB7",
+            "screen_after_return": "Main menu with NEW GAME selected",
+            "selection_retriggered_function": false,
+            "semantic_boundary": "main-menu initialization or rendering; not the final New Game transition hook"
+          }
+        },
+        {
+          "function_start": "0x000654B8",
+          "runtime_start": "0x080654B8",
+          "instruction_offset": "0x0006552C",
+          "literal_offset": "0x00065550",
+          "descriptor_offset": "0x000B8FF4",
+          "descriptor_field_delta": 4,
+          "confidence": "candidate",
+          "evidence": "Thumb code loads a nearby descriptor containing the NEW GAME localized-row pointer. No hit was observed during title entry, menu display, selection, or the early intro."
+        }
+      ],
+      "runtime_transition": {
+        "menu_frame_callback": {
+          "thumb_pointer": "0x080650CD",
+          "function_start": "0x080650CC",
+          "caller_site": "0x0804104E",
+          "indirect_call_helper": "0x08073C44",
+          "evidence": "The title state machine loaded this callback every frame while the main menu was active."
+        },
+        "selection_field_offset": "0x2D5",
+        "new_game_selection_value": 1,
+        "new_game_branch": "0x080652F8",
+        "confirmed_original_bytes": "0a2001f049f801f04df8011c",
+        "candidate_hook_site": {
+          "runtime_address": "0x080652FA",
+          "rom_offset": "0x000652FA",
+          "width": 4,
+          "expected_bytes": "01f049f8",
+          "instruction": "Thumb BL 0x08066390",
+          "reason": "The preceding `movs r0,#10` remains intact. Replacing this BL can call a custom creator entry that preserves the original descriptor-selection call before returning to 0x080652FE.",
+          "range_to_early_expansion": "within Thumb BL reach when the module is allocated near 0x08400000",
+          "confidence": "strongly_supported"
+        },
+        "subsequent_calls": [
+          {"site": "0x080652FA", "target": "0x08066390", "r0": 10},
+          {"site": "0x080652FE", "target": "0x0806639C"},
+          {"site": "0x08065306", "target": "0x0804109C"},
+          {"site": "0x08065316", "target": "0x08062BF0", "r0": 3}
+        ],
+        "runtime_evidence": {
+          "trigger": "Press A while NEW GAME is selected on a blank-save main menu.",
+          "breakpoint_hit": "0x080652F8",
+          "r0": "0x00000001",
+          "r6_menu_state": "0x03007BE0",
+          "scene_request_hit": "0x08062BF0",
+          "scene_request_r0": 3,
+          "scene_request_caller_lr": "0x0806531B"
+        },
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "name-label",
+      "text": "Name:",
+      "string_offset": "0x003A34F0",
+      "runtime_address": "0x083A34F0",
+      "direct_pointer_references": ["0x00096C10", "0x00096C20"],
+      "second_level_pointer_references": ["0x00048C70"],
+      "code_candidates": [
+        {
+          "function_start": "0x00048AB8",
+          "runtime_start": "0x08048AB8",
+          "instruction_offset": "0x00048B98",
+          "literal_offset": "0x00048C70",
+          "confidence": "candidate",
+          "evidence": "Thumb literal load resolves a localized Name label row. Runtime trigger remains unresolved."
+        }
+      ]
+    },
+    {
+      "id": "enter-name",
+      "text": "Enter name",
+      "string_offset": "0x003A3760",
+      "runtime_address": "0x083A3760",
+      "direct_pointer_references": ["0x00096D00"],
+      "descriptor_candidates": [
+        {
+          "descriptor_offset": "0x000BAE54",
+          "runtime_address": "0x080BAE54",
+          "field_delta": 20,
+          "pointer_literal_offsets": ["0x0006664C", "0x00066974", "0x000669D8"],
+          "code_candidates": [
+            {
+              "function_start": "0x0006645C",
+              "runtime_start": "0x0806645C",
+              "instruction_offset": "0x000665A2"
+            },
+            {
+              "function_start": "0x000668C8",
+              "runtime_start": "0x080668C8",
+              "instruction_offset": "0x0006692A"
+            },
+            {
+              "function_start": "0x00066984",
+              "runtime_start": "0x08066984",
+              "instruction_offset": "0x000669C4"
+            }
+          ],
+          "confidence": "strongly_supported",
+          "evidence": "Three Thumb functions load the same descriptor whose +0x14 field points to the Enter name localized row. None triggered during title entry, New Game selection, or the observed opening dialogue; destination buffer and owner remain unresolved."
+        }
+      ]
+    },
+    {
+      "id": "protagonist-name-row",
+      "table_start": "0x00077F10",
+      "table_end_exclusive": "0x00077F24",
+      "runtime_start": "0x08077F10",
+      "entries": [
+        {"language_index": 0, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 1, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 2, "text": "Tyson", "string_offset": "0x0033BF8C"},
+        {"language_index": 3, "text": "Takao", "string_offset": "0x0033BF84"},
+        {"language_index": 4, "text": "Tyson", "string_offset": "0x0033BF8C"}
+      ],
+      "code_candidates": [
+        {
+          "function_start": "0x0002E4DC",
+          "runtime_start": "0x0802E4DC",
+          "instruction_offset": "0x0002E598",
+          "literal_offset": "0x0002E5F0",
+          "confidence": "strongly_supported",
+          "evidence": "Function loads the five-pointer protagonist row, indexes it through a runtime language value, and passes the resolved string to a text routine. It did not trigger during the observed fixed-Tyson opening dialogue, so that dialogue uses a separate text path."
+        }
+      ]
+    }
+  ],
+  "status": {
+    "static_analysis": "executed",
+    "runtime_experiments": "partial",
+    "native_hook_sites": "new-game candidate strongly supported; remaining hooks unresolved",
+    "actual_new_game_transition_hook": "0x080652FA candidate BL replacement",
+    "source_rom_modified": false
+  }
+}

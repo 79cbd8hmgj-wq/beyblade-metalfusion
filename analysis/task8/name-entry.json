@@ -1,0 +1,126 @@
+{
+  "schema_version": 2,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "scene_system": {
+    "descriptor_pointer_table": "0x080BA1A8",
+    "descriptor_pointer_table_rom_offset": "0x000BA1A8",
+    "descriptor_count": 55,
+    "descriptor_width": "0x50",
+    "descriptor_stride": "0x50",
+    "name_entry_scene_index": 10,
+    "name_entry_descriptor": "0x080B9398",
+    "confidence": "confirmed"
+  },
+  "callbacks": [
+    {"descriptor_field": "0x00", "pointer": "0x0806645D", "function": "0x0806645C", "role": "scene initialization", "confidence": "strongly_supported"},
+    {"descriptor_field": "0x04", "pointer": "0x08066665", "function": "0x08066664", "role": "scene update", "confidence": "candidate"},
+    {"descriptor_field": "0x08", "pointer": "0x080667ED", "function": "0x080667EC", "role": "scene draw or transition update", "confidence": "candidate"},
+    {"descriptor_field": "0x0C", "pointer": "0x08065349", "function": "0x08065348", "role": "shared scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x18", "pointer": "0x080669F5", "function": "0x080669F4", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x1C", "pointer": "0x08066A2D", "function": "0x08066A2C", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x20", "pointer": "0x08066A65", "function": "0x08066A64", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x24", "pointer": "0x08066A9D", "function": "0x08066A9C", "role": "scene callback", "confidence": "unknown"},
+    {"descriptor_field": "0x28", "pointer": "0x080668C9", "function": "0x080668C8", "role": "selection and confirm handler", "confidence": "strongly_supported"},
+    {"descriptor_field": "0x2C", "pointer": "0x08066985", "function": "0x08066984", "role": "delete or back handler", "confidence": "strongly_supported"}
+  ],
+  "localized_text": {
+    "english_string": "Enter name",
+    "english_string_rom_offset": "0x003A3760",
+    "localized_row_rom_offset": "0x00096D00",
+    "descriptor_containing_row": "0x080BAE54",
+    "descriptor_field_offset": "0x14",
+    "confidence": "strongly_supported"
+  },
+  "input_contract": {
+    "symbol_handler": "0x08066B10",
+    "confirm_code": 7,
+    "delete_code": 8,
+    "case_toggle_code": 9,
+    "case_flag_address": "0x030009A8",
+    "buffer_pointer_address": "0x030009AC",
+    "maximum_characters": 15,
+    "buffer_bytes": 16,
+    "empty_confirm_allowed": false,
+    "confidence": "strongly_supported",
+    "evidence": [
+      "The append path compares the current string length with 14 and rejects appends only when it is greater than 14.",
+      "The confirm path for symbol code 7 checks that the current string length is greater than zero before returning success.",
+      "Symbol code 8 calls the retail string-delete helper.",
+      "Symbol code 9 toggles the byte at 0x030009A8 and refreshes the keyboard layout."
+    ]
+  },
+  "commit_contract": {
+    "handler": "0x080668C8",
+    "copy_call_runtime_address": "0x08066962",
+    "copy_call_rom_offset": "0x00066962",
+    "copy_call_expected_bytes": "0cf059fc",
+    "copy_target": "0x08073218",
+    "copy_arguments": {
+      "r0": "*[0x030009AC], 16-byte keyboard source",
+      "r1": "*[0x03000198]+0x0858, retail runtime destination",
+      "r2": 16
+    },
+    "runtime_base_pointer_address": "0x03000198",
+    "runtime_name_offset": "0x0858",
+    "runtime_name_size": 16,
+    "operation": "Clear 16 bytes at *[0x03000198]+0x858, then copy 16 bytes from *[0x030009AC].",
+    "confidence": "confirmed_static"
+  },
+  "native_persistence": {
+    "status": "runtime_confirmed",
+    "hook_id": "hook-name-entry-custom-slot",
+    "hook_site_rom_offset": "0x00066962",
+    "hook_site_runtime_address": "0x08066962",
+    "module_entry": "0x08400078",
+    "commit_function": "0x084002F8",
+    "retail_copy_preserved": true,
+    "custom_slot_runtime_expression": "*[0x03000198]+0x18C8",
+    "custom_slot_name_offset": "0x0A",
+    "persistent_name_bytes": 12,
+    "retail_name_bytes": 16,
+    "overflow_policy": "The first 12 retail bytes are persisted; the retail 16-byte field remains unchanged.",
+    "integrity_policy": "Reseal state validation and CRC32; restore the canonical default slot if the persisted name violates native invariants.",
+    "storage": "32 two-byte padding pairs inside the checksummed retail payload",
+    "runtime_evidence": {
+      "emulator": "mGBA 0.10.5",
+      "execution": "the actual guarded BL at 0x08066962 was executed with a breakpoint at the next retail instruction 0x08066966",
+      "hook_bytes": "99f389fb",
+      "runtime_root": "0x02000804",
+      "custom_slot": "0x020020CC",
+      "valid_name": "Rin-42",
+      "retail_destination_hex": "52696e2d343200000000000000000000",
+      "persistent_slot_valid_python": true,
+      "persistent_slot_valid_native": true,
+      "native_validate_return": 1,
+      "invalid_name": "Bad!",
+      "invalid_retail_copy_preserved": true,
+      "invalid_name_defaulted": true,
+      "return_pc": "0x08066966"
+    },
+    "confidence": "confirmed",
+    "remaining_interactive_test": "Drive the retail keyboard manually to confirm the same hook through end-user input; the exact native branch and data contract are already runtime-confirmed."
+  },
+  "new_game_relationship": {
+    "menu_selection_branch": "0x080652F8",
+    "descriptor_selector_argument": 10,
+    "descriptor_selector_call": "0x080652FA",
+    "scene_request_argument": 3,
+    "scene_request_call": "0x08065316",
+    "confidence": "confirmed",
+    "runtime_observation": "Selecting NEW GAME hit the branch with selection value 1 and subsequently requested scene 3."
+  },
+  "retail_persistence": {
+    "status": "not_directly_serialized",
+    "serializer": "0x08045198",
+    "deserializer": "0x08045590",
+    "direct_serializer_literal_for_runtime_offset_0x858": false,
+    "direct_deserializer_literal_for_runtime_offset_0x858": false,
+    "conclusion": "The retail +0x858 field remains a session field. Task 8 mirrors its committed value into the independent SU8C state carried by proven payload padding."
+  },
+  "semantic_owner": {
+    "status": "strongly_supported",
+    "candidate": "new-profile or player name",
+    "counterevidence": "The observed opening story dialogue still rendered fixed Tyson text and did not call the candidate protagonist-name lookup at 0x0802E4DC.",
+    "conclusion": "The retail field is an existing New Game name, but it is not sufficient by itself to replace all Tyson dialogue."
+  }
+}

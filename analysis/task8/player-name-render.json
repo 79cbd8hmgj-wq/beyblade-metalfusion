@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "runtime_confirmed",
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "research_build": {
+    "build_id": "37506985f2a5e994",
+    "output_sha256": "35f4aa8f5fdca6bec4f12abf7d75be1716cd811a2b9b7a11c0242b4a1b6ed790",
+    "bps_sha256": "887e34be55884a039df446615a4347eaa21fb91230dfc8cb21bd7100df5efa8a"
+  },
+  "module": {
+    "size": 2110,
+    "sha256": "f73e7edbeb59b611d8c29175ebfcc4f7f1a9b79823b1203d58c961457aea88f0",
+    "entry": "0x084000B4"
+  },
+  "hook_site": "0x0802E5AC",
+  "hook_rom_offset": "0x0002E5AC",
+  "hook_bytes": "d1f382fd",
+  "original_renderer": "0x08070AD4",
+  "bounded_length": 15,
+  "runtime_context": {
+    "emulator": "mGBA 0.10.5",
+    "natural_thumb_breakpoint": "0x08067584",
+    "runtime_root": "0x02000804",
+    "custom_slot": "0x020020CC",
+    "fallback_pointer": "0x02007000",
+    "cpsr": "0x0000003F"
+  },
+  "valid_selection": {
+    "slot_valid": true,
+    "text": "Rin-42",
+    "selected_pointer": "0x020020D6",
+    "expected_pointer": "0x020020D6",
+    "renderer_r2": 15
+  },
+  "invalid_selection": {
+    "slot_valid": false,
+    "fallback_text": "Tyson",
+    "fallback_pointer": "0x02007000",
+    "selected_pointer": "0x02007000",
+    "renderer_r2": 15
+  },
+  "conclusion": "The combined staged-creator module substitutes the validated persistent player name at the verified bounded UI consumer and preserves the localized retail fallback for invalid state.",
+  "confidence": "confirmed"
+}

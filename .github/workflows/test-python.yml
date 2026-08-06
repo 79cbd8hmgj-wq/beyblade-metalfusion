@@ -1,0 +1,42 @@
+name: Python verification
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'assistant/**'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependency
+        run: python -m pip install --disable-pip-version-check pytest
+      - name: Compile Python
+        run: python -m compileall -q tools src tests
+      - name: Run unit tests
+        run: python -m pytest -q
+      - name: Validate tracked JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in sorted(Path('.').rglob('*.json')):
+              if any(part in {'.git', 'build', 'work', 'dumps'} for part in path.parts):
+                  continue
+              with path.open(encoding='utf-8') as fh:
+                  json.load(fh)
+              print(path)
+          PY
+      - name: Check shell syntax
+        run: |
+          find scripts debugger-bundle -type f \( -name '*.sh' -o -name '*.bash' \) -print0 2>/dev/null \
+            | xargs -0 -r -n1 bash -n

@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "candidate_range": {
+    "start_block": "0x3EF",
+    "end_block": "0x3FF",
+    "start_byte": "0x1F78",
+    "end_byte_exclusive": "0x2000",
+    "size": "0x88"
+  },
+  "static_evidence": {
+    "status": "strongly_supported",
+    "main_payload_last_block": "0x3EE",
+    "identified_direct_game_access_above_0x3EE": false,
+    "computed_or_indirect_access_disproven": false,
+    "conclusion": "The retail high-level payload loops end at block 0x3EE, but static analysis alone does not prove the tail safe for native writes."
+  },
+  "runtime_evidence": {
+    "status": "partial",
+    "boot_trace": {
+      "status": "confirmed",
+      "read_breakpoint": "0x08067584",
+      "header_caller_lr": "0x08044AF3",
+      "header_blocks": "0x000-0x002",
+      "payload_caller_lr": "0x08044FFD",
+      "payload_blocks": "0x003-0x3EE",
+      "maximum_observed_block": "0x3EE",
+      "observed_access_above_0x3EE": false,
+      "unique_blocks_recorded": 1006,
+      "instrumentation_gap": "Block 0x1F4 was crossed during an RSP reconnect; the surrounding sequential payload reads were observed."
+    },
+    "required_scenarios_for_tail_use": [
+      "blank EEPROM boot",
+      "valid save boot",
+      "New Game initialization",
+      "three normal save/load cycles",
+      "component purchase and equip",
+      "battle completion",
+      "tournament result",
+      "settings change",
+      "seeded-tail preservation"
+    ],
+    "completed_scenarios": [
+      "boot with a copied save that failed retail validation"
+    ],
+    "observed_tail_reads": 0,
+    "observed_tail_writes": 0,
+    "seeded_tail_preserved": null
+  },
+  "task8_decision": {
+    "native_tail_extension_enabled": false,
+    "tail_required_for_custom_state": false,
+    "primary_storage": "64-byte SU8C slot mapped into confirmed retail payload record padding",
+    "primary_storage_evidence": "analysis/task8/payload-padding-evidence.json",
+    "reason": "The payload padding path is covered by the retail checksum and transaction and does not require new low-level EEPROM accesses."
+  },
+  "future_release_gate": {
+    "applies_only_if_tail_is_reconsidered": true,
+    "required_runtime_status": "confirmed",
+    "required_observed_retail_max_block": "0x3EE",
+    "required_seeded_save_cycles": 3,
+    "fallback": "Continue using the confirmed retail payload padding and refuse native EEPROM-tail hooks."
+  }
+}

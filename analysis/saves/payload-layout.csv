@@ -1,3 +1,9 @@
-offset,length,classification,confidence
-0x0000,0x4,checksum,confirmed
-0x0004,0x1F5C,unresolved_copied_region,strongly_supported
+offset,length,classification,confidence,details
+0x0000,0x4,checksum,confirmed,written after serializer
+0x0004,0x50,serialized_or_translated_fields,strongly_supported,
+0x0054,0x4,serializer_deserializer_untouched_hole,confirmed,
+0x0058,0x28F,serialized_or_translated_fields,strongly_supported,
+0x02E7,0x1,serializer_deserializer_untouched_alignment_gap,confirmed,
+0x02E8,0x3E4,translated_83_record_table,confirmed,83 records x 0x0C; bytes +0x0A-+0x0B are padding
+0x06CC,0x1893,serialized_or_translated_fields,strongly_supported,
+0x1F5F,0x1,serializer_deserializer_untouched_trailing_byte,confirmed,

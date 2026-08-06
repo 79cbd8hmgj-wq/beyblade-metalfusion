@@ -1,0 +1,142 @@
+{
+  "schema_version": 6,
+  "sources": [
+    "src/native/task8/task8_hooks.S",
+    "src/native/task8/task8_slot.c",
+    "src/native/task8/creator.c",
+    "src/native/task8/creator.h"
+  ],
+  "decoded_sha256": "f73e7edbeb59b611d8c29175ebfcc4f7f1a9b79823b1203d58c961457aea88f0",
+  "decoded_size": 2110,
+  "encoding": "hex",
+  "load_address": "0x08400000",
+  "rom_offset": "0x00400000",
+  "allocation_size": "0x900",
+  "entry_symbol": "Task8_NewGameHook",
+  "entry_address": "0x08400001",
+  "entry_symbols": {
+    "Task8_NewGameHook": "0x00000000",
+    "Task8_SavePayloadHook": "0x00000018",
+    "Task8_LoadPayloadHook": "0x00000048",
+    "Task8_NameCommitHook": "0x00000078",
+    "Task8_CreatorBackHook": "0x00000098",
+    "Task8_PlayerNameRenderHook": "0x000000B4",
+    "Task8_CreatorInit": "0x0000011C",
+    "Task8_CreatorRefresh": "0x00000138",
+    "Task8_CreatorCommit": "0x00000280",
+    "Task8_CreatorBack": "0x00000428",
+    "Task8_ValidateSlot": "0x0000046A",
+    "Task8_SealSlot": "0x000005E4",
+    "Task8_InitializeDefaultSlot": "0x0000065C",
+    "Task8_PrepareSlotForSave": "0x00000674",
+    "Task8_ValidateOrDefaultSlot": "0x0000068C",
+    "Task8_SelectPlayerName": "0x000006A4",
+    "Task8_PromptBladerNameRow": "0x00000754"
+  },
+  "retail_symbols": {
+    "Retail_SelectNewGameDescriptor": "0x08066391",
+    "Retail_SerializeSavePayload": "0x08045199",
+    "Retail_DeserializeSavePayload": "0x08045591",
+    "Retail_CopyBytes": "0x08073219",
+    "Retail_SetText": "0x08070AD5",
+    "Retail_UpdateNameCursor": "0x08066AD5",
+    "Retail_DrawBoundedText": "0x08070AD5"
+  },
+  "runtime_storage": {
+    "root_pointer_global": "0x03000198",
+    "root_allocation_literal_rom_offset": "0x0004612C",
+    "root_allocation_old_size": "0x18C8",
+    "root_allocation_new_size": "0x1908",
+    "custom_slot_offset": "0x18C8",
+    "custom_slot_size": 64
+  },
+  "payload_storage": {
+    "payload_size": "0x1F60",
+    "translated_record_base": "0x02E8",
+    "record_stride": "0x0C",
+    "serialized_bytes_per_record": 10,
+    "padding_bytes_per_record": 2,
+    "first_payload_offset": "0x02F2",
+    "records_used": 32,
+    "slot_size": 64,
+    "covered_by_retail_checksum": true,
+    "covered_by_retail_transaction": true
+  },
+  "slot_integrity": {
+    "magic": "SU8C",
+    "commit": "OK8!",
+    "schema_version": 1,
+    "state_validation_seed": "0x43555354",
+    "state_validation_enabled": true,
+    "crc32_polynomial": "0xEDB88320",
+    "crc32_enabled": true,
+    "field_invariant_validation": true,
+    "invalid_slot_defaults": true,
+    "default_slot_matches_python_serializer": true
+  },
+  "name_commit": {
+    "retail_handler": "0x080668C8",
+    "retail_copy_call": "0x08066962",
+    "retail_copy_target": "0x08073218",
+    "keyboard_buffer_pointer": "0x030009AC",
+    "retail_runtime_destination": "*[0x03000198]+0x0858",
+    "retail_buffer_bytes": 16,
+    "persistent_name_offset": "0x0A",
+    "persistent_name_bytes": 12,
+    "retail_copy_preserved": true,
+    "slot_resealed": true,
+    "confidence": "strongly_supported"
+  },
+  "creator": {
+    "retail_keyboard_reused": true,
+    "backtracking_enabled": true,
+    "selection_count": 7,
+    "option_range": [1, 4],
+    "existing_save_entry": false,
+    "stage_count": 10,
+    "prompt_row_address": "0x08400754",
+    "complete_flag": "0x80",
+    "runtime_status": "unexecuted_combined_module"
+  },
+  "player_name_render": {
+    "retail_call_site": "0x0802E5AC",
+    "retail_call_rom_offset": "0x0002E5AC",
+    "retail_expected": "42f092fa",
+    "retail_target": "0x08070AD4",
+    "bounded_length": 15,
+    "localized_fallback_preserved": true,
+    "fallback_behavior": "preserve retail localized Tyson/Takao pointer when SU8C is invalid",
+    "persistent_name_offset": "0x0A",
+    "requires_valid_slot": true,
+    "runtime_status": "runtime_confirmed_combined_module"
+  },
+  "hook_sites": {
+    "new_game": {"rom_offset":"0x000652FA","expected":"01f049f8","destination":"0x08400000"},
+    "save_payload": {"rom_offset":"0x00044E80","expected":"00f08af9","destination":"0x08400018"},
+    "load_payload": {"rom_offset":"0x00045092","expected":"00f07dfa","destination":"0x08400048"},
+    "name_commit": {"rom_offset":"0x00066962","expected":"0cf059fc","destination":"0x08400078"},
+    "creator_back": {"rom_offset":"0x000669DC","expected":"02202060","destination":"0x08400098"},
+    "player_name_render": {"rom_offset":"0x0002E5AC","expected":"42f092fa","destination":"0x084000B4"}
+  },
+  "local_verification": {
+    "compiler": "clang 17.0.0 --target=arm-none-eabi -Oz",
+    "linker": "LLD 17.0.0",
+    "objcopy": "llvm-objcopy",
+    "load_vma": "0x08400000",
+    "source_and_checked_hex_equal": true,
+    "module_fits_allocation": true,
+    "host_player_name_selection": true,
+    "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821"
+  },
+  "runtime_verification": {
+    "previous_payload_save_hook": "confirmed on predecessor module",
+    "previous_payload_load_hook": "confirmed on predecessor module",
+    "previous_name_commit_hook": "confirmed on predecessor module",
+    "previous_player_name_render_hook": "confirmed on precreator module",
+    "combined_creator_module": "player-name renderer confirmed on combined 2110-byte creator module; creator interaction flow itself remains unexecuted",
+    "required_call_context": "system-mode game loop with IRQ enabled for EEPROM transactions",
+    "player_name_render_hook": "confirmed: actual guarded BL d1f382fd at 0x0802E5AC selected slot+0x0A for valid Rin-42, preserved fallback 0x02007000 for invalid SU8C, and entered retail renderer 0x08070AD4 with r2=15"
+  },
+  "behavior": "Staged Tier-A creator, retail payload persistence, and one guarded persistent player-name renderer.",
+  "release_status": "research-only"
+}

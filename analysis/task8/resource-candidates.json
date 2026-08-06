@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "resources": [
+    {
+      "id": "protagonist-localized-name-row",
+      "category": "text",
+      "rom_start": "0x00077F10",
+      "rom_end_exclusive": "0x00077F24",
+      "runtime_start": "0x08077F10",
+      "entry_count": 5,
+      "consumer": "0x0802E4DC",
+      "confidence": "strongly_supported",
+      "usable_for_native_patch": false,
+      "reason": "The row and one rendering consumer are supported, but the correct player-name substitution boundary still requires runtime confirmation."
+    },
+    {
+      "id": "player-overworld-actor",
+      "category": "overworld_sprite",
+      "confidence": "unknown",
+      "usable_for_native_patch": false,
+      "required_evidence": [
+        "runtime actor record for the player",
+        "animation-table pointer",
+        "direction/frame compatibility",
+        "palette upload path",
+        "proof that NPC records are not shared-mutated"
+      ]
+    },
+    {
+      "id": "player-dialogue-portrait",
+      "category": "portrait",
+      "confidence": "unknown",
+      "usable_for_native_patch": false,
+      "required_evidence": [
+        "portrait lookup argument representing the player",
+        "resource pointer and dimensions",
+        "dialogue consumer",
+        "profile and result-screen consumers"
+      ]
+    },
+    {
+      "id": "player-palette-options",
+      "category": "palette",
+      "confidence": "unknown",
+      "usable_for_native_patch": false,
+      "required_evidence": [
+        "player-only palette destination",
+        "source palette ranges",
+        "VRAM/palette-bank ownership",
+        "all-direction visual validation"
+      ]
+    },
+    {
+      "id": "origin-starter-loadouts",
+      "category": "starter_configuration",
+      "confidence": "unknown",
+      "usable_for_native_patch": false,
+      "rejected_interpretation": "Origin IDs must not map positionally to complete-template IDs 0 through 3.",
+      "required_evidence": [
+        "new-game inventory initialization function",
+        "equip function and component ID representation",
+        "valid component combinations",
+        "type/stat evidence for each origin"
+      ]
+    }
+  ],
+  "status": {
+    "verified_avatar_options": 0,
+    "verified_portrait_options": 0,
+    "verified_palette_options": 0,
+    "verified_starter_loadouts": 0,
+    "placeholder_manifests_are_release_eligible": false
+  }
+}

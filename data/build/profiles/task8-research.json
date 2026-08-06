@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "project": "Spirit Unbound",
+  "profile_id": "task8-research",
+  "source_rom": {
+    "sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "size": "0x00400000"
+  },
+  "output": {
+    "rom_name": "spirit-unbound-task8-research.gba",
+    "bps_name": "spirit-unbound-task8-research.bps"
+  },
+  "expansion": {
+    "target_size": "0x00800000",
+    "fill": "0xff",
+    "reservations": [
+      {
+        "id": "reserved-future",
+        "start": "0x00600000",
+        "end": "0x00610000"
+      }
+    ]
+  },
+  "allocation_regions": [
+    {
+      "id": "expansion",
+      "start": "0x00400000",
+      "end": "0x00800000"
+    }
+  ],
+  "allocations": [
+    {
+      "id": "task8-native-hooks",
+      "size": "0x900",
+      "alignment": "0x4",
+      "class": "thumb",
+      "fixed_offset": "0x00400000"
+    },
+    {
+      "id": "task8-research-metadata",
+      "size": "0x90",
+      "alignment": "0x10",
+      "class": "data",
+      "fixed_offset": "0x00400900"
+    }
+  ],
+  "assets": [],
+  "tables": [],
+  "texts": [],
+  "modules": [
+    {
+      "id": "insert-task8-native-hooks",
+      "allocation": "task8-native-hooks",
+      "path": "data/build/fixtures/task8-new-game-hook.hex",
+      "sha256": "f73e7edbeb59b611d8c29175ebfcc4f7f1a9b79823b1203d58c961457aea88f0",
+      "encoding": "hex",
+      "entry_offset": "0x0",
+      "thumb": true
+    }
+  ],
+  "patches": [
+    {
+      "id": "extend-runtime-root-for-custom-slot",
+      "kind": "write_u32",
+      "offset": "0x0004612c",
+      "expected": "c8180000",
+      "value": "0x00001908"
+    },
+    {
+      "id": "replace-name-entry-prompt-row",
+      "kind": "write_u32",
+      "offset": "0x000bae68",
+      "expected": "006d0908",
+      "value": "0x08400754"
+    }
+  ],
+  "relocations": [],
+  "hooks": [
+    {
+      "id": "hook-new-game-descriptor-selection",
+      "kind": "thumb_bl",
+      "site": "0x000652fa",
+      "expected": "01f049f8",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x0",
+      "depends_on": ["insert-task8-native-hooks"]
+    },
+    {
+      "id": "hook-save-payload-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00044e80",
+      "expected": "00f08af9",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x18",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    },
+    {
+      "id": "hook-load-payload-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00045092",
+      "expected": "00f07dfa",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x48",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    },
+    {
+      "id": "hook-name-entry-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00066962",
+      "expected": "0cf059fc",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x78",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    },
+    {
+      "id": "hook-name-entry-empty-back",
+      "kind": "thumb_bl",
+      "site": "0x000669dc",
+      "expected": "02202060",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x98",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    },
+    {
+      "id": "hook-protagonist-name-render",
+      "kind": "thumb_bl",
+      "site": "0x0002e5ac",
+      "expected": "42f092fa",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0xb4",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    }
+  ],
+  "metadata": {
+    "enabled": true,
+    "id": "write-task8-research-metadata",
+    "allocation": "task8-research-metadata",
+    "project_version": "0.8.6-research"
+  },
+  "validation": {
+    "allow_invalid_header": false,
+    "require_base_unchanged": false
+  },
+  "smoke_test": {"enabled": false},
+  "extension_metadata": {
+    "task": "8",
+    "release_status": "research-only",
+    "behavior": "Run a staged Tier-A creator through the verified retail keyboard, persist one validated 64-byte SU8C state slot inside the retail payload, and render the validated player name at the verified bounded protagonist-name consumer.",
+    "custom_state_storage": "retail payload record padding",
+    "custom_slot_runtime_offset": "0x18C8",
+    "slot_integrity": "schema and field invariants plus state validation and CRC32",
+    "retail_name_capture_enabled": true,
+    "creator_enabled": true,
+    "creator_ui": "retail name-entry keyboard with staged prompts and compact summary",
+    "creator_option_range": "1-4",
+    "creator_existing_save_entry": false,
+    "native_eeprom_tail_enabled": false,
+    "player_name_render_enabled": true
+  }
+}

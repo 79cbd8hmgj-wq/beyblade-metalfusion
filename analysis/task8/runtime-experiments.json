@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "rom_sha256": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+  "emulator": {
+    "name": "mGBA",
+    "version": "0.10.5",
+    "gdb_endpoint": "127.0.0.1:2345",
+    "bundle_provenance": "Build GBA GDB Debugger Bundle workflow artifact"
+  },
+  "experiments": [
+    {
+      "id": "boot-eeprom-block-trace",
+      "status": "executed",
+      "trigger": "Boot with the supplied copied 8-KiB save image.",
+      "breakpoint": "0x08067584",
+      "observations": {
+        "header_read_caller_lr": "0x08044AF3",
+        "header_blocks": "0x000-0x002",
+        "payload_read_caller_lr": "0x08044FFD",
+        "payload_blocks": "0x003-0x3EE",
+        "minimum_observed_block": "0x000",
+        "maximum_observed_block": "0x3EE",
+        "observed_block_above_0x3EE": false,
+        "unique_blocks_recorded": 1006,
+        "instrumentation_gap": "Block 0x1F4 was crossed while reconnecting the RSP client; the surrounding payload-loop sequence was 0x1F3 then 0x1F5."
+      },
+      "conclusion": "Runtime confirms the known boot header reads and the payload loop ending at block 0x3EE. This single boot scenario does not prove the tail unused by every subsystem.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "invalid-save-header-clear",
+      "status": "executed",
+      "trigger": "Continue boot after the copied save failed retail validation.",
+      "breakpoint": "0x08067634",
+      "observations": {
+        "caller_lr": "0x08044F7F",
+        "block_sequence": ["0x000", "0x001", "0x002", "0x000", "0x001", "0x002", "0x000", "0x001", "0x002"],
+        "source_pointer": "0x08096938"
+      },
+      "conclusion": "The invalid-save path attempted repeated writes to the three header blocks only. Exact retry semantics remain bounded by the existing Task 5 analysis.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "serializer-multi-seed-preservation",
+      "status": "executed",
+      "trigger": "At the initialized title state, derive the payload buffer through *[0x03000198] + 0x168C, seed all 0x1F60 bytes, invoke 0x08045198 manually, and dump the result.",
+      "entry": "0x08045198",
+      "observations": {
+        "runtime_root_pointer_global": "0x03000198",
+        "observed_runtime_root": "0x02000804",
+        "payload_pointer_field_offset": "0x168C",
+        "observed_payload_pointer": "0x02003218",
+        "payload_size": "0x1F60",
+        "serializer_modes": [0, 1],
+        "seed_values": ["0xA5", "0x5A", "0x3C"],
+        "intersection_untouched_bytes": 176,
+        "isolated_untouched_ranges": ["0x0000-0x0003", "0x0054-0x0057", "0x02E7", "0x1F5F"],
+        "record_table_base": "0x02E8",
+        "record_count": 83,
+        "payload_record_stride": "0x0C",
+        "serialized_bytes_per_record": 10,
+        "untouched_padding_per_record": 2,
+        "first_padding": "0x02F2-0x02F3",
+        "last_padding": "0x06CA-0x06CB",
+        "custom_slot_mapping": "first 32 padding pairs, sparse offsets 0x02F2 through 0x0467"
+      },
+      "static_cross_check": {
+        "serializer_loop": "0x08045412-0x080454A0",
+        "deserializer_loop": "0x08045844-0x08045954",
+        "deserializer_reads_padding": false,
+        "deserializer_payload_stride": "0x0C",
+        "deserializer_runtime_stride": "0x28"
+      },
+      "conclusion": "The repeated two-byte tails are confirmed serializer/deserializer padding. The first 32 pairs hold one 64-byte SU8C slot inside the original payload checksum and transaction, so Task 8 no longer requires direct EEPROM-tail writes.",
+      "confidence": "confirmed",
+      "compact_report": "analysis/task8/payload-padding-evidence.json"
+    },
+    {
+      "id": "title-main-menu-consumer",
+      "status": "executed",
+      "trigger": "Press Start on the title screen before the main menu appears.",
+      "breakpoint": "0x08064E10",
+      "observations": {
+        "caller_lr": "0x0804106B",
+        "r0": "0x03007BE0",
+        "r2": "0x03007EB7",
+        "screen_after_return": "Main menu with NEW GAME selected"
+      },
+      "conclusion": "0x08064E10 participates in main-menu initialization or rendering. Selecting NEW GAME did not call it again, so it is not the final creator interception site.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "new-game-transition",
+      "status": "executed",
+      "trigger": "Press A while NEW GAME is selected on a blank-save main menu.",
+      "breakpoint": "0x080652F8",
+      "observations": {
+        "selection_value": 1,
+        "menu_state": "0x03007BE0",
+        "descriptor_selector_call_site": "0x080652FA",
+        "descriptor_selector_argument": 10,
+        "retail_descriptor_selector": "0x08066390",
+        "scene_request_call_site": "0x08065316",
+        "scene_request_argument": 3
+      },
+      "conclusion": "The branch at 0x080652F8 is the confirmed New Game path. The four-byte BL at 0x080652FA is the first practical creator interception site.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "native-new-game-research-hook",
+      "status": "executed_partial",
+      "trigger": "Run an 8-MiB research image whose guarded BL at 0x080652FA targets the checked expansion module at 0x08400000, then force the already-confirmed branch from an initialized title-menu state to avoid nondeterministic UI timing.",
+      "breakpoints": ["0x080000C0", "0x08064558", "0x08064E10", "0x08400000"],
+      "research_image": {
+        "source_sha256_before": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        "source_sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+        "output_sha256": "3e70c62bb874885962ad4fdcb7fb9d8624505523da6ebe6dacaa3cde6819ce11",
+        "output_size": "0x00800000",
+        "hook_bytes": "9af381fe",
+        "module_bytes": "00b566f4c5f900bd"
+      },
+      "observations": {
+        "module_entry": "0x08400000",
+        "r0": 10,
+        "lr": "0x080652FF",
+        "sp": "0x03007BE0",
+        "module_bytes_read_at_runtime": "00b566f4c5f900bd"
+      },
+      "conclusion": "Runtime confirms that the guarded retail BL reaches the expansion module with the original descriptor index and correct return address. Full call-through and return tracing was not completed because mGBA 0.10.5 repeatedly stalled when resuming from a software breakpoint at the expansion entry; static disassembly independently confirms the wrapper calls 0x08066390 and pops PC.",
+      "confidence": "runtime_observed"
+    },
+    {
+      "id": "early-intro-name-paths",
+      "status": "executed",
+      "trigger": "Select NEW GAME and advance through the initial bedroom dialogue.",
+      "breakpoints": ["0x0802E4DC", "0x080654B8", "0x0806645C", "0x080668C8", "0x08066984"],
+      "observations": {
+        "fixed_tyson_dialogue_visible": true,
+        "protagonist_lookup_hits": 0,
+        "enter_name_consumer_hits": 0,
+        "secondary_new_game_consumer_hits": 0
+      },
+      "conclusion": "The opening dialogue's Tyson text does not pass through the candidate protagonist lookup during the observed segment. The Enter name descriptor is not part of the initial New Game sequence.",
+      "confidence": "strongly_supported"
+    },
+    {
+      "id": "current-native-slot-integrity",
+      "status": "executed",
+      "trigger": "Boot the current four-hook research build, wait for the runtime root allocation, then invoke the current module default initializer and validator through the mGBA GDB stub.",
+      "breakpoints": ["0x084002B0", "0x084000BC"],
+      "observations": {
+        "runtime_root": "0x02000804",
+        "custom_slot": "0x020020CC",
+        "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821",
+        "matches_canonical_serializer": true,
+        "native_validate_return": 1
+      },
+      "conclusion": "The current module initializes the exact canonical SU8C slot and validates it successfully at runtime.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "current-name-commit-hook",
+      "status": "executed",
+      "trigger": "Execute the patched Thumb BL at 0x08066962 with a 16-byte retail source buffer and stop at the next retail instruction 0x08066966.",
+      "breakpoints": ["0x08066966"],
+      "observations": {
+        "hook_bytes": "99f389fb",
+        "module_entry": "0x08400078",
+        "runtime_root": "0x02000804",
+        "custom_slot": "0x020020CC",
+        "valid_source": "Rin-42",
+        "retail_16_byte_copy_preserved": true,
+        "persistent_12_byte_name": "Rin-42",
+        "python_slot_valid": true,
+        "native_validate_return": 1,
+        "invalid_source": "Bad!",
+        "invalid_retail_copy_preserved": true,
+        "invalid_persistent_slot_defaulted": true,
+        "pc_after_return": "0x08066966"
+      },
+      "conclusion": "The actual guarded retail call replacement preserves original behavior, commits and reseals a valid persistent player name, and safely defaults invalid persistent input.",
+      "confidence": "confirmed"
+    }
+  ],
+  "remaining_runtime_gates": [
+    "verify one SU8C slot survives three complete retail save/load cycles",
+    "prove no unrelated high-level routine mutates the selected payload padding pairs",
+    "trigger the existing Enter name descriptor with live UI input and inspect its allocated buffer",
+    "trigger player sprite and portrait lookup paths",
+    "trigger all player-side Bit Chip consumers"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 3,
+  "profile": "data/build/profiles/task8-research.json",
+  "source": {
+    "size": 4194304,
+    "sha256_before": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "sha256_after": "c4a568adc896bace0e25dbff4aa0c1802933c88e3f4a4e825075116c8c4173e5",
+    "immutable": true
+  },
+  "native_module": {
+    "sources": ["src/native/task8/task8_hooks.S", "src/native/task8/task8_slot.c"],
+    "checked_hex": "data/build/fixtures/task8-new-game-hook.hex",
+    "load_offset": "0x00400000",
+    "load_address": "0x08400000",
+    "allocation_size": "0x500",
+    "size": 1055,
+    "decoded_sha256": "4f163b7bc02571739058bc39b343e95b01faf74d37b100fa160d8aa52e93c6f1",
+    "entry_symbols": {
+      "Task8_NewGameHook": "0x08400000",
+      "Task8_SavePayloadHook": "0x08400018",
+      "Task8_LoadPayloadHook": "0x08400048",
+      "Task8_NameCommitHook": "0x08400078",
+      "Task8_ValidateSlot": "0x084000BC",
+      "Task8_SealSlot": "0x08400238",
+      "Task8_InitializeDefaultSlot": "0x084002B0",
+      "Task8_PrepareSlotForSave": "0x084002C8",
+      "Task8_ValidateOrDefaultSlot": "0x084002E0",
+      "Task8_CommitPlayerName": "0x084002F8"
+    },
+    "compiler_verification": {
+      "status": "passed",
+      "provider": "llvm-arm-none-eabi",
+      "compiler": "clang 17.0.0",
+      "linker": "LLD 17.0.0",
+      "objcopy": "llvm-objcopy",
+      "source_and_checked_hex_equal": true,
+      "module_fits_allocation": true,
+      "retail_call_strategy": "local Thumb veneers with odd callable addresses",
+      "host_name_commit_validation": true
+    }
+  },
+  "runtime_storage": {
+    "root_pointer_global": "0x03000198",
+    "root_allocation_original_size": "0x18C8",
+    "root_allocation_patched_size": "0x1908",
+    "custom_slot_runtime_offset": "0x18C8",
+    "custom_slot_size": 64,
+    "payload_storage": {
+      "format": "SU8C",
+      "translated_table_base": "0x02E8",
+      "translated_record_count": 83,
+      "translated_record_stride": "0x0C",
+      "padding_bytes_per_record": 2,
+      "records_used": 32,
+      "first_payload_offset": "0x02F2",
+      "last_payload_offset": "0x0467",
+      "covered_by_retail_checksum": true,
+      "covered_by_retail_transaction": true
+    },
+    "native_eeprom_tail_required": false
+  },
+  "guarded_changes": [
+    {"id":"hook-save-payload-custom-slot","site_offset":"0x00044E80","expected_original_bytes":"00f08af9","emitted_bytes":"bbf3caf8","destination_address":"0x08400018","kind":"thumb_bl"},
+    {"id":"hook-load-payload-custom-slot","site_offset":"0x00045092","expected_original_bytes":"00f07dfa","emitted_bytes":"baf3d9ff","destination_address":"0x08400048","kind":"thumb_bl"},
+    {"id":"extend-runtime-root-for-custom-slot","site_offset":"0x0004612C","expected_original_bytes":"c8180000","emitted_bytes":"08190000","kind":"write_u32"},
+    {"id":"hook-new-game-descriptor-selection","site_offset":"0x000652FA","expected_original_bytes":"01f049f8","emitted_bytes":"9af381fe","destination_address":"0x08400000","kind":"thumb_bl"},
+    {"id":"hook-name-entry-custom-slot","site_offset":"0x00066962","expected_original_bytes":"0cf059fc","emitted_bytes":"99f389fb","destination_address":"0x08400078","kind":"thumb_bl"}
+  ],
+  "build": {
+    "status": "passed",
+    "build_id": "b681cce88cd15b08",
+    "output_size": 8388608,
+    "output_sha256": "aaa28e2af589fb4711e32e17b6a51be82687036ed66532da230c8495562b8518",
+    "bps_size": 4194388,
+    "bps_sha256": "8a381a491aaceead974376f6f113f808019a5703bf60237e17f24ea7abe71d13",
+    "bps_reconstruction": "passed",
+    "header_validation": "passed",
+    "expansion_fill_audit": "passed",
+    "original_changed_byte_count": 18,
+    "original_changed_offsets": [
+      "0x00044E80", "0x00044E81", "0x00044E82", "0x00044E83",
+      "0x00045092", "0x00045093", "0x00045094", "0x00045095",
+      "0x0004612C", "0x0004612D",
+      "0x000652FA", "0x000652FB", "0x000652FC", "0x000652FD",
+      "0x00066962", "0x00066963", "0x00066964", "0x00066965"
+    ]
+  },
+  "determinism": {
+    "status": "passed",
+    "independent_clean_builds": 2,
+    "byte_identical_artifacts": ["ROM", "BPS", "build manifest", "allocation map JSON", "allocation map CSV", "changed ranges", "hooks", "modules", "validation", "build report"]
+  },
+  "runtime": {
+    "status": "current_integrity_and_name_confirmed_predecessor_payload_persistence_confirmed",
+    "emulator": "mGBA 0.10.5",
+    "predecessor_new_game_hook": {"status":"confirmed","module_entry_observed":"0x08400000","r0":10,"lr":"0x080652FF","module_bytes_matched":true},
+    "predecessor_save_hook": {
+      "status": "confirmed",
+      "trigger": "retail high-level save transaction 0x08044DAC invoked from a system-mode game-loop callback with IRQ enabled",
+      "result": "valid 8-KiB EEPROM image containing one valid sparse SU8C slot",
+      "required_context": "system mode with interrupts enabled; invoking EEPROM writes from IRQ context deadlocks in BIOS IntrWait"
+    },
+    "predecessor_load_hook": {
+      "status": "confirmed",
+      "trigger": "retail high-level load/validate path 0x0804504C",
+      "evidence": "write watchpoint on runtime custom-slot byte 63 stopped during the final gather-loop iteration"
+    },
+    "current_integrity_module": {
+      "status": "confirmed",
+      "emulator": "mGBA 0.10.5",
+      "runtime_root": "0x02000804",
+      "custom_slot": "0x020020CC",
+      "default_slot_matches_canonical_serializer": true,
+      "native_validate_return": 1
+    },
+    "current_name_commit_hook": {
+      "status": "confirmed",
+      "hook_site": "0x08066962",
+      "hook_bytes": "99f389fb",
+      "module_entry": "0x08400078",
+      "return_pc": "0x08066966",
+      "valid_name": "Rin-42",
+      "retail_copy_preserved": true,
+      "persistent_slot_valid": true,
+      "invalid_name_defaulted": true
+    }
+  },
+  "tests": {
+    "continuous_integration": "passed for the four-hook static/native contract before the debugger-script and report-only commits",
+    "conditional_real_rom_build": "passed locally with the supplied supported ROM",
+    "native_host_name_commit": "passed",
+    "source_assembly_and_checked_hex": "passed",
+    "current_head": "140 passed with the supported ROM available; Python compilation and tracked JSON validation also passed in CI"
+  },
+  "release_status": "research-only",
+  "creator_model_enabled": true,
+  "creator_runtime_enabled": false,
+  "retail_name_capture_enabled": true,
+  "native_custom_state_persistence_enabled": true,
+  "native_eeprom_tail_enabled": false,
+  "remaining_gates": [
+    "three complete ordinary gameplay save/load cycles on the current module",
+    "native appearance, origin, tendency, summary, and confirmation screens",
+    "player-name substitution across dialogue and UI",
+    "verified avatar and portrait routing",
+    "origin starter application",
+    "Blank Core gameplay hooks"
+  ]
+}

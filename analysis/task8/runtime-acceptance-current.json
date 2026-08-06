@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "profile": "task8-research",
+  "build": {
+    "build_id": "b681cce88cd15b08",
+    "output_sha256": "aaa28e2af589fb4711e32e17b6a51be82687036ed66532da230c8495562b8518",
+    "module_sha256": "4f163b7bc02571739058bc39b343e95b01faf74d37b100fa160d8aa52e93c6f1"
+  },
+  "environment": {
+    "emulator": "mGBA 0.10.5",
+    "gdb_endpoint": "127.0.0.1:2345",
+    "runtime_mode": "IRQ-enabled system mode with Thumb calls",
+    "runtime_root": "0x02000804",
+    "custom_slot": "0x020020CC"
+  },
+  "experiments": [
+    {
+      "id": "current-module-validate-or-default",
+      "status": "confirmed",
+      "entry": "0x084002E0",
+      "trigger": "Fill the runtime custom slot with 64 bytes of 0xA5 and invoke Task8_ValidateOrDefaultSlot.",
+      "result": {
+        "exact_canonical_default": true,
+        "python_slot_parser": "valid"
+      },
+      "conclusion": "The current native module rejects corrupt state and restores the byte-exact canonical SU8C default slot."
+    },
+    {
+      "id": "current-module-three-save-load-cycles",
+      "status": "confirmed",
+      "trigger": "In three independent emulator sessions, write a valid distinct SU8C state, invoke the retail save transaction at 0x08044DAC, overwrite the runtime slot with 0xA5, and invoke the retail load path at 0x0804504C.",
+      "sessions": [
+        {
+          "sequence": 20,
+          "player_name": "Rin",
+          "bey_name": "Comet",
+          "save_return": 1,
+          "load_return": 1,
+          "exact_64_byte_match": true,
+          "slot_valid": true
+        },
+        {
+          "sequence": 21,
+          "player_name": "Kai",
+          "bey_name": "Nova Bey",
+          "save_return": 1,
+          "load_return": 1,
+          "exact_64_byte_match": true,
+          "slot_valid": true
+        },
+        {
+          "sequence": 22,
+          "player_name": "Mina",
+          "bey_name": "Aster",
+          "save_return": 1,
+          "load_return": 1,
+          "exact_64_byte_match": true,
+          "slot_valid": true
+        }
+      ],
+      "conclusion": "The current seal, scatter, gather, validate, and default integration survives three complete retail save/load cycles without using EEPROM tail blocks."
+    },
+    {
+      "id": "current-module-valid-name-commit",
+      "status": "confirmed_direct_module_entry",
+      "entry": "0x08400078",
+      "retail_copy_target": "0x08073218",
+      "source": "0x0203F000",
+      "retail_destination": "0x0200105C",
+      "trigger": "Invoke Task8_NameCommitHook with the stable 16-byte EWRAM string ABCDEFGHIJKLMNO\\0, a valid sequence-33 custom slot, the retail destination, and maximum length 16.",
+      "result": {
+        "retail_16_bytes_exact": true,
+        "persistent_player_name": "ABCDEFGHIJKL",
+        "persistent_length": 12,
+        "slot_valid": true,
+        "sequence_preserved": 33,
+        "bey_name_preserved": "Comet",
+        "avatar_id_preserved": 2,
+        "components_preserved": [12, 9, 5, 21]
+      },
+      "conclusion": "The native wrapper preserves the retail string-copy behavior and commits a resealed 12-byte persistent player name without disturbing unrelated custom state."
+    },
+    {
+      "id": "current-module-invalid-name-commit",
+      "status": "confirmed_direct_module_entry",
+      "entry": "0x08400078",
+      "trigger": "Pre-clear the retail destination as the original handler does, then invoke the wrapper with Bad!\\0 followed by zero padding.",
+      "result": {
+        "retail_16_bytes_exact": true,
+        "custom_slot_exact_default": true,
+        "default_slot_valid": true
+      },
+      "conclusion": "Invalid persistent input cannot activate corrupt custom state; retail behavior remains intact while the protected slot defaults."
+    }
+  ],
+  "rejected_observation": {
+    "description": "An initial direct-call attempt used 0x03007E00 as the source buffer and appeared to persist only eight characters.",
+    "cause": "The chosen IWRAM range was active during interrupts and was overwritten during the call.",
+    "resolution": "Repeating the same call with stable EWRAM at 0x0203F000 preserved all 16 retail bytes and the expected 12 persistent bytes.",
+    "classification": "harness_error"
+  },
+  "remaining_runtime_gate": {
+    "id": "natural-name-entry-ui-trigger",
+    "status": "unexecuted",
+    "command_file": "debugger-bundle/task8-name-entry.gdb",
+    "required_action": "Reach the existing Enter name scene through live UI, enter a distinctive name, and confirm the patched branch naturally reaches 0x08400078 before returning to 0x08066966."
+  },
+  "artifact_policy": {
+    "tracked_memory_dumps": false,
+    "tracked_save_files": false,
+    "tracked_patched_rom": false,
+    "tracked_content": "compact observations only"
+  }
+}

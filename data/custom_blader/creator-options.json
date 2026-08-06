@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "runtime_status": "research-only",
+  "defaults": {
+    "avatars": 0,
+    "skin_palettes": 0,
+    "hair_palettes": 0,
+    "outfit_palettes": 0,
+    "portraits": 0,
+    "origins": 0,
+    "tendencies": 0
+  },
+  "avatars": [
+    {"id": 0, "label": "Classic", "description": "Balanced complete-player sprite option.", "resource_ref": "assets.json#/avatars/0", "compatible_portrait_ids": [0], "confidence": "unknown"},
+    {"id": 1, "label": "Rookie", "description": "Compact rookie complete-player sprite option.", "resource_ref": "assets.json#/avatars/1", "compatible_portrait_ids": [1], "confidence": "unknown"},
+    {"id": 2, "label": "Ace", "description": "Athletic ace complete-player sprite option.", "resource_ref": "assets.json#/avatars/2", "compatible_portrait_ids": [2], "confidence": "unknown"},
+    {"id": 3, "label": "Guard", "description": "Heavy guard complete-player sprite option.", "resource_ref": "assets.json#/avatars/3", "compatible_portrait_ids": [3], "confidence": "unknown"}
+  ],
+  "skin_palettes": [
+    {"id": 0, "label": "Tone 1", "description": "Player palette variant 1.", "resource_ref": "assets.json#/palettes/0", "confidence": "unknown"},
+    {"id": 1, "label": "Tone 2", "description": "Player palette variant 2.", "resource_ref": "assets.json#/palettes/1", "confidence": "unknown"},
+    {"id": 2, "label": "Tone 3", "description": "Player palette variant 3.", "resource_ref": "assets.json#/palettes/2", "confidence": "unknown"},
+    {"id": 3, "label": "Tone 4", "description": "Player palette variant 4.", "resource_ref": "assets.json#/palettes/3", "confidence": "unknown"}
+  ],
+  "hair_palettes": [
+    {"id": 0, "label": "Black", "description": "Dark hair palette.", "resource_ref": "assets.json#/palettes/0", "confidence": "unknown"},
+    {"id": 1, "label": "Auburn", "description": "Warm auburn hair palette.", "resource_ref": "assets.json#/palettes/1", "confidence": "unknown"},
+    {"id": 2, "label": "Brown", "description": "Brown hair palette.", "resource_ref": "assets.json#/palettes/2", "confidence": "unknown"},
+    {"id": 3, "label": "Silver", "description": "Silver hair palette.", "resource_ref": "assets.json#/palettes/3", "confidence": "unknown"}
+  ],
+  "outfit_palettes": [
+    {"id": 0, "label": "Blue", "description": "Blue outfit palette.", "resource_ref": "assets.json#/palettes/0", "confidence": "unknown"},
+    {"id": 1, "label": "Red", "description": "Red outfit palette.", "resource_ref": "assets.json#/palettes/1", "confidence": "unknown"},
+    {"id": 2, "label": "Violet", "description": "Violet outfit palette.", "resource_ref": "assets.json#/palettes/2", "confidence": "unknown"},
+    {"id": 3, "label": "Green", "description": "Green outfit palette.", "resource_ref": "assets.json#/palettes/3", "confidence": "unknown"}
+  ],
+  "portraits": [
+    {"id": 0, "label": "Classic", "description": "Classic portrait option.", "resource_ref": "assets.json#/portraits/0", "compatible_avatar_ids": [0], "confidence": "unknown"},
+    {"id": 1, "label": "Rookie", "description": "Rookie portrait option.", "resource_ref": "assets.json#/portraits/1", "compatible_avatar_ids": [1], "confidence": "unknown"},
+    {"id": 2, "label": "Ace", "description": "Ace portrait option.", "resource_ref": "assets.json#/portraits/2", "compatible_avatar_ids": [2], "confidence": "unknown"},
+    {"id": 3, "label": "Guard", "description": "Guard portrait option.", "resource_ref": "assets.json#/portraits/3", "compatible_avatar_ids": [3], "confidence": "unknown"}
+  ],
+  "origins": [
+    {"id": 0, "label": "Street Blader", "description": "Aggressive local-battle background.", "resource_ref": "origins.json#/0", "confidence": "candidate"},
+    {"id": 1, "label": "Technical Blader", "description": "Analytical customization background.", "resource_ref": "origins.json#/1", "confidence": "candidate"},
+    {"id": 2, "label": "Endurance Blader", "description": "Spin-conservation background.", "resource_ref": "origins.json#/2", "confidence": "candidate"},
+    {"id": 3, "label": "Defensive Blader", "description": "Counter-oriented background.", "resource_ref": "origins.json#/3", "confidence": "candidate"}
+  ],
+  "tendencies": [
+    {"id": 0, "label": "Attack", "description": "Initial aggressive tendency.", "resource_ref": "state-layout.json#/tendency_id", "confidence": "confirmed"},
+    {"id": 1, "label": "Defense", "description": "Initial defensive tendency.", "resource_ref": "state-layout.json#/tendency_id", "confidence": "confirmed"},
+    {"id": 2, "label": "Stamina", "description": "Initial spin-conservation tendency.", "resource_ref": "state-layout.json#/tendency_id", "confidence": "confirmed"},
+    {"id": 3, "label": "Balance", "description": "Initial adaptive tendency.", "resource_ref": "state-layout.json#/tendency_id", "confidence": "confirmed"}
+  ]
+}
