@@ -6,7 +6,7 @@ from tools.build.profile import load
 
 
 class Task8PayloadHookTests(unittest.TestCase):
-    def test_native_sources_declare_persistence_and_integrity_contracts(self):
+    def test_native_sources_declare_persistence_integrity_and_name_contracts(self):
         hooks = Path("src/native/task8/task8_hooks.S").read_text(encoding="utf-8")
         slot = Path("src/native/task8/task8_slot.c")
         self.assertTrue(slot.is_file(), "implement native Task 8 slot validation")
@@ -15,13 +15,16 @@ class Task8PayloadHookTests(unittest.TestCase):
         for symbol in (
             "Task8_SavePayloadHook",
             "Task8_LoadPayloadHook",
+            "Task8_NameCommitHook",
             "Retail_SerializeSavePayload",
             "Retail_DeserializeSavePayload",
+            "Retail_CopyBytes",
             "Task8_RuntimeRootPointer",
             "Task8_CustomSlotOffset",
             "Task8_InitializeDefaultSlot",
             "Task8_PrepareSlotForSave",
             "Task8_ValidateOrDefaultSlot",
+            "Task8_CommitPlayerName",
         ):
             self.assertIn(symbol, hooks + slot_source)
         self.assertIn("Task8_PayloadSlotFirstOffset, 0x000002F2", hooks)
@@ -30,6 +33,7 @@ class Task8PayloadHookTests(unittest.TestCase):
         self.assertIn("bl Task8_InitializeDefaultSlot", hooks)
         self.assertIn("bl Task8_PrepareSlotForSave", hooks)
         self.assertIn("bl Task8_ValidateOrDefaultSlot", hooks)
+        self.assertIn("bl Task8_CommitPlayerName", hooks)
 
         for contract in (
             "Task8_ValidateSlot",
@@ -41,14 +45,14 @@ class Task8PayloadHookTests(unittest.TestCase):
         ):
             self.assertIn(contract, slot_source)
 
-    def test_profile_expands_runtime_root_and_installs_three_guarded_hooks(self):
+    def test_profile_expands_runtime_root_and_installs_four_guarded_hooks(self):
         profile = load("data/build/profiles/task8-research.json")
         allocation = next(
             item
             for item in profile["allocations"]
             if item["id"] == "task8-native-hooks"
         )
-        self.assertGreaterEqual(int(allocation["size"], 0), 0x300)
+        self.assertGreaterEqual(int(allocation["size"], 0), 0x500)
         self.assertEqual(allocation["fixed_offset"], "0x00400000")
 
         patch = next(
@@ -68,31 +72,24 @@ class Task8PayloadHookTests(unittest.TestCase):
                 "hook-new-game-descriptor-selection",
                 "hook-save-payload-custom-slot",
                 "hook-load-payload-custom-slot",
+                "hook-name-entry-custom-slot",
             },
         )
-        self.assertEqual(
-            hooks["hook-save-payload-custom-slot"]["site"],
-            "0x00044e80",
-        )
-        self.assertEqual(
-            hooks["hook-save-payload-custom-slot"]["expected"],
-            "00f08af9",
-        )
-        self.assertEqual(
-            hooks["hook-load-payload-custom-slot"]["site"],
-            "0x00045092",
-        )
-        self.assertEqual(
-            hooks["hook-load-payload-custom-slot"]["expected"],
-            "00f07dfa",
-        )
+        expected_sites = {
+            "hook-save-payload-custom-slot": ("0x00044e80", "00f08af9"),
+            "hook-load-payload-custom-slot": ("0x00045092", "00f07dfa"),
+            "hook-name-entry-custom-slot": ("0x00066962", "0cf059fc"),
+        }
+        for hook_id, (site, expected) in expected_sites.items():
+            self.assertEqual(hooks[hook_id]["site"], site)
+            self.assertEqual(hooks[hook_id]["expected"], expected)
         for hook in hooks.values():
             self.assertEqual(
                 hook["destination_allocation"],
                 "task8-native-hooks",
             )
 
-    def test_module_provenance_exposes_integrity_functions_and_storage(self):
+    def test_module_provenance_exposes_integrity_name_and_storage(self):
         provenance = json.loads(
             Path(
                 "data/build/fixtures/task8-new-game-hook.provenance.json"
@@ -103,11 +100,13 @@ class Task8PayloadHookTests(unittest.TestCase):
             "Task8_NewGameHook",
             "Task8_SavePayloadHook",
             "Task8_LoadPayloadHook",
+            "Task8_NameCommitHook",
             "Task8_ValidateSlot",
             "Task8_SealSlot",
             "Task8_InitializeDefaultSlot",
             "Task8_PrepareSlotForSave",
             "Task8_ValidateOrDefaultSlot",
+            "Task8_CommitPlayerName",
         ):
             self.assertIn(symbol, entries)
         self.assertEqual(entries["Task8_NewGameHook"], "0x00000000")
@@ -146,6 +145,11 @@ class Task8PayloadHookTests(unittest.TestCase):
         self.assertTrue(
             provenance["slot_integrity"]["invalid_slot_defaults"]
         )
+        self.assertEqual(provenance["name_commit"]["retail_buffer_bytes"], 16)
+        self.assertEqual(
+            provenance["name_commit"]["persistent_name_bytes"], 12
+        )
+        self.assertTrue(provenance["name_commit"]["retail_copy_preserved"])
 
 
 if __name__ == "__main__":
