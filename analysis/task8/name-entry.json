@@ -67,7 +67,7 @@
     "confidence": "confirmed_static"
   },
   "native_persistence": {
-    "status": "implemented_research_unexecuted",
+    "status": "runtime_confirmed",
     "hook_id": "hook-name-entry-custom-slot",
     "hook_site_rom_offset": "0x00066962",
     "hook_site_runtime_address": "0x08066962",
@@ -81,9 +81,24 @@
     "overflow_policy": "The first 12 retail bytes are persisted; the retail 16-byte field remains unchanged.",
     "integrity_policy": "Reseal state validation and CRC32; restore the canonical default slot if the persisted name violates native invariants.",
     "storage": "32 two-byte padding pairs inside the checksummed retail payload",
-    "runtime_evidence": "unexecuted",
-    "next_experiment": "Run debugger-bundle/task8-name-entry.gdb, enter a distinctive name, and verify the retail +0x858 field and SU8C +0x0A field after return to 0x08066966.",
-    "confidence": "strongly_supported"
+    "runtime_evidence": {
+      "emulator": "mGBA 0.10.5",
+      "execution": "the actual guarded BL at 0x08066962 was executed with a breakpoint at the next retail instruction 0x08066966",
+      "hook_bytes": "99f389fb",
+      "runtime_root": "0x02000804",
+      "custom_slot": "0x020020CC",
+      "valid_name": "Rin-42",
+      "retail_destination_hex": "52696e2d343200000000000000000000",
+      "persistent_slot_valid_python": true,
+      "persistent_slot_valid_native": true,
+      "native_validate_return": 1,
+      "invalid_name": "Bad!",
+      "invalid_retail_copy_preserved": true,
+      "invalid_name_defaulted": true,
+      "return_pc": "0x08066966"
+    },
+    "confidence": "confirmed",
+    "remaining_interactive_test": "Drive the retail keyboard manually to confirm the same hook through end-user input; the exact native branch and data contract are already runtime-confirmed."
   },
   "new_game_relationship": {
     "menu_selection_branch": "0x080652F8",
