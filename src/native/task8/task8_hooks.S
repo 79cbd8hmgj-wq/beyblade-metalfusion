@@ -19,6 +19,7 @@
 .equ Retail_SelectNewGameDescriptor, 0x08066391
 .equ Retail_SerializeSavePayload, 0x08045199
 .equ Retail_DeserializeSavePayload, 0x08045591
+.equ Retail_CopyBytes, 0x08073219
 .equ Task8_RuntimeRootPointer, 0x03000198
 .equ Task8_CustomSlotOffset, 0x000018C8
 .equ Task8_PayloadSlotFirstOffset, 0x000002F2
@@ -27,9 +28,11 @@
 .global Task8_NewGameHook
 .global Task8_SavePayloadHook
 .global Task8_LoadPayloadHook
+.global Task8_NameCommitHook
 .type Task8_NewGameHook,%function
 .type Task8_SavePayloadHook,%function
 .type Task8_LoadPayloadHook,%function
+.type Task8_NameCommitHook,%function
 
 .thumb_func
 Task8_NewGameHook:
@@ -102,6 +105,22 @@ Task8_LoadPayloadHook:
     pop {r4-r7, pc}
 .size Task8_LoadPayloadHook, .-Task8_LoadPayloadHook
 
+.align 2
+.thumb_func
+Task8_NameCommitHook:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    bl Task8_CallRetailCopyBytes
+
+    ldr r0, =Task8_RuntimeRootPointer
+    ldr r0, [r0]
+    ldr r1, =Task8_CustomSlotOffset
+    adds r0, r0, r1
+    adds r1, r4, #0
+    bl Task8_CommitPlayerName
+    pop {r4-r7, pc}
+.size Task8_NameCommitHook, .-Task8_NameCommitHook
+
 /*
  * Use local Thumb veneers instead of allowing the linker to create ARM thunks.
  * Each literal stores the odd callable address of the retail Thumb routine.
@@ -122,6 +141,12 @@ Task8_CallSerializeSavePayload:
 .thumb_func
 Task8_CallDeserializeSavePayload:
     ldr r3, =Retail_DeserializeSavePayload
+    bx r3
+
+.align 2
+.thumb_func
+Task8_CallRetailCopyBytes:
+    ldr r3, =Retail_CopyBytes
     bx r3
 
 .ltorg
