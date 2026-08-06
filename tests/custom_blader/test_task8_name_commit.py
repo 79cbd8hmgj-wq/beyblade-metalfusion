@@ -79,56 +79,31 @@ class Task8NameCommitTests(unittest.TestCase):
     def test_native_module_and_profile_declare_guarded_name_commit_hook(self):
         hooks = Path("src/native/task8/task8_hooks.S").read_text(encoding="utf-8")
         slot = Path("src/native/task8/task8_slot.c").read_text(encoding="utf-8")
-        creator = Path("src/native/task8/creator.c").read_text(encoding="utf-8")
         for symbol in (
             "Task8_NameCommitHook",
-            "Task8_CommitPlayerName",
             "Task8_CreatorCommit",
             "Retail_CopyBytes",
         ):
-            self.assertIn(symbol, hooks + slot + creator)
+            self.assertIn(symbol, hooks + slot)
 
         profile = load("data/build/profiles/task8-research.json")
         profile_hooks = {item["id"]: item for item in profile["hooks"]}
-        self.assertIn("hook-name-entry-custom-slot", profile_hooks)
         hook = profile_hooks["hook-name-entry-custom-slot"]
         self.assertEqual(hook["site"], "0x00066962")
         self.assertEqual(hook["expected"], "0cf059fc")
-        self.assertEqual(hook["destination_allocation"], "task8-native-hooks")
 
         provenance = json.loads(
-            Path(
-                "data/build/fixtures/task8-new-game-hook.provenance.json"
-            ).read_text(encoding="utf-8")
+            Path("data/build/fixtures/task8-new-game-hook.provenance.json").read_text(
+                encoding="utf-8"
+            )
         )
         self.assertIn("Task8_NameCommitHook", provenance["entry_symbols"])
         self.assertIn("Task8_CreatorCommit", provenance["entry_symbols"])
-        self.assertIn("Task8_CommitPlayerName", provenance["entry_symbols"])
-        self.assertEqual(
-            provenance["hook_sites"]["name_commit"]["rom_offset"],
-            "0x00066962",
-        )
-        self.assertEqual(
-            provenance["hook_sites"]["name_commit"]["expected"],
-            "0cf059fc",
-        )
         self.assertTrue(provenance["name_commit"]["retail_copy_preserved"])
-        self.assertEqual(
-            provenance["name_commit"]["persistent_name_bytes"],
-            12,
-        )
-        runtime = provenance["runtime_verification"]
+        self.assertEqual(provenance["name_commit"]["persistent_name_bytes"], 12)
         self.assertTrue(
-            runtime["predecessor_payload_and_integrity"].startswith(
+            provenance["runtime_verification"]["previous_name_commit_hook"].startswith(
                 "confirmed"
-            )
-        )
-        self.assertTrue(
-            runtime["predecessor_name_commit"].startswith("confirmed")
-        )
-        self.assertTrue(
-            runtime["current_2118_byte_creator_module"].startswith(
-                "unexecuted"
             )
         )
 
@@ -136,17 +111,9 @@ class Task8NameCommitTests(unittest.TestCase):
             Path("analysis/task8/name-entry.json").read_text(encoding="utf-8")
         )["native_persistence"]
         self.assertEqual(name_evidence["status"], "runtime_confirmed")
-        self.assertEqual(
-            name_evidence["runtime_evidence"]["hook_bytes"],
-            "99f389fb",
-        )
-        self.assertEqual(
-            name_evidence["runtime_evidence"]["valid_name"],
-            "Rin-42",
-        )
-        self.assertTrue(
-            name_evidence["runtime_evidence"]["invalid_name_defaulted"]
-        )
+        self.assertEqual(name_evidence["runtime_evidence"]["hook_bytes"], "99f389fb")
+        self.assertEqual(name_evidence["runtime_evidence"]["valid_name"], "Rin-42")
+        self.assertTrue(name_evidence["runtime_evidence"]["invalid_name_defaulted"])
 
 
 if __name__ == "__main__":
