@@ -198,3 +198,13 @@ void Task8_ValidateOrDefaultSlot(uint8_t *slot) {
         Task8_InitializeDefaultSlot(slot);
     }
 }
+
+void Task8_CommitPlayerName(uint8_t *slot, const uint8_t *retail_name) {
+    unsigned int index;
+    for (index = 0; index < 12u; ++index) {
+        slot[10u + index] = retail_name[index];
+    }
+    if (!Task8_SealSlot(slot)) {
+        Task8_InitializeDefaultSlot(slot);
+    }
+}
