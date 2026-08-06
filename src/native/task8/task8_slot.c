@@ -208,3 +208,13 @@ void Task8_CommitPlayerName(uint8_t *slot, const uint8_t *retail_name) {
         Task8_InitializeDefaultSlot(slot);
     }
 }
+
+const uint8_t *Task8_SelectPlayerName(
+    const uint8_t *slot,
+    const uint8_t *fallback
+) {
+    if (Task8_ValidateSlot(slot)) {
+        return slot + 10u;
+    }
+    return fallback;
+}
