@@ -52,7 +52,7 @@
       "id": "insert-task8-native-hooks",
       "allocation": "task8-native-hooks",
       "path": "data/build/fixtures/task8-new-game-hook.hex",
-      "sha256": "d75f4db0b21ece9059c794c57b7f165e9c42c95b2e76fbaba843ccccdc600a47",
+      "sha256": "f73e7edbeb59b611d8c29175ebfcc4f7f1a9b79823b1203d58c961457aea88f0",
       "encoding": "hex",
       "entry_offset": "0x0",
       "thumb": true
@@ -83,9 +83,7 @@
       "expected": "01f049f8",
       "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x0",
-      "depends_on": [
-        "insert-task8-native-hooks"
-      ]
+      "depends_on": ["insert-task8-native-hooks"]
     },
     {
       "id": "hook-save-payload-custom-slot",
@@ -94,10 +92,7 @@
       "expected": "00f08af9",
       "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x18",
-      "depends_on": [
-        "insert-task8-native-hooks",
-        "extend-runtime-root-for-custom-slot"
-      ]
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
     },
     {
       "id": "hook-load-payload-custom-slot",
@@ -106,10 +101,7 @@
       "expected": "00f07dfa",
       "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x48",
-      "depends_on": [
-        "insert-task8-native-hooks",
-        "extend-runtime-root-for-custom-slot"
-      ]
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
     },
     {
       "id": "hook-name-entry-custom-slot",
@@ -118,10 +110,7 @@
       "expected": "0cf059fc",
       "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x78",
-      "depends_on": [
-        "insert-task8-native-hooks",
-        "extend-runtime-root-for-custom-slot"
-      ]
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
     },
     {
       "id": "hook-name-entry-empty-back",
@@ -130,29 +119,33 @@
       "expected": "02202060",
       "destination_allocation": "task8-native-hooks",
       "destination_offset": "0x98",
-      "depends_on": [
-        "insert-task8-native-hooks",
-        "extend-runtime-root-for-custom-slot"
-      ]
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
+    },
+    {
+      "id": "hook-protagonist-name-render",
+      "kind": "thumb_bl",
+      "site": "0x0002e5ac",
+      "expected": "42f092fa",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0xb4",
+      "depends_on": ["insert-task8-native-hooks", "extend-runtime-root-for-custom-slot"]
     }
   ],
   "metadata": {
     "enabled": true,
     "id": "write-task8-research-metadata",
     "allocation": "task8-research-metadata",
-    "project_version": "0.8.5-research"
+    "project_version": "0.8.6-research"
   },
   "validation": {
     "allow_invalid_header": false,
     "require_base_unchanged": false
   },
-  "smoke_test": {
-    "enabled": false
-  },
+  "smoke_test": {"enabled": false},
   "extension_metadata": {
     "task": "8",
     "release_status": "research-only",
-    "behavior": "Run a staged Tier-A creator through the verified retail keyboard while persisting one validated 64-byte SU8C state slot inside the retail payload.",
+    "behavior": "Run a staged Tier-A creator through the verified retail keyboard, persist one validated 64-byte SU8C state slot inside the retail payload, and render the validated player name at the verified bounded protagonist-name consumer.",
     "custom_state_storage": "retail payload record padding",
     "custom_slot_runtime_offset": "0x18C8",
     "slot_integrity": "schema and field invariants plus state validation and CRC32",
@@ -161,6 +154,7 @@
     "creator_ui": "retail name-entry keyboard with staged prompts and compact summary",
     "creator_option_range": "1-4",
     "creator_existing_save_entry": false,
-    "native_eeprom_tail_enabled": false
+    "native_eeprom_tail_enabled": false,
+    "player_name_render_enabled": true
   }
 }
