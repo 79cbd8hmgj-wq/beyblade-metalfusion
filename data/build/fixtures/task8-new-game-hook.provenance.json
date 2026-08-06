@@ -1,17 +1,26 @@
 {
-  "schema_version": 2,
-  "source": "src/native/task8/task8_hooks.S",
-  "decoded_sha256": "78b18bad83aa49bca3f61f7efa5c829b4bd070177411ddbdb3c19b01ae11120d",
-  "decoded_size": 124,
+  "schema_version": 3,
+  "sources": [
+    "src/native/task8/task8_hooks.S",
+    "src/native/task8/task8_slot.c"
+  ],
+  "decoded_sha256": "7e402f1c1c8c1e3754ea7247bb3a9957f555956d2fc760ba182930c65b4afa09",
+  "decoded_size": 961,
   "encoding": "hex",
   "load_address": "0x08400000",
   "rom_offset": "0x00400000",
+  "allocation_size": "0x400",
   "entry_symbol": "Task8_NewGameHook",
   "entry_address": "0x08400001",
   "entry_symbols": {
     "Task8_NewGameHook": "0x00000000",
-    "Task8_SavePayloadHook": "0x00000008",
-    "Task8_LoadPayloadHook": "0x00000030"
+    "Task8_SavePayloadHook": "0x00000018",
+    "Task8_LoadPayloadHook": "0x00000048",
+    "Task8_ValidateSlot": "0x0000009C",
+    "Task8_SealSlot": "0x00000218",
+    "Task8_InitializeDefaultSlot": "0x00000290",
+    "Task8_PrepareSlotForSave": "0x000002A8",
+    "Task8_ValidateOrDefaultSlot": "0x000002C0"
   },
   "retail_symbols": {
     "Retail_SelectNewGameDescriptor": "0x08066391",
@@ -38,6 +47,18 @@
     "covered_by_retail_checksum": true,
     "covered_by_retail_transaction": true
   },
+  "slot_integrity": {
+    "magic": "SU8C",
+    "commit": "OK8!",
+    "schema_version": 1,
+    "state_validation_seed": "0x43555354",
+    "state_validation_enabled": true,
+    "crc32_polynomial": "0xEDB88320",
+    "crc32_enabled": true,
+    "field_invariant_validation": true,
+    "invalid_slot_defaults": true,
+    "default_slot_matches_python_serializer": true
+  },
   "hook_sites": {
     "new_game": {
       "rom_offset": "0x000652FA",
@@ -47,34 +68,37 @@
     "save_payload": {
       "rom_offset": "0x00044E80",
       "expected": "00f08af9",
-      "destination": "0x08400008"
+      "destination": "0x08400018"
     },
     "load_payload": {
       "rom_offset": "0x00045092",
       "expected": "00f07dfa",
-      "destination": "0x08400030"
+      "destination": "0x08400048"
     }
   },
   "disassembly": [
-    "0x08400000 Task8_NewGameHook: preserve the retail descriptor-selector call",
-    "0x08400008 Task8_SavePayloadHook: call retail serializer, then scatter 64 runtime bytes into 32 payload padding pairs",
-    "0x08400030 Task8_LoadPayloadHook: call retail deserializer, then gather 32 payload padding pairs into the runtime slot",
-    "0x08400058-0x08400062: local Thumb veneers using odd retail function pointers"
+    "0x08400000 Task8_NewGameHook: initialize the canonical default runtime slot, then preserve the retail descriptor-selector call",
+    "0x08400018 Task8_SavePayloadHook: call the retail serializer, seal or default the runtime slot, then scatter 64 bytes into 32 payload padding pairs",
+    "0x08400048 Task8_LoadPayloadHook: call the retail deserializer, gather 32 payload padding pairs, then validate or default the runtime slot",
+    "0x0840009C Task8_ValidateSlot: verify magic, commit, field invariants, state validation, and CRC32",
+    "0x08400218 Task8_SealSlot: restore fixed fields and recompute both integrity layers",
+    "0x08400290 Task8_InitializeDefaultSlot: copy the canonical sequence-zero default slot"
   ],
   "local_verification": {
-    "compiler": "clang 17.0.0 --target=arm-none-eabi",
+    "compiler": "clang 17.0.0 --target=arm-none-eabi -Oz",
     "linker": "LLD 17.0.0",
     "objcopy": "llvm-objcopy",
     "load_vma": "0x08400000",
     "source_and_checked_hex_equal": true,
-    "result_hex": "00b500f029f800bdf0b5041c00f026f8144d2d6814482d18144824182026287820706878607002350c34013ef7d1f0bdf0b5041c00f014f80a4d2d680a482d180a482418202620782870607868700c340235013ef7d1f0bd054b1847054b1847054b184798010003c8180000f2020000916306089951040891550408"
+    "module_fits_allocation": true,
+    "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821"
   },
   "runtime_verification": {
-    "save_hook": "confirmed: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
-    "load_hook": "confirmed: high-level load reached the native gather loop; a write watchpoint on runtime custom-slot byte 63 triggered at 0x0840004E during the final iteration",
-    "direct_deserializer_call": "rejected: calling the retail deserializer outside its validated high-level context deadlocked or crashed because required load state was absent",
+    "previous_payload_save_hook": "confirmed on the predecessor module: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
+    "previous_payload_load_hook": "confirmed on the predecessor module: high-level load reached the native gather loop and wrote the final runtime custom-slot byte",
+    "current_integrity_module": "unexecuted: the new initialization, seal, CRC32, and invalid-slot default paths require a fresh mGBA acceptance run",
     "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait"
   },
-  "behavior": "Preserves New Game behavior and integrates one custom-state slot with the original payload checksum and transaction. It does not yet expose creator UI or custom gameplay behavior.",
+  "behavior": "Initializes and validates a custom-state slot while integrating it with the original payload checksum and transaction. It does not yet expose creator UI or custom gameplay behavior.",
   "release_status": "research-only"
 }
