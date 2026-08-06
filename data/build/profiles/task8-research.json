@@ -31,7 +31,7 @@
   "allocations": [
     {
       "id": "task8-native-hooks",
-      "size": "0x400",
+      "size": "0x500",
       "alignment": "0x4",
       "class": "thumb",
       "fixed_offset": "0x00400000"
@@ -41,7 +41,7 @@
       "size": "0x90",
       "alignment": "0x10",
       "class": "data",
-      "fixed_offset": "0x00400400"
+      "fixed_offset": "0x00400500"
     }
   ],
   "assets": [],
@@ -52,7 +52,7 @@
       "id": "insert-task8-native-hooks",
       "allocation": "task8-native-hooks",
       "path": "data/build/fixtures/task8-new-game-hook.hex",
-      "sha256": "7e402f1c1c8c1e3754ea7247bb3a9957f555956d2fc760ba182930c65b4afa09",
+      "sha256": "4f163b7bc02571739058bc39b343e95b01faf74d37b100fa160d8aa52e93c6f1",
       "encoding": "hex",
       "entry_offset": "0x0",
       "thumb": true
@@ -103,13 +103,25 @@
         "insert-task8-native-hooks",
         "extend-runtime-root-for-custom-slot"
       ]
+    },
+    {
+      "id": "hook-name-entry-custom-slot",
+      "kind": "thumb_bl",
+      "site": "0x00066962",
+      "expected": "0cf059fc",
+      "destination_allocation": "task8-native-hooks",
+      "destination_offset": "0x78",
+      "depends_on": [
+        "insert-task8-native-hooks",
+        "extend-runtime-root-for-custom-slot"
+      ]
     }
   ],
   "metadata": {
     "enabled": true,
     "id": "write-task8-research-metadata",
     "allocation": "task8-research-metadata",
-    "project_version": "0.8.3-research"
+    "project_version": "0.8.4-research"
   },
   "validation": {
     "allow_invalid_header": false,
@@ -121,10 +133,11 @@
   "extension_metadata": {
     "task": "8",
     "release_status": "research-only",
-    "behavior": "Initialize, validate, seal, and persist one 64-byte SU8C state slot through the retail payload serializer and deserializer while preserving the confirmed New Game transition.",
+    "behavior": "Initialize, validate, seal, and persist one 64-byte SU8C state slot through the retail payload while capturing the confirmed retail player-name commit.",
     "custom_state_storage": "retail payload record padding",
     "custom_slot_runtime_offset": "0x18C8",
     "slot_integrity": "schema and field invariants plus state validation and CRC32",
+    "retail_name_capture_enabled": true,
     "native_eeprom_tail_enabled": false,
     "creator_enabled": false
   }
