@@ -1,31 +1,34 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "sources": [
     "src/native/task8/task8_hooks.S",
     "src/native/task8/task8_slot.c"
   ],
-  "decoded_sha256": "7e402f1c1c8c1e3754ea7247bb3a9957f555956d2fc760ba182930c65b4afa09",
-  "decoded_size": 961,
+  "decoded_sha256": "4f163b7bc02571739058bc39b343e95b01faf74d37b100fa160d8aa52e93c6f1",
+  "decoded_size": 1055,
   "encoding": "hex",
   "load_address": "0x08400000",
   "rom_offset": "0x00400000",
-  "allocation_size": "0x400",
+  "allocation_size": "0x500",
   "entry_symbol": "Task8_NewGameHook",
   "entry_address": "0x08400001",
   "entry_symbols": {
     "Task8_NewGameHook": "0x00000000",
     "Task8_SavePayloadHook": "0x00000018",
     "Task8_LoadPayloadHook": "0x00000048",
-    "Task8_ValidateSlot": "0x0000009C",
-    "Task8_SealSlot": "0x00000218",
-    "Task8_InitializeDefaultSlot": "0x00000290",
-    "Task8_PrepareSlotForSave": "0x000002A8",
-    "Task8_ValidateOrDefaultSlot": "0x000002C0"
+    "Task8_NameCommitHook": "0x00000078",
+    "Task8_ValidateSlot": "0x000000BC",
+    "Task8_SealSlot": "0x00000238",
+    "Task8_InitializeDefaultSlot": "0x000002B0",
+    "Task8_PrepareSlotForSave": "0x000002C8",
+    "Task8_ValidateOrDefaultSlot": "0x000002E0",
+    "Task8_CommitPlayerName": "0x000002F8"
   },
   "retail_symbols": {
     "Retail_SelectNewGameDescriptor": "0x08066391",
     "Retail_SerializeSavePayload": "0x08045199",
-    "Retail_DeserializeSavePayload": "0x08045591"
+    "Retail_DeserializeSavePayload": "0x08045591",
+    "Retail_CopyBytes": "0x08073219"
   },
   "runtime_storage": {
     "root_pointer_global": "0x03000198",
@@ -59,6 +62,20 @@
     "invalid_slot_defaults": true,
     "default_slot_matches_python_serializer": true
   },
+  "name_commit": {
+    "retail_handler": "0x080668C8",
+    "retail_copy_call": "0x08066962",
+    "retail_copy_target": "0x08073218",
+    "keyboard_buffer_pointer": "0x030009AC",
+    "retail_runtime_destination": "*[0x03000198]+0x0858",
+    "retail_buffer_bytes": 16,
+    "persistent_name_offset": "0x0A",
+    "persistent_name_bytes": 12,
+    "retail_copy_preserved": true,
+    "slot_resealed": true,
+    "invalid_name_defaults": true,
+    "confidence": "strongly_supported"
+  },
   "hook_sites": {
     "new_game": {
       "rom_offset": "0x000652FA",
@@ -74,15 +91,22 @@
       "rom_offset": "0x00045092",
       "expected": "00f07dfa",
       "destination": "0x08400048"
+    },
+    "name_commit": {
+      "rom_offset": "0x00066962",
+      "expected": "0cf059fc",
+      "destination": "0x08400078"
     }
   },
   "disassembly": [
     "0x08400000 Task8_NewGameHook: initialize the canonical default runtime slot, then preserve the retail descriptor-selector call",
     "0x08400018 Task8_SavePayloadHook: call the retail serializer, seal or default the runtime slot, then scatter 64 bytes into 32 payload padding pairs",
     "0x08400048 Task8_LoadPayloadHook: call the retail deserializer, gather 32 payload padding pairs, then validate or default the runtime slot",
-    "0x0840009C Task8_ValidateSlot: verify magic, commit, field invariants, state validation, and CRC32",
-    "0x08400218 Task8_SealSlot: restore fixed fields and recompute both integrity layers",
-    "0x08400290 Task8_InitializeDefaultSlot: copy the canonical sequence-zero default slot"
+    "0x08400078 Task8_NameCommitHook: preserve the retail 16-byte copy, then commit and reseal the first 12 bytes as the persistent player name",
+    "0x084000BC Task8_ValidateSlot: verify magic, commit, field invariants, state validation, and CRC32",
+    "0x08400238 Task8_SealSlot: restore fixed fields and recompute both integrity layers",
+    "0x084002B0 Task8_InitializeDefaultSlot: copy the canonical sequence-zero default slot",
+    "0x084002F8 Task8_CommitPlayerName: copy 12 name bytes, seal the slot, or restore defaults"
   ],
   "local_verification": {
     "compiler": "clang 17.0.0 --target=arm-none-eabi -Oz",
@@ -91,14 +115,16 @@
     "load_vma": "0x08400000",
     "source_and_checked_hex_equal": true,
     "module_fits_allocation": true,
+    "host_name_commit_validation": true,
     "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821"
   },
   "runtime_verification": {
     "previous_payload_save_hook": "confirmed on the predecessor module: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
     "previous_payload_load_hook": "confirmed on the predecessor module: high-level load reached the native gather loop and wrote the final runtime custom-slot byte",
-    "current_integrity_module": "unexecuted: the new initialization, seal, CRC32, and invalid-slot default paths require a fresh mGBA acceptance run",
+    "current_integrity_module": "unexecuted: initialization, seal, CRC32, and invalid-slot default paths require a fresh mGBA acceptance run",
+    "name_commit_hook": "unexecuted: the guarded retail copy replacement and persistent-name update require a fresh mGBA name-entry run",
     "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait"
   },
-  "behavior": "Initializes and validates a custom-state slot while integrating it with the original payload checksum and transaction. It does not yet expose creator UI or custom gameplay behavior.",
+  "behavior": "Initializes and validates a custom-state slot, integrates it with the original payload transaction, and captures the retail player-name entry. Additional creator choices and custom gameplay behavior remain disabled.",
   "release_status": "research-only"
 }
