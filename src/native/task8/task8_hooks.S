@@ -5,34 +5,35 @@
 /*
  * Task 8 native research hooks.
  *
- * The module preserves the confirmed New Game descriptor-selection behavior
- * and integrates one validated 64-byte SU8C custom-state slot with the retail
- * payload. Native EEPROM-tail writes remain disabled.
- *
- * The retail payload contains 83 translated records at +0x02E8. Each record
- * advances by 0x0C bytes while the original serializer and deserializer use
- * only the first ten bytes. The first 32 two-byte padding pairs provide the
- * 64-byte custom slot. These bytes remain inside the retail checksum and save
- * transaction.
+ * The module integrates one validated 64-byte SU8C custom-state slot with the
+ * retail payload and reuses the retail name-entry scene as the Tier-A creator.
+ * Native EEPROM-tail writes remain disabled.
  */
 
 .equ Retail_SelectNewGameDescriptor, 0x08066391
 .equ Retail_SerializeSavePayload, 0x08045199
 .equ Retail_DeserializeSavePayload, 0x08045591
 .equ Retail_CopyBytes, 0x08073219
+.equ Retail_SetText, 0x08070AD5
+.equ Retail_UpdateNameCursor, 0x08066AD5
 .equ Task8_RuntimeRootPointer, 0x03000198
 .equ Task8_CustomSlotOffset, 0x000018C8
+.equ Task8_RetailNameOffset, 0x00000858
 .equ Task8_PayloadSlotFirstOffset, 0x000002F2
 
-.section .text,"ax",%progbits
+.section .text.task8_entry,"ax",%progbits
 .global Task8_NewGameHook
 .global Task8_SavePayloadHook
 .global Task8_LoadPayloadHook
 .global Task8_NameCommitHook
+.global Task8_CreatorBackHook
+.global Task8_CallRetailSetText
+.global Task8_CallRetailUpdateNameCursor
 .type Task8_NewGameHook,%function
 .type Task8_SavePayloadHook,%function
 .type Task8_LoadPayloadHook,%function
 .type Task8_NameCommitHook,%function
+.type Task8_CreatorBackHook,%function
 
 .thumb_func
 Task8_NewGameHook:
@@ -42,7 +43,7 @@ Task8_NewGameHook:
     ldr r0, [r0]
     ldr r1, =Task8_CustomSlotOffset
     adds r0, r0, r1
-    bl Task8_InitializeDefaultSlot
+    bl Task8_CreatorInit
     adds r0, r4, #0
     bl Task8_CallSelectNewGameDescriptor
     pop {r4, pc}
@@ -109,22 +110,39 @@ Task8_LoadPayloadHook:
 .thumb_func
 Task8_NameCommitHook:
     push {r4-r7, lr}
-    adds r4, r0, #0
+    adds r5, r0, #0
+    adds r6, r1, #0
     bl Task8_CallRetailCopyBytes
 
-    ldr r0, =Task8_RuntimeRootPointer
-    ldr r0, [r0]
-    ldr r1, =Task8_CustomSlotOffset
-    adds r0, r0, r1
-    adds r1, r4, #0
-    bl Task8_CommitPlayerName
+    ldr r1, =Task8_RuntimeRootPointer
+    ldr r1, [r1]
+    ldr r0, =Task8_CustomSlotOffset
+    adds r1, r1, r0
+    adds r0, r4, #0
+    adds r2, r5, #0
+    adds r3, r6, #0
+    bl Task8_CreatorCommit
     pop {r4-r7, pc}
 .size Task8_NameCommitHook, .-Task8_NameCommitHook
 
-/*
- * Use local Thumb veneers instead of allowing the linker to create ARM thunks.
- * Each literal stores the odd callable address of the retail Thumb routine.
- */
+.align 2
+.thumb_func
+Task8_CreatorBackHook:
+    push {r4-r7, lr}
+    ldr r1, =Task8_RuntimeRootPointer
+    ldr r1, [r1]
+    ldr r0, =Task8_CustomSlotOffset
+    adds r1, r1, r0
+    ldr r2, =Task8_RetailNameOffset
+    adds r2, r2, r1
+    ldr r0, =Task8_CustomSlotOffset
+    subs r2, r2, r0
+    adds r0, r7, #0
+    bl Task8_CreatorBack
+    pop {r4-r7, pc}
+.size Task8_CreatorBackHook, .-Task8_CreatorBackHook
+
+/* Local Thumb veneers keep retail calls in Thumb state. */
 .align 2
 .thumb_func
 Task8_CallSelectNewGameDescriptor:
@@ -147,6 +165,18 @@ Task8_CallDeserializeSavePayload:
 .thumb_func
 Task8_CallRetailCopyBytes:
     ldr r3, =Retail_CopyBytes
+    bx r3
+
+.align 2
+.thumb_func
+Task8_CallRetailSetText:
+    ldr r3, =Retail_SetText
+    bx r3
+
+.align 2
+.thumb_func
+Task8_CallRetailUpdateNameCursor:
+    ldr r3, =Retail_UpdateNameCursor
     bx r3
 
 .ltorg
