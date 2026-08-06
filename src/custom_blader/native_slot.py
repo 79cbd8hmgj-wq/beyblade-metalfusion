@@ -150,3 +150,22 @@ def validate_or_default(raw: bytes) -> tuple[bytes, str]:
     if validate_slot(raw):
         return bytes(raw), "valid"
     return default_slot(), "defaulted"
+
+
+def commit_player_name(raw: bytes, retail_buffer: bytes) -> tuple[bytes, str]:
+    """Copy the retail 16-byte keyboard buffer into the persistent name field.
+
+    The retail scene accepts up to 15 characters, while the SU8C ABI reserves
+    12 bytes. The native hook therefore copies the first 12 bytes exactly and
+    reseals the slot. A name that violates the native field invariants defaults
+    the whole slot rather than activating corrupt state.
+    """
+    _require_slot(raw)
+    if len(retail_buffer) != 16:
+        raise ValueError("retail name buffer must be exactly 16 bytes")
+    output = bytearray(raw)
+    output[10:22] = retail_buffer[:12]
+    try:
+        return seal_slot(bytes(output)), "committed"
+    except ValueError:
+        return default_slot(), "defaulted"
