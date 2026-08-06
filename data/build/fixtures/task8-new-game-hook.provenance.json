@@ -74,7 +74,7 @@
     "retail_copy_preserved": true,
     "slot_resealed": true,
     "invalid_name_defaults": true,
-    "confidence": "strongly_supported"
+    "confidence": "confirmed"
   },
   "hook_sites": {
     "new_game": {
@@ -121,9 +121,10 @@
   "runtime_verification": {
     "previous_payload_save_hook": "confirmed on the predecessor module: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
     "previous_payload_load_hook": "confirmed on the predecessor module: high-level load reached the native gather loop and wrote the final runtime custom-slot byte",
-    "current_integrity_module": "unexecuted: initialization, seal, CRC32, and invalid-slot default paths require a fresh mGBA acceptance run",
-    "name_commit_hook": "unexecuted: the guarded retail copy replacement and persistent-name update require a fresh mGBA name-entry run",
-    "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait"
+    "current_integrity_module": "confirmed: Task8_InitializeDefaultSlot produced the exact canonical 64-byte slot and Task8_ValidateSlot returned 1 under mGBA 0.10.5 on the current 1055-byte module",
+    "name_commit_hook": "confirmed: the actual guarded BL at 0x08066962 copied 16 retail bytes, persisted Rin-42 in SU8C, returned at 0x08066966, passed native and Python validation, and defaulted an invalid Bad! persistent name while preserving the retail copy",
+    "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait",
+    "name_commit_hook_bytes": "99f389fb"
   },
   "behavior": "Initializes and validates a custom-state slot, integrates it with the original payload transaction, and captures the retail player-name entry. Additional creator choices and custom gameplay behavior remain disabled.",
   "release_status": "research-only"
