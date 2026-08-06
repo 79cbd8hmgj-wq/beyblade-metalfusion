@@ -72,7 +72,7 @@ class CreatorStateMachineTests(unittest.TestCase):
             creator.choose(field, 99)
             self.assertEqual(getattr(creator.state, field), 0, field)
         self.assertEqual(creator.state.player_name, "Blader")
-        self.assertEqual(creator.state.bey_name, "Blank Bey")
+        self.assertEqual(creator.state.bey_name, "invalid")
 
     def test_current_step_selection_and_summary_use_option_labels(self):
         creator = CreatorModel()
