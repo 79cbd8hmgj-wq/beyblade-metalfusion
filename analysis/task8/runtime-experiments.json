@@ -133,13 +133,7 @@
       "id": "early-intro-name-paths",
       "status": "executed",
       "trigger": "Select NEW GAME and advance through the initial bedroom dialogue.",
-      "breakpoints": [
-        "0x0802E4DC",
-        "0x080654B8",
-        "0x0806645C",
-        "0x080668C8",
-        "0x08066984"
-      ],
+      "breakpoints": ["0x0802E4DC", "0x080654B8", "0x0806645C", "0x080668C8", "0x08066984"],
       "observations": {
         "fixed_tyson_dialogue_visible": true,
         "protagonist_lookup_hits": 0,
@@ -148,15 +142,50 @@
       },
       "conclusion": "The opening dialogue's Tyson text does not pass through the candidate protagonist lookup during the observed segment. The Enter name descriptor is not part of the initial New Game sequence.",
       "confidence": "strongly_supported"
+    },
+    {
+      "id": "current-native-slot-integrity",
+      "status": "executed",
+      "trigger": "Boot the current four-hook research build, wait for the runtime root allocation, then invoke the current module default initializer and validator through the mGBA GDB stub.",
+      "breakpoints": ["0x084002B0", "0x084000BC"],
+      "observations": {
+        "runtime_root": "0x02000804",
+        "custom_slot": "0x020020CC",
+        "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821",
+        "matches_canonical_serializer": true,
+        "native_validate_return": 1
+      },
+      "conclusion": "The current module initializes the exact canonical SU8C slot and validates it successfully at runtime.",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "current-name-commit-hook",
+      "status": "executed",
+      "trigger": "Execute the patched Thumb BL at 0x08066962 with a 16-byte retail source buffer and stop at the next retail instruction 0x08066966.",
+      "breakpoints": ["0x08066966"],
+      "observations": {
+        "hook_bytes": "99f389fb",
+        "module_entry": "0x08400078",
+        "runtime_root": "0x02000804",
+        "custom_slot": "0x020020CC",
+        "valid_source": "Rin-42",
+        "retail_16_byte_copy_preserved": true,
+        "persistent_12_byte_name": "Rin-42",
+        "python_slot_valid": true,
+        "native_validate_return": 1,
+        "invalid_source": "Bad!",
+        "invalid_retail_copy_preserved": true,
+        "invalid_persistent_slot_defaulted": true,
+        "pc_after_return": "0x08066966"
+      },
+      "conclusion": "The actual guarded retail call replacement preserves original behavior, commits and reseals a valid persistent player name, and safely defaults invalid persistent input.",
+      "confidence": "confirmed"
     }
   ],
   "remaining_runtime_gates": [
-    "hook the retail serializer after its normal writes and before checksum calculation",
-    "hook the retail load path after validation and deserialization",
     "verify one SU8C slot survives three complete retail save/load cycles",
     "prove no unrelated high-level routine mutates the selected payload padding pairs",
     "trigger the existing Enter name descriptor with live UI input and inspect its allocated buffer",
-    "trace full native wrapper call-through and return with a debugger that resumes reliably from expansion breakpoints",
     "trigger player sprite and portrait lookup paths",
     "trigger all player-side Bit Chip consumers"
   ]
