@@ -40,3 +40,14 @@ jobs:
         run: |
           find scripts debugger-bundle -type f \( -name '*.sh' -o -name '*.bash' \) -print0 2>/dev/null \
             | xargs -0 -r -n1 bash -n
+      - name: Upload current Task 8 source snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: task8-current-${{ github.sha }}
+          path: |
+            .
+            !.git/**
+            !**/__pycache__/**
+            !.pytest_cache/**
+          include-hidden-files: true
+          retention-days: 1
