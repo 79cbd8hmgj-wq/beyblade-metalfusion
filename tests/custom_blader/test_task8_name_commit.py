@@ -116,6 +116,24 @@ class Task8NameCommitTests(unittest.TestCase):
             provenance["name_commit"]["persistent_name_bytes"],
             12,
         )
+        self.assertTrue(
+            provenance["runtime_verification"]["current_integrity_module"].startswith(
+                "confirmed"
+            )
+        )
+        self.assertTrue(
+            provenance["runtime_verification"]["name_commit_hook"].startswith(
+                "confirmed"
+            )
+        )
+
+        name_evidence = json.loads(
+            Path("analysis/task8/name-entry.json").read_text(encoding="utf-8")
+        )["native_persistence"]
+        self.assertEqual(name_evidence["status"], "runtime_confirmed")
+        self.assertEqual(name_evidence["runtime_evidence"]["hook_bytes"], "99f389fb")
+        self.assertEqual(name_evidence["runtime_evidence"]["valid_name"], "Rin-42")
+        self.assertTrue(name_evidence["runtime_evidence"]["invalid_name_defaulted"])
 
 
 if __name__ == "__main__":
