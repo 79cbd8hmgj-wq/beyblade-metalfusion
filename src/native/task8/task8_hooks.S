@@ -15,6 +15,7 @@
 .equ Retail_DeserializeSavePayload, 0x08045591
 .equ Retail_CopyBytes, 0x08073219
 .equ Retail_SetText, 0x08070AD5
+.equ Retail_DrawBoundedText, 0x08070AD5
 .equ Retail_UpdateNameCursor, 0x08066AD5
 .equ Task8_RuntimeRootPointer, 0x03000198
 .equ Task8_CustomSlotOffset, 0x000018C8
@@ -27,13 +28,16 @@
 .global Task8_LoadPayloadHook
 .global Task8_NameCommitHook
 .global Task8_CreatorBackHook
+.global Task8_PlayerNameRenderHook
 .global Task8_CallRetailSetText
 .global Task8_CallRetailUpdateNameCursor
+.global Task8_CallDrawBoundedText
 .type Task8_NewGameHook,%function
 .type Task8_SavePayloadHook,%function
 .type Task8_LoadPayloadHook,%function
 .type Task8_NameCommitHook,%function
 .type Task8_CreatorBackHook,%function
+.type Task8_PlayerNameRenderHook,%function
 
 .thumb_func
 Task8_NewGameHook:
@@ -142,6 +146,27 @@ Task8_CreatorBackHook:
     pop {r4-r7, pc}
 .size Task8_CreatorBackHook, .-Task8_CreatorBackHook
 
+.align 2
+.thumb_func
+Task8_PlayerNameRenderHook:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    adds r5, r2, #0
+    adds r6, r1, #0
+
+    ldr r0, =Task8_RuntimeRootPointer
+    ldr r0, [r0]
+    ldr r1, =Task8_CustomSlotOffset
+    adds r0, r0, r1
+    adds r1, r6, #0
+    bl Task8_SelectPlayerName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    adds r2, r5, #0
+    bl Task8_CallDrawBoundedText
+    pop {r4-r7, pc}
+.size Task8_PlayerNameRenderHook, .-Task8_PlayerNameRenderHook
+
 /* Local Thumb veneers keep retail calls in Thumb state. */
 .align 2
 .thumb_func
@@ -177,6 +202,12 @@ Task8_CallRetailSetText:
 .thumb_func
 Task8_CallRetailUpdateNameCursor:
     ldr r3, =Retail_UpdateNameCursor
+    bx r3
+
+.align 2
+.thumb_func
+Task8_CallDrawBoundedText:
+    ldr r3, =Retail_DrawBoundedText
     bx r3
 
 .ltorg
