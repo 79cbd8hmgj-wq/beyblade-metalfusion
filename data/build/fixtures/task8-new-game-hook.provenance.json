@@ -1,15 +1,17 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "sources": [
     "src/native/task8/task8_hooks.S",
+    "src/native/task8/creator.c",
+    "src/native/task8/creator.h",
     "src/native/task8/task8_slot.c"
   ],
-  "decoded_sha256": "4f163b7bc02571739058bc39b343e95b01faf74d37b100fa160d8aa52e93c6f1",
-  "decoded_size": 1055,
+  "decoded_sha256": "d75f4db0b21ece9059c794c57b7f165e9c42c95b2e76fbaba843ccccdc600a47",
+  "decoded_size": 2118,
   "encoding": "hex",
   "load_address": "0x08400000",
   "rom_offset": "0x00400000",
-  "allocation_size": "0x500",
+  "allocation_size": "0x900",
   "entry_symbol": "Task8_NewGameHook",
   "entry_address": "0x08400001",
   "entry_symbols": {
@@ -17,18 +19,26 @@
     "Task8_SavePayloadHook": "0x00000018",
     "Task8_LoadPayloadHook": "0x00000048",
     "Task8_NameCommitHook": "0x00000078",
-    "Task8_ValidateSlot": "0x000000BC",
-    "Task8_SealSlot": "0x00000238",
-    "Task8_InitializeDefaultSlot": "0x000002B0",
-    "Task8_PrepareSlotForSave": "0x000002C8",
-    "Task8_ValidateOrDefaultSlot": "0x000002E0",
-    "Task8_CommitPlayerName": "0x000002F8"
+    "Task8_CreatorBackHook": "0x00000098",
+    "Task8_CreatorInit": "0x000000F4",
+    "Task8_CreatorRefresh": "0x00000114",
+    "Task8_CreatorCommit": "0x00000260",
+    "Task8_CreatorBack": "0x000003F0",
+    "Task8_ValidateSlot": "0x00000434",
+    "Task8_SealSlot": "0x000005BC",
+    "Task8_InitializeDefaultSlot": "0x00000638",
+    "Task8_PrepareSlotForSave": "0x00000650",
+    "Task8_ValidateOrDefaultSlot": "0x0000066A",
+    "Task8_CommitPlayerName": "0x00000684",
+    "Task8_PromptBladerNameRow": "0x00000754"
   },
   "retail_symbols": {
     "Retail_SelectNewGameDescriptor": "0x08066391",
     "Retail_SerializeSavePayload": "0x08045199",
     "Retail_DeserializeSavePayload": "0x08045591",
-    "Retail_CopyBytes": "0x08073219"
+    "Retail_CopyBytes": "0x08073219",
+    "Retail_SetText": "0x08070AD5",
+    "Retail_UpdateNameCursor": "0x08066AD5"
   },
   "runtime_storage": {
     "root_pointer_global": "0x03000198",
@@ -62,6 +72,49 @@
     "invalid_slot_defaults": true,
     "default_slot_matches_python_serializer": true
   },
+  "creator": {
+    "status": "implemented_research_unexecuted",
+    "retail_scene": "name-entry descriptor index 10",
+    "retail_keyboard_reused": true,
+    "retail_text_objects_reused": true,
+    "retail_cursor_reused": true,
+    "stages": [
+      "player_name",
+      "bey_name",
+      "avatar",
+      "skin",
+      "hair",
+      "outfit",
+      "portrait",
+      "origin",
+      "tendency",
+      "confirm"
+    ],
+    "selection_count": 7,
+    "option_range": [1, 4],
+    "selection_storage": {
+      "avatar": "slot+0x22 and hair-style mirror slot+0x25",
+      "skin": "slot+0x24",
+      "hair_palette": "slot+0x26",
+      "outfit": "slot+0x27",
+      "portrait": "slot+0x23",
+      "origin": "slot+0x28",
+      "tendency": "slot+0x29"
+    },
+    "stage_storage": "slot+0x2D low nibble",
+    "complete_marker": "slot+0x2D = 0x80",
+    "backtracking_enabled": true,
+    "cancel_at_first_stage": true,
+    "restart_from_confirm": "enter N",
+    "summary": {
+      "prompt_line": "A# S# H# O#",
+      "input_line": "P# R# T# Y",
+      "confirm": "Y",
+      "restart": "N"
+    },
+    "existing_save_entry": false,
+    "reason_existing_save_bypasses": "Task8_CreatorInit is called only by the guarded New Game hook; normal load validates the persisted slot without entering the creator."
+  },
   "name_commit": {
     "retail_handler": "0x080668C8",
     "retail_copy_call": "0x08066962",
@@ -73,8 +126,8 @@
     "persistent_name_bytes": 12,
     "retail_copy_preserved": true,
     "slot_resealed": true,
-    "invalid_name_defaults": true,
-    "confidence": "confirmed"
+    "player_name_restored_after_non-player stages": true,
+    "confidence": "confirmed_on_predecessor_wrapper"
   },
   "hook_sites": {
     "new_game": {
@@ -96,17 +149,28 @@
       "rom_offset": "0x00066962",
       "expected": "0cf059fc",
       "destination": "0x08400078"
+    },
+    "creator_back": {
+      "rom_offset": "0x000669DC",
+      "expected": "02202060",
+      "destination": "0x08400098"
+    },
+    "creator_initial_prompt": {
+      "rom_offset": "0x000BAE68",
+      "expected": "006d0908",
+      "value": "0x08400754"
     }
   },
   "disassembly": [
-    "0x08400000 Task8_NewGameHook: initialize the canonical default runtime slot, then preserve the retail descriptor-selector call",
-    "0x08400018 Task8_SavePayloadHook: call the retail serializer, seal or default the runtime slot, then scatter 64 bytes into 32 payload padding pairs",
-    "0x08400048 Task8_LoadPayloadHook: call the retail deserializer, gather 32 payload padding pairs, then validate or default the runtime slot",
-    "0x08400078 Task8_NameCommitHook: preserve the retail 16-byte copy, then commit and reseal the first 12 bytes as the persistent player name",
-    "0x084000BC Task8_ValidateSlot: verify magic, commit, field invariants, state validation, and CRC32",
-    "0x08400238 Task8_SealSlot: restore fixed fields and recompute both integrity layers",
-    "0x084002B0 Task8_InitializeDefaultSlot: copy the canonical sequence-zero default slot",
-    "0x084002F8 Task8_CommitPlayerName: copy 12 name bytes, seal the slot, or restore defaults"
+    "0x08400000 Task8_NewGameHook: initialize incomplete creator state, then preserve the retail descriptor-selector call",
+    "0x08400018 Task8_SavePayloadHook: seal or default the runtime slot and scatter it into 32 payload padding pairs",
+    "0x08400048 Task8_LoadPayloadHook: gather the slot and validate or default it",
+    "0x08400078 Task8_NameCommitHook: preserve retail copy semantics and dispatch the current creator stage",
+    "0x08400098 Task8_CreatorBackHook: backtrack a creator stage when the retail input buffer is empty",
+    "0x084000F4 Task8_CreatorInit: create an incomplete sequence-zero creator state",
+    "0x08400114 Task8_CreatorRefresh: update prompts, summary, input text, cursor, and active phase",
+    "0x08400260 Task8_CreatorCommit: persist names, 1-4 choices, restart, or final confirmation",
+    "0x084003F0 Task8_CreatorBack: retain prior choices while moving backward or cancel at stage zero"
   ],
   "local_verification": {
     "compiler": "clang 17.0.0 --target=arm-none-eabi -Oz",
@@ -115,17 +179,17 @@
     "load_vma": "0x08400000",
     "source_and_checked_hex_equal": true,
     "module_fits_allocation": true,
-    "host_name_commit_validation": true,
+    "host_creator_state_machine": "passed",
+    "host_creator_flow": "Nova, Comet, choices 2/4/1/3/2/2/4, compact summary, confirm, and backtracking",
+    "host_final_slot_valid": true,
     "default_slot_hex": "53553843000000000101426c61646572000000000000426c616e6b20426579000000000000000000000000f00000000000004c3104450000f64a43814f4b3821"
   },
   "runtime_verification": {
-    "previous_payload_save_hook": "confirmed on the predecessor module: a genuine high-level save transaction embedded a valid SU8C slot into the retail payload and produced a valid 8-KiB EEPROM image",
-    "previous_payload_load_hook": "confirmed on the predecessor module: high-level load reached the native gather loop and wrote the final runtime custom-slot byte",
-    "current_integrity_module": "confirmed: Task8_InitializeDefaultSlot produced the exact canonical 64-byte slot and Task8_ValidateSlot returned 1 under mGBA 0.10.5 on the current 1055-byte module",
-    "name_commit_hook": "confirmed: the actual guarded BL at 0x08066962 copied 16 retail bytes, persisted Rin-42 in SU8C, returned at 0x08066966, passed native and Python validation, and defaulted an invalid Bad! persistent name while preserving the retail copy",
-    "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait",
-    "name_commit_hook_bytes": "99f389fb"
+    "predecessor_payload_and_integrity": "confirmed on the 1055-byte four-hook module through three independent retail save/load cycles",
+    "predecessor_name_commit": "confirmed at the actual guarded BL on the 1055-byte four-hook module",
+    "current_2118_byte_creator_module": "unexecuted: complete, backtrack, cancel, restart, invalid input, save/load, and existing-save bypass require fresh mGBA acceptance",
+    "required_call_context": "system-mode game loop with IRQ enabled; invoking EEPROM transactions from an interrupted IRQ context deadlocks in BIOS IntrWait"
   },
-  "behavior": "Initializes and validates a custom-state slot, integrates it with the original payload transaction, and captures the retail player-name entry. Additional creator choices and custom gameplay behavior remain disabled.",
+  "behavior": "Provides a research-only staged Tier-A creator through the retail keyboard and persists the resulting validated custom state inside the original checksummed save payload.",
   "release_status": "research-only"
 }
