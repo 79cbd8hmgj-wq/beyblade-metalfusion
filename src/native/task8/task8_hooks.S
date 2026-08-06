@@ -6,13 +6,14 @@
  * Task 8 native research hooks.
  *
  * The module preserves the confirmed New Game descriptor-selection behavior
- * and integrates one 64-byte SU8C custom-state slot with the retail payload.
+ * and integrates one validated 64-byte SU8C custom-state slot with the retail
+ * payload. Native EEPROM-tail writes remain disabled.
  *
  * The retail payload contains 83 translated records at +0x02E8. Each record
  * advances by 0x0C bytes while the original serializer and deserializer use
  * only the first ten bytes. The first 32 two-byte padding pairs provide the
  * 64-byte custom slot. These bytes remain inside the retail checksum and save
- * transaction; direct EEPROM-tail writes remain disabled.
+ * transaction.
  */
 
 .equ Retail_SelectNewGameDescriptor, 0x08066391
@@ -32,9 +33,16 @@
 
 .thumb_func
 Task8_NewGameHook:
-    push {lr}
+    push {r4, lr}
+    adds r4, r0, #0
+    ldr r0, =Task8_RuntimeRootPointer
+    ldr r0, [r0]
+    ldr r1, =Task8_CustomSlotOffset
+    adds r0, r0, r1
+    bl Task8_InitializeDefaultSlot
+    adds r0, r4, #0
     bl Task8_CallSelectNewGameDescriptor
-    pop {pc}
+    pop {r4, pc}
 .size Task8_NewGameHook, .-Task8_NewGameHook
 
 .align 2
@@ -48,6 +56,8 @@ Task8_SavePayloadHook:
     ldr r5, [r5]
     ldr r0, =Task8_CustomSlotOffset
     adds r5, r5, r0
+    adds r0, r5, #0
+    bl Task8_PrepareSlotForSave
     ldr r0, =Task8_PayloadSlotFirstOffset
     adds r4, r4, r0
     movs r6, #32
@@ -74,6 +84,7 @@ Task8_LoadPayloadHook:
     ldr r5, [r5]
     ldr r0, =Task8_CustomSlotOffset
     adds r5, r5, r0
+    adds r7, r5, #0
     ldr r0, =Task8_PayloadSlotFirstOffset
     adds r4, r4, r0
     movs r6, #32
@@ -86,6 +97,8 @@ Task8_LoadPayloadHook:
     adds r5, #2
     subs r6, #1
     bne 2b
+    adds r0, r7, #0
+    bl Task8_ValidateOrDefaultSlot
     pop {r4-r7, pc}
 .size Task8_LoadPayloadHook, .-Task8_LoadPayloadHook
 
