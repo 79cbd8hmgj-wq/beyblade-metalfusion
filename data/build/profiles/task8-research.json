@@ -31,7 +31,7 @@
   "allocations": [
     {
       "id": "task8-native-hooks",
-      "size": "0x80",
+      "size": "0x400",
       "alignment": "0x4",
       "class": "thumb",
       "fixed_offset": "0x00400000"
@@ -41,7 +41,7 @@
       "size": "0x90",
       "alignment": "0x10",
       "class": "data",
-      "fixed_offset": "0x00400100"
+      "fixed_offset": "0x00400400"
     }
   ],
   "assets": [],
@@ -52,7 +52,7 @@
       "id": "insert-task8-native-hooks",
       "allocation": "task8-native-hooks",
       "path": "data/build/fixtures/task8-new-game-hook.hex",
-      "sha256": "78b18bad83aa49bca3f61f7efa5c829b4bd070177411ddbdb3c19b01ae11120d",
+      "sha256": "7e402f1c1c8c1e3754ea7247bb3a9957f555956d2fc760ba182930c65b4afa09",
       "encoding": "hex",
       "entry_offset": "0x0",
       "thumb": true
@@ -86,7 +86,7 @@
       "site": "0x00044e80",
       "expected": "00f08af9",
       "destination_allocation": "task8-native-hooks",
-      "destination_offset": "0x8",
+      "destination_offset": "0x18",
       "depends_on": [
         "insert-task8-native-hooks",
         "extend-runtime-root-for-custom-slot"
@@ -98,7 +98,7 @@
       "site": "0x00045092",
       "expected": "00f07dfa",
       "destination_allocation": "task8-native-hooks",
-      "destination_offset": "0x30",
+      "destination_offset": "0x48",
       "depends_on": [
         "insert-task8-native-hooks",
         "extend-runtime-root-for-custom-slot"
@@ -109,7 +109,7 @@
     "enabled": true,
     "id": "write-task8-research-metadata",
     "allocation": "task8-research-metadata",
-    "project_version": "0.8.2-research"
+    "project_version": "0.8.3-research"
   },
   "validation": {
     "allow_invalid_header": false,
@@ -121,9 +121,10 @@
   "extension_metadata": {
     "task": "8",
     "release_status": "research-only",
-    "behavior": "Preserve the confirmed New Game transition and integrate one 64-byte SU8C state slot with the retail payload serializer and deserializer.",
+    "behavior": "Initialize, validate, seal, and persist one 64-byte SU8C state slot through the retail payload serializer and deserializer while preserving the confirmed New Game transition.",
     "custom_state_storage": "retail payload record padding",
     "custom_slot_runtime_offset": "0x18C8",
+    "slot_integrity": "schema and field invariants plus state validation and CRC32",
     "native_eeprom_tail_enabled": false,
     "creator_enabled": false
   }
