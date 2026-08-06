@@ -17,11 +17,11 @@ def linker_script(address, entry=None, absolute_symbols=None):
         [
             'SECTIONS {',
             f' . = 0x{address:08x};',
-            ' .text : { *(.text*) }',
+            ' .text : { *(.text.task8_entry) *(.text*) }',
             ' .rodata : { *(.rodata*) }',
             ' .data : { *(.data*) }',
             ' .bss : { *(.bss*) }',
-            ' /DISCARD/ : { *(.ARM.attributes) *(.comment) *(.note*) }',
+            ' /DISCARD/ : { *(.ARM.attributes) *(.ARM.exidx*) *(.ARM.extab*) *(.comment) *(.note*) }',
             '}',
             '',
         ]
